@@ -11,13 +11,13 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %TRR = 50;              % Torque input of rear right tire [Nm]
 
 %Load Fuzzy Inference System Controllers
-%Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\Kenny Schmutz\Dropbox\EE500\CURRENT Model for editing\Fuzzy_Controller\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
-%Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\Kenny Schmutz\Dropbox\EE500\CURRENT Model for editing\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
-%Fuzzy_AYC_Ctl      = readfis('C:\Users\Kenny Schmutz\Dropbox\EE500\CURRENT Model for editing\Fuzzy_Controller\Fuzzy_AYC_Ctl');         %AYC FIS
+Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
+Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
+Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
 
-Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_VLC_2');      %VLC FIS
-Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS_2');      %ABS FIS
-Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_AYC_Ctl');             %AYC FIS
+%Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_VLC_2');      %VLC FIS
+%Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS_2');      %ABS FIS
+%Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_AYC_Ctl');             %AYC FIS
 
 
 T_Avail = 150;          % Peak Torque available by motors [Nm]
@@ -27,7 +27,7 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
 %D_Slip = 0.1;            % Desired slip for PID
 
-Vx0 = 0.01;             % Initial vehicle longitude speed [m/s] note: was 60*1000/3600   KDS 10/16, 
+Vx0 = 1.0;             % Initial vehicle longitude speed [m/s] note: was 60*1000/3600   KDS 10/16, 
                         % DO NOT USE EXTREMELY SMALL START SPEEDS
                         % Initial negative speeds seem to not work....
 Vy0 = 0;                % Initial vehicle lateral speed [m/s]
