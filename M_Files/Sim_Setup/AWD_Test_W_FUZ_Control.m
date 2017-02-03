@@ -10,6 +10,7 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %TRL = 50;              % Torque input of rear left tire [Nm]
 %TRR = 50;              % Torque input of rear right tire [Nm]
 
+%fuzzyLogicDesigner
 %Load Fuzzy Inference System Controllers
 Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
 Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
