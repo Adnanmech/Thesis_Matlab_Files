@@ -1,7 +1,8 @@
 %clear all; close all; clc;
 fprintf('Loading data for rear wheel driving model...')
 %set_param('AWD_EV_MODEL','AlgebraicLoopSolver','LineSearch')
-set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
+%set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
+set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
 %USE ABOVE STATEMENT IF SOLVER HAS CONVERGENCE ERROR!!!!!!!!!!
 
 %% Inputs
@@ -28,7 +29,7 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
 %D_Slip = 0.1;            % Desired slip for PID
 
-Vx0 = 1.0;             % Initial vehicle longitude speed [m/s] note: was 60*1000/3600   KDS 10/16, 
+Vx0 = .10;             % Initial vehicle longitude speed [m/s] note: was 60*1000/3600   KDS 10/16, 
                         % DO NOT USE EXTREMELY SMALL START SPEEDS
                         % Initial negative speeds seem to not work....
 Vy0 = 0;                % Initial vehicle lateral speed [m/s]
