@@ -21,7 +21,8 @@ Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working D
 %Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS_2');      %ABS FIS
 %Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_AYC_Ctl');             %AYC FIS
 
-
+PassBand = 100;
+StopBand = 200;
 T_Avail = 150;          % Peak Torque available by motors [Nm]
 
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
