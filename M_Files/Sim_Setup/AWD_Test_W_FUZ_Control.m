@@ -21,8 +21,8 @@ Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working D
 %Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS_2');      %ABS FIS
 %Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_AYC_Ctl');             %AYC FIS
 
-PassBand = 100;
-StopBand = 200;
+%PassBand = 100;
+%StopBand = 200;
 T_Avail = 150;          % Peak Torque available by motors [Nm]
 
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
@@ -30,7 +30,7 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
 %D_Slip = 0.1;            % Desired slip for PID
 
-Vx0 = .10;             % Initial vehicle longitude speed [m/s] note: was 60*1000/3600   KDS 10/16, 
+Vx0 = 26.82;             % Initial vehicle longitude speed [m/s] note: was 60*1000/3600   KDS 10/16, 
                         % DO NOT USE EXTREMELY SMALL START SPEEDS
                         % Initial negative speeds seem to not work....
 Vy0 = 0;                % Initial vehicle lateral speed [m/s]
@@ -58,8 +58,8 @@ Kxnorm = 30;      % normalized stiffness
 Muxp = .99;         % peak friction coefficient
 Muxs = 0.5;         % sliding friction coefficient was .5 kds 5/16/14
 %(Condition 2)
-Muxp_2 = 0.2;         % peak friction coefficient
-Muxs_2 = 0.2;       % sliding friction coefficient 
+Muxp_2 = 0.3;         % peak friction coefficient
+Muxs_2 = 0.29;       % sliding friction coefficient 
 
 
 % Magic formular (Lateral)
@@ -70,8 +70,8 @@ Fz = m*g/4;
 Muyp0 = 0.85;       % static peak friction coefficient
 Muys = 0.80;        % friction coefficient when sliding 
 %(Condition 2)
-Muyp0_2 = 0.2;       % static peak friction coefficient
-Muys_2 = 0.2;        % friction coefficient when sliding 
+Muyp0_2 = 0.3;       % static peak friction coefficient
+Muys_2 = 0.29;        % friction coefficient when sliding 
 
 % Combined slip parameters
 %(Condition 1)
@@ -252,11 +252,11 @@ Ex_2 = ( Bx_2 * sp_2 - tan( pi / ( 2 * Cx_2 )) ) / ( Bx_2 * sp_2-atan( Bx_2 * sp
 %Test Formula   KDS 2/7/14
 %u = slip ratio
 u=-1:.001:1;
-LongSlip = Dx*sin(Cx*atan(Bx*u-Ex*(Bx*u-atan(Bx*u))));
-%figure;
-%hhh(1) = subplot(2,1,1); % upper plot
-%plot(u,LongSlip)
-%hold on;
+LongSlip = Dx_2*sin(Cx_2*atan(Bx_2*u-Ex_2*(Bx_2*u-atan(Bx_2*u))));
+figure;
+hhh(1) = subplot(2,1,1); % upper plot
+plot(u,LongSlip)
+hold on;
 
 %------------------  Lateral Slip Characteristics  ------------------------
 %   

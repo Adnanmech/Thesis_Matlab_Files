@@ -132,7 +132,7 @@ drawnow
 
 %% 5. define the motion coordinates
 step = 1;               % initialize data stepper
-time = 25;               % time of simulation display [seconds]
+time = 5;               % time of simulation display [seconds]
 fps = 40;               % Frames/second desired
 samples_p_sec = 1000;  % Samples per second of model simulation
                
@@ -245,12 +245,12 @@ for i = 1:(samples_taken - 1)
      
     %Statement to keep camera focused on vehicle whilst moving
     %The axes limits are track the vehicle 
-    %set(main_vehicle_plot,'ylim',[-10+longitude(i) 10+longitude(i)]);
-    %set(main_vehicle_plot,'xlim',[-3+latitude(i) 3+latitude(i)]);
+    set(main_vehicle_plot,'ylim',[-10+longitude(i) 10+longitude(i)]);
+    set(main_vehicle_plot,'xlim',[-3+latitude(i) 3+latitude(i)]);
     
     %fixed axes limits
-    set(main_vehicle_plot,'ylim',[-20 150]);
-    set(main_vehicle_plot,'xlim',[50 150]);
+    %set(main_vehicle_plot,'ylim',[-20 150]);
+    %set(main_vehicle_plot,'xlim',[50 150]);
     
     pause(1/(20000*fps));
     
