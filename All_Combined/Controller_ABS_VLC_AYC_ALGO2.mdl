@@ -83,7 +83,7 @@ Model {
       OutputFunctionCall      "off"
       UnitExpr		      "inherit"
     }
-    NumRootOutports	    5
+    NumRootOutports	    6
     Outport {
       Name		      "TFL"
       BusObject		      ""
@@ -114,8 +114,14 @@ Model {
       BusOutputAsStruct	      "off"
       UnitExpr		      "inherit"
     }
+    Outport {
+      Name		      "LAE"
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      UnitExpr		      "inherit"
+    }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.140"
+    ComputedModelVersion    "1.152"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -170,15 +176,15 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		2
+	Dimension		3
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "1"
+	  LoadSaveID		  "12"
 	  Extents		  [1677.0, 863.0]
-	  ZoomFactor		  [0.4]
-	  Offset		  [-879.21167475934249, -650.41502295652049]
+	  ZoomFactor		  [1.0]
+	  Offset		  [64.700000000000159, 33.599999999999795]
 	}
 	Object {
 	  $ObjectID		  7
@@ -188,6 +194,15 @@ Model {
 	  Extents		  [1677.0, 863.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  8
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1677.0, 863.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [66.400000000000546, 51.733333333333007]
 	}
 	PropName		"EditorsInfo"
       }
@@ -199,9 +214,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Mar 22 00:39:59 2017"
-  RTWModifiedTimeStamp	  412043905
-  ModelVersionFormat	  "1.%<AutoIncrement:140>"
+  LastModifiedDate	  "Thu Mar 23 00:36:02 2017"
+  RTWModifiedTimeStamp	  412128982
+  ModelVersionFormat	  "1.%<AutoIncrement:152>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -249,7 +264,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    8
+    $ObjectID		    9
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "Controller_ABS_VLC_AYC_ALGO2"
     overrideMode_	    [0.0]
@@ -293,13 +308,13 @@ Model {
     Type		    "Handle"
     Dimension		    2
     Simulink.ConfigSet {
-      $ObjectID		      9
+      $ObjectID		      10
       Version		      "1.16.2"
       Array {
 	Type			"Handle"
 	Dimension		11
 	Simulink.SolverCC {
-	  $ObjectID		  10
+	  $ObjectID		  11
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
 	  StopTime		  "6"
@@ -336,7 +351,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  11
+	  $ObjectID		  12
 	  Version		  "1.16.2"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -374,7 +389,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  12
+	  $ObjectID		  13
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -431,7 +446,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  13
+	  $ObjectID		  14
 	  Version		  "1.16.2"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -526,7 +541,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  14
+	  $ObjectID		  15
 	  Version		  "1.16.2"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -568,7 +583,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  15
+	  $ObjectID		  16
 	  Version		  "1.16.2"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  EnableRefExpFcnMdlSchedulingChecks on
@@ -584,7 +599,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  16
+	  $ObjectID		  17
 	  Version		  "1.16.2"
 	  SFSimEcho		  on
 	  SimCtrlC		  on
@@ -596,7 +611,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  17
+	  $ObjectID		  18
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -662,7 +677,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      18
+	      $ObjectID		      19
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -731,7 +746,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      19
+	      $ObjectID		      20
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -819,7 +834,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  20
+	  $ObjectID		  21
 	  Version		  "1.16.2"
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -852,7 +867,7 @@ Model {
 	  CovStopTime		  0
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  21
+	  $ObjectID		  22
 	  Version		  "1.16.2"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
@@ -865,7 +880,7 @@ Model {
 	  HDLCActiveTab		  "0"
 	}
 	SSC.SimscapeCC {
-	  $ObjectID		  22
+	  $ObjectID		  23
 	  Version		  "1.0"
 	  Array {
 	    Type		    "Cell"
@@ -877,7 +892,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    MECH.SimMechanicsCC {
-	      $ObjectID		      23
+	      $ObjectID		      24
 	      Version		      "1.16.2"
 	      WarnOnRedundantConstraints on
 	      WarnOnSingularInitialAssembly off
@@ -910,14 +925,14 @@ Model {
 	      Name		      "SimscapeMultibody1G"
 	    }
 	    simmechanics.ConfigurationSet {
-	      $ObjectID		      24
+	      $ObjectID		      25
 	      Version		      "1.16.2"
 	      Description	      "Simscape Multibody"
 	      Array {
 		Type			"Handle"
 		Dimension		2
 		simmechanics.DiagnosticsConfigSet {
-		  $ObjectID		  25
+		  $ObjectID		  26
 		  Version		  "1.16.2"
 		  Description		  "Diagnostics"
 		  Name			  "DiagnosticsConfigSet"
@@ -932,7 +947,7 @@ Model {
 		  SimMechanicsJointTargetOverSpecification "error"
 		}
 		simmechanics.ExplorerConfigSet {
-		  $ObjectID		  26
+		  $ObjectID		  27
 		  Version		  "1.16.2"
 		  Description		  "Explorer"
 		  Name			  "ExplorerConfigSet"
@@ -963,13 +978,13 @@ Model {
       ConfigPrmDlgPosition     [ 469, 130, 1452, 888 ] 
     }
     Simulink.ConfigSet {
-      $ObjectID		      27
+      $ObjectID		      28
       Version		      "1.16.2"
       Array {
 	Type			"Handle"
 	Dimension		11
 	Simulink.SolverCC {
-	  $ObjectID		  28
+	  $ObjectID		  29
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
 	  StopTime		  "6"
@@ -1006,7 +1021,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  29
+	  $ObjectID		  30
 	  Version		  "1.16.2"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -1044,7 +1059,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  30
+	  $ObjectID		  31
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -1101,7 +1116,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  31
+	  $ObjectID		  32
 	  Version		  "1.16.2"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -1196,7 +1211,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  32
+	  $ObjectID		  33
 	  Version		  "1.16.2"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -1238,7 +1253,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  33
+	  $ObjectID		  34
 	  Version		  "1.16.2"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  EnableRefExpFcnMdlSchedulingChecks on
@@ -1254,7 +1269,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  34
+	  $ObjectID		  35
 	  Version		  "1.16.2"
 	  SFSimEcho		  on
 	  SimCtrlC		  on
@@ -1266,7 +1281,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  35
+	  $ObjectID		  36
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -1332,7 +1347,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      36
+	      $ObjectID		      37
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -1401,7 +1416,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      37
+	      $ObjectID		      38
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -1488,7 +1503,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  38
+	  $ObjectID		  39
 	  Version		  "1.16.2"
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -1521,7 +1536,7 @@ Model {
 	  CovStopTime		  0
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  39
+	  $ObjectID		  40
 	  Version		  "1.16.2"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
@@ -1534,7 +1549,7 @@ Model {
 	  HDLCActiveTab		  "0"
 	}
 	SSC.SimscapeCC {
-	  $ObjectID		  40
+	  $ObjectID		  41
 	  Version		  "1.0"
 	  Array {
 	    Type		    "Cell"
@@ -1546,7 +1561,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    MECH.SimMechanicsCC {
-	      $ObjectID		      41
+	      $ObjectID		      42
 	      Version		      "1.16.2"
 	      WarnOnRedundantConstraints on
 	      WarnOnSingularInitialAssembly off
@@ -1579,14 +1594,14 @@ Model {
 	      Name		      "SimscapeMultibody1G"
 	    }
 	    simmechanics.ConfigurationSet {
-	      $ObjectID		      42
+	      $ObjectID		      43
 	      Version		      "1.16.2"
 	      Description	      "Simscape Multibody"
 	      Array {
 		Type			"Handle"
 		Dimension		2
 		simmechanics.DiagnosticsConfigSet {
-		  $ObjectID		  43
+		  $ObjectID		  44
 		  Version		  "1.16.2"
 		  Description		  "Diagnostics"
 		  Name			  "DiagnosticsConfigSet"
@@ -1601,7 +1616,7 @@ Model {
 		  SimMechanicsJointTargetOverSpecification "error"
 		}
 		simmechanics.ExplorerConfigSet {
-		  $ObjectID		  44
+		  $ObjectID		  45
 		  Version		  "1.16.2"
 		  Description		  "Explorer"
 		  Name			  "ExplorerConfigSet"
@@ -1636,11 +1651,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    27
+    $ObjectID		    28
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    45
+    $ObjectID		    46
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1923,7 +1938,7 @@ Model {
   System {
     Name		    "Controller_ABS_VLC_AYC_ALGO2"
     Location		    [0, 0, 1920, 1040]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -1934,9 +1949,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "522"
+    SIDHighWatermark	    "609"
     Block {
       BlockType		      Inport
       Name		      "Vx_cont"
@@ -2057,8 +2072,8 @@ Model {
       BlockType		      SubSystem
       Name		      "ABS/VLC/AYC Control"
       SID		      "1"
-      Ports		      [13, 5]
-      Position		      [795, 131, 990, 939]
+      Ports		      [13, 6]
+      Position		      [795, 126, 990, 934]
       ZOrder		      -10
       BackgroundColor	      "orange"
       RequestExecContextInheritance off
@@ -2066,7 +2081,7 @@ Model {
       System {
 	Name			"ABS/VLC/AYC Control"
 	Location		[0, 0, 1920, 1040]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
 	ScreenColor		"white"
@@ -2077,7 +2092,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"40"
+	ZoomFactor		"60"
 	Block {
 	  BlockType		  Inport
 	  Name			  "longitudinal speed [m/s]"
@@ -2258,7 +2273,7 @@ Model {
 	  System {
 	    Name		    "FL Slip Controller"
 	    Location		    [0, 0, 1920, 1040]
-	    Open		    off
+	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2287,11 +2302,54 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Reference
+	      Name		      "Async Rate Transition "
+	      SID		      "525"
+	      Ports		      [1, 1]
+	      Position		      [460, 455, 580, 515]
+	      ZOrder		      45
+	      LibraryVersion	      "1.1846"
+	      SourceBlock	      "slrtlib/Asynchronous\nEvent/Async Rate Transition "
+	      SourceType	      "Rate Transition"
+	      ContentPreviewEnabled   off
+	      sample_time	      "0.001"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Async Rate Transition 1"
+	      SID		      "526"
+	      Ports		      [1, 1]
+	      Position		      [750, 455, 870, 515]
+	      ZOrder		      46
+	      LibraryVersion	      "1.1846"
+	      SourceBlock	      "slrtlib/Asynchronous\nEvent/Async Rate Transition "
+	      SourceType	      "Rate Transition"
+	      ContentPreviewEnabled   off
+	      sample_time	      "0.001"
+	    }
+	    Block {
 	      BlockType		      Derivative
 	      Name		      "Derivative"
 	      SID		      "317"
 	      Position		      [550, 250, 580, 280]
 	      ZOrder		      2
+	    }
+	    Block {
+	      BlockType		      DigitalClock
+	      Name		      "Digital Clock"
+	      SID		      "592"
+	      Position		      [1025, 298, 1090, 322]
+	      ZOrder		      62
+	      SampleTime	      "0.001"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From47"
+	      SID		      "527"
+	      Position		      [920, 511, 960, 539]
+	      ZOrder		      47
+	      ShowName		      off
+	      GotoTag		      "Clk"
 	    }
 	    Block {
 	      BlockType		      Gain
@@ -2314,24 +2372,33 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto39"
+	      SID		      "593"
+	      Position		      [1115, 296, 1160, 324]
+	      ZOrder		      61
+	      ShowName		      off
+	      GotoTag		      "Clk"
+	    }
+	    Block {
 	      BlockType		      Reference
-	      Name		      "Lowpass Filter"
-	      SID		      "405"
+	      Name		      "Lowpass Filter1"
+	      SID		      "528"
 	      Ports		      [1, 1]
-	      Position		      [900, 194, 1000, 236]
-	      ZOrder		      16
+	      Position		      [620, 464, 720, 506]
+	      ZOrder		      44
 	      LibraryVersion	      "1.205"
 	      SourceBlock	      "dspfdesign/Lowpass Filter"
 	      SourceType	      "dsp.LowpassFilter"
 	      FilterType	      "FIR"
 	      DesignForMinimumOrder   on
 	      FilterOrder	      "50"
-	      PassbandFrequency	      "300"
-	      StopbandFrequency	      "400"
+	      PassbandFrequency	      "20"
+	      StopbandFrequency	      "80"
 	      PassbandRipple	      "0.1"
 	      StopbandAttenuation     "80"
 	      InheritSampleRate	      on
-	      SampleRate	      "44100"
+	      SampleRate	      "1000"
 	      roundingMode	      "Floor"
 	      coeffsDataTypeStr	      "fixdt(1,16)"
 	      LockScale		      off
@@ -2344,6 +2411,56 @@ Model {
 	      Position		      [730, 285, 760, 315]
 	      ZOrder		      10
 	      Value		      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope"
+	      SID		      "584"
+	      Ports		      [1]
+	      Position		      [955, 389, 985, 421]
+	      ZOrder		      49
+	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
+	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
+	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Dom"
+	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-0.125','MaxYLimReal','1.125','YLabelReal','','MinYLimMag"
+	      "','0.00000','MaxYLimMag','1.125','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
+	      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666"
+	      "66666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831"
+	      "372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980392156"
+	      "86 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLi"
+	      "nes',1,'LineNames',{{'Switch'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimRea"
+	      "l','-0.125','MaxYLimReal','1.125','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.125','LegendVisibility"
+	      "','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0"
+	      ".686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0."
+	      "16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608"
+	      " 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tool"
+	      "s','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measuremen"
+	      "ts',true,'Version','2016a')),'Version','2016a')"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope1"
+	      SID		      "585"
+	      Ports		      [1]
+	      Position		      [1140, 574, 1170, 606]
+	      ZOrder		      50
+	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
+	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
+	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData2'),extmgr.Configuration('Visuals','Time Dom"
+	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-0.23335','MaxYLimReal','1.19918','YLabelReal','','MinYLi"
+	      "mMag','0.00000','MaxYLimMag','1.19918','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,"
+	      "'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0"
+	      ".0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098"
+	      " 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980"
+	      "39215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},"
+	      "'NumLines',1,'LineNames',{{'Switch1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('Min"
+	      "YLimReal','-0.23335','MaxYLimReal','1.19918','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.19918','Leg"
+	      "endVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.6862"
+	      "74509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.41176"
+	      "4705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.83"
+	      "1372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Config"
+	      "uration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools"
+	      "','Measurements',true,'Version','2016a')),'Version','2016a')"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -2390,6 +2507,16 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch1"
+	      SID		      "529"
+	      Position		      [1020, 505, 1070, 545]
+	      ZOrder		      48
+	      Threshold		      ".02"
+	      InputSameDT	      off
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Constant
 	      Name		      "Target Slip"
 	      SID		      "397"
@@ -2408,7 +2535,7 @@ Model {
 	      BlockType		      Outport
 	      Name		      "u_slip_FL"
 	      SID		      "20"
-	      Position		      [1125, 208, 1155, 222]
+	      Position		      [1165, 518, 1195, 532]
 	      ZOrder		      -19
 	      IconDisplay	      "Port number"
 	    }
@@ -2492,24 +2619,90 @@ Model {
 	      DstPort		      3
 	    }
 	    Line {
-	      ZOrder		      98
-	      SrcBlock		      "Switch"
-	      SrcPort		      1
-	      DstBlock		      "Lowpass Filter"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      99
-	      SrcBlock		      "Lowpass Filter"
-	      SrcPort		      1
-	      DstBlock		      "u_slip_FL"
-	      DstPort		      1
-	    }
-	    Line {
 	      ZOrder		      104
 	      SrcBlock		      "Abs"
 	      SrcPort		      1
 	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      123
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      Points		      [44, 0; 0, 187]
+	      Branch {
+		ZOrder			132
+		Points			[-503, 0; 0, 83]
+		Branch {
+		  ZOrder		  125
+		  Points		  [0, 86; 609, 0; 0, -31]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Branch {
+		  ZOrder		  124
+		  DstBlock		  "Async Rate Transition "
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		ZOrder			128
+		Points			[0, 3]
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      119
+	      SrcBlock		      "Lowpass Filter1"
+	      SrcPort		      1
+	      DstBlock		      "Async Rate Transition 1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      120
+	      SrcBlock		      "Async Rate Transition "
+	      SrcPort		      1
+	      DstBlock		      "Lowpass Filter1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      121
+	      SrcBlock		      "From47"
+	      SrcPort		      1
+	      DstBlock		      "Switch1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      122
+	      SrcBlock		      "Async Rate Transition 1"
+	      SrcPort		      1
+	      Points		      [115, 0; 0, 25]
+	      DstBlock		      "Switch1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      126
+	      SrcBlock		      "Switch1"
+	      SrcPort		      1
+	      Points		      [37, 0]
+	      Branch {
+		ZOrder			135
+		Points			[0, 65]
+		DstBlock		"Scope1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			134
+		DstBlock		"u_slip_FL"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      136
+	      SrcBlock		      "Digital Clock"
+	      SrcPort		      1
+	      DstBlock		      "Goto39"
 	      DstPort		      1
 	    }
 	  }
@@ -2517,10 +2710,10 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "FR Slip Controller"
-	  SID			  "411"
+	  SID			  "530"
 	  Ports			  [1, 1]
 	  Position		  [530, 577, 705, 673]
-	  ZOrder		  62
+	  ZOrder		  106
 	  BackgroundColor	  "orange"
 	  RequestExecContextInheritance	off
 	  Variant		  off
@@ -2542,7 +2735,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Slip Ratio [%]"
-	      SID		      "412"
+	      SID		      "531"
 	      Position		      [215, 208, 245, 222]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -2550,22 +2743,65 @@ Model {
 	    Block {
 	      BlockType		      Abs
 	      Name		      "Abs"
-	      SID		      "413"
+	      SID		      "532"
 	      Position		      [330, 200, 360, 230]
 	      ZOrder		      18
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Reference
+	      Name		      "Async Rate Transition "
+	      SID		      "533"
+	      Ports		      [1, 1]
+	      Position		      [460, 455, 580, 515]
+	      ZOrder		      45
+	      LibraryVersion	      "1.1846"
+	      SourceBlock	      "slrtlib/Asynchronous\nEvent/Async Rate Transition "
+	      SourceType	      "Rate Transition"
+	      ContentPreviewEnabled   off
+	      sample_time	      "0.001"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Async Rate Transition 1"
+	      SID		      "534"
+	      Ports		      [1, 1]
+	      Position		      [750, 455, 870, 515]
+	      ZOrder		      46
+	      LibraryVersion	      "1.1846"
+	      SourceBlock	      "slrtlib/Asynchronous\nEvent/Async Rate Transition "
+	      SourceType	      "Rate Transition"
+	      ContentPreviewEnabled   off
+	      sample_time	      "0.001"
+	    }
+	    Block {
 	      BlockType		      Derivative
 	      Name		      "Derivative"
-	      SID		      "414"
+	      SID		      "535"
 	      Position		      [550, 250, 580, 280]
 	      ZOrder		      2
 	    }
 	    Block {
+	      BlockType		      DigitalClock
+	      Name		      "Digital Clock"
+	      SID		      "594"
+	      Position		      [1080, 288, 1145, 312]
+	      ZOrder		      62
+	      SampleTime	      "0.001"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From47"
+	      SID		      "536"
+	      Position		      [920, 511, 960, 539]
+	      ZOrder		      47
+	      ShowName		      off
+	      GotoTag		      "Clk"
+	    }
+	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain"
-	      SID		      "415"
+	      SID		      "537"
 	      Position		      [605, 200, 635, 230]
 	      ZOrder		      6
 	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
@@ -2575,7 +2811,7 @@ Model {
 	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain1"
-	      SID		      "416"
+	      SID		      "538"
 	      Position		      [605, 250, 635, 280]
 	      ZOrder		      7
 	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
@@ -2583,24 +2819,33 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto39"
+	      SID		      "595"
+	      Position		      [1170, 286, 1215, 314]
+	      ZOrder		      61
+	      ShowName		      off
+	      GotoTag		      "Clk"
+	    }
+	    Block {
 	      BlockType		      Reference
-	      Name		      "Lowpass Filter"
-	      SID		      "417"
+	      Name		      "Lowpass Filter1"
+	      SID		      "539"
 	      Ports		      [1, 1]
-	      Position		      [900, 194, 1000, 236]
-	      ZOrder		      16
+	      Position		      [620, 464, 720, 506]
+	      ZOrder		      44
 	      LibraryVersion	      "1.205"
 	      SourceBlock	      "dspfdesign/Lowpass Filter"
 	      SourceType	      "dsp.LowpassFilter"
 	      FilterType	      "FIR"
 	      DesignForMinimumOrder   on
 	      FilterOrder	      "50"
-	      PassbandFrequency	      "300"
-	      StopbandFrequency	      "400"
+	      PassbandFrequency	      "20"
+	      StopbandFrequency	      "80"
 	      PassbandRipple	      "0.1"
 	      StopbandAttenuation     "80"
 	      InheritSampleRate	      on
-	      SampleRate	      "44100"
+	      SampleRate	      "1000"
 	      roundingMode	      "Floor"
 	      coeffsDataTypeStr	      "fixdt(1,16)"
 	      LockScale		      off
@@ -2609,15 +2854,33 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "PWM limit"
-	      SID		      "418"
+	      SID		      "540"
 	      Position		      [730, 285, 760, 315]
 	      ZOrder		      10
 	      Value		      "0"
 	    }
 	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope"
+	      SID		      "586"
+	      Ports		      [1]
+	      Position		      [980, 389, 1010, 421]
+	      ZOrder		      50
+	      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData1'),StrPVP('SaveName','ScopeData3'))"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope1"
+	      SID		      "587"
+	      Ports		      [1]
+	      Position		      [1165, 599, 1195, 631]
+	      ZOrder		      51
+	      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData1'),StrPVP('SaveName','ScopeData4'))"
+	    }
+	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum"
-	      SID		      "419"
+	      SID		      "541"
 	      Ports		      [2, 1]
 	      Position		      [425, 205, 445, 225]
 	      ZOrder		      4
@@ -2637,7 +2900,7 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum1"
-	      SID		      "420"
+	      SID		      "542"
 	      Ports		      [2, 1]
 	      Position		      [670, 205, 690, 225]
 	      ZOrder		      5
@@ -2651,7 +2914,7 @@ Model {
 	    Block {
 	      BlockType		      Switch
 	      Name		      "Switch"
-	      SID		      "421"
+	      SID		      "543"
 	      Position		      [785, 195, 835, 235]
 	      ZOrder		      8
 	      Criteria		      "u2 > Threshold"
@@ -2659,9 +2922,19 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch1"
+	      SID		      "544"
+	      Position		      [1020, 505, 1070, 545]
+	      ZOrder		      48
+	      Threshold		      ".02"
+	      InputSameDT	      off
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Constant
 	      Name		      "Target Slip"
-	      SID		      "422"
+	      SID		      "545"
 	      Position		      [330, 285, 360, 315]
 	      ZOrder		      3
 	      Value		      "0.17"
@@ -2669,15 +2942,15 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "no limit"
-	      SID		      "423"
+	      SID		      "546"
 	      Position		      [730, 125, 760, 155]
 	      ZOrder		      9
 	    }
 	    Block {
 	      BlockType		      Outport
-	      Name		      "u_slip_FR"
-	      SID		      "424"
-	      Position		      [1125, 208, 1155, 222]
+	      Name		      "u_slip_FL"
+	      SID		      "547"
+	      Position		      [1165, 518, 1195, 532]
 	      ZOrder		      -19
 	      IconDisplay	      "Port number"
 	    }
@@ -2762,23 +3035,89 @@ Model {
 	    }
 	    Line {
 	      ZOrder		      12
-	      SrcBlock		      "Switch"
+	      SrcBlock		      "Abs"
 	      SrcPort		      1
-	      DstBlock		      "Lowpass Filter"
+	      DstBlock		      "Sum"
 	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      13
-	      SrcBlock		      "Lowpass Filter"
+	      SrcBlock		      "Switch"
 	      SrcPort		      1
-	      DstBlock		      "u_slip_FR"
+	      Points		      [44, 0; 0, 187]
+	      Branch {
+		ZOrder			22
+		Points			[0, 3]
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			21
+		Points			[-503, 0; 0, 83]
+		Branch {
+		  ZOrder		  14
+		  Points		  [0, 86; 609, 0; 0, -31]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Branch {
+		  ZOrder		  15
+		  DstBlock		  "Async Rate Transition "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      16
+	      SrcBlock		      "Lowpass Filter1"
+	      SrcPort		      1
+	      DstBlock		      "Async Rate Transition 1"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      14
-	      SrcBlock		      "Abs"
+	      ZOrder		      17
+	      SrcBlock		      "Async Rate Transition "
 	      SrcPort		      1
-	      DstBlock		      "Sum"
+	      DstBlock		      "Lowpass Filter1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "From47"
+	      SrcPort		      1
+	      DstBlock		      "Switch1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "Async Rate Transition 1"
+	      SrcPort		      1
+	      Points		      [115, 0; 0, 25]
+	      DstBlock		      "Switch1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "Switch1"
+	      SrcPort		      1
+	      Points		      [41, 0]
+	      Branch {
+		ZOrder			25
+		Points			[0, 90]
+		DstBlock		"Scope1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			24
+		DstBlock		"u_slip_FL"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      26
+	      SrcBlock		      "Digital Clock"
+	      SrcPort		      1
+	      DstBlock		      "Goto39"
 	      DstPort		      1
 	    }
 	  }
@@ -2845,40 +3184,139 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
+	      BlockType		      Reference
+	      Name		      "Async Rate Transition "
+	      SID		      "600"
+	      Ports		      [1, 1]
+	      Position		      [355, 45, 475, 105]
+	      ZOrder		      53
+	      LibraryVersion	      "1.1846"
+	      SourceBlock	      "slrtlib/Asynchronous\nEvent/Async Rate Transition "
+	      SourceType	      "Rate Transition"
+	      ContentPreviewEnabled   off
+	      sample_time	      "0.001"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Async Rate Transition 1"
+	      SID		      "601"
+	      Ports		      [1, 1]
+	      Position		      [645, 45, 765, 105]
+	      ZOrder		      54
+	      LibraryVersion	      "1.1846"
+	      SourceBlock	      "slrtlib/Asynchronous\nEvent/Async Rate Transition "
+	      SourceType	      "Rate Transition"
+	      ContentPreviewEnabled   off
+	      sample_time	      "0.001"
+	    }
+	    Block {
+	      BlockType		      DigitalClock
+	      Name		      "Digital Clock"
+	      SID		      "605"
+	      Position		      [685, 238, 750, 262]
+	      ZOrder		      64
+	      SampleTime	      "0.001"
+	    }
+	    Block {
 	      BlockType		      Gain
 	      Name		      "Error Gain"
 	      SID		      "511"
-	      Position		      [305, 60, 335, 90]
+	      Position		      [1065, 100, 1095, 130]
 	      ZOrder		      50
 	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
 	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Gain
+	      Name		      "Error Gain1"
+	      SID		      "609"
+	      Position		      [1240, 100, 1270, 130]
+	      ZOrder		      66
+	      Gain		      ".3"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From47"
+	      SID		      "602"
+	      Position		      [815, 101, 855, 129]
+	      ZOrder		      55
+	      ShowName		      off
+	      GotoTag		      "Clk"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto39"
+	      SID		      "606"
+	      Position		      [775, 236, 820, 264]
+	      ZOrder		      63
+	      ShowName		      off
+	      GotoTag		      "Clk"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Lowpass Filter1"
+	      SID		      "603"
+	      Ports		      [1, 1]
+	      Position		      [515, 54, 615, 96]
+	      ZOrder		      52
+	      LibraryVersion	      "1.205"
+	      SourceBlock	      "dspfdesign/Lowpass Filter"
+	      SourceType	      "dsp.LowpassFilter"
+	      FilterType	      "FIR"
+	      DesignForMinimumOrder   on
+	      FilterOrder	      "50"
+	      PassbandFrequency	      "20"
+	      StopbandFrequency	      "80"
+	      PassbandRipple	      "0.1"
+	      StopbandAttenuation     "80"
+	      InheritSampleRate	      on
+	      SampleRate	      "1000"
+	      roundingMode	      "Floor"
+	      coeffsDataTypeStr	      "fixdt(1,16)"
+	      LockScale		      off
+	      SimulateUsing	      "Interpreted execution"
+	    }
+	    Block {
 	      BlockType		      Saturate
 	      Name		      "Saturation"
 	      SID		      "510"
 	      Ports		      [1, 1]
-	      Position		      [495, 60, 525, 90]
+	      Position		      [1170, 100, 1200, 130]
 	      ZOrder		      49
 	      InputPortMap	      "u0"
 	      UpperLimit	      "1"
 	      LowerLimit	      "0"
 	    }
 	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope1"
+	      SID		      "608"
+	      Ports		      [1]
+	      Position		      [1440, 244, 1470, 276]
+	      ZOrder		      65
+	      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData10'))"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch1"
+	      SID		      "604"
+	      Position		      [915, 95, 965, 135]
+	      ZOrder		      56
+	      Threshold		      ".02"
+	      InputSameDT	      off
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Outport
 	      Name		      "Lateral Acceleration Control Signal"
 	      SID		      "509"
-	      Position		      [705, 68, 735, 82]
+	      Position		      [1465, 108, 1495, 122]
 	      ZOrder		      51
 	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      22
-	      SrcBlock		      "Lateral Acceleration Error [m/s^2]"
-	      SrcPort		      1
-	      DstBlock		      "Error Gain"
-	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      23
@@ -2891,8 +3329,85 @@ Model {
 	      ZOrder		      24
 	      SrcBlock		      "Saturation"
 	      SrcPort		      1
-	      DstBlock		      "Lateral Acceleration Control Signal"
+	      DstBlock		      "Error Gain1"
 	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      32
+	      SrcBlock		      "Lateral Acceleration Error [m/s^2]"
+	      SrcPort		      1
+	      Points		      [145, 0]
+	      Branch {
+		ZOrder			34
+		DstBlock		"Async Rate Transition "
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			33
+		Points			[0, 87; 639, 0; 0, -32]
+		DstBlock		"Switch1"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      ZOrder		      27
+	      SrcBlock		      "Lowpass Filter1"
+	      SrcPort		      1
+	      DstBlock		      "Async Rate Transition 1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      28
+	      SrcBlock		      "Async Rate Transition "
+	      SrcPort		      1
+	      DstBlock		      "Lowpass Filter1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      29
+	      SrcBlock		      "From47"
+	      SrcPort		      1
+	      DstBlock		      "Switch1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      30
+	      SrcBlock		      "Async Rate Transition 1"
+	      SrcPort		      1
+	      Points		      [115, 0; 0, 25]
+	      DstBlock		      "Switch1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      31
+	      SrcBlock		      "Switch1"
+	      SrcPort		      1
+	      DstBlock		      "Error Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      36
+	      SrcBlock		      "Digital Clock"
+	      SrcPort		      1
+	      DstBlock		      "Goto39"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      39
+	      SrcBlock		      "Error Gain1"
+	      SrcPort		      1
+	      Points		      [57, 0]
+	      Branch {
+		ZOrder			38
+		Points			[0, 145]
+		DstBlock		"Scope1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			37
+		DstBlock		"Lateral Acceleration Control Signal"
+		DstPort			1
+	      }
 	    }
 	  }
 	}
@@ -2920,7 +3435,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "125"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Longitudinal Speed [m/s]"
@@ -3054,22 +3569,22 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData24','DataLoggingSaveFormat','StructureWithTi"
 	      "me','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',tr"
-	      "ue,'SerializedDisplays',{struct('MinYLimReal','-0.02646','MaxYLimReal','0.02117','YLabelReal','','MinYLimMag','"
-	      "0.00000','MaxYLimMag','0.02646','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCo"
+	      "ue,'SerializedDisplays',{struct('MinYLimReal','-0.00847','MaxYLimReal','0.00862','YLabelReal','','MinYLimMag','"
+	      "0.00000','MaxYLimMag','0.00862','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCo"
 	      "lor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
 	      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313"
 	      "72549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803921568"
 	      "6 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLin"
-	      "es',1,'LineNames',{{'Yaw error'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimR"
-	      "eal','-0.02646','MaxYLimReal','0.02117','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.02646','LegendVi"
-	      "sibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509"
-	      "803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411"
-	      "764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.71764705"
-	      "8823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLab"
-	      "el>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',tr"
-	      "ue,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','"
-	      "XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[347 220"
-	      " 1713 899])"
+	      "es',1,'LineNames',{{'Lateral Acceleration error'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults'"
+	      ",struct('MinYLimReal','-0.00847','MaxYLimReal','0.00862','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0"
+	      ".00862','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickCo"
+	      "lor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450980392"
+	      "15686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039"
+	      "215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Ti"
+	      "tle','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}}"
+	      ",'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'Pre"
+	      "viousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','L"
+	      "ocation',[347 220 1713 899])"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -3304,24 +3819,24 @@ Model {
 	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
 	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData16','DataLoggingSaveFormat','StructureWithTime','DataLog"
 	  "gingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDi"
-	  "splays',{struct('MinYLimReal','-126.29699','MaxYLimReal','17.49755','YLabelReal','','MinYLimMag',' 0.00000','MaxYLi"
-	  "mMag','126.29699','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axes"
-	  "TickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074509803"
-	  "9215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509803921"
-	  "5686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','"
-	  "%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Gain2','Gain'"
-	  "}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-126.29699','MaxYLimReal','17"
-	  ".49755','YLabelReal','','MinYLimMag',' 0.00000','MaxYLimMag','126.29699','LegendVisibility','off','XGrid',true,'YGr"
-	  "id',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862745098"
-	  "03922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1607843137"
-	  "2549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.058823529411764"
-	  "7 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChann"
-	  "elNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot"
-	  " Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Ve"
-	  "rsion','2016a','Measurements',struct('traceselector',struct('Line',2),'tcursors',struct('XCoordinates',[0.000432039"
-	  "065202784 0.00079356770259349],'YCoordinates',[NaN NaN],'CursorChannels',[2 2],'WaveformCursors',true,'ShowHorizont"
-	  "al',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanel"
-	  "Open',1)))),'Version','2016a','Location',[1 557 1087 1079],'WindowStyle','docked')"
+	  "splays',{struct('MinYLimReal','-66.23164','MaxYLimReal','66.43564','YLabelReal','','MinYLimMag','0.00000','MaxYLimM"
+	  "ag','66.43564','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTic"
+	  "kColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074509803921"
+	  "5686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509803921568"
+	  "6;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<S"
+	  "ignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Sum5','Sum6'}},'"
+	  "ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-66.23164','MaxYLimReal','66.4356"
+	  "4','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','66.43564','LegendVisibility','off','XGrid',true,'YGrid',tru"
+	  "e,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],"
+	  "'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0."
+	  "392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1"
+	  " 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames"
+	  "',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Naviga"
+	  "tion',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version',"
+	  "'2016a','Measurements',struct('traceselector',struct('Line',2),'tcursors',struct('XCoordinates',[0.0004320390652027"
+	  "84 0.00079356770259349],'YCoordinates',[NaN NaN],'CursorChannels',[2 2],'WaveformCursors',true,'ShowHorizontal',fal"
+	  "se,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1"
+	  ")))),'Version','2016a','Location',[1 557 1191 1079],'WindowStyle','docked','VisibleAtModelOpen','on')"
 	}
 	Block {
 	  BlockType		  Reference
@@ -3424,10 +3939,10 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "RL Slip Controller"
-	  SID			  "425"
+	  SID			  "548"
 	  Ports			  [1, 1]
 	  Position		  [530, 802, 705, 898]
-	  ZOrder		  63
+	  ZOrder		  107
 	  BackgroundColor	  "orange"
 	  RequestExecContextInheritance	off
 	  Variant		  off
@@ -3449,7 +3964,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Slip Ratio [%]"
-	      SID		      "426"
+	      SID		      "549"
 	      Position		      [215, 208, 245, 222]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -3457,22 +3972,65 @@ Model {
 	    Block {
 	      BlockType		      Abs
 	      Name		      "Abs"
-	      SID		      "427"
+	      SID		      "550"
 	      Position		      [330, 200, 360, 230]
 	      ZOrder		      18
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Reference
+	      Name		      "Async Rate Transition "
+	      SID		      "551"
+	      Ports		      [1, 1]
+	      Position		      [460, 455, 580, 515]
+	      ZOrder		      45
+	      LibraryVersion	      "1.1846"
+	      SourceBlock	      "slrtlib/Asynchronous\nEvent/Async Rate Transition "
+	      SourceType	      "Rate Transition"
+	      ContentPreviewEnabled   off
+	      sample_time	      "0.001"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Async Rate Transition 1"
+	      SID		      "552"
+	      Ports		      [1, 1]
+	      Position		      [750, 455, 870, 515]
+	      ZOrder		      46
+	      LibraryVersion	      "1.1846"
+	      SourceBlock	      "slrtlib/Asynchronous\nEvent/Async Rate Transition "
+	      SourceType	      "Rate Transition"
+	      ContentPreviewEnabled   off
+	      sample_time	      "0.001"
+	    }
+	    Block {
 	      BlockType		      Derivative
 	      Name		      "Derivative"
-	      SID		      "428"
+	      SID		      "553"
 	      Position		      [550, 250, 580, 280]
 	      ZOrder		      2
 	    }
 	    Block {
+	      BlockType		      DigitalClock
+	      Name		      "Digital Clock"
+	      SID		      "596"
+	      Position		      [1100, 283, 1165, 307]
+	      ZOrder		      62
+	      SampleTime	      "0.001"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From47"
+	      SID		      "554"
+	      Position		      [920, 511, 960, 539]
+	      ZOrder		      47
+	      ShowName		      off
+	      GotoTag		      "Clk"
+	    }
+	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain"
-	      SID		      "429"
+	      SID		      "555"
 	      Position		      [605, 200, 635, 230]
 	      ZOrder		      6
 	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
@@ -3482,7 +4040,7 @@ Model {
 	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain1"
-	      SID		      "430"
+	      SID		      "556"
 	      Position		      [605, 250, 635, 280]
 	      ZOrder		      7
 	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
@@ -3490,24 +4048,33 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto39"
+	      SID		      "597"
+	      Position		      [1190, 281, 1235, 309]
+	      ZOrder		      61
+	      ShowName		      off
+	      GotoTag		      "Clk"
+	    }
+	    Block {
 	      BlockType		      Reference
-	      Name		      "Lowpass Filter"
-	      SID		      "431"
+	      Name		      "Lowpass Filter1"
+	      SID		      "557"
 	      Ports		      [1, 1]
-	      Position		      [900, 194, 1000, 236]
-	      ZOrder		      16
+	      Position		      [620, 464, 720, 506]
+	      ZOrder		      44
 	      LibraryVersion	      "1.205"
 	      SourceBlock	      "dspfdesign/Lowpass Filter"
 	      SourceType	      "dsp.LowpassFilter"
 	      FilterType	      "FIR"
 	      DesignForMinimumOrder   on
 	      FilterOrder	      "50"
-	      PassbandFrequency	      "300"
-	      StopbandFrequency	      "400"
+	      PassbandFrequency	      "20"
+	      StopbandFrequency	      "80"
 	      PassbandRipple	      "0.1"
 	      StopbandAttenuation     "80"
 	      InheritSampleRate	      on
-	      SampleRate	      "44100"
+	      SampleRate	      "1000"
 	      roundingMode	      "Floor"
 	      coeffsDataTypeStr	      "fixdt(1,16)"
 	      LockScale		      off
@@ -3516,15 +4083,33 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "PWM limit"
-	      SID		      "432"
+	      SID		      "558"
 	      Position		      [730, 285, 760, 315]
 	      ZOrder		      10
 	      Value		      "0"
 	    }
 	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope"
+	      SID		      "588"
+	      Ports		      [1]
+	      Position		      [995, 384, 1025, 416]
+	      ZOrder		      50
+	      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData1'),StrPVP('SaveName','ScopeData5'))"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope1"
+	      SID		      "589"
+	      Ports		      [1]
+	      Position		      [1165, 644, 1195, 676]
+	      ZOrder		      51
+	      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData1'),StrPVP('SaveName','ScopeData6'))"
+	    }
+	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum"
-	      SID		      "433"
+	      SID		      "559"
 	      Ports		      [2, 1]
 	      Position		      [425, 205, 445, 225]
 	      ZOrder		      4
@@ -3544,7 +4129,7 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum1"
-	      SID		      "434"
+	      SID		      "560"
 	      Ports		      [2, 1]
 	      Position		      [670, 205, 690, 225]
 	      ZOrder		      5
@@ -3558,7 +4143,7 @@ Model {
 	    Block {
 	      BlockType		      Switch
 	      Name		      "Switch"
-	      SID		      "435"
+	      SID		      "561"
 	      Position		      [785, 195, 835, 235]
 	      ZOrder		      8
 	      Criteria		      "u2 > Threshold"
@@ -3566,9 +4151,19 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch1"
+	      SID		      "562"
+	      Position		      [1020, 505, 1070, 545]
+	      ZOrder		      48
+	      Threshold		      ".02"
+	      InputSameDT	      off
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Constant
 	      Name		      "Target Slip"
-	      SID		      "436"
+	      SID		      "563"
 	      Position		      [330, 285, 360, 315]
 	      ZOrder		      3
 	      Value		      "0.17"
@@ -3576,15 +4171,15 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "no limit"
-	      SID		      "437"
+	      SID		      "564"
 	      Position		      [730, 125, 760, 155]
 	      ZOrder		      9
 	    }
 	    Block {
 	      BlockType		      Outport
-	      Name		      "u_slip_RL"
-	      SID		      "438"
-	      Position		      [1125, 208, 1155, 222]
+	      Name		      "u_slip_FL"
+	      SID		      "565"
+	      Position		      [1165, 518, 1195, 532]
 	      ZOrder		      -19
 	      IconDisplay	      "Port number"
 	    }
@@ -3669,23 +4264,88 @@ Model {
 	    }
 	    Line {
 	      ZOrder		      12
-	      SrcBlock		      "Switch"
+	      SrcBlock		      "Abs"
 	      SrcPort		      1
-	      DstBlock		      "Lowpass Filter"
+	      DstBlock		      "Sum"
 	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      13
-	      SrcBlock		      "Lowpass Filter"
+	      SrcBlock		      "Switch"
 	      SrcPort		      1
-	      DstBlock		      "u_slip_RL"
+	      Points		      [44, 0; 0, 185]
+	      Branch {
+		ZOrder			22
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			21
+		Points			[0, 2; -503, 0; 0, 83]
+		Branch {
+		  ZOrder		  14
+		  Points		  [0, 86; 609, 0; 0, -31]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Branch {
+		  ZOrder		  15
+		  DstBlock		  "Async Rate Transition "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      16
+	      SrcBlock		      "Lowpass Filter1"
+	      SrcPort		      1
+	      DstBlock		      "Async Rate Transition 1"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      14
-	      SrcBlock		      "Abs"
+	      ZOrder		      17
+	      SrcBlock		      "Async Rate Transition "
 	      SrcPort		      1
-	      DstBlock		      "Sum"
+	      DstBlock		      "Lowpass Filter1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "From47"
+	      SrcPort		      1
+	      DstBlock		      "Switch1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "Async Rate Transition 1"
+	      SrcPort		      1
+	      Points		      [115, 0; 0, 25]
+	      DstBlock		      "Switch1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "Switch1"
+	      SrcPort		      1
+	      Points		      [46, 0]
+	      Branch {
+		ZOrder			25
+		Points			[0, 135]
+		DstBlock		"Scope1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			24
+		DstBlock		"u_slip_FL"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      26
+	      SrcBlock		      "Digital Clock"
+	      SrcPort		      1
+	      DstBlock		      "Goto39"
 	      DstPort		      1
 	    }
 	  }
@@ -3693,10 +4353,10 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "RR Slip Controller"
-	  SID			  "439"
+	  SID			  "566"
 	  Ports			  [1, 1]
 	  Position		  [530, 1022, 705, 1118]
-	  ZOrder		  64
+	  ZOrder		  108
 	  BackgroundColor	  "orange"
 	  RequestExecContextInheritance	off
 	  Variant		  off
@@ -3718,7 +4378,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Slip Ratio [%]"
-	      SID		      "440"
+	      SID		      "567"
 	      Position		      [215, 208, 245, 222]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -3726,22 +4386,65 @@ Model {
 	    Block {
 	      BlockType		      Abs
 	      Name		      "Abs"
-	      SID		      "441"
+	      SID		      "568"
 	      Position		      [330, 200, 360, 230]
 	      ZOrder		      18
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Reference
+	      Name		      "Async Rate Transition "
+	      SID		      "569"
+	      Ports		      [1, 1]
+	      Position		      [460, 455, 580, 515]
+	      ZOrder		      45
+	      LibraryVersion	      "1.1846"
+	      SourceBlock	      "slrtlib/Asynchronous\nEvent/Async Rate Transition "
+	      SourceType	      "Rate Transition"
+	      ContentPreviewEnabled   off
+	      sample_time	      "0.001"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Async Rate Transition 1"
+	      SID		      "570"
+	      Ports		      [1, 1]
+	      Position		      [750, 455, 870, 515]
+	      ZOrder		      46
+	      LibraryVersion	      "1.1846"
+	      SourceBlock	      "slrtlib/Asynchronous\nEvent/Async Rate Transition "
+	      SourceType	      "Rate Transition"
+	      ContentPreviewEnabled   off
+	      sample_time	      "0.001"
+	    }
+	    Block {
 	      BlockType		      Derivative
 	      Name		      "Derivative"
-	      SID		      "442"
+	      SID		      "571"
 	      Position		      [550, 250, 580, 280]
 	      ZOrder		      2
 	    }
 	    Block {
+	      BlockType		      DigitalClock
+	      Name		      "Digital Clock"
+	      SID		      "598"
+	      Position		      [1060, 288, 1125, 312]
+	      ZOrder		      62
+	      SampleTime	      "0.001"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From47"
+	      SID		      "572"
+	      Position		      [920, 511, 960, 539]
+	      ZOrder		      47
+	      ShowName		      off
+	      GotoTag		      "Clk"
+	    }
+	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain"
-	      SID		      "443"
+	      SID		      "573"
 	      Position		      [605, 200, 635, 230]
 	      ZOrder		      6
 	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
@@ -3751,7 +4454,7 @@ Model {
 	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain1"
-	      SID		      "444"
+	      SID		      "574"
 	      Position		      [605, 250, 635, 280]
 	      ZOrder		      7
 	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
@@ -3759,24 +4462,33 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto39"
+	      SID		      "599"
+	      Position		      [1150, 286, 1195, 314]
+	      ZOrder		      61
+	      ShowName		      off
+	      GotoTag		      "Clk"
+	    }
+	    Block {
 	      BlockType		      Reference
-	      Name		      "Lowpass Filter"
-	      SID		      "445"
+	      Name		      "Lowpass Filter1"
+	      SID		      "575"
 	      Ports		      [1, 1]
-	      Position		      [900, 194, 1000, 236]
-	      ZOrder		      16
+	      Position		      [620, 464, 720, 506]
+	      ZOrder		      44
 	      LibraryVersion	      "1.205"
 	      SourceBlock	      "dspfdesign/Lowpass Filter"
 	      SourceType	      "dsp.LowpassFilter"
 	      FilterType	      "FIR"
 	      DesignForMinimumOrder   on
 	      FilterOrder	      "50"
-	      PassbandFrequency	      "300"
-	      StopbandFrequency	      "400"
+	      PassbandFrequency	      "20"
+	      StopbandFrequency	      "80"
 	      PassbandRipple	      "0.1"
 	      StopbandAttenuation     "80"
 	      InheritSampleRate	      on
-	      SampleRate	      "44100"
+	      SampleRate	      "1000"
 	      roundingMode	      "Floor"
 	      coeffsDataTypeStr	      "fixdt(1,16)"
 	      LockScale		      off
@@ -3785,15 +4497,33 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "PWM limit"
-	      SID		      "446"
+	      SID		      "576"
 	      Position		      [730, 285, 760, 315]
 	      ZOrder		      10
 	      Value		      "0"
 	    }
 	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope"
+	      SID		      "590"
+	      Ports		      [1]
+	      Position		      [1030, 384, 1060, 416]
+	      ZOrder		      50
+	      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData1'),StrPVP('SaveName','ScopeData7'))"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope1"
+	      SID		      "591"
+	      Ports		      [1]
+	      Position		      [1165, 619, 1195, 651]
+	      ZOrder		      51
+	      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData1'),StrPVP('SaveName','ScopeData8'))"
+	    }
+	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum"
-	      SID		      "447"
+	      SID		      "577"
 	      Ports		      [2, 1]
 	      Position		      [425, 205, 445, 225]
 	      ZOrder		      4
@@ -3813,7 +4543,7 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum1"
-	      SID		      "448"
+	      SID		      "578"
 	      Ports		      [2, 1]
 	      Position		      [670, 205, 690, 225]
 	      ZOrder		      5
@@ -3827,7 +4557,7 @@ Model {
 	    Block {
 	      BlockType		      Switch
 	      Name		      "Switch"
-	      SID		      "449"
+	      SID		      "579"
 	      Position		      [785, 195, 835, 235]
 	      ZOrder		      8
 	      Criteria		      "u2 > Threshold"
@@ -3835,9 +4565,19 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch1"
+	      SID		      "580"
+	      Position		      [1020, 505, 1070, 545]
+	      ZOrder		      48
+	      Threshold		      ".02"
+	      InputSameDT	      off
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Constant
 	      Name		      "Target Slip"
-	      SID		      "450"
+	      SID		      "581"
 	      Position		      [330, 285, 360, 315]
 	      ZOrder		      3
 	      Value		      "0.17"
@@ -3845,15 +4585,15 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "no limit"
-	      SID		      "451"
+	      SID		      "582"
 	      Position		      [730, 125, 760, 155]
 	      ZOrder		      9
 	    }
 	    Block {
 	      BlockType		      Outport
-	      Name		      "u_slip_RR"
-	      SID		      "452"
-	      Position		      [1125, 208, 1155, 222]
+	      Name		      "u_slip_FL"
+	      SID		      "583"
+	      Position		      [1165, 518, 1195, 532]
 	      ZOrder		      -19
 	      IconDisplay	      "Port number"
 	    }
@@ -3938,23 +4678,88 @@ Model {
 	    }
 	    Line {
 	      ZOrder		      12
-	      SrcBlock		      "Switch"
+	      SrcBlock		      "Abs"
 	      SrcPort		      1
-	      DstBlock		      "Lowpass Filter"
+	      DstBlock		      "Sum"
 	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      13
-	      SrcBlock		      "Lowpass Filter"
+	      SrcBlock		      "Switch"
 	      SrcPort		      1
-	      DstBlock		      "u_slip_RR"
+	      Points		      [44, 0; 0, 185]
+	      Branch {
+		ZOrder			22
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			21
+		Points			[0, 2; -503, 0; 0, 83]
+		Branch {
+		  ZOrder		  14
+		  Points		  [0, 86; 609, 0; 0, -31]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Branch {
+		  ZOrder		  15
+		  DstBlock		  "Async Rate Transition "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      16
+	      SrcBlock		      "Lowpass Filter1"
+	      SrcPort		      1
+	      DstBlock		      "Async Rate Transition 1"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      14
-	      SrcBlock		      "Abs"
+	      ZOrder		      17
+	      SrcBlock		      "Async Rate Transition "
 	      SrcPort		      1
-	      DstBlock		      "Sum"
+	      DstBlock		      "Lowpass Filter1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "From47"
+	      SrcPort		      1
+	      DstBlock		      "Switch1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "Async Rate Transition 1"
+	      SrcPort		      1
+	      Points		      [115, 0; 0, 25]
+	      DstBlock		      "Switch1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "Switch1"
+	      SrcPort		      1
+	      Points		      [38, 0]
+	      Branch {
+		ZOrder			24
+		Points			[0, 110]
+		DstBlock		"Scope1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			23
+		DstBlock		"u_slip_FL"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      25
+	      SrcBlock		      "Digital Clock"
+	      SrcPort		      1
+	      DstBlock		      "Goto39"
 	      DstPort		      1
 	    }
 	  }
@@ -3995,7 +4800,7 @@ Model {
 	  ZOrder		  101
 	  ShowName		  off
 	  IconShape		  "round"
-	  Inputs		  "-+|"
+	  Inputs		  "++|"
 	  InputSameDT		  off
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -4009,7 +4814,7 @@ Model {
 	  ZOrder		  102
 	  ShowName		  off
 	  IconShape		  "round"
-	  Inputs		  "++|"
+	  Inputs		  "-+|"
 	  InputSameDT		  off
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -4023,7 +4828,7 @@ Model {
 	  ZOrder		  103
 	  ShowName		  off
 	  IconShape		  "round"
-	  Inputs		  "-+|"
+	  Inputs		  "++|"
 	  InputSameDT		  off
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -4037,7 +4842,7 @@ Model {
 	  ZOrder		  104
 	  ShowName		  off
 	  IconShape		  "round"
-	  Inputs		  "++|"
+	  Inputs		  "-+|"
 	  InputSameDT		  off
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -4209,8 +5014,8 @@ Model {
 	      FilterType	      "FIR"
 	      DesignForMinimumOrder   on
 	      FilterOrder	      "50"
-	      PassbandFrequency	      "400"
-	      StopbandFrequency	      "499"
+	      PassbandFrequency	      "5"
+	      StopbandFrequency	      "20"
 	      PassbandRipple	      "0.1"
 	      StopbandAttenuation     "80"
 	      InheritSampleRate	      on
@@ -4232,7 +5037,7 @@ Model {
 	      Name		      "Scope1"
 	      SID		      "62"
 	      Ports		      [1]
-	      Position		      [790, 19, 820, 51]
+	      Position		      [1070, 299, 1100, 331]
 	      ZOrder		      -16
 	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
@@ -4254,6 +5059,15 @@ Model {
 	      "Content',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousA"
 	      "utoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Locatio"
 	      "n',[9 83 953 1031])"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope2"
+	      SID		      "607"
+	      Ports		      [1]
+	      Position		      [1095, 454, 1125, 486]
+	      ZOrder		      49
+	      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData9'))"
 	    }
 	    Block {
 	      BlockType		      Signum
@@ -4312,6 +5126,7 @@ Model {
 	      SID		      "351"
 	      Position		      [895, 510, 925, 540]
 	      ZOrder		      25
+	      Gain		      ".3"
 	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
 	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
 	      SaturateOnIntegerOverflow	off
@@ -4377,16 +5192,26 @@ Model {
 	      Labels		      [0, 0]
 	      SrcBlock		      "Available Torque [Nm]"
 	      SrcPort		      1
-	      Points		      [39, 0; 0, 207; -844, 0; 0, 173]
+	      Points		      [39, 0; 0, 207]
 	      Branch {
-		ZOrder			216
-		Points			[0, 86; 595, 0; 0, -31]
-		DstBlock		"Switch1"
-		DstPort			3
+		ZOrder			230
+		Points			[-844, 0; 0, 173]
+		Branch {
+		  ZOrder		  216
+		  Points		  [0, 86; 595, 0; 0, -31]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Branch {
+		  ZOrder		  215
+		  DstBlock		  "Async Rate Transition "
+		  DstPort		  1
+		}
 	      }
 	      Branch {
-		ZOrder			215
-		DstBlock		"Async Rate Transition "
+		ZOrder			229
+		Points			[0, 3]
+		DstBlock		"Scope1"
 		DstPort			1
 	      }
 	    }
@@ -4401,8 +5226,18 @@ Model {
 	      ZOrder		      213
 	      SrcBlock		      "Yaw Error Weighting Gain2"
 	      SrcPort		      1
-	      DstBlock		      "Yaw Control Signal"
-	      DstPort		      1
+	      Points		      [121, 0]
+	      Branch {
+		ZOrder			233
+		Points			[0, -55]
+		DstBlock		"Scope2"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			232
+		DstBlock		"Yaw Control Signal"
+		DstPort			1
+	      }
 	    }
 	    Line {
 	      ZOrder		      167
@@ -4576,14 +5411,14 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData24','DataLoggingSaveFormat','StructureWithTi"
 	      "me','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',tr"
-	      "ue,'SerializedDisplays',{struct('MinYLimReal','-0.02646','MaxYLimReal','0.02117','YLabelReal','','MinYLimMag','"
-	      "0.00000','MaxYLimMag','0.02646','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCo"
+	      "ue,'SerializedDisplays',{struct('MinYLimReal','-0.74291','MaxYLimReal','0.49861','YLabelReal','','MinYLimMag','"
+	      "0.00000','MaxYLimMag','0.74291','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCo"
 	      "lor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
 	      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313"
 	      "72549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803921568"
 	      "6 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLin"
 	      "es',1,'LineNames',{{'Yaw error'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimR"
-	      "eal','-0.02646','MaxYLimReal','0.02117','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.02646','LegendVi"
+	      "eal','-0.74291','MaxYLimReal','0.49861','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.74291','LegendVi"
 	      "sibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509"
 	      "803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411"
 	      "764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.71764705"
@@ -4838,6 +5673,15 @@ Model {
 	  Port			  "5"
 	  IconDisplay		  "Port number"
 	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Lateral Accel Error [m/s^2]"
+	  SID			  "523"
+	  Position		  [1325, -167, 1355, -153]
+	  ZOrder		  105
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
 	Line {
 	  ZOrder		  2
 	  SrcBlock		  "Mux"
@@ -4999,21 +5843,21 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  249
+	  ZOrder		  405
 	  SrcBlock		  "FR_SR"
 	  SrcPort		  1
 	  DstBlock		  "FR Slip Controller"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  252
+	  ZOrder		  407
 	  SrcBlock		  "RL_SR"
 	  SrcPort		  1
 	  DstBlock		  "RL Slip Controller"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  253
+	  ZOrder		  409
 	  SrcBlock		  "RR_SR"
 	  SrcPort		  1
 	  DstBlock		  "RR Slip Controller"
@@ -5027,7 +5871,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  331
+	  ZOrder		  406
 	  SrcBlock		  "FR Slip Controller"
 	  SrcPort		  1
 	  Points		  [574, 0; 0, -300]
@@ -5035,7 +5879,7 @@ Model {
 	  DstPort		  3
 	}
 	Line {
-	  ZOrder		  332
+	  ZOrder		  408
 	  SrcBlock		  "RL Slip Controller"
 	  SrcPort		  1
 	  Points		  [593, 0; 0, -340]
@@ -5043,7 +5887,7 @@ Model {
 	  DstPort		  3
 	}
 	Line {
-	  ZOrder		  333
+	  ZOrder		  410
 	  SrcBlock		  "RR Slip Controller"
 	  SrcPort		  1
 	  Points		  [609, 0; 0, -380]
@@ -5090,8 +5934,18 @@ Model {
 	  ZOrder		  300
 	  SrcBlock		  "Lateral Acceleration Reference/Error Generator"
 	  SrcPort		  1
-	  DstBlock		  "Lateral Acceleration Controller"
-	  DstPort		  1
+	  Points		  [68, 0]
+	  Branch {
+	    ZOrder		    404
+	    Points		    [0, 175]
+	    DstBlock		    "Lateral Accel Error [m/s^2]"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    403
+	    DstBlock		    "Lateral Acceleration Controller"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  ZOrder		  310
@@ -5344,7 +6198,7 @@ Model {
       BlockType		      Outport
       Name		      "TFL"
       SID		      "147"
-      Position		      [1090, 203, 1120, 217]
+      Position		      [1090, 188, 1120, 202]
       ZOrder		      -26
       IconDisplay	      "Port number"
     }
@@ -5352,7 +6206,7 @@ Model {
       BlockType		      Outport
       Name		      "TFR"
       SID		      "157"
-      Position		      [1090, 363, 1120, 377]
+      Position		      [1090, 323, 1120, 337]
       ZOrder		      -26
       Port		      "2"
       IconDisplay	      "Port number"
@@ -5361,7 +6215,7 @@ Model {
       BlockType		      Outport
       Name		      "TRL"
       SID		      "158"
-      Position		      [1090, 523, 1120, 537]
+      Position		      [1090, 458, 1120, 472]
       ZOrder		      -26
       Port		      "3"
       IconDisplay	      "Port number"
@@ -5370,7 +6224,7 @@ Model {
       BlockType		      Outport
       Name		      "TRR"
       SID		      "159"
-      Position		      [1090, 683, 1120, 697]
+      Position		      [1090, 593, 1120, 607]
       ZOrder		      -26
       Port		      "4"
       IconDisplay	      "Port number"
@@ -5379,16 +6233,24 @@ Model {
       BlockType		      Outport
       Name		      "YE"
       SID		      "396"
-      Position		      [1090, 843, 1120, 857]
+      Position		      [1090, 728, 1120, 742]
       ZOrder		      1
       Port		      "5"
+      IconDisplay	      "Port number"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "LAE"
+      SID		      "524"
+      Position		      [1090, 863, 1120, 877]
+      ZOrder		      78
+      Port		      "6"
       IconDisplay	      "Port number"
     }
     Line {
       ZOrder		      9
       SrcBlock		      "T_P"
       SrcPort		      1
-      Points		      [53, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      9
     }
@@ -5396,7 +6258,6 @@ Model {
       ZOrder		      10
       SrcBlock		      "ABS/VLC/AYC Control"
       SrcPort		      1
-      Points		      [40, 0; 0, -5]
       DstBlock		      "TFL"
       DstPort		      1
     }
@@ -5404,7 +6265,6 @@ Model {
       ZOrder		      11
       SrcBlock		      "ABS/VLC/AYC Control"
       SrcPort		      2
-      Points		      [40, 0; 0, -5]
       DstBlock		      "TFR"
       DstPort		      1
     }
@@ -5412,7 +6272,6 @@ Model {
       ZOrder		      12
       SrcBlock		      "ABS/VLC/AYC Control"
       SrcPort		      3
-      Points		      [45, 0; 0, -5]
       DstBlock		      "TRL"
       DstPort		      1
     }
@@ -5420,7 +6279,6 @@ Model {
       ZOrder		      13
       SrcBlock		      "ABS/VLC/AYC Control"
       SrcPort		      4
-      Points		      [40, 0; 0, -5]
       DstBlock		      "TRR"
       DstPort		      1
     }
@@ -5428,7 +6286,6 @@ Model {
       ZOrder		      28
       SrcBlock		      "FL_SR"
       SrcPort		      1
-      Points		      [53, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      5
     }
@@ -5436,7 +6293,6 @@ Model {
       ZOrder		      29
       SrcBlock		      "FR_SR"
       SrcPort		      1
-      Points		      [53, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      6
     }
@@ -5444,7 +6300,6 @@ Model {
       ZOrder		      30
       SrcBlock		      "RL_SR"
       SrcPort		      1
-      Points		      [58, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      7
     }
@@ -5452,7 +6307,6 @@ Model {
       ZOrder		      31
       SrcBlock		      "RR_SR"
       SrcPort		      1
-      Points		      [53, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      8
     }
@@ -5460,7 +6314,6 @@ Model {
       ZOrder		      25
       SrcBlock		      "r_cont"
       SrcPort		      1
-      Points		      [53, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      3
     }
@@ -5468,7 +6321,6 @@ Model {
       ZOrder		      24
       SrcBlock		      "Vy_cont"
       SrcPort		      1
-      Points		      [53, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      2
     }
@@ -5484,7 +6336,6 @@ Model {
       ZOrder		      27
       SrcBlock		      "S_Ang"
       SrcPort		      1
-      Points		      [53, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      4
     }
@@ -5492,7 +6343,6 @@ Model {
       ZOrder		      36
       SrcBlock		      "ABS/VLC/AYC Control"
       SrcPort		      5
-      Points		      [40, 0; 0, -5]
       DstBlock		      "YE"
       DstPort		      1
     }
@@ -5500,7 +6350,6 @@ Model {
       ZOrder		      37
       SrcBlock		      "FLFz [N]"
       SrcPort		      1
-      Points		      [53, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      10
     }
@@ -5508,7 +6357,6 @@ Model {
       ZOrder		      38
       SrcBlock		      "FRFz [N]"
       SrcPort		      1
-      Points		      [53, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      11
     }
@@ -5516,7 +6364,6 @@ Model {
       ZOrder		      39
       SrcBlock		      "RLFz [N]"
       SrcPort		      1
-      Points		      [53, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      12
     }
@@ -5524,9 +6371,15 @@ Model {
       ZOrder		      40
       SrcBlock		      "RRFz [N]"
       SrcPort		      1
-      Points		      [53, 0; 0, 5]
       DstBlock		      "ABS/VLC/AYC Control"
       DstPort		      13
+    }
+    Line {
+      ZOrder		      41
+      SrcBlock		      "ABS/VLC/AYC Control"
+      SrcPort		      6
+      DstBlock		      "LAE"
+      DstPort		      1
     }
   }
 }
