@@ -30,7 +30,7 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
 %D_Slip = 0.1;            % Desired slip for PID
 
-Vx0 =13.41;       %13.41/26.82;             % Initial vehicle longitude speed [m/s] note: was 60*1000/3600   KDS 10/16, 
+Vx0 =26.82;       %13.41/26.82;             % Initial vehicle longitude speed [m/s] note: was 60*1000/3600   KDS 10/16, 
                         % DO NOT USE EXTREMELY SMALL START SPEEDS
                         % Initial negative speeds seem to not work....
 Vy0 = 0.001;                % Initial vehicle lateral speed [m/s]
