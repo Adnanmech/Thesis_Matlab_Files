@@ -121,7 +121,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.288"
+    ComputedModelVersion    "1.312"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -157,7 +157,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [7.0, 63.0, 1850.0, 879.0]
+      Location		      [49.0, 130.0, 1850.0, 879.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -180,10 +180,10 @@ Model {
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
 	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"1"
+	LoadSaveID		"457"
 	Extents			[1607.0, 705.0]
-	ZoomFactor		[0.4]
-	Offset			[-825.75, -427.54999999999973]
+	ZoomFactor		[0.8]
+	Offset			[-2.375, 0.0]
       }
     }
   }
@@ -193,9 +193,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Apr 02 16:40:01 2017"
-  RTWModifiedTimeStamp	  413050779
-  ModelVersionFormat	  "1.%<AutoIncrement:288>"
+  LastModifiedDate	  "Sun May 07 18:46:55 2017"
+  RTWModifiedTimeStamp	  416083607
+  ModelVersionFormat	  "1.%<AutoIncrement:312>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1916,7 +1916,7 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC_ALGO2"
-    Location		    [7, 63, 1857, 942]
+    Location		    [49, 130, 1899, 1009]
     Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
@@ -1930,7 +1930,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "696"
+    SIDHighWatermark	    "707"
     Block {
       BlockType		      Inport
       Name		      "Vx_cont"
@@ -2059,8 +2059,8 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[7, 63, 1857, 942]
-	Open			on
+	Location		[49, 130, 1899, 1009]
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
 	ScreenColor		"white"
@@ -2258,7 +2258,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Slip Controller"
-	    Location		    [7, 63, 1857, 942]
+	    Location		    [49, 130, 1899, 1009]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2446,20 +2446,20 @@ Model {
 	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Dom"
-	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-0.125','MaxYLimReal','1.125','YLabelReal','','MinYLimMag"
-	      "','0.00000','MaxYLimMag','1.125','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
-	      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666"
-	      "66666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831"
-	      "372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980392156"
-	      "86 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLi"
-	      "nes',1,'LineNames',{{'Switch'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimRea"
-	      "l','-0.125','MaxYLimReal','1.125','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.125','LegendVisibility"
-	      "','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0"
-	      ".686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0."
-	      "16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608"
-	      " 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tool"
-	      "s','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measuremen"
-	      "ts',true,'Version','2016a')),'Version','2016a','Position',[1 41 1920 964])"
+	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-0.01048','MaxYLimReal','1.00572','YLabelReal','','MinYLi"
+	      "mMag','0.00000','MaxYLimMag','1.00572','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,"
+	      "'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0"
+	      ".0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098"
+	      " 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980"
+	      "39215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},"
+	      "'NumLines',1,'LineNames',{{'Switch'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinY"
+	      "LimReal','-0.01048','MaxYLimReal','1.00572','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.00572','Lege"
+	      "ndVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.68627"
+	      "4509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764"
+	      "705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831"
+	      "372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configu"
+	      "ration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools'"
+	      ",'Measurements',true,'Version','2016a')),'Version','2016a','Position',[-12 -118 1920 964])"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -2484,7 +2484,7 @@ Model {
 	      "3 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.83137254901"
 	      "9608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('"
 	      "Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measur"
-	      "ements',true,'Version','2016a')),'Version','2016a','Position',[1 41 1920 964])"
+	      "ements',true,'Version','2016a')),'Version','2016a','Position',[-54 -121 1920 964])"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -2496,21 +2496,21 @@ Model {
 	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Dom"
-	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-62.11707','MaxYLimReal','4.04146','YLabelReal','','MinYL"
-	      "imMag','0.00000','MaxYLimMag','62.11707','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',fals"
-	      "e,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1"
-	      " 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.3921568627450"
-	      "98 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509"
-	      "8039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}"
-	      "},'NumLines',1,'LineNames',{{'FL Slip Error'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',str"
-	      "uct('MinYLimReal','-62.11707','MaxYLimReal','4.04146','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','62.1"
-	      "1707','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColo"
-	      "r',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1"
-	      ";1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.3921568627"
-	      "45098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),ext"
-	      "mgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configurat"
-	      "ion('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Position',[306 168 1382 351],'VisibleAtM"
-	      "odelOpen','on')"
+	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-0.10303','MaxYLimReal','0.30417','YLabelReal','','MinYLi"
+	      "mMag','0.00000','MaxYLimMag','0.30417','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,"
+	      "'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0"
+	      ".0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098"
+	      " 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980"
+	      "39215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},"
+	      "'NumLines',1,'LineNames',{{'FL Slip Error'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struc"
+	      "t('MinYLimReal','-0.10303','MaxYLimReal','0.30417','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.30417"
+	      "','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',["
+	      "0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0"
+	      ".411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.39215686274509"
+	      "8 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr."
+	      "Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration("
+	      "'Tools','Measurements',true,'Version','2016a')),'Version','2016a','Position',[283 255 1382 351],'VisibleAtModel"
+	      "Open','on')"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -2522,20 +2522,21 @@ Model {
 	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Dom"
-	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-1','MaxYLimReal','1','YLabelReal','','MinYLimMag','    0"
-	      ".00000','MaxYLimMag','7186550.29047','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'A"
-	      "xesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0"
-	      "666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0"
-	      ".831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039"
-	      "215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'N"
-	      "umLines',2,'LineNames',{{'Abs','Sum2'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('Mi"
-	      "nYLimReal','-1','MaxYLimReal','1','YLabelReal','','MinYLimMag','    0.00000','MaxYLimMag','7186550.29047','Lege"
-	      "ndVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.68627"
-	      "4509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764"
-	      "705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831"
-	      "372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configu"
-	      "ration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools'"
-	      ",'Measurements',true,'Version','2016a')),'Version','2016a','Position',[283 353 1382 549])"
+	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-14154.5521','MaxYLimReal','127390.96894','YLabelReal',''"
+	      ",'MinYLimMag','   0.00000','MaxYLimMag','127390.96894','LegendVisibility','Off','XGrid',true,'YGrid',true,'Plot"
+	      "MagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'Co"
+	      "lorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0"
+	      ".392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 "
+	      "1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedCha"
+	      "nnelNames',{{}},'NumLines',2,'LineNames',{{'Abs','Sum2'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDe"
+	      "faults',struct('MinYLimReal','-14154.5521','MaxYLimReal','127390.96894','YLabelReal','','MinYLimMag','   0.0000"
+	      "0','MaxYLimMag','127390.96894','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCol"
+	      "or',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.07450980392"
+	      "15686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.27450"
+	      "9803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686"
+	      " 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale"
+	      "','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Position',[126 "
+	      "85 1382 549])"
 	      NumInputPorts	      "2"
 	    }
 	    Block {
@@ -2548,20 +2549,20 @@ Model {
 	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData2'),extmgr.Configuration('Visuals','Time Dom"
-	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-1123.91844','MaxYLimReal','5904.76072','YLabelReal','','"
-	      "MinYLimMag','  0.00000','MaxYLimMag','5904.76072','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPh"
-	      "ase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOr"
-	      "der',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.3921"
-	      "56862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1"
-	      " 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelN"
-	      "ames',{{}},'NumLines',1,'LineNames',{{'Sum1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',str"
-	      "uct('MinYLimReal','-1123.91844','MaxYLimReal','5904.76072','YLabelReal','','MinYLimMag','  0.00000','MaxYLimMag"
-	      "','5904.76072','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axe"
-	      "sTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.62352941"
-	      "1764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.3"
-	      "92156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.6509803921568"
-	      "63])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.C"
-	      "onfiguration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Position',[393 268 1382 556])"
+	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-21.19628','MaxYLimReal','20.95133','YLabelReal','','MinY"
+	      "LimMag','0.00000','MaxYLimMag','21.19628','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',fal"
+	      "se,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 "
+	      "1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745"
+	      "098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450"
+	      "98039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{"
+	      "}},'NumLines',1,'LineNames',{{'Sum1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('Min"
+	      "YLimReal','-21.19628','MaxYLimReal','20.95133','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','21.19628','"
+	      "LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.6"
+	      "86274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.41"
+	      "1764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0"
+	      ".831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Con"
+	      "figuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('To"
+	      "ols','Measurements',true,'Version','2016a')),'Version','2016a','Position',[393 268 1382 556])"
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -2654,9 +2655,9 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Target Slip"
 	      SID		      "397"
-	      Position		      [215, 285, 245, 315]
+	      Position		      [185, 285, 245, 315]
 	      ZOrder		      3
-	      Value		      ".2"
+	      Value		      "Target_SR"
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -2953,7 +2954,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FR Slip Controller"
-	    Location		    [7, 63, 1857, 942]
+	    Location		    [49, 130, 1899, 1009]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3274,9 +3275,9 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Target Slip"
 	      SID		      "682"
-	      Position		      [160, 295, 190, 325]
+	      Position		      [135, 295, 190, 325]
 	      ZOrder		      83
-	      Value		      ".2"
+	      Value		      "Target_SR"
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -3563,7 +3564,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Lateral Acceleration Controller"
-	    Location		    [7, 63, 1857, 942]
+	    Location		    [49, 130, 1899, 1009]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3588,8 +3589,8 @@ Model {
 	      BlockType		      Abs
 	      Name		      "Abs"
 	      SID		      "651"
-	      Position		      [1130, 100, 1160, 130]
-	      ZOrder		      78
+	      Position		      [1130, 220, 1160, 250]
+	      ZOrder		      80
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
@@ -3621,9 +3622,9 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Constant"
-	      SID		      "611"
-	      Position		      [1070, 430, 1100, 460]
-	      ZOrder		      77
+	      SID		      "699"
+	      Position		      [1210, 180, 1240, 210]
+	      ZOrder		      91
 	    }
 	    Block {
 	      BlockType		      DigitalClock
@@ -3686,6 +3687,24 @@ Model {
 	      SimulateUsing	      "Interpreted execution"
 	    }
 	    Block {
+	      BlockType		      ManualSwitch
+	      Name		      "Manual Switch1"
+	      SID		      "698"
+	      Position		      [1300, 107, 1330, 143]
+	      ZOrder		      90
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "Saturation"
+	      SID		      "697"
+	      Ports		      [1, 1]
+	      Position		      [1385, 100, 1415, 130]
+	      ZOrder		      79
+	      InputPortMap	      "u0"
+	      UpperLimit	      "1"
+	      LowerLimit	      "0"
+	    }
+	    Block {
 	      BlockType		      Scope
 	      Name		      "Scope1"
 	      SID		      "608"
@@ -3696,20 +3715,20 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData10','DataLoggingSaveFormat','Array','DataLog"
 	      "gingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'Serializ"
-	      "edDisplays',{struct('MinYLimReal','-0.125','MaxYLimReal','1.125','YLabelReal','','MinYLimMag','0.00000','MaxYLi"
-	      "mMag','1.125','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axes"
-	      "TickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450"
-	      "98039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745"
-	      "098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.65098039215686"
-	      "3],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',"
-	      "{{'Saturation1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.125','M"
-	      "axYLimReal','1.125','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.125','LegendVisibility','Off','XGrid"
-	      "',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.6862745098039"
-	      "22 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549"
-	      ";1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.07450980392"
-	      "15686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navig"
-	      "ation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Vers"
-	      "ion','2016a')),'Version','2016a','Position',[515 73 847 603])"
+	      "edDisplays',{struct('MinYLimReal','-0.09127','MaxYLimReal','9.16799','YLabelReal','','MinYLimMag','0.00000','Ma"
+	      "xYLimMag','9.16799','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0]"
+	      ",'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0"
+	      ".0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 "
+	      "0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.65098039"
+	      "2156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineN"
+	      "ames',{{'Saturation'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.09"
+	      "127','MaxYLimReal','9.16799','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','9.16799','LegendVisibility','"
+	      "Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68"
+	      "6274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.160"
+	      "78431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0."
+	      "0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools',"
+	      "'Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements'"
+	      ",true,'Version','2016a')),'Version','2016a','Position',[515 73 847 603])"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -3722,15 +3741,15 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1','DataLoggingSaveFormat','Array','DataLogg"
 	      "ingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'Serialize"
-	      "dDisplays',{struct('MinYLimReal','-5.61851','MaxYLimReal','5.30651','YLabelReal','','MinYLimMag','0.00000','Max"
-	      "YLimMag','5.61851','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],"
+	      "dDisplays',{struct('MinYLimReal','-6.89738','MaxYLimReal','6.80699','YLabelReal','','MinYLimMag','0.00000','Max"
+	      "YLimMag','6.89738','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],"
 	      "'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0."
 	      "0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0"
 	      ".0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392"
 	      "156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNa"
 	      "mes',{{'Lateral Acceleration Error [m/s^2]'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',stru"
-	      "ct('MinYLimReal','-5.61851','MaxYLimReal','5.30651','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','5.6185"
-	      "1','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',"
+	      "ct('MinYLimReal','-6.89738','MaxYLimReal','6.80699','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','6.8973"
+	      "8','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',"
 	      "[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 "
 	      "0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.3921568627450"
 	      "98 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr"
@@ -3748,20 +3767,20 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData3','DataLoggingSaveFormat','Array','DataLogg"
 	      "ingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'Serialize"
-	      "dDisplays',{struct('MinYLimReal','-9.66551','MaxYLimReal','9.70949','YLabelReal','','MinYLimMag','0.00000','Max"
-	      "YLimMag','9.70949','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],"
-	      "'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0."
-	      "0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0"
-	      ".0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392"
-	      "156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNa"
-	      "mes',{{'Error Gain'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-9.665"
-	      "51','MaxYLimReal','9.70949','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','9.70949','LegendVisibility','O"
-	      "ff','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686"
-	      "274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1607"
-	      "8431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0"
-	      "745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','"
-	      "Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',"
-	      "true,'Version','2016a')),'Version','2016a','Position',[680 147 847 603])"
+	      "dDisplays',{struct('MinYLimReal','-2.59782','MaxYLimReal','2.6317','YLabelReal','','MinYLimMag','0.00000','MaxY"
+	      "LimMag','2.6317','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'A"
+	      "xesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07"
+	      "45098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0"
+	      "745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.65098039215"
+	      "6863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineName"
+	      "s',{{'Error Gain'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-2.59782"
+	      "','MaxYLimReal','2.6317','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','2.6317','LegendVisibility','Off',"
+	      "'XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.6862745"
+	      "09803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431"
+	      "372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.07450"
+	      "98039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot"
+	      " Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true"
+	      ",'Version','2016a')),'Version','2016a','Position',[680 147 847 603])"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -3788,20 +3807,6 @@ Model {
 	      "745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','"
 	      "Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',"
 	      "true,'Version','2016a')),'Version','2016a','Position',[680 147 847 603])"
-	    }
-	    Block {
-	      BlockType		      Sum
-	      Name		      "Sum"
-	      SID		      "610"
-	      Ports		      [2, 1]
-	      Position		      [1135, 330, 1155, 350]
-	      ZOrder		      76
-	      ShowName		      off
-	      IconShape		      "round"
-	      Inputs		      "|-+"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Switch
@@ -3897,9 +3902,19 @@ Model {
 	      SrcPort		      1
 	      Points		      [15, 0]
 	      Branch {
-		ZOrder			99
-		DstBlock		"Abs"
-		DstPort			1
+		ZOrder			122
+		Points			[171, 0]
+		Branch {
+		  ZOrder		  124
+		  DstBlock		  "Manual Switch1"
+		  DstPort		  1
+		}
+		Branch {
+		  ZOrder		  123
+		  Points		  [0, -80]
+		  DstBlock		  "Scope5"
+		  DstPort		  1
+		}
 	      }
 	      Branch {
 		ZOrder			89
@@ -3909,38 +3924,36 @@ Model {
 	      }
 	    }
 	    Line {
-	      ZOrder		      98
-	      SrcBlock		      "Abs"
+	      ZOrder		      121
+	      SrcBlock		      "Saturation"
 	      SrcPort		      1
-	      Points		      [61, 0]
+	      Points		      [21, 0]
 	      Branch {
-		ZOrder			108
-		Points			[214, 0]
-		Branch {
-		  ZOrder		  38
-		  Points		  [0, 135]
-		  DstBlock		  "Scope1"
-		  DstPort		  1
-		}
-		Branch {
-		  ZOrder		  37
-		  DstBlock		  "Lateral Acceleration Control Signal"
-		  DstPort		  1
-		}
+		ZOrder			119
+		Points			[0, 135]
+		DstBlock		"Scope1"
+		DstPort			1
 	      }
 	      Branch {
-		ZOrder			94
-		Points			[0, -80]
-		DstBlock		"Scope5"
+		ZOrder			118
+		DstBlock		"Lateral Acceleration Control Signal"
 		DstPort			1
 	      }
 	    }
 	    Line {
-	      ZOrder		      95
+	      ZOrder		      125
+	      SrcBlock		      "Manual Switch1"
+	      SrcPort		      1
+	      Points		      [23, 0; 0, -10]
+	      DstBlock		      "Saturation"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      126
 	      SrcBlock		      "Constant"
 	      SrcPort		      1
-	      Points		      [40, 0]
-	      DstBlock		      "Sum"
+	      Points		      [17, 0; 0, -60]
+	      DstBlock		      "Manual Switch1"
 	      DstPort		      2
 	    }
 	  }
@@ -3957,8 +3970,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Lateral Acceleration Reference/Error Generator"
-	    Location		    [7, 63, 1857, 942]
-	    Open		    off
+	    Location		    [49, 130, 1899, 1009]
+	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -4042,6 +4055,28 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
+	      BlockType		      Abs
+	      Name		      "Abs"
+	      SID		      "704"
+	      Position		      [905, 310, 935, 340]
+	      ZOrder		      93
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "703"
+	      Position		      [1040, 375, 1070, 405]
+	      ZOrder		      92
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "705"
+	      Position		      [1010, 115, 1040, 145]
+	      ZOrder		      94
+	    }
+	    Block {
 	      BlockType		      Fcn
 	      Name		      "Desired Lat Accel Denominator"
 	      SID		      "462"
@@ -4071,6 +4106,17 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      "707"
+	      Position		      [970, 180, 1000, 210]
+	      ZOrder		      96
+	      Gain		      ".1"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Mux
 	      Name		      "Mux1"
 	      SID		      "475"
@@ -4097,28 +4143,28 @@ Model {
 	      Name		      "Scope1"
 	      SID		      "466"
 	      Ports		      [1]
-	      Position		      [985, 364, 1015, 396]
+	      Position		      [1300, 364, 1330, 396]
 	      ZOrder		      -15
 	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData24','DataLoggingSaveFormat','StructureWithTi"
 	      "me','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',tr"
-	      "ue,'SerializedDisplays',{struct('MinYLimReal','-9.97191','MaxYLimReal','10.51492','YLabelReal','','MinYLimMag',"
-	      "'0.00000','MaxYLimMag','10.51492','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'Axes"
-	      "Color',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666"
-	      "666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83"
-	      "1372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215"
-	      "686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumL"
-	      "ines',1,'LineNames',{{'Lateral Acceleration error'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefault"
-	      "s',struct('MinYLimReal','-9.97191','MaxYLimReal','10.51492','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag'"
-	      ",'10.51492','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTi"
-	      "ckColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098"
-	      "039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509"
-	      "8039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]"
-	      ",'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{"
-	      "[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,"
-	      "'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a"
-	      "','Location',[347 220 1713 899])"
+	      "ue,'SerializedDisplays',{struct('MinYLimReal','0.01207','MaxYLimReal','1.10977','YLabelReal','','MinYLimMag','0"
+	      ".01207','MaxYLimMag','1.10977','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCol"
+	      "or',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666"
+	      "666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+	      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686"
+	      " 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLine"
+	      "s',1,'LineNames',{{'Switch'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal'"
+	      ",'0.01207','MaxYLimReal','1.10977','YLabelReal','','MinYLimMag','0.01207','MaxYLimMag','1.10977','LegendVisibil"
+	      "ity','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.68627450980392"
+	      "2 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.62352941176470"
+	      "6 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.7176470588235"
+	      "29 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>',"
+	      "'LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'P"
+	      "lacement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),"
+	      "extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[347 220 1713"
+	      " 899])"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -4131,29 +4177,29 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1','DataLoggingSaveFormat','StructureWithTim"
 	      "e','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',tru"
-	      "e,'SerializedDisplays',{struct('MinYLimReal','-9.97191','MaxYLimReal','10.51492','YLabelReal','','MinYLimMag','"
-	      "0.00000','MaxYLimMag','10.51492','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
-	      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666"
-	      "66666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831"
-	      "372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980392156"
-	      "86 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLi"
-	      "nes',1,'LineNames',{{'Lateral Accel [m/s^2]'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',str"
-	      "uct('MinYLimReal','-9.97191','MaxYLimReal','10.51492','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','10.5"
-	      "1492','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColo"
-	      "r',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215"
-	      "686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509803921"
-	      "5686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Titl"
-	      "e','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'"
-	      "ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'Previ"
-	      "ousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Loc"
-	      "ation',[347 220 1713 899])"
+	      "e,'SerializedDisplays',{struct('MinYLimReal','-6.89738','MaxYLimReal','6.80699','YLabelReal','','MinYLimMag','0"
+	      ".00000','MaxYLimMag','6.89738','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCol"
+	      "or',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666"
+	      "666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+	      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686"
+	      " 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLine"
+	      "s',1,'LineNames',{{'Lateral Accel [m/s^2]'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struc"
+	      "t('MinYLimReal','-6.89738','MaxYLimReal','6.80699','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','6.89738"
+	      "','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',["
+	      "0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 "
+	      "0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686"
+	      ";0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','"
+	      "%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'Show"
+	      "Content',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousA"
+	      "utoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Locatio"
+	      "n',[241 222 1607 901])"
 	    }
 	    Block {
 	      BlockType		      Scope
 	      Name		      "Scope3"
 	      SID		      "647"
 	      Ports		      [1]
-	      Position		      [895, 189, 925, 221]
+	      Position		      [805, 89, 835, 121]
 	      ZOrder		      82
 	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
@@ -4186,7 +4232,7 @@ Model {
 	      NamePlacement	      "alternate"
 	      ShowName		      off
 	      IconShape		      "round"
-	      Inputs		      "-+|"
+	      Inputs		      "+-|"
 	      InputSameDT	      off
 	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
 	      SaturateOnIntegerOverflow	off
@@ -4226,10 +4272,36 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum3"
+	      SID		      "706"
+	      Ports		      [2, 1]
+	      Position		      [1060, 185, 1080, 205]
+	      ZOrder		      95
+	      NamePlacement	      "alternate"
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "+-|"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      SID		      "700"
+	      Position		      [1155, 305, 1205, 345]
+	      ZOrder		      83
+	      Criteria		      "u2 > Threshold"
+	      Threshold		      "1"
+	      InputSameDT	      off
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Outport
 	      Name		      "Lateral Accel Error [rad/s]"
 	      SID		      "470"
-	      Position		      [985, 318, 1015, 332]
+	      Position		      [1300, 318, 1330, 332]
 	      ZOrder		      -20
 	      IconDisplay	      "Port number"
 	    }
@@ -4237,7 +4309,7 @@ Model {
 	      BlockType		      Outport
 	      Name		      "Steering Angle Out [rad]"
 	      SID		      "471"
-	      Position		      [985, 423, 1015, 437]
+	      Position		      [1300, 513, 1330, 527]
 	      ZOrder		      -21
 	      Port		      "2"
 	      IconDisplay	      "Port number"
@@ -4280,7 +4352,7 @@ Model {
 	      }
 	      Branch {
 		ZOrder			28
-		Points			[23, 0; 0, 40]
+		Points			[0, 45; 193, 0; 0, 85]
 		DstBlock		"Steering Angle Out [rad]"
 		DstPort			1
 	      }
@@ -4304,22 +4376,12 @@ Model {
 	    }
 	    Line {
 	      Name		      "Lateral Acceleration error"
-	      ZOrder		      15
+	      ZOrder		      67
 	      Labels		      [0, 0]
 	      SrcBlock		      "Sum"
 	      SrcPort		      1
-	      Points		      [125, 0]
-	      Branch {
-		ZOrder			16
-		DstBlock		"Lateral Accel Error [rad/s]"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			17
-		Points			[0, 55]
-		DstBlock		"Scope1"
-		DstPort			1
-	      }
+	      DstBlock		      "Abs"
+	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      24
@@ -4394,17 +4456,83 @@ Model {
 	      ZOrder		      41
 	      SrcBlock		      "Divide"
 	      SrcPort		      1
-	      Points		      [25, 0; 0, 35]
+	      Points		      [25, 0]
 	      Branch {
-		ZOrder			50
+		ZOrder			71
 		DstBlock		"Sum"
 		DstPort			1
 	      }
 	      Branch {
 		ZOrder			49
+		Points			[0, -65]
 		DstBlock		"Scope3"
 		DstPort			1
 	      }
+	    }
+	    Line {
+	      ZOrder		      66
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      Branch {
+		ZOrder			16
+		DstBlock		"Lateral Accel Error [rad/s]"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			17
+		Points			[0, 55]
+		DstBlock		"Scope1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      70
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [38, 0; 0, -50]
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      72
+	      SrcBlock		      "Abs"
+	      SrcPort		      1
+	      Points		      [9, 0]
+	      Branch {
+		ZOrder			74
+		Points			[0, -130]
+		DstBlock		"Gain"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			73
+		DstBlock		"Switch"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      ZOrder		      75
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      DstBlock		      "Sum3"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      78
+	      SrcBlock		      "Sum3"
+	      SrcPort		      1
+	      Points		      [33, 0; 0, 115]
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      77
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      2
 	    }
 	    Annotation {
 	      SID		      "472"
@@ -4427,24 +4555,25 @@ Model {
 	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
 	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData16','DataLoggingSaveFormat','StructureWithTime','DataLog"
 	  "gingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDi"
-	  "splays',{struct('MinYLimReal','-163.29114','MaxYLimReal','156.64557','YLabelReal','','MinYLimMag',' 0.00000','MaxYL"
-	  "imMag','163.29114','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axe"
-	  "sTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450980"
-	  "39215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.07450980392"
-	  "15686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title',"
-	  "'%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Saturation',"
-	  "'Saturation1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-163.29114','Max"
-	  "YLimReal','156.64557','YLabelReal','','MinYLimMag',' 0.00000','MaxYLimMag','163.29114','LegendVisibility','off','XG"
-	  "rid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450980392"
-	  "2 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470588235"
-	  "3 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0"
-	  "588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'Us"
-	  "erDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration"
-	  "('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurem"
-	  "ents',true,'Version','2016a','Measurements',struct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates"
-	  "',[0.000432039065202784 0.00079356770259349],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true"
-	  ",'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'Mea"
-	  "surementsPanelOpen',1)))),'Version','2016a','Location',[1 626 807 1079],'WindowStyle','docked')"
+	  "splays',{struct('MinYLimReal','-177.45802','MaxYLimReal','97.12216','YLabelReal','','MinYLimMag',' 0.00000','MaxYLi"
+	  "mMag','177.45802','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axes"
+	  "TickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074509803"
+	  "9215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509803921"
+	  "5686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','"
+	  "%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Saturation','"
+	  "Saturation1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-177.45802','MaxY"
+	  "LimReal','97.12216','YLabelReal','','MinYLimMag',' 0.00000','MaxYLimMag','177.45802','LegendVisibility','off','XGri"
+	  "d',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 "
+	  "0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 "
+	  "0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.058"
+	  "8235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'User"
+	  "DefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('"
+	  "Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measuremen"
+	  "ts',true,'Version','2016a','Measurements',struct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',"
+	  "[0.000432039065202784 0.00079356770259349],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'"
+	  "ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'Measu"
+	  "rementsPanelOpen',1)))),'Version','2016a','Location',[1 490 1233 1079],'WindowStyle','docked','VisibleAtModelOpen',"
+	  "'on')"
 	}
 	Block {
 	  BlockType		  Reference
@@ -4556,7 +4685,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "RL Slip Controller"
-	    Location		    [7, 63, 1857, 942]
+	    Location		    [49, 130, 1899, 1009]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -4861,9 +4990,9 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Target Slip"
 	      SID		      "689"
-	      Position		      [170, 290, 200, 320]
+	      Position		      [140, 290, 200, 320]
 	      ZOrder		      78
-	      Value		      ".2"
+	      Value		      "Target_SR"
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -5426,9 +5555,9 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Target Slip"
 	      SID		      "696"
-	      Position		      [175, 295, 205, 325]
+	      Position		      [150, 295, 205, 325]
 	      ZOrder		      78
-	      Value		      ".2"
+	      Value		      "Target_SR"
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -5685,21 +5814,21 @@ Model {
 	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
 	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData7','DataLoggingSaveFormat','StructureWithTime','DataLogg"
 	  "ingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDis"
-	  "plays',{struct('MinYLimReal','-163.26851','MaxYLimReal','156.21079','YLabelReal','','MinYLimMag',' 0.00000','MaxYLi"
-	  "mMag','163.26851','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axes"
-	  "TickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074509803"
-	  "9215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509803921"
-	  "5686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','"
-	  "%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Saturation2',"
-	  "'Saturation3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-163.26851','Max"
-	  "YLimReal','156.21079','YLabelReal','','MinYLimMag',' 0.00000','MaxYLimMag','163.26851','LegendVisibility','off','XG"
-	  "rid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450980392"
-	  "2 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470588235"
-	  "3 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0"
-	  "588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'Us"
-	  "erDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration"
-	  "('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurem"
-	  "ents',true,'Version','2016a')),'Version','2016a','Location',[8 83 1632 938])"
+	  "plays',{struct('MinYLimReal','-151.44697','MaxYLimReal','76.96791','YLabelReal','','MinYLimMag',' 0.00000','MaxYLim"
+	  "Mag','151.44697','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesT"
+	  "ickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039"
+	  "215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215"
+	  "686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%"
+	  "<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Saturation2','"
+	  "Saturation3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-151.44697','MaxY"
+	  "LimReal','76.96791','YLabelReal','','MinYLimMag',' 0.00000','MaxYLimMag','151.44697','LegendVisibility','off','XGri"
+	  "d',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 "
+	  "0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 "
+	  "0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.058"
+	  "8235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'User"
+	  "DefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('"
+	  "Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measuremen"
+	  "ts',true,'Version','2016a')),'Version','2016a','Location',[8 83 1632 938])"
 	}
 	Block {
 	  BlockType		  Saturate
@@ -5755,21 +5884,24 @@ Model {
 	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
 	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
 	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain',true,'S"
-	  "erializedDisplays',{struct('MinYLimReal','-0.00711','MaxYLimReal','1.03322','YLabelReal','','MinYLimMag','0.00000',"
-	  "'MaxYLimMag','1.03322','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],"
-	  "'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745"
-	  "098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098"
-	  "039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Tit"
-	  "le','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',7,'LineNames',{{'Lateral "
-	  "Acceleration Controller','Yaw Controller','FL Slip Controller','FR Slip Controller','RL Slip Controller','RR Slip C"
-	  "ontroller','Channel 7'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.0071"
-	  "1','MaxYLimReal','1.03322','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.03322','LegendVisibility','off','"
-	  "XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803"
-	  "922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 "
-	  "1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0"
-	  ".0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true"
-	  ",'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),"
-	  "'Version','2016a','Position',[1 41 1920 964])"
+	  "erializedDisplays',{struct('MinYLimReal','-88.38546','MaxYLimReal','87.22521','YLabelReal','','MinYLimMag','0.00000"
+	  "','MaxYLimMag','88.38546','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 "
+	  "0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0"
+	  "745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745"
+	  "098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'"
+	  "Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',7,'LineNames',{{'Later"
+	  "al Acceleration Controller','Yaw Controller','FL Slip Controller','FR Slip Controller','RL Slip Controller','RR Sli"
+	  "p Controller','Channel 7'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-88."
+	  "38546','MaxYLimReal','87.22521','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','88.38546','LegendVisibility','"
+	  "off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274"
+	  "509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372"
+	  "549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.074509803921"
+	  "5686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation"
+	  "',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','201"
+	  "6a','Measurements',struct('traceselector',struct('Line',2),'tcursors',struct('XCoordinates',[2.5 7.5],'YCoordinates"
+	  "',[NaN NaN],'CursorChannels',[2 2],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpa"
+	  "cing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Position',[-3"
+	  "27 -118 1920 964])"
 	  NumInputPorts		  "7"
 	}
 	Block {
@@ -5889,7 +6021,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "80"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Yaw Error"
@@ -5978,6 +6110,7 @@ Model {
 	      SID		      "643"
 	      Position		      [1190, 500, 1220, 530]
 	      ZOrder		      63
+	      Gain		      ".35"
 	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
 	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
 	      SaturateOnIntegerOverflow	off
@@ -6307,7 +6440,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Reference/Error Generator"
-	    Location		    [7, 63, 1857, 942]
+	    Location		    [49, 130, 1899, 1009]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -6999,27 +7132,26 @@ Model {
 	  }
 	  Branch {
 	    ZOrder		    268
-	    Points		    [0, -390]
-	    DstBlock		    "Lateral Acceleration Reference/Error Generator"
-	    DstPort		    2
+	    Points		    [0, -345]
+	    Branch {
+	      ZOrder		      748
+	      DstBlock		      "Derivative"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      747
+	      Points		      [0, -45]
+	      DstBlock		      "Lateral Acceleration Reference/Error Generator"
+	      DstPort		      2
+	    }
 	  }
 	}
 	Line {
 	  ZOrder		  5
 	  SrcBlock		  "yaw rate [rad/s]"
 	  SrcPort		  1
-	  Points		  [64, 0]
-	  Branch {
-	    ZOrder		    556
-	    Points		    [0, -375]
-	    DstBlock		    "Derivative"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    466
-	    DstBlock		    "Yaw Reference/Error Generator"
-	    DstPort		    3
-	  }
+	  DstBlock		  "Yaw Reference/Error Generator"
+	  DstPort		  3
 	}
 	Line {
 	  ZOrder		  6
