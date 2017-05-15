@@ -33,7 +33,7 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 Vx0 = 26.82;             % Initial vehicle longitude speed [m/s] note: was 60*1000/3600   KDS 10/16, 
                         % DO NOT USE EXTREMELY SMALL START SPEEDS
                         % Initial negative speeds seem to not work....
-Vy0 = 0;                % Initial vehicle lateral speed [m/s]
+Vy0 = 0.001;                % Initial vehicle lateral speed [m/s]
 r0 = 0;                 % Initial yaw rate [rad/s]
 
 %% Parameters
@@ -58,8 +58,8 @@ Kxnorm = 30;      % normalized stiffness
 Muxp = .99;         % peak friction coefficient
 Muxs = 0.5;         % sliding friction coefficient was .5 kds 5/16/14
 %(Condition 2)
-Muxp_2 = 0.3;         % peak friction coefficient
-Muxs_2 = 0.29;       % sliding friction coefficient 
+Muxp_2 = 0.2;         % peak friction coefficient
+Muxs_2 = 0.1;       % sliding friction coefficient 
 
 
 % Magic formular (Lateral)
@@ -70,8 +70,8 @@ Fz = m*g/4;
 Muyp0 = 0.85;       % static peak friction coefficient
 Muys = 0.80;        % friction coefficient when sliding 
 %(Condition 2)
-Muyp0_2 = 0.3;       % static peak friction coefficient
-Muys_2 = 0.29;        % friction coefficient when sliding 
+Muyp0_2 = 0.2;       % static peak friction coefficient
+Muys_2 = 0.15;        % friction coefficient when sliding 
 
 % Combined slip parameters
 %(Condition 1)
