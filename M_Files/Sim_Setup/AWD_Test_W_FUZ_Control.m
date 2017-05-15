@@ -1,8 +1,8 @@
 %clear all; close all; clc;
 fprintf('Loading data for rear wheel driving model...')
 %set_param('AWD_EV_MODEL','AlgebraicLoopSolver','LineSearch')
-set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
-%set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
+%set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
+set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
 %USE ABOVE STATEMENT IF SOLVER HAS CONVERGENCE ERROR!!!!!!!!!!
 
 %% Inputs
