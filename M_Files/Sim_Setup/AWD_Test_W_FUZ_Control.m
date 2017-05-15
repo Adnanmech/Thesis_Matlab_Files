@@ -44,9 +44,6 @@ Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
 hg = 0.3;               %   Hight of CoG [m]
 
-%Cf = ???               %Front Cornering Stiffness
-%Cr = ???               %Rear Cornering Stiffness
-
 Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 %Jw changed from 12 -> 1.2. Wheel is being treated as hollow ring.
 Jw = 1.2;            %   Wheel rotational moment of inertial >>Inertia = Mass(at radius r) * radius^2; sum multiple masses at diff radii for total
