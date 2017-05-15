@@ -33,8 +33,8 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 Vx0 =26.82;       %26.82;             % Initial vehicle longitude speed [m/s] note: was 60*1000/3600   KDS 10/16, 
                         % DO NOT USE EXTREMELY SMALL START SPEEDS
                         % Initial negative speeds seem to not work....
-Vy0 = 0.001;                % Initial vehicle lateral speed [m/s]
-r0 = 0.001;                 % Initial yaw rate [rad/s]
+Vy0 = 0;                % Initial vehicle lateral speed [m/s]
+r0 = 0;                 % Initial yaw rate [rad/s]
 
 %% Parameters
 g = 9.81;               %   Gravity acceleration [m/s^2]
