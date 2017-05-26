@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.538"
+    ComputedModelVersion    "1.539"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC_ALGO2"
@@ -73,7 +73,7 @@ Model {
 	  LoadSaveID		  "0"
 	  Extents		  [1372.0, 801.0]
 	  ZoomFactor		  [0.4]
-	  Offset		  [-506.02142857142485, 97.350474726586754]
+	  Offset		  [-945.18809523808977, -304.98285860674639]
 	}
 	Object {
 	  $ObjectID		  7
@@ -103,9 +103,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu May 25 21:31:10 2017"
-  RTWModifiedTimeStamp	  417648621
-  ModelVersionFormat	  "1.%<AutoIncrement:538>"
+  LastModifiedDate	  "Thu May 25 22:05:47 2017"
+  RTWModifiedTimeStamp	  417650741
+  ModelVersionFormat	  "1.%<AutoIncrement:539>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -207,7 +207,7 @@ Model {
 	  $ObjectID		  11
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
-	  StopTime		  "6"
+	  StopTime		  "5"
 	  AbsTol		  "auto"
 	  FixedStep		  "0.001"
 	  InitialStep		  "auto"
@@ -9303,7 +9303,7 @@ Model {
       Name		      "To Workspace"
       SID		      "4658"
       Ports		      [1]
-      Position		      [1815, 1235, 1875, 1265]
+      Position		      [1840, 1250, 1900, 1280]
       ZOrder		      -7
       VariableName	      "VMC"
       MaxDataPoints	      "inf"
@@ -11964,7 +11964,6 @@ Model {
       ZOrder		      87
       SrcBlock		      "Mux3"
       SrcPort		      1
-      Points		      [30, 0; 0, -15]
       DstBlock		      "To Workspace"
       DstPort		      1
     }
