@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.535"
+    ComputedModelVersion    "1.538"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC_ALGO2"
@@ -68,21 +68,21 @@ Model {
 	Dimension		3
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "5121"
-	  Extents		  [1372.0, 801.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
-	}
-	Object {
-	  $ObjectID		  7
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1372.0, 801.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-216.31666666666456, -117.59999999999968]
+	  ZoomFactor		  [0.4]
+	  Offset		  [-506.02142857142485, 97.350474726586754]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "4050"
+	  Extents		  [1372.0, 801.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  8
@@ -103,9 +103,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu May 11 21:28:39 2017"
-  RTWModifiedTimeStamp	  416438623
-  ModelVersionFormat	  "1.%<AutoIncrement:535>"
+  LastModifiedDate	  "Thu May 25 21:31:10 2017"
+  RTWModifiedTimeStamp	  417648621
+  ModelVersionFormat	  "1.%<AutoIncrement:538>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1203,9 +1203,9 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "40"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "5428"
+    SIDHighWatermark	    "5429"
     Block {
       BlockType		      Constant
       Name		      "Constant1"
@@ -1213,38 +1213,6 @@ Model {
       Position		      [50, 975, 80, 1005]
       ZOrder		      82
       Value		      "0"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Constant2"
-      SID		      "5398"
-      Position		      [375, -195, 435, -165]
-      ZOrder		      112
-      Value		      "TQ_INIT"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Constant3"
-      SID		      "5405"
-      Position		      [475, 95, 535, 125]
-      ZOrder		      119
-      Value		      "TQ_INIT"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Constant4"
-      SID		      "5408"
-      Position		      [1160, -245, 1220, -215]
-      ZOrder		      122
-      Value		      "TQ_INIT"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Constant5"
-      SID		      "5411"
-      Position		      [1245, 100, 1305, 130]
-      ZOrder		      125
-      Value		      "TQ_INIT"
     }
     Block {
       BlockType		      DigitalClock
@@ -1263,38 +1231,6 @@ Model {
       SampleTime	      "0.001"
     }
     Block {
-      BlockType		      DigitalClock
-      Name		      "Digital Clock2"
-      SID		      "5404"
-      Position		      [375, -342, 440, -318]
-      ZOrder		      118
-      SampleTime	      "0.001"
-    }
-    Block {
-      BlockType		      DigitalClock
-      Name		      "Digital Clock3"
-      SID		      "5406"
-      Position		      [475, -52, 540, -28]
-      ZOrder		      121
-      SampleTime	      "0.001"
-    }
-    Block {
-      BlockType		      DigitalClock
-      Name		      "Digital Clock4"
-      SID		      "5409"
-      Position		      [1160, -392, 1225, -368]
-      ZOrder		      124
-      SampleTime	      "0.001"
-    }
-    Block {
-      BlockType		      DigitalClock
-      Name		      "Digital Clock5"
-      SID		      "5412"
-      Position		      [1245, -47, 1310, -23]
-      ZOrder		      127
-      SampleTime	      "0.001"
-    }
-    Block {
       BlockType		      Constant
       Name		      "Dummy Constant1"
       SID		      "5363"
@@ -1307,7 +1243,7 @@ Model {
       Name		      "FL Tire Mode"
       SID		      "4050"
       Ports		      [5, 4]
-      Position		      [660, -190, 865, -70]
+      Position		      [785, -110, 990, 10]
       ZOrder		      -19
       BackgroundColor	      "lightBlue"
       RequestExecContextInheritance off
@@ -1324,7 +1260,7 @@ Model {
       System {
 	Name			"FL Tire Mode"
 	Location		[99, 20, 1714, 998]
-	Open			off
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2811,8 +2747,18 @@ Model {
 	  }
 	  Branch {
 	    ZOrder		    48
-	    DstBlock		    "Gear Reduction Ratio"
-	    DstPort		    1
+	    Points		    [43, 0]
+	    Branch {
+	      ZOrder		      99
+	      Points		      [0, 280]
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	    Branch {
+	      ZOrder		      98
+	      DstBlock		      "Gear Reduction Ratio"
+	      DstPort		      1
+	    }
 	  }
 	}
 	Line {
@@ -3076,14 +3022,6 @@ Model {
 	  }
 	}
 	Line {
-	  ZOrder		  45
-	  SrcBlock		  "Throttle Position [%]"
-	  SrcPort		  1
-	  Points		  [124, 0; 0, 50]
-	  DstBlock		  "Switch"
-	  DstPort		  2
-	}
-	Line {
 	  ZOrder		  56
 	  SrcBlock		  "Mux2"
 	  SrcPort		  1
@@ -3134,7 +3072,7 @@ Model {
       Name		      "FR Tire Mode"
       SID		      "4095"
       Ports		      [5, 4]
-      Position		      [1460, -191, 1670, -69]
+      Position		      [1445, -126, 1655, -4]
       ZOrder		      -21
       BackgroundColor	      "lightBlue"
       RequestExecContextInheritance off
@@ -3862,8 +3800,18 @@ Model {
 	  ZOrder		  3
 	  SrcBlock		  "Torque [Nm]"
 	  SrcPort		  1
-	  DstBlock		  "Gear Reduction Ratio"
-	  DstPort		  1
+	  Points		  [122, 0]
+	  Branch {
+	    ZOrder		    45
+	    Points		    [0, 280]
+	    DstBlock		    "Switch"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    44
+	    DstBlock		    "Gear Reduction Ratio"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  ZOrder		  6
@@ -4085,14 +4033,6 @@ Model {
 	    DstBlock		    "Slip Ratio"
 	    DstPort		    1
 	  }
-	}
-	Line {
-	  ZOrder		  43
-	  SrcBlock		  "Throttle Position [%]"
-	  SrcPort		  1
-	  Points		  [124, 0; 0, 50]
-	  DstBlock		  "Switch"
-	  DstPort		  2
 	}
 	Annotation {
 	  SID			  "5253"
@@ -4486,7 +4426,7 @@ Model {
       BlockType		      From
       Name		      "From10"
       SID		      "4089"
-      Position		      [1390, -169, 1430, -141]
+      Position		      [1375, -104, 1415, -76]
       ZOrder		      -27
       ShowName		      off
       GotoTag		      "FRa"
@@ -4512,7 +4452,7 @@ Model {
       BlockType		      From
       Name		      "From13"
       SID		      "2805"
-      Position		      [1465, 146, 1505, 174]
+      Position		      [1375, 126, 1415, 154]
       ZOrder		      -30
       ShowName		      off
       GotoTag		      "RRa"
@@ -4530,7 +4470,7 @@ Model {
       BlockType		      From
       Name		      "From15"
       SID		      "4090"
-      Position		      [1390, -119, 1430, -91]
+      Position		      [1375, -54, 1415, -26]
       ZOrder		      -9
       ShowName		      off
       GotoTag		      "FRFz"
@@ -4539,7 +4479,7 @@ Model {
       BlockType		      From
       Name		      "From16"
       SID		      "4044"
-      Position		      [590, -144, 630, -116]
+      Position		      [715, -64, 755, -36]
       ZOrder		      -33
       ShowName		      off
       GotoTag		      "FLVx"
@@ -4548,7 +4488,7 @@ Model {
       BlockType		      From
       Name		      "From17"
       SID		      "4045"
-      Position		      [590, -169, 630, -141]
+      Position		      [715, -89, 755, -61]
       ZOrder		      -34
       ShowName		      off
       GotoTag		      "FLa"
@@ -4557,7 +4497,7 @@ Model {
       BlockType		      From
       Name		      "From18"
       SID		      "4046"
-      Position		      [590, -119, 630, -91]
+      Position		      [715, -39, 755, -11]
       ZOrder		      -9
       ShowName		      off
       GotoTag		      "FLFz"
@@ -4566,7 +4506,7 @@ Model {
       BlockType		      From
       Name		      "From19"
       SID		      "4091"
-      Position		      [1390, -144, 1430, -116]
+      Position		      [1375, -79, 1415, -51]
       ZOrder		      -36
       ShowName		      off
       GotoTag		      "FRVx"
@@ -4632,7 +4572,7 @@ Model {
       BlockType		      From
       Name		      "From26"
       SID		      "4241"
-      Position		      [290, -259, 330, -231]
+      Position		      [490, -114, 530, -86]
       ZOrder		      111
       ShowName		      off
       GotoTag		      "TFL"
@@ -4641,7 +4581,7 @@ Model {
       BlockType		      From
       Name		      "From27"
       SID		      "4243"
-      Position		      [390, 31, 430, 59]
+      Position		      [510, 96, 550, 124]
       ZOrder		      110
       ShowName		      off
       GotoTag		      "TRL"
@@ -4650,7 +4590,7 @@ Model {
       BlockType		      From
       Name		      "From28"
       SID		      "4245"
-      Position		      [1075, -309, 1115, -281]
+      Position		      [1195, -134, 1235, -106]
       ZOrder		      109
       ShowName		      off
       GotoTag		      "TFR"
@@ -4659,7 +4599,7 @@ Model {
       BlockType		      From
       Name		      "From29"
       SID		      "4247"
-      Position		      [1160, 36, 1200, 64]
+      Position		      [1210, 86, 1250, 114]
       ZOrder		      108
       ShowName		      off
       GotoTag		      "TRR"
@@ -4717,7 +4657,7 @@ Model {
       BlockType		      From
       Name		      "From35"
       SID		      "5119"
-      Position		      [590, -94, 630, -66]
+      Position		      [715, -14, 755, 14]
       ZOrder		      -9
       ShowName		      off
       GotoTag		      "T_P"
@@ -4735,7 +4675,7 @@ Model {
       BlockType		      From
       Name		      "From37"
       SID		      "3288"
-      Position		      [1465, 196, 1505, 224]
+      Position		      [1375, 176, 1415, 204]
       ZOrder		      -9
       ShowName		      off
       GotoTag		      "RRFz"
@@ -4825,7 +4765,7 @@ Model {
       BlockType		      From
       Name		      "From47"
       SID		      "5380"
-      Position		      [1390, -94, 1430, -66]
+      Position		      [1375, -29, 1415, -1]
       ZOrder		      86
       ShowName		      off
       GotoTag		      "T_P"
@@ -4915,7 +4855,7 @@ Model {
       BlockType		      From
       Name		      "From56"
       SID		      "5381"
-      Position		      [1465, 221, 1505, 249]
+      Position		      [1375, 201, 1415, 229]
       ZOrder		      87
       ShowName		      off
       GotoTag		      "T_P"
@@ -4959,7 +4899,7 @@ Model {
       BlockType		      From
       Name		      "From9"
       SID		      "2815"
-      Position		      [1465, 171, 1505, 199]
+      Position		      [1375, 151, 1415, 179]
       ZOrder		      -72
       ShowName		      off
       GotoTag		      "RRVx"
@@ -5194,7 +5134,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto12"
       SID		      "4093"
-      Position		      [1700, -159, 1745, -131]
+      Position		      [1685, -94, 1730, -66]
       ZOrder		      -77
       ShowName		      off
       GotoTag		      "FRFx"
@@ -5223,7 +5163,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto15"
       SID		      "2834"
-      Position		      [1775, 126, 1820, 154]
+      Position		      [1685, 106, 1730, 134]
       ZOrder		      -80
       ShowName		      off
       GotoTag		      "RRw"
@@ -5276,7 +5216,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto2"
       SID		      "2839"
-      Position		      [1775, 156, 1820, 184]
+      Position		      [1685, 136, 1730, 164]
       ZOrder		      -85
       ShowName		      off
       GotoTag		      "RRFx"
@@ -5329,7 +5269,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto24"
       SID		      "4047"
-      Position		      [905, -189, 950, -161]
+      Position		      [1030, -109, 1075, -81]
       ZOrder		      -90
       ShowName		      off
       GotoTag		      "FLw"
@@ -5338,7 +5278,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto25"
       SID		      "4048"
-      Position		      [905, -159, 950, -131]
+      Position		      [1030, -79, 1075, -51]
       ZOrder		      -91
       ShowName		      off
       GotoTag		      "FLFx"
@@ -5347,7 +5287,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto26"
       SID		      "4049"
-      Position		      [905, -129, 950, -101]
+      Position		      [1030, -49, 1075, -21]
       ZOrder		      -92
       ShowName		      off
       GotoTag		      "FLFy"
@@ -5356,7 +5296,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto27"
       SID		      "4094"
-      Position		      [1700, -129, 1745, -101]
+      Position		      [1685, -64, 1730, -36]
       ZOrder		      -93
       ShowName		      off
       GotoTag		      "FRFy"
@@ -5374,7 +5314,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto29"
       SID		      "4226"
-      Position		      [1775, 216, 1820, 244]
+      Position		      [1685, 196, 1730, 224]
       ZOrder		      -95
       ShowName		      off
       GotoTag		      "RR_SR"
@@ -5392,7 +5332,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto30"
       SID		      "4228"
-      Position		      [1700, -99, 1745, -71]
+      Position		      [1685, -34, 1730, -6]
       ZOrder		      -97
       ShowName		      off
       GotoTag		      "FR_SR"
@@ -5401,7 +5341,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto31"
       SID		      "4230"
-      Position		      [905, -99, 950, -71]
+      Position		      [1030, -19, 1075, 9]
       ZOrder		      -98
       ShowName		      off
       GotoTag		      "FL_SR"
@@ -5482,7 +5422,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto4"
       SID		      "4092"
-      Position		      [1700, -189, 1745, -161]
+      Position		      [1685, -124, 1730, -96]
       ZOrder		      -107
       ShowName		      off
       GotoTag		      "FRw"
@@ -5518,7 +5458,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto6"
       SID		      "2843"
-      Position		      [1775, 186, 1820, 214]
+      Position		      [1685, 166, 1730, 194]
       ZOrder		      -109
       ShowName		      off
       GotoTag		      "RRFy"
@@ -5770,7 +5710,7 @@ Model {
       ModelNameDialog	      "Controller_ABS_VLC_AYC_ALGO2.mdl"
       SimulationMode	      "Normal"
       Variant		      off
-      ModelReferenceVersion   "1.351"
+      ModelReferenceVersion   "1.352"
       List {
 	ListType		InputPortNames
 	port0			"Vx_cont"
@@ -5918,7 +5858,7 @@ Model {
       System {
 	Name			"RL Tire Mode"
 	Location		[99, 20, 1714, 998]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -7157,8 +7097,18 @@ Model {
 	  ZOrder		  3
 	  SrcBlock		  "Torque [Nm]"
 	  SrcPort		  1
-	  DstBlock		  "Gear Reduction Ratio"
-	  DstPort		  1
+	  Points		  [127, 0]
+	  Branch {
+	    ZOrder		    50
+	    Points		    [0, 280]
+	    DstBlock		    "Switch"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    49
+	    DstBlock		    "Gear Reduction Ratio"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  ZOrder		  6
@@ -7381,14 +7331,6 @@ Model {
 	    DstPort		    1
 	  }
 	}
-	Line {
-	  ZOrder		  46
-	  SrcBlock		  "Throttle Position [%]"
-	  SrcPort		  1
-	  Points		  [137, 0; 0, 55]
-	  DstBlock		  "Switch"
-	  DstPort		  2
-	}
 	Annotation {
 	  SID			  "5256"
 	  Position		  [341, 334, 343, 349]
@@ -7422,7 +7364,7 @@ Model {
       Name		      "RR Tire Mode"
       SID		      "3464"
       Ports		      [5, 4]
-      Position		      [1535, 124, 1740, 246]
+      Position		      [1445, 104, 1650, 226]
       ZOrder		      -122
       BackgroundColor	      "lightBlue"
       RequestExecContextInheritance off
@@ -7680,16 +7622,15 @@ Model {
 	      "66666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372"
 	      "549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
 	      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines"
-	      "',1,'LineNames',{{'combined'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal"
-	      "','-0.0304','MaxYLimReal','0.72296','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.72296','LegendVisibi"
-	      "lity','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.6862745098039"
-	      "22 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.6235294117647"
-	      "06 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823"
-	      "529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>'"
-	      ",'LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'"
-	      "Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY')"
-	      ",extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[130 175 149"
-	      "6 854],'VisibleAtModelOpen','on')"
+	      "',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.03"
+	      "04','MaxYLimReal','0.72296','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.72296','LegendVisibility','o"
+	      "ff','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686"
+	      "274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0"
+	      ".411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.27"
+	      "4509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePr"
+	      "opertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placemen"
+	      "t',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr."
+	      "Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[130 175 1496 854])"
 	    }
 	    Block {
 	      BlockType		      Fcn
@@ -8245,8 +8186,18 @@ Model {
 	  ZOrder		  3
 	  SrcBlock		  "Torque [Nm]"
 	  SrcPort		  1
-	  DstBlock		  "Gear Reduction Ratio"
-	  DstPort		  1
+	  Points		  [129, 0]
+	  Branch {
+	    ZOrder		    56
+	    Points		    [0, 280]
+	    DstBlock		    "Switch"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    55
+	    DstBlock		    "Gear Reduction Ratio"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  ZOrder		  6
@@ -8479,14 +8430,6 @@ Model {
 	    DstPort		    1
 	  }
 	}
-	Line {
-	  ZOrder		  43
-	  SrcBlock		  "Throttle Position [%]"
-	  SrcPort		  1
-	  Points		  [124, 0; 0, 50]
-	  DstBlock		  "Switch"
-	  DstPort		  2
-	}
 	Annotation {
 	  SID			  "5259"
 	  Position		  [421, 409, 423, 424]
@@ -8655,34 +8598,6 @@ Model {
     }
     Block {
       BlockType		      Scope
-      Name		      "Scope10"
-      SID		      "5422"
-      Ports		      [1]
-      Position		      [1485, 14, 1515, 46]
-      ZOrder		      132
-      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
-      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
-      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData10'),extmgr.Configuration('Visuals','Time Domai"
-      "n',true,'SerializedDisplays',{struct('MinYLimReal','-18.75','MaxYLimReal','168.75','YLabelReal','','MinYLimMag',"
-      "'0.00000','MaxYLimMag','168.75','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCol"
-      "or',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666666"
-      "66666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313725"
-      "49019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0."
-      "650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1"
-      ",'LineNames',{{'Switch3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-1"
-      "8.75','MaxYLimReal','168.75','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','168.75','LegendVisibility','of"
-      "f','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627"
-      "4509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1607843"
-      "1372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.07450"
-      "98039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot "
-      "Navigation',true,'PreviousAutoscale','XY','OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'"
-      "Measurements',struct('tcursors',struct('XCoordinates',[1.5 4.5],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],"
-      "'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'"
-      "SettingsPanelOpen',0,'MeasurementsPanelOpen',1)),'Version','2016a')),'Version','2016a','Position',[1 41 1920 964"
-      "])"
-    }
-    Block {
-      BlockType		      Scope
       Name		      "Scope2"
       SID		      "5386"
       Ports		      [1]
@@ -8783,90 +8698,6 @@ Model {
       "'LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Pl"
       "acement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'PreviousAutoscale','XY'),extmgr.Configuration("
       "'Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[971 83 1913 1091])"
-    }
-    Block {
-      BlockType		      Scope
-      Name		      "Scope6"
-      SID		      "5414"
-      Ports		      [1]
-      Position		      [675, -331, 705, -299]
-      ZOrder		      128
-      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
-      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
-      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData5'),extmgr.Configuration('Visuals','Time Domain"
-      "',true,'SerializedDisplays',{struct('MinYLimReal','-50.39734','MaxYLimReal','172.26637','YLabelReal','','MinYLim"
-      "Mag','0.00000','MaxYLimMag','172.26637','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,"
-      "'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0."
-      "0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0"
-      ".831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980392"
-      "15686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'Num"
-      "Lines',1,'LineNames',{{'Switch'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimRe"
-      "al','-50.39734','MaxYLimReal','172.26637','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','172.26637','Legen"
-      "dVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.6862745"
-      "09803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705"
-      "882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.8313725"
-      "49019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuratio"
-      "n('Tools','Plot Navigation',true,'PreviousAutoscale','XY','OnceAtStop',false),extmgr.Configuration('Tools','Meas"
-      "urements',true,'Measurements',struct('tcursors',struct('XCoordinates',[1.5 4.5],'YCoordinates',[NaN NaN],'Cursor"
-      "Channels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'Sna"
-      "pToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)),'Version','2016a')),'Version','2016a','Position"
-      "',[1 41 1920 964])"
-    }
-    Block {
-      BlockType		      Scope
-      Name		      "Scope7"
-      SID		      "5419"
-      Ports		      [1]
-      Position		      [715, -1, 745, 31]
-      ZOrder		      129
-      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
-      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
-      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData7'),extmgr.Configuration('Visuals','Time Domain"
-      "',true,'SerializedDisplays',{struct('MinYLimReal','-18.75','MaxYLimReal','168.75','YLabelReal','','MinYLimMag','"
-      "0.00000','MaxYLimMag','168.75','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColo"
-      "r',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666666"
-      "6666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137254"
-      "9019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.6"
-      "50980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,"
-      "'LineNames',{{'Switch1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-18"
-      ".75','MaxYLimReal','168.75','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','168.75','LegendVisibility','off"
-      "','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274"
-      "509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431"
-      "372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.074509"
-      "8039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot N"
-      "avigation',true,'PreviousAutoscale','XY','OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'M"
-      "easurements',struct('tcursors',struct('XCoordinates',[1.5 4.5],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'"
-      "WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'S"
-      "ettingsPanelOpen',0,'MeasurementsPanelOpen',1)),'Version','2016a')),'Version','2016a','Position',[1 41 1920 964]"
-      ")"
-    }
-    Block {
-      BlockType		      Scope
-      Name		      "Scope9"
-      SID		      "5421"
-      Ports		      [1]
-      Position		      [1430, -366, 1460, -334]
-      ZOrder		      131
-      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
-      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
-      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData9'),extmgr.Configuration('Visuals','Time Domain"
-      "',true,'SerializedDisplays',{struct('MinYLimReal','-21.95778','MaxYLimReal','155.40149','YLabelReal','','MinYLim"
-      "Mag','0.00000','MaxYLimMag','155.40149','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,"
-      "'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0."
-      "0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0"
-      ".831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980392"
-      "15686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'Num"
-      "Lines',1,'LineNames',{{'Switch2'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimR"
-      "eal','-21.95778','MaxYLimReal','155.40149','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','155.40149','Lege"
-      "ndVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274"
-      "509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.41176470"
-      "5882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372"
-      "549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configurati"
-      "on('Tools','Plot Navigation',true,'PreviousAutoscale','XY','OnceAtStop',false),extmgr.Configuration('Tools','Mea"
-      "surements',true,'Measurements',struct('tcursors',struct('XCoordinates',[1.5 4.5],'YCoordinates',[NaN NaN],'Curso"
-      "rChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'Sn"
-      "apToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)),'Version','2016a')),'Version','2016a','Positio"
-      "n',[1 41 1920 964])"
     }
     Block {
       BlockType		      SubSystem
@@ -8994,50 +8825,6 @@ Model {
       Before		      "Throttle_Init_Val"
       After		      "Throttle_Final_Val"
       SampleTime	      "0"
-    }
-    Block {
-      BlockType		      Switch
-      Name		      "Switch"
-      SID		      "5402"
-      Position		      [470, -250, 520, -210]
-      ZOrder		      116
-      Criteria		      "u2 > Threshold"
-      Threshold		      "TQ_CTRL_ON_TIME"
-      InputSameDT	      off
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Switch
-      Name		      "Switch1"
-      SID		      "5407"
-      Position		      [570, 40, 620, 80]
-      ZOrder		      120
-      Criteria		      "u2 > Threshold"
-      Threshold		      "TQ_CTRL_ON_TIME"
-      InputSameDT	      off
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Switch
-      Name		      "Switch2"
-      SID		      "5410"
-      Position		      [1255, -300, 1305, -260]
-      ZOrder		      123
-      Criteria		      "u2 > Threshold"
-      Threshold		      "TQ_CTRL_ON_TIME"
-      InputSameDT	      off
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Switch
-      Name		      "Switch3"
-      SID		      "5413"
-      Position		      [1340, 45, 1390, 85]
-      ZOrder		      126
-      Criteria		      "u2 > Threshold"
-      Threshold		      "TQ_CTRL_ON_TIME"
-      InputSameDT	      off
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      SubSystem
@@ -9542,7 +9329,7 @@ Model {
       BlockType		      UnitDelay
       Name		      "Unit Delay"
       SID		      "5221"
-      Position		      [545, -197, 580, -163]
+      Position		      [670, -117, 705, -83]
       ZOrder		      37
       InitialCondition	      "10"
       InputProcessing	      "Elements as channels (sample based)"
@@ -9562,7 +9349,7 @@ Model {
       BlockType		      UnitDelay
       Name		      "Unit Delay2"
       SID		      "5293"
-      Position		      [1325, -247, 1360, -213]
+      Position		      [1305, -137, 1340, -103]
       ZOrder		      39
       InitialCondition	      "10"
       InputProcessing	      "Elements as channels (sample based)"
@@ -9572,7 +9359,7 @@ Model {
       BlockType		      UnitDelay
       Name		      "Unit Delay3"
       SID		      "5294"
-      Position		      [1410, 98, 1445, 132]
+      Position		      [1300, 83, 1335, 117]
       ZOrder		      40
       InitialCondition	      "10"
       InputProcessing	      "Elements as channels (sample based)"
@@ -12632,7 +12419,7 @@ Model {
       ZOrder		      433
       SrcBlock		      "Unit Delay3"
       SrcPort		      1
-      Points		      [40, 0; 0, 20]
+      Points		      [50, 0; 0, 15]
       DstBlock		      "RR Tire Mode"
       DstPort		      1
     }
@@ -12640,7 +12427,7 @@ Model {
       ZOrder		      442
       SrcBlock		      "Unit Delay2"
       SrcPort		      1
-      Points		      [47, 0; 0, 50]
+      Points		      [33, 0; 0, 5]
       DstBlock		      "FR Tire Mode"
       DstPort		      1
     }
@@ -12816,167 +12603,32 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      934
+      ZOrder		      981
       SrcBlock		      "From26"
       SrcPort		      1
-      DstBlock		      "Switch"
+      DstBlock		      "Unit Delay"
       DstPort		      1
     }
     Line {
-      ZOrder		      936
-      SrcBlock		      "Digital Clock2"
-      SrcPort		      1
-      Points		      [9, 0; 0, 100]
-      DstBlock		      "Switch"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      937
-      SrcBlock		      "Constant2"
-      SrcPort		      1
-      Points		      [13, 0; 0, -35]
-      DstBlock		      "Switch"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      943
-      SrcBlock		      "Switch1"
-      SrcPort		      1
-      Points		      [5, 0]
-      Branch {
-	ZOrder			961
-	Points			[0, -45]
-	DstBlock		"Scope7"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			960
-	Points			[4, 0; 0, 50]
-	DstBlock		"Unit Delay1"
-	DstPort			1
-      }
-    }
-    Line {
-      ZOrder		      942
+      ZOrder		      982
       SrcBlock		      "From27"
       SrcPort		      1
-      DstBlock		      "Switch1"
+      DstBlock		      "Unit Delay1"
       DstPort		      1
     }
     Line {
-      ZOrder		      940
-      SrcBlock		      "Digital Clock3"
-      SrcPort		      1
-      Points		      [9, 0; 0, 100]
-      DstBlock		      "Switch1"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      941
-      SrcBlock		      "Constant3"
-      SrcPort		      1
-      Points		      [13, 0; 0, -35]
-      DstBlock		      "Switch1"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      948
-      SrcBlock		      "Switch2"
-      SrcPort		      1
-      Points		      [5, 0]
-      Branch {
-	ZOrder			963
-	Points			[0, -70]
-	DstBlock		"Scope9"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			962
-	Points			[0, 50]
-	DstBlock		"Unit Delay2"
-	DstPort			1
-      }
-    }
-    Line {
-      ZOrder		      949
+      ZOrder		      983
       SrcBlock		      "From28"
       SrcPort		      1
-      DstBlock		      "Switch2"
+      DstBlock		      "Unit Delay2"
       DstPort		      1
     }
     Line {
-      ZOrder		      946
-      SrcBlock		      "Digital Clock4"
-      SrcPort		      1
-      Points		      [9, 0; 0, 100]
-      DstBlock		      "Switch2"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      947
-      SrcBlock		      "Constant4"
-      SrcPort		      1
-      Points		      [13, 0; 0, -35]
-      DstBlock		      "Switch2"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      954
-      SrcBlock		      "Switch3"
-      SrcPort		      1
-      Points		      [5, 0]
-      Branch {
-	ZOrder			966
-	Points			[0, 50]
-	DstBlock		"Unit Delay3"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			965
-	Points			[0, -35]
-	DstBlock		"Scope10"
-	DstPort			1
-      }
-    }
-    Line {
-      ZOrder		      955
+      ZOrder		      984
       SrcBlock		      "From29"
       SrcPort		      1
-      DstBlock		      "Switch3"
+      DstBlock		      "Unit Delay3"
       DstPort		      1
-    }
-    Line {
-      ZOrder		      952
-      SrcBlock		      "Digital Clock5"
-      SrcPort		      1
-      Points		      [9, 0; 0, 100]
-      DstBlock		      "Switch3"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      953
-      SrcBlock		      "Constant5"
-      SrcPort		      1
-      Points		      [13, 0; 0, -35]
-      DstBlock		      "Switch3"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      933
-      SrcBlock		      "Switch"
-      SrcPort		      1
-      Points		      [5, 0]
-      Branch {
-	ZOrder			959
-	DstBlock		"Unit Delay"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			958
-	Points			[0, -85]
-	DstBlock		"Scope6"
-	DstPort			1
-      }
     }
     Annotation {
       SID		      "5270"
