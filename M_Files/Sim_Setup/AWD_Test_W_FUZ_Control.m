@@ -104,10 +104,11 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 %%
 %%
 % Sliding Mode Controller Settings
-Target_SR = 0.95;
+Target_SR = 0.1;
 PWM_Low_Lim = 0.05;
 Slip_Err_P_Gain = 1;
-Slip_Err_D_Gain = 1;
+Slip_Err_D_Gain = .1;
+PWM_SW_Threshold = 0;
 
 %% Parameters
 g = 9.81;               %   Gravity acceleration [m/s^2]
