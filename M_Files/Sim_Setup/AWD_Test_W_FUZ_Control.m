@@ -31,32 +31,32 @@ Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working D
 %StopBand = 200;
 
 %%
-%ABS Test
-Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
-
-Throttle_Step_Time = 0.2;       %Step time of throttle signal
-Throttle_Init_Val = 0;          %Initial throttle value
-Throttle_Final_Val = -1;        %Final throttle value
-
-Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
-SA_Start_Time = 500;            %Don't Care since channel not selected
-SA_Slope = 1;                   %Don't Care since channel not selected
-
-Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
-%%
-%%
-% %VLC Test
+% %ABS Test
 % Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
 % 
-% Throttle_Step_Time = 0.05;       %Step time of throttle signal
+% Throttle_Step_Time = 0.2;       %Step time of throttle signal
 % Throttle_Init_Val = 0;          %Initial throttle value
-% Throttle_Final_Val = 1;         %Final throttle value
+% Throttle_Final_Val = -1;        %Final throttle value
 % 
 % Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
 % SA_Start_Time = 500;            %Don't Care since channel not selected
 % SA_Slope = 1;                   %Don't Care since channel not selected
 % 
-% Vx0 = 0.1;                     % Initial vehicle longitude speed [m/s]
+% Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
+%%
+%%
+%VLC Test
+Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
+
+Throttle_Step_Time = 0.05;       %Step time of throttle signal
+Throttle_Init_Val = 0;          %Initial throttle value
+Throttle_Final_Val = 1;         %Final throttle value
+
+Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
+SA_Start_Time = 500;            %Don't Care since channel not selected
+SA_Slope = 1;                   %Don't Care since channel not selected
+
+Vx0 = 0.6;                     % Initial vehicle longitude speed [m/s]
 
 %%
 %%
@@ -104,7 +104,7 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 %%
 %%
 % Sliding Mode Controller Settings
-Target_SR = 0.1;
+Target_SR = -0.3;
 PWM_Low_Lim = 0.05;
 Slip_Err_P_Gain = 1;
 Slip_Err_D_Gain = .1;
