@@ -60,33 +60,33 @@ Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working D
 
 %%
 %%
-%Constant Steering Angle Test
-Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
-
-Throttle_Step_Time = 500;       %Step time of throttle signal
-Throttle_Init_Val = 0;          %Initial throttle value
-Throttle_Final_Val = .1;        %Final throttle value (DOESN'T MATTER)
-
-Steering_Input_Select = 2;      %Steering Angle Selection (2 = Ramp)
-SA_Start_Time = .2;
-SA_Slope = 1;
-
-Vx0 =13.41;                     % Initial vehicle longitude speed [m/s]
-
-%%
-%%
-% %Split-u Test
-% Split_u_Time_On = 1;          %Set time for split-u to start (Keep off w large time)
+% %Constant Steering Angle Test
+% Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
 % 
-% Throttle_Step_Time = 1.5;       %Step time of throttle signal
+% Throttle_Step_Time = 500;       %Step time of throttle signal
 % Throttle_Init_Val = 0;          %Initial throttle value
-% Throttle_Final_Val = -1;        %Final throttle value (DOESN'T MATTER)
+% Throttle_Final_Val = .1;        %Final throttle value (DOESN'T MATTER)
 % 
-% Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
+% Steering_Input_Select = 2;      %Steering Angle Selection (2 = Ramp)
 % SA_Start_Time = .2;
 % SA_Slope = 1;
 % 
-% Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
+% Vx0 =13.41;                     % Initial vehicle longitude speed [m/s]
+
+%%
+%%
+%Split-u Test
+Split_u_Time_On = 1;          %Set time for split-u to start (Keep off w large time)
+
+Throttle_Step_Time = 1.5;       %Step time of throttle signal
+Throttle_Init_Val = 0;          %Initial throttle value
+Throttle_Final_Val = -1;        %Final throttle value (DOESN'T MATTER)
+
+Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
+SA_Start_Time = .2;
+SA_Slope = 1;
+
+Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
 %%
 %%
 %Variables wich remain constant for all tests
