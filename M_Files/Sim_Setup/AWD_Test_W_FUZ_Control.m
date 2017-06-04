@@ -77,7 +77,7 @@ Split_u_Time_On = 1;          %Set time for split-u to start (Keep off w large t
 
 Throttle_Step_Time = 1.5;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
-Throttle_Final_Val = -0.5;        %Final throttle value (DOESN'T MATTER)
+Throttle_Final_Val = -1;        %Final throttle value (DOESN'T MATTER)
 
 Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
 SA_Start_Time = .2;
@@ -100,6 +100,12 @@ T_Avail = 150;          % Peak Torque available by motors [Nm]
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
+
+m_2 = 1;
+m_1 = 5000;
+m_0 = 6250000;
+
+n_0 = 6250000;
 %D_Slip = 0.1;            % Desired slip for PID
 
 %%
