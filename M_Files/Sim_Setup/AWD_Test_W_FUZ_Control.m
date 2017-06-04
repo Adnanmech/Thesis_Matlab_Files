@@ -77,7 +77,7 @@ Split_u_Time_On = 1;          %Set time for split-u to start (Keep off w large t
 
 Throttle_Step_Time = 1.5;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
-Throttle_Final_Val = -1;        %Final throttle value (DOESN'T MATTER)
+Throttle_Final_Val = -.75;        %Final throttle value (DOESN'T MATTER)
 
 Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
 SA_Start_Time = .2;
@@ -131,7 +131,7 @@ Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 Jw = 1.2;            %   Wheel rotational moment of inertial >>Inertia = Mass(at radius r) * radius^2; sum multiple masses at diff radii for total
                     %   Value should be 0.3-0.5
 
-Rw = .3;           %   Wheel rolling radius [m]
+Rw = .6;           %   Wheel rolling radius [m]
 
 % Magic formular (Longitudinal)
 Kxnorm = 30;      % normalized stiffness

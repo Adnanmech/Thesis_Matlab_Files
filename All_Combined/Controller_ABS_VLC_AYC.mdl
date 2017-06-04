@@ -91,7 +91,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.146"
+    ComputedModelVersion    "1.147"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -127,7 +127,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [85.0, 162.0, 1920.0, 1040.0]
+      Location		      [0.0, 0.0, 1920.0, 1040.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -152,8 +152,8 @@ Model {
 	ViewObjType		"SimulinkSubsys"
 	LoadSaveID		"1"
 	Extents			[1677.0, 866.0]
-	ZoomFactor		[0.5]
-	Offset			[191.45952380953031, -70.091964494339777]
+	ZoomFactor		[0.3]
+	Offset			[-869.23333333333267, -803.26666666666745]
       }
     }
   }
@@ -163,9 +163,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu May 25 00:29:28 2017"
-  RTWModifiedTimeStamp	  417572863
-  ModelVersionFormat	  "1.%<AutoIncrement:146>"
+  LastModifiedDate	  "Sat Jun 03 20:38:38 2017"
+  RTWModifiedTimeStamp	  418423115
+  ModelVersionFormat	  "1.%<AutoIncrement:147>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1558,20 +1558,6 @@ Model {
       SampleTime	      "-1"
     }
     Block {
-      BlockType		      MinMax
-      Function		      "min"
-      Inputs		      "1"
-      InputSameDT	      on
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      LockScale		      off
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	on
-      ZeroCross		      on
-      SampleTime	      "-1"
-    }
-    Block {
       BlockType		      Mux
       Inputs		      "4"
       DisplayOption	      "none"
@@ -1596,21 +1582,6 @@ Model {
       SourceOfInitialOutputValue "Dialog"
       OutputWhenDisabled      "held"
       InitialOutput	      "[]"
-    }
-    Block {
-      BlockType		      Saturate
-      UpperLimitSource	      "Dialog"
-      UpperLimit	      "0.5"
-      LowerLimitSource	      "Dialog"
-      LowerLimit	      "-0.5"
-      LinearizeAsGain	      on
-      ZeroCross		      on
-      SampleTime	      "-1"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Same as input"
-      LockScale		      off
-      RndMeth		      "Floor"
     }
     Block {
       BlockType		      Scope
@@ -1796,7 +1767,7 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[85, 162, 2005, 1202]
+	Location		[0, 0, 1920, 1040]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
@@ -1808,7 +1779,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"50"
+	ZoomFactor		"30"
 	Block {
 	  BlockType		  Inport
 	  Name			  "longitudinal speed [m/s]"
@@ -2017,90 +1988,6 @@ Model {
 	  Position		  [2785, 198, 2850, 222]
 	  ZOrder		  60
 	  SampleTime		  "0.001"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "FL Saturation\nDynamic"
-	  SID			  "403"
-	  Ports			  [3, 1]
-	  Position		  [1980, 380, 2060, 430]
-	  ZOrder		  83
-	  LibraryVersion	  "1.386"
-	  SourceBlock		  "simulink/Discontinuities/Saturation\nDynamic"
-	  SourceType		  "Saturation Dynamic"
-	  ContentPreviewEnabled	  off
-	  OutMin		  "[]"
-	  OutMax		  "[]"
-	  OutDataTypeStr	  "Inherit: Same as second input"
-	  OutputDataTypeScalingMode "Same as second input"
-	  OutDataType		  "fixdt(1, 16)"
-	  OutScaling		  "2^-10"
-	  LockScale		  off
-	  RndMeth		  "Floor"
-	  DoSatur		  off
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "FL Saturation\nDynamic1"
-	  SID			  "409"
-	  Ports			  [3, 1]
-	  Position		  [1980, 575, 2060, 625]
-	  ZOrder		  84
-	  LibraryVersion	  "1.386"
-	  SourceBlock		  "simulink/Discontinuities/Saturation\nDynamic"
-	  SourceType		  "Saturation Dynamic"
-	  ContentPreviewEnabled	  off
-	  OutMin		  "[]"
-	  OutMax		  "[]"
-	  OutDataTypeStr	  "Inherit: Same as second input"
-	  OutputDataTypeScalingMode "Same as second input"
-	  OutDataType		  "fixdt(1, 16)"
-	  OutScaling		  "2^-10"
-	  LockScale		  off
-	  RndMeth		  "Floor"
-	  DoSatur		  off
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "FL Saturation\nDynamic2"
-	  SID			  "410"
-	  Ports			  [3, 1]
-	  Position		  [1980, 800, 2060, 850]
-	  ZOrder		  85
-	  LibraryVersion	  "1.386"
-	  SourceBlock		  "simulink/Discontinuities/Saturation\nDynamic"
-	  SourceType		  "Saturation Dynamic"
-	  ContentPreviewEnabled	  off
-	  OutMin		  "[]"
-	  OutMax		  "[]"
-	  OutDataTypeStr	  "Inherit: Same as second input"
-	  OutputDataTypeScalingMode "Same as second input"
-	  OutDataType		  "fixdt(1, 16)"
-	  OutScaling		  "2^-10"
-	  LockScale		  off
-	  RndMeth		  "Floor"
-	  DoSatur		  off
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "FL Saturation\nDynamic3"
-	  SID			  "411"
-	  Ports			  [3, 1]
-	  Position		  [1980, 1020, 2060, 1070]
-	  ZOrder		  86
-	  LibraryVersion	  "1.386"
-	  SourceBlock		  "simulink/Discontinuities/Saturation\nDynamic"
-	  SourceType		  "Saturation Dynamic"
-	  ContentPreviewEnabled	  off
-	  OutMin		  "[]"
-	  OutMax		  "[]"
-	  OutDataTypeStr	  "Inherit: Same as second input"
-	  OutputDataTypeScalingMode "Same as second input"
-	  OutDataType		  "fixdt(1, 16)"
-	  OutScaling		  "2^-10"
-	  LockScale		  off
-	  RndMeth		  "Floor"
-	  DoSatur		  off
 	}
 	Block {
 	  BlockType		  SubSystem
@@ -3005,7 +2892,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "80"
+	    ZoomFactor		    "60"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Yaw Error [rad/s]"
@@ -3787,28 +3674,6 @@ Model {
 	}
 	Block {
 	  BlockType		  Gain
-	  Name			  "Gain12"
-	  SID			  "432"
-	  Position		  [1795, 1180, 1825, 1210]
-	  ZOrder		  105
-	  Gain			  "Torque_Diff_Gain"
-	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Gain
-	  Name			  "Gain13"
-	  SID			  "433"
-	  Position		  [1795, 1285, 1825, 1315]
-	  ZOrder		  106
-	  Gain			  "Torque_Diff_Gain"
-	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Gain
 	  Name			  "Gain2"
 	  SID			  "327"
 	  Position		  [3185, 800, 3215, 830]
@@ -3849,17 +3714,6 @@ Model {
 	}
 	Block {
 	  BlockType		  Gain
-	  Name			  "Gain6"
-	  SID			  "412"
-	  Position		  [1795, 90, 1825, 120]
-	  ZOrder		  87
-	  Gain			  "Torque_Diff_Gain"
-	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Gain
 	  Name			  "Gain7"
 	  SID			  "407"
 	  Position		  [2175, 810, 2205, 840]
@@ -3874,17 +3728,6 @@ Model {
 	  SID			  "408"
 	  Position		  [2175, 1030, 2205, 1060]
 	  ZOrder		  69
-	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Gain
-	  Name			  "Gain9"
-	  SID			  "413"
-	  Position		  [1795, 195, 1825, 225]
-	  ZOrder		  88
-	  Gain			  "Torque_Diff_Gain"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -3927,36 +3770,6 @@ Model {
 	  "39065202784 0.00079356770259349],'YCoordinates',[NaN NaN],'CursorChannels',[2 2],'WaveformCursors',true,'ShowHorizo"
 	  "ntal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPan"
 	  "elOpen',1)))),'Version','2016a','Location',[1 598 849 1079],'WindowStyle','docked')"
-	}
-	Block {
-	  BlockType		  Scope
-	  Name			  "Left Torque Scope1"
-	  SID			  "414"
-	  Ports			  [1]
-	  Position		  [2095, 219, 2125, 251]
-	  ZOrder		  90
-	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
-	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
-	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData1','DataLoggingSaveFormat','StructureWithTime','DataLogg"
-	  "ingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDis"
-	  "plays',{struct('MinYLimReal','-185.64224','MaxYLimReal','20.78016','YLabelReal','','MinYLimMag',' 0.00000','MaxYLim"
-	  "Mag','185.64224','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesT"
-	  "ickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039"
-	  "215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215"
-	  "686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%"
-	  "<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Gain6','Gain9'"
-	  "}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-185.64224','MaxYLimReal','20"
-	  ".78016','YLabelReal','','MinYLimMag',' 0.00000','MaxYLimMag','185.64224','LegendVisibility','off','XGrid',true,'YGr"
-	  "id',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862745098"
-	  "03922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1607843137"
-	  "2549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.058823529411764"
-	  "7 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChann"
-	  "elNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot"
-	  " Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Ve"
-	  "rsion','2016a','Measurements',struct('traceselector',struct('Line',2),'tcursors',struct('XCoordinates',[0.000432039"
-	  "065202784 0.00079356770259349],'YCoordinates',[NaN NaN],'CursorChannels',[2 2],'WaveformCursors',true,'ShowHorizont"
-	  "al',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanel"
-	  "Open',1)))),'Version','2016a','Location',[1 598 849 1079],'WindowStyle','docked')"
 	}
 	Block {
 	  BlockType		  Reference
@@ -4055,52 +3868,6 @@ Model {
 	  SimulateUsing		  "Interpreted execution"
 	}
 	Block {
-	  BlockType		  MinMax
-	  Name			  "MinMax"
-	  SID			  "397"
-	  Ports			  [2, 1]
-	  Position		  [1705, 172, 1755, 248]
-	  ZOrder		  81
-	  Function		  "max"
-	  Inputs		  "2"
-	  InputSameDT		  off
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  MinMax
-	  Name			  "MinMax1"
-	  SID			  "398"
-	  Ports			  [2, 1]
-	  Position		  [1705, 57, 1755, 148]
-	  ZOrder		  82
-	  Inputs		  "2"
-	  InputSameDT		  off
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  MinMax
-	  Name			  "MinMax4"
-	  SID			  "434"
-	  Ports			  [2, 1]
-	  Position		  [1705, 1262, 1755, 1338]
-	  ZOrder		  103
-	  Function		  "max"
-	  Inputs		  "2"
-	  InputSameDT		  off
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  MinMax
-	  Name			  "MinMax5"
-	  SID			  "435"
-	  Ports			  [2, 1]
-	  Position		  [1705, 1147, 1755, 1238]
-	  ZOrder		  104
-	  Inputs		  "2"
-	  InputSameDT		  off
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
 	  BlockType		  Mux
 	  Name			  "Mux"
 	  SID			  "73"
@@ -4118,17 +3885,6 @@ Model {
 	  Ports			  [2, 1]
 	  Position		  [3455, 1080, 3465, 1180]
 	  ZOrder		  -18
-	  ShowName		  off
-	  Inputs		  "2"
-	  DisplayOption		  "bar"
-	}
-	Block {
-	  BlockType		  Mux
-	  Name			  "Mux2"
-	  SID			  "415"
-	  Ports			  [2, 1]
-	  Position		  [2005, 185, 2015, 285]
-	  ZOrder		  89
 	  ShowName		  off
 	  Inputs		  "2"
 	  DisplayOption		  "bar"
@@ -4974,94 +4730,6 @@ Model {
 	  "elNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot"
 	  " Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Ve"
 	  "rsion','2016a')),'Version','2016a','Location',[8 83 1632 938])"
-	}
-	Block {
-	  BlockType		  Saturate
-	  Name			  "Saturation"
-	  SID			  "428"
-	  Ports			  [1, 1]
-	  Position		  [1640, 65, 1670, 95]
-	  ZOrder		  99
-	  InputPortMap		  "u0"
-	  UpperLimit		  "170"
-	  LowerLimit		  "0"
-	}
-	Block {
-	  BlockType		  Saturate
-	  Name			  "Saturation1"
-	  SID			  "429"
-	  Ports			  [1, 1]
-	  Position		  [1640, 110, 1670, 140]
-	  ZOrder		  100
-	  InputPortMap		  "u0"
-	  UpperLimit		  "170"
-	  LowerLimit		  "0"
-	}
-	Block {
-	  BlockType		  Saturate
-	  Name			  "Saturation2"
-	  SID			  "430"
-	  Ports			  [1, 1]
-	  Position		  [1640, 175, 1670, 205]
-	  ZOrder		  101
-	  InputPortMap		  "u0"
-	  UpperLimit		  "0"
-	  LowerLimit		  "-170"
-	}
-	Block {
-	  BlockType		  Saturate
-	  Name			  "Saturation3"
-	  SID			  "431"
-	  Ports			  [1, 1]
-	  Position		  [1640, 215, 1670, 245]
-	  ZOrder		  102
-	  InputPortMap		  "u0"
-	  UpperLimit		  "0"
-	  LowerLimit		  "-170"
-	}
-	Block {
-	  BlockType		  Saturate
-	  Name			  "Saturation4"
-	  SID			  "436"
-	  Ports			  [1, 1]
-	  Position		  [1640, 1155, 1670, 1185]
-	  ZOrder		  107
-	  InputPortMap		  "u0"
-	  UpperLimit		  "170"
-	  LowerLimit		  "0"
-	}
-	Block {
-	  BlockType		  Saturate
-	  Name			  "Saturation5"
-	  SID			  "437"
-	  Ports			  [1, 1]
-	  Position		  [1640, 1200, 1670, 1230]
-	  ZOrder		  108
-	  InputPortMap		  "u0"
-	  UpperLimit		  "170"
-	  LowerLimit		  "0"
-	}
-	Block {
-	  BlockType		  Saturate
-	  Name			  "Saturation6"
-	  SID			  "438"
-	  Ports			  [1, 1]
-	  Position		  [1640, 1265, 1670, 1295]
-	  ZOrder		  109
-	  InputPortMap		  "u0"
-	  UpperLimit		  "0"
-	  LowerLimit		  "-170"
-	}
-	Block {
-	  BlockType		  Saturate
-	  Name			  "Saturation7"
-	  SID			  "439"
-	  Ports			  [1, 1]
-	  Position		  [1640, 1305, 1670, 1335]
-	  ZOrder		  110
-	  InputPortMap		  "u0"
-	  UpperLimit		  "0"
-	  LowerLimit		  "-170"
 	}
 	Block {
 	  BlockType		  Switch
@@ -6004,313 +5672,32 @@ Model {
 	  }
 	}
 	Line {
-	  ZOrder		  380
-	  SrcBlock		  "FL Saturation\nDynamic"
+	  ZOrder		  480
+	  SrcBlock		  "FL Torque Gains and Saturation"
 	  SrcPort		  1
 	  DstBlock		  "Gain4"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  379
-	  SrcBlock		  "FL Saturation\nDynamic1"
+	  ZOrder		  482
+	  SrcBlock		  "FR Torque Gains and Saturation"
 	  SrcPort		  1
 	  DstBlock		  "Gain5"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  377
-	  SrcBlock		  "FL Saturation\nDynamic2"
+	  ZOrder		  483
+	  SrcBlock		  "RL Torque Gains and Saturation"
 	  SrcPort		  1
 	  DstBlock		  "Gain7"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  378
-	  SrcBlock		  "FL Saturation\nDynamic3"
+	  ZOrder		  485
+	  SrcBlock		  "RR Torque Gains and Saturation"
 	  SrcPort		  1
 	  DstBlock		  "Gain8"
 	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  337
-	  SrcBlock		  "MinMax1"
-	  SrcPort		  1
-	  DstBlock		  "Gain6"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  338
-	  SrcBlock		  "MinMax"
-	  SrcPort		  1
-	  DstBlock		  "Gain9"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  376
-	  SrcBlock		  "RL Torque Gains and Saturation"
-	  SrcPort		  1
-	  Points		  [113, 0]
-	  Branch {
-	    ZOrder		    433
-	    Points		    [0, 345]
-	    Branch {
-	      ZOrder		      435
-	      Points		      [0, 110]
-	      DstBlock		      "Saturation6"
-	      DstPort		      1
-	    }
-	    Branch {
-	      ZOrder		      434
-	      DstBlock		      "Saturation4"
-	      DstPort		      1
-	    }
-	  }
-	  Branch {
-	    ZOrder		    432
-	    DstBlock		    "FL Saturation\nDynamic2"
-	    DstPort		    2
-	  }
-	}
-	Line {
-	  ZOrder		  357
-	  SrcBlock		  "Gain6"
-	  SrcPort		  1
-	  Points		  [76, 0; 0, 105]
-	  Branch {
-	    ZOrder		    356
-	    DstBlock		    "Mux2"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    355
-	    Points		    [0, 180; 2, 0]
-	    Branch {
-	      ZOrder		      441
-	      Points		      [0, 195]
-	      DstBlock		      "FL Saturation\nDynamic1"
-	      DstPort		      1
-	    }
-	    Branch {
-	      ZOrder		      440
-	      DstBlock		      "FL Saturation\nDynamic"
-	      DstPort		      1
-	    }
-	  }
-	}
-	Line {
-	  ZOrder		  366
-	  SrcBlock		  "Gain9"
-	  SrcPort		  1
-	  Points		  [18, 0; 0, 50]
-	  Branch {
-	    ZOrder		    365
-	    DstBlock		    "Mux2"
-	    DstPort		    2
-	  }
-	  Branch {
-	    ZOrder		    364
-	    Points		    [0, 160]
-	    Branch {
-	      ZOrder		      443
-	      Points		      [0, 195]
-	      DstBlock		      "FL Saturation\nDynamic1"
-	      DstPort		      3
-	    }
-	    Branch {
-	      ZOrder		      442
-	      DstBlock		      "FL Saturation\nDynamic"
-	      DstPort		      3
-	    }
-	  }
-	}
-	Line {
-	  ZOrder		  367
-	  SrcBlock		  "Mux2"
-	  SrcPort		  1
-	  DstBlock		  "Left Torque Scope1"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  385
-	  SrcBlock		  "Saturation"
-	  SrcPort		  1
-	  DstBlock		  "MinMax1"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  387
-	  SrcBlock		  "Saturation1"
-	  SrcPort		  1
-	  DstBlock		  "MinMax1"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  374
-	  SrcBlock		  "FL Torque Gains and Saturation"
-	  SrcPort		  1
-	  Points		  [19, 0]
-	  Branch {
-	    ZOrder		    391
-	    Points		    [0, -215]
-	    Branch {
-	      ZOrder		      397
-	      DstBlock		      "Saturation2"
-	      DstPort		      1
-	    }
-	    Branch {
-	      ZOrder		      396
-	      Points		      [0, -110]
-	      DstBlock		      "Saturation"
-	      DstPort		      1
-	    }
-	  }
-	  Branch {
-	    ZOrder		    390
-	    DstBlock		    "FL Saturation\nDynamic"
-	    DstPort		    2
-	  }
-	}
-	Line {
-	  ZOrder		  394
-	  SrcBlock		  "Saturation2"
-	  SrcPort		  1
-	  DstBlock		  "MinMax"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  395
-	  SrcBlock		  "Saturation3"
-	  SrcPort		  1
-	  DstBlock		  "MinMax"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  401
-	  SrcBlock		  "MinMax5"
-	  SrcPort		  1
-	  DstBlock		  "Gain12"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  402
-	  SrcBlock		  "MinMax4"
-	  SrcPort		  1
-	  DstBlock		  "Gain13"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  375
-	  SrcBlock		  "RR Torque Gains and Saturation"
-	  SrcPort		  1
-	  Points		  [79, 0]
-	  Branch {
-	    ZOrder		    419
-	    Points		    [0, 170]
-	    Branch {
-	      ZOrder		      420
-	      Points		      [0, 105]
-	      DstBlock		      "Saturation7"
-	      DstPort		      1
-	    }
-	    Branch {
-	      ZOrder		      411
-	      DstBlock		      "Saturation5"
-	      DstPort		      1
-	    }
-	  }
-	  Branch {
-	    ZOrder		    418
-	    DstBlock		    "FL Saturation\nDynamic3"
-	    DstPort		    2
-	  }
-	}
-	Line {
-	  ZOrder		  405
-	  SrcBlock		  "Saturation4"
-	  SrcPort		  1
-	  DstBlock		  "MinMax5"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  406
-	  SrcBlock		  "Saturation5"
-	  SrcPort		  1
-	  DstBlock		  "MinMax5"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  373
-	  SrcBlock		  "FR Torque Gains and Saturation"
-	  SrcPort		  1
-	  Points		  [39, 0]
-	  Branch {
-	    ZOrder		    428
-	    Points		    [0, -370]
-	    Branch {
-	      ZOrder		      430
-	      DstBlock		      "Saturation3"
-	      DstPort		      1
-	    }
-	    Branch {
-	      ZOrder		      429
-	      Points		      [0, -105]
-	      DstBlock		      "Saturation1"
-	      DstPort		      1
-	    }
-	  }
-	  Branch {
-	    ZOrder		    427
-	    DstBlock		    "FL Saturation\nDynamic1"
-	    DstPort		    2
-	  }
-	}
-	Line {
-	  ZOrder		  409
-	  SrcBlock		  "Saturation6"
-	  SrcPort		  1
-	  DstBlock		  "MinMax4"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  410
-	  SrcBlock		  "Saturation7"
-	  SrcPort		  1
-	  DstBlock		  "MinMax4"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  421
-	  SrcBlock		  "Gain12"
-	  SrcPort		  1
-	  Points		  [113, 0; 0, -165]
-	  Branch {
-	    ZOrder		    437
-	    Points		    [0, -220]
-	    DstBlock		    "FL Saturation\nDynamic2"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    436
-	    DstBlock		    "FL Saturation\nDynamic3"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  ZOrder		  424
-	  SrcBlock		  "Gain13"
-	  SrcPort		  1
-	  Points		  [132, 0; 0, -240; 1, 0]
-	  Branch {
-	    ZOrder		    439
-	    Points		    [0, -220]
-	    DstBlock		    "FL Saturation\nDynamic2"
-	    DstPort		    3
-	  }
-	  Branch {
-	    ZOrder		    438
-	    DstBlock		    "FL Saturation\nDynamic3"
-	    DstPort		    3
-	  }
 	}
 	Annotation {
 	  SID			  "440"
@@ -6331,6 +5718,7 @@ Model {
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
 	  Interpreter		  "rich"
+	  ZOrder		  -1
 	}
 	Annotation {
 	  SID			  "214"

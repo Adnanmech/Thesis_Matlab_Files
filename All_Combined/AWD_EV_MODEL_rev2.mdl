@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.476"
+    ComputedModelVersion    "1.477"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC"
@@ -72,7 +72,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1372.0, 788.0]
 	ZoomFactor		[0.59999999999999987]
-	Offset			[-183.52857142857283, -319.42857142857861]
+	Offset			[-248.90000000000055, -166.08333333334053]
       }
     }
   }
@@ -82,9 +82,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Jun 02 17:38:21 2017"
-  RTWModifiedTimeStamp	  418325858
-  ModelVersionFormat	  "1.%<AutoIncrement:476>"
+  LastModifiedDate	  "Sat Jun 03 20:33:28 2017"
+  RTWModifiedTimeStamp	  418422778
+  ModelVersionFormat	  "1.%<AutoIncrement:477>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1134,14 +1134,6 @@ Model {
       FixptAsFi		      off
       NumInputs		      "1"
       SampleTime	      "0"
-    }
-    Block {
-      BlockType		      TransferFcn
-      Numerator		      "[1]"
-      Denominator	      "[1 2 1]"
-      AbsoluteTolerance	      "auto"
-      ContinuousStateAttributes	"''"
-      Realization	      "auto"
     }
     Block {
       BlockType		      TransportDelay
@@ -4461,7 +4453,7 @@ Model {
       BlockType		      From
       Name		      "From26"
       SID		      "4241"
-      Position		      [265, 56, 305, 84]
+      Position		      [395, 56, 435, 84]
       ZOrder		      -44
       ShowName		      off
       GotoTag		      "TFL"
@@ -4470,7 +4462,7 @@ Model {
       BlockType		      From
       Name		      "From27"
       SID		      "4243"
-      Position		      [415, 251, 455, 279]
+      Position		      [455, 276, 495, 304]
       ZOrder		      -45
       ShowName		      off
       GotoTag		      "TRL"
@@ -4479,7 +4471,7 @@ Model {
       BlockType		      From
       Name		      "From28"
       SID		      "4245"
-      Position		      [765, -134, 805, -106]
+      Position		      [985, 1, 1025, 29]
       ZOrder		      -46
       ShowName		      off
       GotoTag		      "TFR"
@@ -4488,7 +4480,7 @@ Model {
       BlockType		      From
       Name		      "From29"
       SID		      "4247"
-      Position		      [935, 231, 975, 259]
+      Position		      [1045, 231, 1085, 259]
       ZOrder		      -47
       ShowName		      off
       GotoTag		      "TRR"
@@ -9071,42 +9063,6 @@ Model {
       SampleTime	      "-1"
     }
     Block {
-      BlockType		      TransferFcn
-      Name		      "Transfer Fcn"
-      SID		      "5422"
-      Position		      [330, 37, 475, 103]
-      ZOrder		      101
-      Numerator		      "[n_0]"
-      Denominator	      "[m_2 m_1 m_0]"
-    }
-    Block {
-      BlockType		      TransferFcn
-      Name		      "Transfer Fcn1"
-      SID		      "5423"
-      Position		      [900, -153, 1045, -87]
-      ZOrder		      102
-      Numerator		      "[n_0]"
-      Denominator	      "[m_2 m_1 m_0]"
-    }
-    Block {
-      BlockType		      TransferFcn
-      Name		      "Transfer Fcn2"
-      SID		      "5424"
-      Position		      [1005, 229, 1115, 261]
-      ZOrder		      103
-      Numerator		      "[n_0]"
-      Denominator	      "[m_2 m_1 m_0]"
-    }
-    Block {
-      BlockType		      TransferFcn
-      Name		      "Transfer Fcn3"
-      SID		      "5425"
-      Position		      [485, 249, 595, 281]
-      ZOrder		      104
-      Numerator		      "[n_0]"
-      Denominator	      "[m_2 m_1 m_0]"
-    }
-    Block {
       BlockType		      TransportDelay
       Name		      "Transport\nDelay"
       SID		      "5359"
@@ -9136,7 +9092,7 @@ Model {
       BlockType		      UnitDelay
       Name		      "Unit Delay1"
       SID		      "5292"
-      Position		      [630, 258, 665, 292]
+      Position		      [535, 273, 570, 307]
       ZOrder		      38
       InitialCondition	      "1"
       InputProcessing	      "Elements as channels (sample based)"
@@ -9146,7 +9102,7 @@ Model {
       BlockType		      UnitDelay
       Name		      "Unit Delay2"
       SID		      "5293"
-      Position		      [1120, -137, 1155, -103]
+      Position		      [1120, -2, 1155, 32]
       ZOrder		      39
       InitialCondition	      "1"
       InputProcessing	      "Elements as channels (sample based)"
@@ -12108,34 +12064,6 @@ Model {
       DstPort		      10
     }
     Line {
-      ZOrder		      403
-      SrcBlock		      "From28"
-      SrcPort		      1
-      DstBlock		      "Transfer Fcn1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      407
-      SrcBlock		      "From29"
-      SrcPort		      1
-      DstBlock		      "Transfer Fcn2"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      406
-      SrcBlock		      "From27"
-      SrcPort		      1
-      DstBlock		      "Transfer Fcn3"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      405
-      SrcBlock		      "From26"
-      SrcPort		      1
-      DstBlock		      "Transfer Fcn"
-      DstPort		      1
-    }
-    Line {
       ZOrder		      152
       SrcBlock		      "From45"
       SrcPort		      1
@@ -12213,7 +12141,7 @@ Model {
       ZOrder		      441
       SrcBlock		      "Unit Delay1"
       SrcPort		      1
-      Points		      [5, 0; 0, 35]
+      Points		      [50, 0; 0, 20]
       DstBlock		      "RL Tire Mode"
       DstPort		      1
     }
@@ -12369,31 +12297,30 @@ Model {
       DstPort		      5
     }
     Line {
-      ZOrder		      547
-      SrcBlock		      "Transfer Fcn"
+      ZOrder		      553
+      SrcBlock		      "From26"
       SrcPort		      1
       DstBlock		      "Unit Delay"
       DstPort		      1
     }
     Line {
-      ZOrder		      548
-      SrcBlock		      "Transfer Fcn1"
+      ZOrder		      555
+      SrcBlock		      "From28"
       SrcPort		      1
       DstBlock		      "Unit Delay2"
       DstPort		      1
     }
     Line {
-      ZOrder		      549
-      SrcBlock		      "Transfer Fcn2"
+      ZOrder		      556
+      SrcBlock		      "From29"
       SrcPort		      1
       DstBlock		      "Unit Delay3"
       DstPort		      1
     }
     Line {
-      ZOrder		      550
-      SrcBlock		      "Transfer Fcn3"
+      ZOrder		      551
+      SrcBlock		      "From27"
       SrcPort		      1
-      Points		      [15, 0]
       DstBlock		      "Unit Delay1"
       DstPort		      1
     }
