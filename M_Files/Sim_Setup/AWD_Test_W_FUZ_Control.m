@@ -99,6 +99,7 @@ T_Avail = 150;          % Peak Torque available by motors [Nm]
 
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
+z = 0.00033;            %Time constant for electric motors
 
 %D_Slip = 0.1;            % Desired slip for PID
 %%
