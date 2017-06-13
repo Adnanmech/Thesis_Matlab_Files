@@ -44,8 +44,8 @@ for cntr3=1:sim_pts_la
                 
                 %analyze data and make decision
                 min_new = min(abs(VMC(:,16)));          %Check min Vx
-                if  VMC(3000,16) < 9 ...                %make sure Vx is lower than 9m/s by 3s
-                        && max(abs(VMC(:,17))) < 1 ...  %make sure Vy lower than 1m/s the entire time.
+                if  VMC(3000,16) < 12 ...                %make sure Vx is lower than 12m/s by 3s
+                        && max(abs(VMC(:,17))) < 1 ...  %make sure Vy lowoer than 1m/s the entire time.
                         && max(VMC(:,18)) < 0.08;       %make sure yaw rate does not exceed 0.08rad(4.5deg)/s
                     for m = 1:nsp
                         if min_new < Vx_arr(1:m);
