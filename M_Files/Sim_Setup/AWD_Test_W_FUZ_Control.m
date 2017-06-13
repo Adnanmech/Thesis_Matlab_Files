@@ -45,7 +45,7 @@ SA_Slope = 1;                   %Don't Care since channel not selected
 Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
 %%
 %%
-% %VLC Test
+%VLC Test
 % Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
 % 
 % Throttle_Step_Time = 0.05;       %Step time of throttle signal
@@ -56,7 +56,7 @@ Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
 % SA_Start_Time = 500;            %Don't Care since channel not selected
 % SA_Slope = 1;                   %Don't Care since channel not selected
 % 
-% Vx0 = 0.1;                     % Initial vehicle longitude speed [m/s]
+% Vx0 = 0.6;                     % Initial vehicle longitude speed [m/s]
 
 %%
 %%
@@ -72,10 +72,10 @@ Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
 % SA_Slope = 1;
 % 
 % Vx0 =13.41;                     % Initial vehicle longitude speed [m/s]
-% 
+
 %%
 %%
-% %Split-u Test
+%Split-u Test
 % Split_u_Time_On = 1;          %Set time for split-u to start (Keep off w large time)
 % 
 % Throttle_Step_Time = 1.5;       %Step time of throttle signal
@@ -99,16 +99,21 @@ T_Avail = 150;          % Peak Torque available by motors [Nm]
 
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
-z = 0.00033;            %Time constant for electric motors
 
 %D_Slip = 0.1;            % Desired slip for PID
 %%
 %%
 % Sliding Mode Controller Settings
-Target_SR = 0.95;
+Target_SR = 0.3;
 PWM_Low_Lim = 0.05;
 Slip_Err_P_Gain = 1;
 Slip_Err_D_Gain = 1;
+PWM_SW_Threshold = 0;
+Yaw_Ctrl_Gain = 0.85;
+Lat_Accel_Err_Gain = 0.1;
+
+%Motor Model
+z=0.00033;
 
 %% Parameters
 g = 9.81;               %   Gravity acceleration [m/s^2]
@@ -126,7 +131,7 @@ Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 Jw = 1.2;            %   Wheel rotational moment of inertial >>Inertia = Mass(at radius r) * radius^2; sum multiple masses at diff radii for total
                     %   Value should be 0.3-0.5
 
-Rw = .3;           %   Wheel rolling radius [m]
+Rw = .6;           %   Wheel rolling radius [m]
 
 % Magic formular (Longitudinal)
 Kxnorm = 30;      % normalized stiffness
@@ -336,12 +341,12 @@ Ex_2 = ( Bx_2 * sp_2 - tan( pi / ( 2 * Cx_2 )) ) / ( Bx_2 * sp_2-atan( Bx_2 * sp
 % hold on;
 
 %u = slip ratio
-u=-1:.001:1;
-LongSlip = Dx*sin(Cx*atan(Bx*u-Ex*(Bx*u-atan(Bx*u))));
-figure;
-hhh(1) = subplot(2,1,1); % upper plot
-plot(u,LongSlip)
-hold on;
+% u=-1:.001:1;
+% LongSlip = Dx*sin(Cx*atan(Bx*u-Ex*(Bx*u-atan(Bx*u))));
+% figure;
+% hhh(1) = subplot(2,1,1); % upper plot
+% plot(u,LongSlip)
+% hold on;
 
 %------------------  Lateral Slip Characteristics  ------------------------
 %   
@@ -414,13 +419,13 @@ Ey_2 = ( By_2 * ap_2 - tan( pi / ( 2 * Cy_2 )))/( By_2 * ap_2 - atan( By_2 * ap_
 
 %Test Formula   KDS 2/7/14
 %uu = steering angle (rads)
-uu = -1:.001:1;
-lz = tan(u);
-angle = -1:.001:1;
-degrees = uu*180/pi;
-pz = tan(angle);
-%LatSlip = (Dy*sin(Cy*atan(By*u-Ey*(By*u-atan(By*u)))));
-LatSlip = (Dy*sin(Cy*atan(By*uu-Ey*(By*uu-atan(By*uu)))));
+% uu = -1:.001:1;
+% lz = tan(u);
+% angle = -1:.001:1;
+% degrees = uu*180/pi;
+% pz = tan(angle);
+% %LatSlip = (Dy*sin(Cy*atan(By*u-Ey*(By*u-atan(By*u)))));
+% LatSlip = (Dy*sin(Cy*atan(By*uu-Ey*(By*uu-atan(By*uu)))));
 
 %hhh(2) = subplot(2,1,2); % lower plot
 %plot(degrees,LatSlip)
