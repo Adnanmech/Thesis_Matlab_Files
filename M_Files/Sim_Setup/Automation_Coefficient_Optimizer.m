@@ -86,6 +86,11 @@ for cntr=1:sim_pts
     end
 end
 
+%save workspace to file
+
+Filename_ABS = sprintf('Fuzzy_Control_Split_u_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+save(Filename_ABS);
+
 figure % new figure
 hold on
 ax1 = subplot(3,1,1); % top subplot
