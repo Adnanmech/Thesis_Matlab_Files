@@ -50,6 +50,8 @@ Throttle_Final_Val = 1;         %Final throttle value
 Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
 SA_Start_Time = 500;            %Don't Care since channel not selected
 SA_Slope = 1;                   %Don't Care since channel not selected
+SA_Upper_Sat_Lim = 10;
+SA_Lower_Sat_Lim = -10;
 
 Vx0 = 0.4;                     % Initial vehicle longitude speed [m/s]
 
@@ -96,6 +98,7 @@ T_Avail = 150;          % Peak Torque available by motors [Nm]
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
+z = 0.00033;
 %D_Slip = 0.1;            % Desired slip for PID
 
 %%
@@ -104,7 +107,8 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
 %%
 % Fuzzy Controller Settings
-Yaw_Ctrl_Gain = 0.1;
+Yaw_Ctrl_Gain = 0.9;
+Slip_Ratio_Ctrl_Gain = 0.8;
 %%
 
 %% Parameters
@@ -120,7 +124,7 @@ Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 Jw = 1.2;            %   Wheel rotational moment of inertial >>Inertia = Mass(at radius r) * radius^2; sum multiple masses at diff radii for total
                     %   Value should be 0.3-0.5
 
-Rw = .3;           %   Wheel rolling radius [m]
+Rw = .33;           %   Wheel rolling radius [m]
 
 % Magic formular (Longitudinal)
 Kxnorm = 30;      % normalized stiffness
@@ -322,12 +326,12 @@ Ex_2 = ( Bx_2 * sp_2 - tan( pi / ( 2 * Cx_2 )) ) / ( Bx_2 * sp_2-atan( Bx_2 * sp
 
 %Test Formula   KDS 2/7/14
 %u = slip ratio
-u=-1:.001:1;
-LongSlip = Dx_2*sin(Cx_2*atan(Bx_2*u-Ex_2*(Bx_2*u-atan(Bx_2*u))));
-figure;
-hhh(1) = subplot(2,1,1); % upper plot
-plot(u,LongSlip)
-hold on;
+%u=-1:.001:1;
+%LongSlip = Dx_2*sin(Cx_2*atan(Bx_2*u-Ex_2*(Bx_2*u-atan(Bx_2*u))));
+%figure;
+%hhh(1) = subplot(2,1,1); % upper plot
+%plot(u,LongSlip)
+%hold on;
 
 %------------------  Lateral Slip Characteristics  ------------------------
 %   
@@ -400,13 +404,13 @@ Ey_2 = ( By_2 * ap_2 - tan( pi / ( 2 * Cy_2 )))/( By_2 * ap_2 - atan( By_2 * ap_
 
 %Test Formula   KDS 2/7/14
 %uu = steering angle (rads)
-uu = -1:.001:1;
-lz = tan(u);
-angle = -1:.001:1;
-degrees = uu*180/pi;
-pz = tan(angle);
+%uu = -1:.001:1;
+%lz = tan(u);
+%angle = -1:.001:1;
+%degrees = uu*180/pi;
+%pz = tan(angle);
 %LatSlip = (Dy*sin(Cy*atan(By*u-Ey*(By*u-atan(By*u)))));
-LatSlip = (Dy*sin(Cy*atan(By*uu-Ey*(By*uu-atan(By*uu)))));
+%LatSlip = (Dy*sin(Cy*atan(By*uu-Ey*(By*uu-atan(By*uu)))));
 
 %hhh(2) = subplot(2,1,2); % lower plot
 %plot(degrees,LatSlip)
