@@ -104,7 +104,7 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 %%
 %%
 % Sliding Mode Controller Settings
-Target_SR = 0.1;
+Target_SR = 0.3;
 PWM_Low_Lim = 0.05;
 Slip_Err_P_Gain = 0.9;
 Slip_Err_D_Gain = 0.1;
@@ -131,7 +131,7 @@ Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 Jw = 1.2;            %   Wheel rotational moment of inertial >>Inertia = Mass(at radius r) * radius^2; sum multiple masses at diff radii for total
                     %   Value should be 0.3-0.5
 
-Rw = .33;           %   Wheel rolling radius [m]
+Rw = .35;           %   Wheel rolling radius [m]
 
 % Magic formular (Longitudinal)
 Kxnorm = 30;      % normalized stiffness

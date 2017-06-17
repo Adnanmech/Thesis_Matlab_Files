@@ -40,7 +40,7 @@ for cntr3=1:sim_pts_la
                 %simulate and collect data
                 Simulation_Count = Simulation_Count + 1
                 %assignin('base', 'Simulation_Count', Simulation_Count)
-                sim('AWD_EV_MODEL_rev2.mdl')
+                sim('All_Combined\AWD_EV_MODEL_rev2.mdl')
                 
                 %analyze data and make decision
                 min_new = min(abs(VMC(:,16)));          %Check min Vx
@@ -100,6 +100,12 @@ for cntr3=1:sim_pts_la
         end
     end
 end
+
+%save workspace to file
+
+Filename_ABS = sprintf('Sliding_Mode_ABS_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+save(Filename_ABS);
+
 figure % new figure
 hold on
 ax1 = subplot(3,1,1); % top subplot
@@ -108,7 +114,7 @@ ax2 = subplot(3,1,2); % bottom subplot
 hold on
 ax3 = subplot(3,1,3); % bottom subplot
 
-for m = 1:nsp
+for m = 1:5
     hold on
     plot(ax1,VMC(:,10),VMC_Vx (:,m))
     plot(ax2,VMC(:,10),VMC_Vy (:,m))
