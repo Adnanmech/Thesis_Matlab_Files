@@ -115,9 +115,9 @@ n_0 = 6250000;
 
 %%
 % Fuzzy Controller Settings
-Yaw_Ctrl_Gain = 1.0;     %previously = 0.5 (produced good split-u test results.
+Yaw_Ctrl_Gain = 0.8;     %previously = 0.5 (produced good split-u test results.
 Torque_Diff_Gain = 1.2;
-Slip_Ratio_Ctrl_Gain = 0.35;
+Slip_Ratio_Ctrl_Gain = 0.4;
 
 %%
 
