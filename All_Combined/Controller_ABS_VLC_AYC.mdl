@@ -91,7 +91,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.134"
+    ComputedModelVersion    "1.154"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -127,7 +127,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [0.0, 0.0, 1920.0, 1040.0]
+      Location		      [183.0, 155.0, 1490.0, 836.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -144,16 +144,37 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		6
-	$ClassName		"Simulink.EditorInfo"
-	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1677.0, 866.0]
-	ZoomFactor		[1.0]
-	Offset			[0.0, 0.0]
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		3
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "256"
+	  Extents		  [1247.0, 659.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "1"
+	  Extents		  [1247.0, 659.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [458.0, 225.0]
+	}
+	Object {
+	  $ObjectID		  8
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "50"
+	  Extents		  [1247.0, 659.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [197.87499999999977, -156.99999999999994]
+	}
+	PropName		"EditorsInfo"
       }
     }
   }
@@ -163,9 +184,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 17 23:50:36 2017"
-  RTWModifiedTimeStamp	  416964125
-  ModelVersionFormat	  "1.%<AutoIncrement:134>"
+  LastModifiedDate	  "Sat Jun 17 15:27:18 2017"
+  RTWModifiedTimeStamp	  419607152
+  ModelVersionFormat	  "1.%<AutoIncrement:154>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -213,7 +234,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
+    $ObjectID		    9
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "Controller_ABS_VLC_AYC"
     overrideMode_	    [0.0]
@@ -257,13 +278,13 @@ Model {
     Type		    "Handle"
     Dimension		    2
     Simulink.ConfigSet {
-      $ObjectID		      8
+      $ObjectID		      10
       Version		      "1.16.2"
       Array {
 	Type			"Handle"
 	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  9
+	  $ObjectID		  11
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
 	  StopTime		  "6"
@@ -300,7 +321,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  10
+	  $ObjectID		  12
 	  Version		  "1.16.2"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -338,7 +359,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  11
+	  $ObjectID		  13
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -395,7 +416,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  12
+	  $ObjectID		  14
 	  Version		  "1.16.2"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -490,7 +511,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  13
+	  $ObjectID		  15
 	  Version		  "1.16.2"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -532,7 +553,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  14
+	  $ObjectID		  16
 	  Version		  "1.16.2"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  EnableRefExpFcnMdlSchedulingChecks on
@@ -548,7 +569,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  15
+	  $ObjectID		  17
 	  Version		  "1.16.2"
 	  SFSimEcho		  on
 	  SimCtrlC		  on
@@ -560,7 +581,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  16
+	  $ObjectID		  18
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -626,7 +647,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      17
+	      $ObjectID		      19
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -695,7 +716,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      18
+	      $ObjectID		      20
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -783,7 +804,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  19
+	  $ObjectID		  21
 	  Version		  "1.16.2"
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -816,7 +837,7 @@ Model {
 	  CovStopTime		  0
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  20
+	  $ObjectID		  22
 	  Version		  "1.16.2"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
@@ -835,13 +856,13 @@ Model {
       ConfigPrmDlgPosition     [ 469, 130, 1452, 888 ] 
     }
     Simulink.ConfigSet {
-      $ObjectID		      21
+      $ObjectID		      23
       Version		      "1.16.2"
       Array {
 	Type			"Handle"
 	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  22
+	  $ObjectID		  24
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
 	  StopTime		  "6"
@@ -878,7 +899,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  23
+	  $ObjectID		  25
 	  Version		  "1.16.2"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -916,7 +937,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  24
+	  $ObjectID		  26
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -973,7 +994,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  25
+	  $ObjectID		  27
 	  Version		  "1.16.2"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -1068,7 +1089,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  26
+	  $ObjectID		  28
 	  Version		  "1.16.2"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -1110,7 +1131,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  27
+	  $ObjectID		  29
 	  Version		  "1.16.2"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  EnableRefExpFcnMdlSchedulingChecks on
@@ -1126,7 +1147,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  28
+	  $ObjectID		  30
 	  Version		  "1.16.2"
 	  SFSimEcho		  on
 	  SimCtrlC		  on
@@ -1138,7 +1159,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  29
+	  $ObjectID		  31
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -1204,7 +1225,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      30
+	      $ObjectID		      32
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -1273,7 +1294,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      31
+	      $ObjectID		      33
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -1360,7 +1381,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  32
+	  $ObjectID		  34
 	  Version		  "1.16.2"
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -1393,7 +1414,7 @@ Model {
 	  CovStopTime		  0
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  33
+	  $ObjectID		  35
 	  Version		  "1.16.2"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
@@ -1415,11 +1436,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    21
+    $ObjectID		    23
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    34
+    $ObjectID		    36
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1660,8 +1681,8 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC"
-    Location		    [0, 0, 1920, 1040]
-    Open		    on
+    Location		    [183, 155, 1673, 991]
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -1672,9 +1693,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "50"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "396"
+    SIDHighWatermark	    "464"
     Block {
       BlockType		      Inport
       Name		      "Vx_cont"
@@ -1767,8 +1788,8 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[0, 0, 1920, 1040]
-	Open			off
+	Location		[183, 155, 1673, 991]
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
 	ScreenColor		"white"
@@ -1779,7 +1800,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"60"
+	ZoomFactor		"100"
 	Block {
 	  BlockType		  Inport
 	  Name			  "longitudinal speed [m/s]"
@@ -1865,7 +1886,7 @@ Model {
 	  Name			  "Async Rate Transition "
 	  SID			  "365"
 	  Ports			  [1, 1]
-	  Position		  [1730, 305, 1850, 365]
+	  Position		  [2445, 280, 2565, 340]
 	  ZOrder		  37
 	  LibraryVersion	  "1.1846"
 	  SourceBlock		  "slrtlib/Asynchronous\nEvent/Async Rate Transition "
@@ -1878,7 +1899,7 @@ Model {
 	  Name			  "Async Rate Transition 1"
 	  SID			  "366"
 	  Ports			  [1, 1]
-	  Position		  [2180, 305, 2300, 365]
+	  Position		  [2895, 280, 3015, 340]
 	  ZOrder		  38
 	  LibraryVersion	  "1.1846"
 	  SourceBlock		  "slrtlib/Asynchronous\nEvent/Async Rate Transition "
@@ -1891,7 +1912,7 @@ Model {
 	  Name			  "Async Rate Transition 2"
 	  SID			  "373"
 	  Ports			  [1, 1]
-	  Position		  [1730, 500, 1850, 560]
+	  Position		  [2445, 475, 2565, 535]
 	  ZOrder		  45
 	  LibraryVersion	  "1.1846"
 	  SourceBlock		  "slrtlib/Asynchronous\nEvent/Async Rate Transition "
@@ -1904,7 +1925,7 @@ Model {
 	  Name			  "Async Rate Transition 3"
 	  SID			  "374"
 	  Ports			  [1, 1]
-	  Position		  [2180, 500, 2300, 560]
+	  Position		  [2895, 475, 3015, 535]
 	  ZOrder		  46
 	  LibraryVersion	  "1.1846"
 	  SourceBlock		  "slrtlib/Asynchronous\nEvent/Async Rate Transition "
@@ -1917,7 +1938,7 @@ Model {
 	  Name			  "Async Rate Transition 4"
 	  SID			  "378"
 	  Ports			  [1, 1]
-	  Position		  [1730, 725, 1850, 785]
+	  Position		  [2445, 700, 2565, 760]
 	  ZOrder		  50
 	  LibraryVersion	  "1.1846"
 	  SourceBlock		  "slrtlib/Asynchronous\nEvent/Async Rate Transition "
@@ -1930,7 +1951,7 @@ Model {
 	  Name			  "Async Rate Transition 5"
 	  SID			  "379"
 	  Ports			  [1, 1]
-	  Position		  [2180, 725, 2300, 785]
+	  Position		  [2895, 700, 3015, 760]
 	  ZOrder		  51
 	  LibraryVersion	  "1.1846"
 	  SourceBlock		  "slrtlib/Asynchronous\nEvent/Async Rate Transition "
@@ -1943,7 +1964,7 @@ Model {
 	  Name			  "Async Rate Transition 6"
 	  SID			  "383"
 	  Ports			  [1, 1]
-	  Position		  [1740, 945, 1860, 1005]
+	  Position		  [2455, 920, 2575, 980]
 	  ZOrder		  55
 	  LibraryVersion	  "1.1846"
 	  SourceBlock		  "slrtlib/Asynchronous\nEvent/Async Rate Transition "
@@ -1956,7 +1977,7 @@ Model {
 	  Name			  "Async Rate Transition 7"
 	  SID			  "384"
 	  Ports			  [1, 1]
-	  Position		  [2190, 945, 2310, 1005]
+	  Position		  [2905, 920, 3025, 980]
 	  ZOrder		  56
 	  LibraryVersion	  "1.1846"
 	  SourceBlock		  "slrtlib/Asynchronous\nEvent/Async Rate Transition "
@@ -1985,7 +2006,7 @@ Model {
 	  BlockType		  DigitalClock
 	  Name			  "Digital Clock"
 	  SID			  "392"
-	  Position		  [2070, 223, 2135, 247]
+	  Position		  [2785, 198, 2850, 222]
 	  ZOrder		  60
 	  SampleTime		  "0.001"
 	}
@@ -2001,7 +2022,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Slip Controller"
-	    Location		    [0, 0, 1920, 1040]
+	    Location		    [183, 155, 1673, 991]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2023,24 +2044,10 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
-	      BlockType		      Reference
-	      Name		      "ABS Fuzzy Controller"
-	      SID		      "14"
-	      Ports		      [1, 1]
-	      Position		      [465, 325, 525, 375]
-	      ZOrder		      -2
-	      LibraryVersion	      "1.186"
-	      SourceBlock	      "fuzblock/Fuzzy Logic \nController \nwith Ruleviewer"
-	      SourceType	      "FIS"
-	      ContentPreviewEnabled   off
-	      fismatrix		      "Fuzzy_Slip_Ctl_ABS"
-	      Ts		      ".1"
-	    }
-	    Block {
 	      BlockType		      Derivative
 	      Name		      "Derivative"
 	      SID		      "317"
-	      Position		      [280, 95, 310, 125]
+	      Position		      [250, 95, 280, 125]
 	      ZOrder		      1
 	    }
 	    Block {
@@ -2100,16 +2107,16 @@ Model {
 	      "9608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650"
 	      "980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Color',[1 1 0.0666666666666667],'LineSty"
 	      "le','-','LineWidth',0.5,'Marker','none','Visible','on','MarkerSize',8)}},'UserDefinedChannelNames',{{}},'NumLin"
-	      "es',1,'LineNames',{{'Fuzzy Logic  Controller'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',st"
-	      "ruct('MinYLimReal','-0.125','MaxYLimReal','1.125','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.125','"
-	      "LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.6"
-	      "86274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.6"
-	      "23529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0."
-	      "717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<S"
-	      "ignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowCon"
-	      "tent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAuto"
-	      "scale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',"
-	      "[1 502 868 1079],'WindowStyle','docked')"
+	      "es',1,'LineNames',{{'Slip Ratio Gain'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('Mi"
+	      "nYLimReal','-0.125','MaxYLimReal','1.125','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.125','LegendVi"
+	      "sibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509"
+	      "803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411"
+	      "764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.71764705"
+	      "8823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLab"
+	      "el>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',tr"
+	      "ue,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','"
+	      "XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[1 632 5"
+	      "76 1079],'WindowStyle','docked')"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -2128,30 +2135,38 @@ Model {
 	      "6667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313725490"
 	      "19608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.65"
 	      "0980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,"
-	      "'LineNames',{{'Fuzzy Logic  Controller1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct("
-	      "'MinYLimReal','-0.125','MaxYLimReal','1.125','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.125','Legen"
-	      "dVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274"
-	      "509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529"
-	      "411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.71764"
-	      "7058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<Signal"
-	      "Label>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent'"
-	      ",true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale"
-	      "','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[0 83"
-	      " 1694 1008])"
+	      "'LineNames',{{'Slip Ratio Gain1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLim"
+	      "Real','-0.125','MaxYLimReal','1.125','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.125','LegendVisibil"
+	      "ity','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.68627450980392"
+	      "2 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.62352941176470"
+	      "6 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.7176470588235"
+	      "29 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>',"
+	      "'LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'P"
+	      "lacement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),"
+	      "extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[0 83 1694 10"
+	      "08])"
 	    }
 	    Block {
-	      BlockType		      Reference
-	      Name		      "VLC Fuzzy Controller"
-	      SID		      "19"
-	      Ports		      [1, 1]
-	      Position		      [465, 130, 525, 180]
-	      ZOrder		      -18
-	      LibraryVersion	      "1.186"
-	      SourceBlock	      "fuzblock/Fuzzy Logic \nController \nwith Ruleviewer"
-	      SourceType	      "FIS"
-	      ContentPreviewEnabled   off
-	      fismatrix		      "Fuzzy_Slip_Ctl_VLC"
-	      Ts		      ".1"
+	      BlockType		      Gain
+	      Name		      "Slip Ratio Gain"
+	      SID		      "463"
+	      Position		      [715, 55, 745, 85]
+	      ZOrder		      138
+	      Gain		      "Slip_Ratio_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Slip Ratio Gain1"
+	      SID		      "464"
+	      Position		      [715, 245, 745, 275]
+	      ZOrder		      139
+	      Gain		      "Slip_Ratio_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -2209,7 +2224,7 @@ Model {
 	      ZOrder		      65
 	      SrcBlock		      "Derivative"
 	      SrcPort		      1
-	      Points		      [40, 0; 0, 30]
+	      Points		      [70, 0; 0, 30]
 	      DstBlock		      "Mux1"
 	      DstPort		      1
 	    }
@@ -2217,24 +2232,21 @@ Model {
 	      ZOrder		      58
 	      SrcBlock		      "Fuzzy Logic \nController1"
 	      SrcPort		      1
-	      Points		      [368, 0]
-	      Branch {
-		ZOrder			50
-		Points			[0, 55]
-		DstBlock		"Scope1"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			49
-		DstBlock		"T_lim_Brake"
-		DstPort			1
-	      }
+	      DstBlock		      "Slip Ratio Gain1"
+	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      81
 	      SrcBlock		      "Fuzzy Logic \nController"
 	      SrcPort		      1
-	      Points		      [368, 0; 0, 60]
+	      DstBlock		      "Slip Ratio Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      86
+	      SrcBlock		      "Slip Ratio Gain"
+	      SrcPort		      1
+	      Points		      [148, 0; 0, 60]
 	      Branch {
 		ZOrder			57
 		Points			[0, 55]
@@ -2244,6 +2256,23 @@ Model {
 	      Branch {
 		ZOrder			56
 		DstBlock		"Scope"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      87
+	      SrcBlock		      "Slip Ratio Gain1"
+	      SrcPort		      1
+	      Points		      [148, 0]
+	      Branch {
+		ZOrder			50
+		Points			[0, 55]
+		DstBlock		"Scope1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			49
+		DstBlock		"T_lim_Brake"
 		DstPort			1
 	      }
 	    }
@@ -2261,7 +2290,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Torque Gains and Saturation"
-	    Location		    [0, 0, 1920, 1040]
+	    Location		    [183, 155, 1673, 991]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2423,7 +2452,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FR Slip Controller"
-	    Location		    [0, 0, 1920, 1040]
+	    Location		    [183, 155, 1673, 991]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2443,20 +2472,6 @@ Model {
 	      Position		      [135, 103, 165, 117]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Reference
-	      Name		      "ABS Fuzzy Controller"
-	      SID		      "230"
-	      Ports		      [1, 1]
-	      Position		      [465, 300, 525, 350]
-	      ZOrder		      -2
-	      LibraryVersion	      "1.186"
-	      SourceBlock	      "fuzblock/Fuzzy Logic \nController \nwith Ruleviewer"
-	      SourceType	      "FIS"
-	      ContentPreviewEnabled   off
-	      fismatrix		      "Fuzzy_Slip_Ctl_ABS"
-	      Ts		      ".1"
 	    }
 	    Block {
 	      BlockType		      Derivative
@@ -2561,18 +2576,26 @@ Model {
 	      "2 603 1079],'WindowStyle','docked')"
 	    }
 	    Block {
-	      BlockType		      Reference
-	      Name		      "VLC Fuzzy Controller"
-	      SID		      "239"
-	      Ports		      [1, 1]
-	      Position		      [465, 130, 525, 180]
-	      ZOrder		      -18
-	      LibraryVersion	      "1.186"
-	      SourceBlock	      "fuzblock/Fuzzy Logic \nController \nwith Ruleviewer"
-	      SourceType	      "FIS"
-	      ContentPreviewEnabled   off
-	      fismatrix		      "Fuzzy_Slip_Ctl_VLC"
-	      Ts		      ".1"
+	      BlockType		      Gain
+	      Name		      "Slip Ratio Gain"
+	      SID		      "461"
+	      Position		      [665, 55, 695, 85]
+	      ZOrder		      138
+	      Gain		      "Slip_Ratio_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Slip Ratio Gain1"
+	      SID		      "462"
+	      Position		      [665, 245, 695, 275]
+	      ZOrder		      139
+	      Gain		      "Slip_Ratio_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -2638,7 +2661,21 @@ Model {
 	      ZOrder		      55
 	      SrcBlock		      "Fuzzy Logic \nController"
 	      SrcPort		      1
-	      Points		      [270, 0; 0, 150; 90, 0]
+	      DstBlock		      "Slip Ratio Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      54
+	      SrcBlock		      "Fuzzy Logic \nController1"
+	      SrcPort		      1
+	      DstBlock		      "Slip Ratio Gain1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      72
+	      SrcBlock		      "Slip Ratio Gain"
+	      SrcPort		      1
+	      Points		      [100, 0; 0, 150; 90, 0]
 	      Branch {
 		ZOrder			50
 		Points			[0, -55]
@@ -2652,10 +2689,10 @@ Model {
 	      }
 	    }
 	    Line {
-	      ZOrder		      54
-	      SrcBlock		      "Fuzzy Logic \nController1"
+	      ZOrder		      73
+	      SrcBlock		      "Slip Ratio Gain1"
 	      SrcPort		      1
-	      Points		      [358, 0]
+	      Points		      [188, 0]
 	      Branch {
 		ZOrder			53
 		Points			[0, 55]
@@ -2682,7 +2719,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FR Torque Gains and Saturation"
-	    Location		    [0, 0, 1920, 1040]
+	    Location		    [183, 155, 1673, 991]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2836,7 +2873,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From1"
 	  SID			  "375"
-	  Position		  [1810, 601, 1850, 629]
+	  Position		  [2525, 576, 2565, 604]
 	  ZOrder		  47
 	  ShowName		  off
 	  GotoTag		  "Clk"
@@ -2845,7 +2882,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From2"
 	  SID			  "380"
-	  Position		  [1810, 826, 1850, 854]
+	  Position		  [2525, 801, 2565, 829]
 	  ZOrder		  52
 	  ShowName		  off
 	  GotoTag		  "Clk"
@@ -2854,7 +2891,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From3"
 	  SID			  "385"
-	  Position		  [1820, 1046, 1860, 1074]
+	  Position		  [2535, 1021, 2575, 1049]
 	  ZOrder		  57
 	  ShowName		  off
 	  GotoTag		  "Clk"
@@ -2863,7 +2900,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From47"
 	  SID			  "369"
-	  Position		  [1810, 406, 1850, 434]
+	  Position		  [2525, 381, 2565, 409]
 	  ZOrder		  39
 	  ShowName		  off
 	  GotoTag		  "Clk"
@@ -2880,8 +2917,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Fuzzy Yaw Controller"
-	    Location		    [0, 0, 1920, 1040]
-	    Open		    off
+	    Location		    [183, 155, 1673, 991]
+	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2892,7 +2929,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "60"
+	    ZoomFactor		    "100"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Yaw Error [rad/s]"
@@ -2931,14 +2968,15 @@ Model {
 	      Name		      "AYC Fuzzy Controller"
 	      SID		      "54"
 	      Ports		      [1, 1]
-	      Position		      [630, 80, 690, 130]
-	      ZOrder		      -4
+	      Position		      [310, -40, 370, 10]
+	      ZOrder		      47
+	      Commented		      "on"
 	      LibraryVersion	      "1.186"
 	      SourceBlock	      "fuzblock/Fuzzy Logic \nController \nwith Ruleviewer"
 	      SourceType	      "FIS"
 	      ContentPreviewEnabled   off
 	      fismatrix		      "Fuzzy_AYC_Ctl"
-	      Ts		      ".1"
+	      Ts		      "100"
 	    }
 	    Block {
 	      BlockType		      Reference
@@ -3014,6 +3052,20 @@ Model {
 	      ZOrder		      42
 	      ShowName		      off
 	      GotoTag		      "Clk"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Fuzzy Logic \nController"
+	      SID		      "441"
+	      Ports		      [1, 1]
+	      Position		      [630, 81, 690, 129]
+	      ZOrder		      46
+	      LibraryVersion	      "1.186"
+	      FontName		      "Arial"
+	      SourceBlock	      "fuzblock/Fuzzy Logic \nController"
+	      SourceType	      "FIS"
+	      ContentPreviewEnabled   off
+	      fis		      "Fuzzy_AYC_Ctl"
 	    }
 	    Block {
 	      BlockType		      Goto
@@ -3127,14 +3179,14 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData31','DataLoggingSaveFormat','StructureWithTi"
 	      "me','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',tr"
-	      "ue,'SerializedDisplays',{struct('MinYLimReal','-0.79277','MaxYLimReal','0.79235','YLabelReal','','MinYLimMag','"
-	      "0.00000','MaxYLimMag','0.79277','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCo"
+	      "ue,'SerializedDisplays',{struct('MinYLimReal','-1.06191','MaxYLimReal','0.82383','YLabelReal','','MinYLimMag','"
+	      "0.00000','MaxYLimMag','1.06191','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCo"
 	      "lor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
 	      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313"
 	      "72549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803921568"
 	      "6 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLin"
 	      "es',1,'LineNames',{{'AYC Fuzzy Controller'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struc"
-	      "t('MinYLimReal','-0.79277','MaxYLimReal','0.79235','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.79277"
+	      "t('MinYLimReal','-1.06191','MaxYLimReal','0.82383','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.06191"
 	      "','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',["
 	      "0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 "
 	      "0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686"
@@ -3408,10 +3460,10 @@ Model {
 	      }
 	    }
 	    Line {
-	      ZOrder		      22
+	      ZOrder		      213
 	      SrcBlock		      "Mux1"
 	      SrcPort		      1
-	      DstBlock		      "AYC Fuzzy Controller"
+	      DstBlock		      "Fuzzy Logic \nController"
 	      DstPort		      1
 	    }
 	    Line {
@@ -3453,8 +3505,8 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      29
-	      SrcBlock		      "AYC Fuzzy Controller"
+	      ZOrder		      214
+	      SrcBlock		      "Fuzzy Logic \nController"
 	      SrcPort		      1
 	      Points		      [25, 0; 0, -10; 35, 0]
 	      Branch {
@@ -3656,7 +3708,7 @@ Model {
 	  BlockType		  Gain
 	  Name			  "Gain"
 	  SID			  "325"
-	  Position		  [2465, 390, 2495, 420]
+	  Position		  [3250, 380, 3280, 410]
 	  ZOrder		  22
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
@@ -3666,7 +3718,7 @@ Model {
 	  BlockType		  Gain
 	  Name			  "Gain1"
 	  SID			  "326"
-	  Position		  [2410, 585, 2440, 615]
+	  Position		  [3195, 575, 3225, 605]
 	  ZOrder		  23
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
@@ -3676,7 +3728,7 @@ Model {
 	  BlockType		  Gain
 	  Name			  "Gain2"
 	  SID			  "327"
-	  Position		  [2400, 810, 2430, 840]
+	  Position		  [3185, 800, 3215, 830]
 	  ZOrder		  24
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
@@ -3686,8 +3738,48 @@ Model {
 	  BlockType		  Gain
 	  Name			  "Gain3"
 	  SID			  "328"
-	  Position		  [2355, 1030, 2385, 1060]
+	  Position		  [3140, 1020, 3170, 1050]
 	  ZOrder		  25
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain4"
+	  SID			  "404"
+	  Position		  [2175, 390, 2205, 420]
+	  ZOrder		  65
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain5"
+	  SID			  "405"
+	  Position		  [2175, 585, 2205, 615]
+	  ZOrder		  66
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain7"
+	  SID			  "407"
+	  Position		  [2175, 810, 2205, 840]
+	  ZOrder		  68
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain8"
+	  SID			  "408"
+	  Position		  [2175, 1030, 2205, 1060]
+	  ZOrder		  69
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -3696,7 +3788,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "Goto39"
 	  SID			  "393"
-	  Position		  [2160, 221, 2205, 249]
+	  Position		  [2875, 196, 2920, 224]
 	  ZOrder		  59
 	  ShowName		  off
 	  GotoTag		  "Clk"
@@ -3706,37 +3798,37 @@ Model {
 	  Name			  "Left Torque Scope"
 	  SID			  "113"
 	  Ports			  [1]
-	  Position		  [2760, 924, 2790, 956]
+	  Position		  [3545, 914, 3575, 946]
 	  ZOrder		  -16
 	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
 	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
 	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData16','DataLoggingSaveFormat','StructureWithTime','DataLog"
 	  "gingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDi"
-	  "splays',{struct('MinYLimReal','-236.38101','MaxYLimReal','153.96446','YLabelReal','','MinYLimMag',' 0.00000','MaxYL"
-	  "imMag','236.38101','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axe"
-	  "sTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450980"
-	  "39215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.07450980392"
-	  "15686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title',"
-	  "'%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Gain2','Gain"
-	  "'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-236.38101','MaxYLimReal','1"
-	  "53.96446','YLabelReal','','MinYLimMag',' 0.00000','MaxYLimMag','236.38101','LegendVisibility','off','XGrid',true,'Y"
-	  "Grid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.68627450"
-	  "9803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431"
-	  "372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117"
-	  "647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedCha"
-	  "nnelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Pl"
-	  "ot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'"
-	  "Version','2016a','Measurements',struct('traceselector',struct('Line',2),'tcursors',struct('XCoordinates',[0.0004320"
-	  "39065202784 0.00079356770259349],'YCoordinates',[NaN NaN],'CursorChannels',[2 2],'WaveformCursors',true,'ShowHorizo"
-	  "ntal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPan"
-	  "elOpen',1)))),'Version','2016a','Location',[1 502 868 1079],'WindowStyle','docked')"
+	  "splays',{struct('MinYLimReal','-207.5692','MaxYLimReal','85.4916','YLabelReal','','MinYLimMag',' 0.00000','MaxYLimM"
+	  "ag','207.5692','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTic"
+	  "kColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074509803921"
+	  "5686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509803921568"
+	  "6;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<S"
+	  "ignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Gain2','Gain'}},"
+	  "'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-207.5692','MaxYLimReal','85.491"
+	  "6','YLabelReal','','MinYLimMag',' 0.00000','MaxYLimMag','207.5692','LegendVisibility','off','XGrid',true,'YGrid',tr"
+	  "ue,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922]"
+	  ",'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0"
+	  ".392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;"
+	  "1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelName"
+	  "s',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navig"
+	  "ation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version'"
+	  ",'2016a','Measurements',struct('traceselector',struct('Line',2),'tcursors',struct('XCoordinates',[0.000432039065202"
+	  "784 0.00079356770259349],'YCoordinates',[NaN NaN],'CursorChannels',[2 2],'WaveformCursors',true,'ShowHorizontal',fa"
+	  "lse,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',"
+	  "1)))),'Version','2016a','Location',[1 632 576 1079],'WindowStyle','docked')"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "Lowpass Filter1"
 	  SID			  "367"
 	  Ports			  [1, 1]
-	  Position		  [1955, 314, 2055, 356]
+	  Position		  [2670, 289, 2770, 331]
 	  ZOrder		  36
 	  LibraryVersion	  "1.205"
 	  SourceBlock		  "dspfdesign/Lowpass Filter"
@@ -3760,7 +3852,7 @@ Model {
 	  Name			  "Lowpass Filter2"
 	  SID			  "376"
 	  Ports			  [1, 1]
-	  Position		  [1955, 509, 2055, 551]
+	  Position		  [2670, 484, 2770, 526]
 	  ZOrder		  44
 	  LibraryVersion	  "1.205"
 	  SourceBlock		  "dspfdesign/Lowpass Filter"
@@ -3784,7 +3876,7 @@ Model {
 	  Name			  "Lowpass Filter3"
 	  SID			  "381"
 	  Ports			  [1, 1]
-	  Position		  [1955, 734, 2055, 776]
+	  Position		  [2670, 709, 2770, 751]
 	  ZOrder		  49
 	  LibraryVersion	  "1.205"
 	  SourceBlock		  "dspfdesign/Lowpass Filter"
@@ -3808,7 +3900,7 @@ Model {
 	  Name			  "Lowpass Filter4"
 	  SID			  "386"
 	  Ports			  [1, 1]
-	  Position		  [1965, 954, 2065, 996]
+	  Position		  [2680, 929, 2780, 971]
 	  ZOrder		  54
 	  LibraryVersion	  "1.205"
 	  SourceBlock		  "dspfdesign/Lowpass Filter"
@@ -3832,7 +3924,7 @@ Model {
 	  Name			  "Mux"
 	  SID			  "73"
 	  Ports			  [2, 1]
-	  Position		  [2670, 890, 2680, 990]
+	  Position		  [3455, 880, 3465, 980]
 	  ZOrder		  -17
 	  ShowName		  off
 	  Inputs		  "2"
@@ -3843,7 +3935,7 @@ Model {
 	  Name			  "Mux1"
 	  SID			  "218"
 	  Ports			  [2, 1]
-	  Position		  [2670, 1090, 2680, 1190]
+	  Position		  [3455, 1080, 3465, 1180]
 	  ZOrder		  -18
 	  ShowName		  off
 	  Inputs		  "2"
@@ -3861,7 +3953,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "RL Slip Controller"
-	    Location		    [0, 0, 1920, 1040]
+	    Location		    [183, 155, 1673, 991]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3878,29 +3970,15 @@ Model {
 	      BlockType		      Inport
 	      Name		      "Slip Ratio [%]"
 	      SID		      "243"
-	      Position		      [135, 103, 165, 117]
+	      Position		      [75, 98, 105, 112]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Reference
-	      Name		      "ABS Fuzzy Controller"
-	      SID		      "244"
-	      Ports		      [1, 1]
-	      Position		      [465, 300, 525, 350]
-	      ZOrder		      -2
-	      LibraryVersion	      "1.186"
-	      SourceBlock	      "fuzblock/Fuzzy Logic \nController \nwith Ruleviewer"
-	      SourceType	      "FIS"
-	      ContentPreviewEnabled   off
-	      fismatrix		      "Fuzzy_Slip_Ctl_ABS"
-	      Ts		      ".1"
 	    }
 	    Block {
 	      BlockType		      Derivative
 	      Name		      "Derivative"
 	      SID		      "319"
-	      Position		      [280, 95, 310, 125]
+	      Position		      [220, 90, 250, 120]
 	      ZOrder		      2
 	    }
 	    Block {
@@ -3973,18 +4051,26 @@ Model {
 	      "leTime','0'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
 	    }
 	    Block {
-	      BlockType		      Reference
-	      Name		      "VLC Fuzzy Controller"
-	      SID		      "253"
-	      Ports		      [1, 1]
-	      Position		      [465, 130, 525, 180]
-	      ZOrder		      -18
-	      LibraryVersion	      "1.186"
-	      SourceBlock	      "fuzblock/Fuzzy Logic \nController \nwith Ruleviewer"
-	      SourceType	      "FIS"
-	      ContentPreviewEnabled   off
-	      fismatrix		      "Fuzzy_Slip_Ctl_VLC"
-	      Ts		      ".1"
+	      BlockType		      Gain
+	      Name		      "Slip Ratio Gain"
+	      SID		      "459"
+	      Position		      [680, 55, 710, 85]
+	      ZOrder		      137
+	      Gain		      "Slip_Ratio_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Slip Ratio Gain1"
+	      SID		      "460"
+	      Position		      [690, 245, 720, 275]
+	      ZOrder		      138
+	      Gain		      "Slip_Ratio_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -4033,7 +4119,7 @@ Model {
 	      }
 	      Branch {
 		ZOrder			16
-		Points			[0, 60]
+		Points			[0, 65]
 		DstBlock		"Mux1"
 		DstPort			2
 	      }
@@ -4042,7 +4128,7 @@ Model {
 	      ZOrder		      58
 	      SrcBlock		      "Derivative"
 	      SrcPort		      1
-	      Points		      [40, 0; 0, 30]
+	      Points		      [100, 0; 0, 35]
 	      DstBlock		      "Mux1"
 	      DstPort		      1
 	    }
@@ -4050,7 +4136,21 @@ Model {
 	      ZOrder		      51
 	      SrcBlock		      "Fuzzy Logic \nController"
 	      SrcPort		      1
-	      Points		      [303, 0; 0, 150; 91, 0]
+	      DstBlock		      "Slip Ratio Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      52
+	      SrcBlock		      "Fuzzy Logic \nController1"
+	      SrcPort		      1
+	      DstBlock		      "Slip Ratio Gain1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      68
+	      SrcBlock		      "Slip Ratio Gain"
+	      SrcPort		      1
+	      Points		      [118, 0; 0, 150; 91, 0]
 	      Branch {
 		ZOrder			47
 		Points			[0, -55]
@@ -4064,10 +4164,10 @@ Model {
 	      }
 	    }
 	    Line {
-	      ZOrder		      52
-	      SrcBlock		      "Fuzzy Logic \nController1"
+	      ZOrder		      69
+	      SrcBlock		      "Slip Ratio Gain1"
 	      SrcPort		      1
-	      Points		      [395, 0]
+	      Points		      [200, 0]
 	      Branch {
 		ZOrder			50
 		Points			[0, 55]
@@ -4094,7 +4194,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "RL Torque Gains and Saturation"
-	    Location		    [0, 0, 1920, 1040]
+	    Location		    [183, 155, 1673, 991]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -4256,8 +4356,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "RR Slip Controller"
-	    Location		    [0, 0, 1920, 1040]
-	    Open		    off
+	    Location		    [183, 155, 1673, 991]
+	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -4273,29 +4373,15 @@ Model {
 	      BlockType		      Inport
 	      Name		      "Slip Ratio [%]"
 	      SID		      "257"
-	      Position		      [135, 103, 165, 117]
+	      Position		      [60, 103, 90, 117]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Reference
-	      Name		      "ABS Fuzzy Controller"
-	      SID		      "258"
-	      Ports		      [1, 1]
-	      Position		      [465, 300, 525, 350]
-	      ZOrder		      -2
-	      LibraryVersion	      "1.186"
-	      SourceBlock	      "fuzblock/Fuzzy Logic \nController \nwith Ruleviewer"
-	      SourceType	      "FIS"
-	      ContentPreviewEnabled   off
-	      fismatrix		      "Fuzzy_Slip_Ctl_ABS"
-	      Ts		      ".1"
 	    }
 	    Block {
 	      BlockType		      Derivative
 	      Name		      "Derivative"
 	      SID		      "320"
-	      Position		      [280, 95, 310, 125]
+	      Position		      [205, 95, 235, 125]
 	      ZOrder		      2
 	    }
 	    Block {
@@ -4331,7 +4417,7 @@ Model {
 	      Name		      "Mux1"
 	      SID		      "264"
 	      Ports		      [2, 1]
-	      Position		      [385, 125, 390, 185]
+	      Position		      [300, 125, 305, 185]
 	      ZOrder		      -12
 	      ShowName		      off
 	      Inputs		      "2"
@@ -4393,18 +4479,26 @@ Model {
 	      "s',true,'Version','2016a')),'Version','2016a','Location',[1 560 1087 1079],'WindowStyle','docked')"
 	    }
 	    Block {
-	      BlockType		      Reference
-	      Name		      "VLC Fuzzy Controller"
-	      SID		      "267"
-	      Ports		      [1, 1]
-	      Position		      [465, 130, 525, 180]
-	      ZOrder		      -18
-	      LibraryVersion	      "1.186"
-	      SourceBlock	      "fuzblock/Fuzzy Logic \nController \nwith Ruleviewer"
-	      SourceType	      "FIS"
-	      ContentPreviewEnabled   off
-	      fismatrix		      "Fuzzy_Slip_Ctl_VLC"
-	      Ts		      ".1"
+	      BlockType		      Gain
+	      Name		      "Slip Ratio Gain"
+	      SID		      "451"
+	      Position		      [630, 55, 660, 85]
+	      ZOrder		      138
+	      Gain		      "Slip_Ratio_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Slip Ratio Gain1"
+	      SID		      "458"
+	      Position		      [640, 245, 670, 275]
+	      ZOrder		      137
+	      Gain		      "Slip_Ratio_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -4427,7 +4521,7 @@ Model {
 	      ZOrder		      1
 	      SrcBlock		      "Mux1"
 	      SrcPort		      1
-	      Points		      [35, 0]
+	      Points		      [120, 0]
 	      Branch {
 		ZOrder			17
 		Points			[0, -85]
@@ -4462,7 +4556,7 @@ Model {
 	      ZOrder		      58
 	      SrcBlock		      "Derivative"
 	      SrcPort		      1
-	      Points		      [40, 0; 0, 30]
+	      Points		      [45, 0]
 	      DstBlock		      "Mux1"
 	      DstPort		      1
 	    }
@@ -4470,24 +4564,21 @@ Model {
 	      ZOrder		      51
 	      SrcBlock		      "Fuzzy Logic \nController"
 	      SrcPort		      1
-	      Points		      [218, 0; 0, 150; 80, 0]
-	      Branch {
-		ZOrder			47
-		Points			[0, -55]
-		DstBlock		"Scope"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			46
-		DstBlock		"T_lim_Accel"
-		DstPort			1
-	      }
+	      DstBlock		      "Slip Ratio Gain"
+	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      52
+	      ZOrder		      71
 	      SrcBlock		      "Fuzzy Logic \nController1"
 	      SrcPort		      1
-	      Points		      [298, 0]
+	      DstBlock		      "Slip Ratio Gain1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      70
+	      SrcBlock		      "Slip Ratio Gain1"
+	      SrcPort		      1
+	      Points		      [153, 0]
 	      Branch {
 		ZOrder			50
 		Points			[0, 55]
@@ -4500,6 +4591,23 @@ Model {
 		DstPort			1
 	      }
 	    }
+	    Line {
+	      ZOrder		      69
+	      SrcBlock		      "Slip Ratio Gain"
+	      SrcPort		      1
+	      Points		      [83, 0; 0, 150; 80, 0]
+	      Branch {
+		ZOrder			47
+		Points			[0, -55]
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			46
+		DstBlock		"T_lim_Accel"
+		DstPort			1
+	      }
+	    }
 	  }
 	}
 	Block {
@@ -4507,14 +4615,14 @@ Model {
 	  Name			  "RR Torque Gains and Saturation"
 	  SID			  "103"
 	  Ports			  [3, 1]
-	  Position		  [1200, 978, 1500, 1112]
+	  Position		  [1190, 978, 1490, 1112]
 	  ZOrder		  -22
 	  BackgroundColor	  "yellow"
 	  RequestExecContextInheritance	off
 	  Variant		  off
 	  System {
 	    Name		    "RR Torque Gains and Saturation"
-	    Location		    [0, 0, 1920, 1040]
+	    Location		    [183, 155, 1673, 991]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -4669,7 +4777,7 @@ Model {
 	  Name			  "Right Torque Scope1"
 	  SID			  "219"
 	  Ports			  [1]
-	  Position		  [2760, 1124, 2790, 1156]
+	  Position		  [3545, 1114, 3575, 1146]
 	  ZOrder		  -23
 	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
 	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
@@ -4695,7 +4803,7 @@ Model {
 	  BlockType		  Switch
 	  Name			  "Switch1"
 	  SID			  "371"
-	  Position		  [1910, 400, 1960, 440]
+	  Position		  [2625, 375, 2675, 415]
 	  ZOrder		  41
 	  Threshold		  ".02"
 	  InputSameDT		  off
@@ -4705,7 +4813,7 @@ Model {
 	  BlockType		  Switch
 	  Name			  "Switch2"
 	  SID			  "377"
-	  Position		  [1910, 595, 1960, 635]
+	  Position		  [2625, 570, 2675, 610]
 	  ZOrder		  48
 	  Threshold		  ".02"
 	  InputSameDT		  off
@@ -4715,7 +4823,7 @@ Model {
 	  BlockType		  Switch
 	  Name			  "Switch3"
 	  SID			  "382"
-	  Position		  [1910, 820, 1960, 860]
+	  Position		  [2625, 795, 2675, 835]
 	  ZOrder		  53
 	  Threshold		  ".02"
 	  InputSameDT		  off
@@ -4725,7 +4833,7 @@ Model {
 	  BlockType		  Switch
 	  Name			  "Switch4"
 	  SID			  "387"
-	  Position		  [1920, 1040, 1970, 1080]
+	  Position		  [2635, 1015, 2685, 1055]
 	  ZOrder		  58
 	  Threshold		  ".02"
 	  InputSameDT		  off
@@ -4770,7 +4878,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Reference/Error Generator"
-	    Location		    [0, 0, 1920, 1040]
+	    Location		    [183, 155, 1673, 991]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -5092,7 +5200,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Torque FL [Nm]"
 	  SID			  "129"
-	  Position		  [2675, 398, 2705, 412]
+	  Position		  [3460, 388, 3490, 402]
 	  ZOrder		  -26
 	  IconDisplay		  "Port number"
 	}
@@ -5100,7 +5208,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Torque FR [Nm]"
 	  SID			  "130"
-	  Position		  [2675, 593, 2705, 607]
+	  Position		  [3460, 583, 3490, 597]
 	  ZOrder		  -27
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -5109,7 +5217,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Torque RL [Nm]"
 	  SID			  "131"
-	  Position		  [2675, 818, 2705, 832]
+	  Position		  [3460, 808, 3490, 822]
 	  ZOrder		  -28
 	  Port			  "3"
 	  IconDisplay		  "Port number"
@@ -5118,7 +5226,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Torque RR [Nm]"
 	  SID			  "132"
-	  Position		  [2675, 1038, 2705, 1052]
+	  Position		  [3460, 1028, 3490, 1042]
 	  ZOrder		  -29
 	  Port			  "4"
 	  IconDisplay		  "Port number"
@@ -5402,24 +5510,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  125
-	  SrcBlock		  "FL Torque Gains and Saturation"
-	  SrcPort		  1
-	  Points		  [100, 0]
-	  Branch {
-	    ZOrder		    145
-	    Points		    [0, -70]
-	    DstBlock		    "Async Rate Transition "
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    144
-	    Points		    [0, 49; 274, 0; 0, -19]
-	    DstBlock		    "Switch1"
-	    DstPort		    3
-	  }
-	}
-	Line {
 	  ZOrder		  126
 	  SrcBlock		  "FL Slip Controller"
 	  SrcPort		  1
@@ -5459,27 +5549,8 @@ Model {
 	  ZOrder		  143
 	  SrcBlock		  "Switch1"
 	  SrcPort		  1
-	  Points		  [410, 0; 0, -15]
 	  DstBlock		  "Gain"
 	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  155
-	  SrcBlock		  "FR Torque Gains and Saturation"
-	  SrcPort		  1
-	  Points		  [100, 0]
-	  Branch {
-	    ZOrder		    148
-	    Points		    [0, -70]
-	    DstBlock		    "Async Rate Transition 2"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    147
-	    Points		    [0, 49; 274, 0; 0, -19]
-	    DstBlock		    "Switch2"
-	    DstPort		    3
-	  }
 	}
 	Line {
 	  ZOrder		  150
@@ -5514,27 +5585,8 @@ Model {
 	  ZOrder		  156
 	  SrcBlock		  "Switch2"
 	  SrcPort		  1
-	  Points		  [430, 0]
 	  DstBlock		  "Gain1"
 	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  165
-	  SrcBlock		  "RL Torque Gains and Saturation"
-	  SrcPort		  1
-	  Points		  [100, 0]
-	  Branch {
-	    ZOrder		    158
-	    Points		    [0, -70]
-	    DstBlock		    "Async Rate Transition 4"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    157
-	    Points		    [0, 49; 274, 0; 0, -19]
-	    DstBlock		    "Switch3"
-	    DstPort		    3
-	  }
 	}
 	Line {
 	  ZOrder		  160
@@ -5569,27 +5621,8 @@ Model {
 	  ZOrder		  166
 	  SrcBlock		  "Switch3"
 	  SrcPort		  1
-	  Points		  [420, 0]
 	  DstBlock		  "Gain2"
 	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  175
-	  SrcBlock		  "RR Torque Gains and Saturation"
-	  SrcPort		  1
-	  Points		  [100, 0]
-	  Branch {
-	    ZOrder		    168
-	    Points		    [0, -70]
-	    DstBlock		    "Async Rate Transition 6"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    167
-	    Points		    [0, 49; 274, 0; 0, -19]
-	    DstBlock		    "Switch4"
-	    DstPort		    3
-	  }
 	}
 	Line {
 	  ZOrder		  170
@@ -5624,7 +5657,6 @@ Model {
 	  ZOrder		  176
 	  SrcBlock		  "Switch4"
 	  SrcPort		  1
-	  Points		  [346, 0; 0, -15]
 	  DstBlock		  "Gain3"
 	  DstPort		  1
 	}
@@ -5634,6 +5666,127 @@ Model {
 	  SrcPort		  1
 	  DstBlock		  "Goto39"
 	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  258
+	  SrcBlock		  "Gain4"
+	  SrcPort		  1
+	  Points		  [100, 0]
+	  Branch {
+	    ZOrder		    253
+	    Points		    [0, 24; 274, 0; 0, -19]
+	    DstBlock		    "Switch1"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    249
+	    Points		    [0, -95]
+	    DstBlock		    "Async Rate Transition "
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  259
+	  SrcBlock		  "Gain5"
+	  SrcPort		  1
+	  Points		  [100, 0]
+	  Branch {
+	    ZOrder		    254
+	    Points		    [0, 24; 274, 0; 0, -19]
+	    DstBlock		    "Switch2"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    250
+	    Points		    [0, -95]
+	    DstBlock		    "Async Rate Transition 2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  262
+	  SrcBlock		  "Gain7"
+	  SrcPort		  1
+	  Points		  [100, 0]
+	  Branch {
+	    ZOrder		    255
+	    Points		    [0, 24; 274, 0; 0, -19]
+	    DstBlock		    "Switch3"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    251
+	    Points		    [0, -95]
+	    DstBlock		    "Async Rate Transition 4"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  263
+	  SrcBlock		  "Gain8"
+	  SrcPort		  1
+	  Points		  [110, 0]
+	  Branch {
+	    ZOrder		    256
+	    Points		    [0, 24; 274, 0; 0, -19]
+	    DstBlock		    "Switch4"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    252
+	    Points		    [0, -95]
+	    DstBlock		    "Async Rate Transition 6"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  480
+	  SrcBlock		  "FL Torque Gains and Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Gain4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  482
+	  SrcBlock		  "FR Torque Gains and Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Gain5"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  483
+	  SrcBlock		  "RL Torque Gains and Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Gain7"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  485
+	  SrcBlock		  "RR Torque Gains and Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Gain8"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "440"
+	  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html"
+	  "><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</styl"
+	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
+	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
+	  " style=\" font-family:'Arial'; font-size:22px;\">Two configurations to play with:<br />1. FR wheel and FL wheel can"
+	  "not exceed 1.1 times the min magnitude torque.</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-le"
+	  "ft:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Arial'; font-size:22px"
+	  ";\">2. FR wheel and RR wheel ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span></p>\n<p style=\" margin-top:0px; ma"
+	  "rgin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-fami"
+	  "ly:'Arial'; font-size:22px;\">(Currently set up as 1)</span></p></body></html>"
+	  Position		  [1534, -91, 2272, 15]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  Interpreter		  "rich"
+	  ZOrder		  -1
 	}
 	Annotation {
 	  SID			  "214"

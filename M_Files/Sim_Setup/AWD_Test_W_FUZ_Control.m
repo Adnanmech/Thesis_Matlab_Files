@@ -1,8 +1,8 @@
 %clear all; close all; clc;
 fprintf('Loading data for rear wheel driving model...')
 %set_param('AWD_EV_MODEL','AlgebraicLoopSolver','LineSearch')
-set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
-%set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
+%set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
+set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
 %USE ABOVE STATEMENT IF SOLVER HAS CONVERGENCE ERROR!!!!!!!!!!
 
 %% Inputs
@@ -13,9 +13,9 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 
 %fuzzyLogicDesigner
 %Load Fuzzy Inference System Controllers
-Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
-Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
-Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
+Fuzzy_Slip_Ctl_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
+Fuzzy_Slip_Ctl_ABS = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
+Fuzzy_AYC_Ctl      = readfis('Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
 
 %Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_VLC_2');      %VLC FIS
 %Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS_2');      %ABS FIS
@@ -31,11 +31,13 @@ Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large
 
 Throttle_Step_Time = 0.2;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
-Throttle_Final_Val = -1;        %Final throttle value
+Throttle_Final_Val = -0.99;        %Final throttle value
 
 Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
 SA_Start_Time = 500;            %Don't Care since channel not selected
 SA_Slope = 1;                   %Don't Care since channel not selected
+SA_Upper_Sat_Lim = 10;
+SA_Lower_Sat_Lim = -10;
 
 Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
 %%
@@ -89,13 +91,14 @@ Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
 Vy0 = 0.0001;                   % Initial vehicle lateral speed [m/s]
 r0 = 0.0001;                    % Initial yaw rate [rad/s]
 
-SR_Eq_Accel_Brake_Threshold = 0.001;       %Throttle position threshold for Slip Ratio to change definitions from Accel to Brake or Vice-Versa
+SR_Eq_Accel_Brake_Threshold = -0.01;       %Throttle position threshold for Slip Ratio to change definitions from Accel to Brake or Vice-Versa
 
 T_Avail = 150;          % Peak Torque available by motors [Nm]
 
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
+z = 0.00033;            %e-motor time constant
 %D_Slip = 0.1;            % Desired slip for PID
 
 %%
@@ -104,7 +107,8 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
 %%
 % Fuzzy Controller Settings
-Yaw_Ctrl_Gain = 0.2;
+Yaw_Ctrl_Gain = .8;
+Slip_Ratio_Ctrl_Gain = 1;
 %%
 
 %% Parameters
@@ -120,7 +124,7 @@ Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 Jw = 1.2;            %   Wheel rotational moment of inertial >>Inertia = Mass(at radius r) * radius^2; sum multiple masses at diff radii for total
                     %   Value should be 0.3-0.5
 
-Rw = .3;           %   Wheel rolling radius [m]
+Rw = .33;           %   Wheel rolling radius [m]
 
 % Magic formular (Longitudinal)
 Kxnorm = 30;      % normalized stiffness
@@ -323,11 +327,11 @@ Ex_2 = ( Bx_2 * sp_2 - tan( pi / ( 2 * Cx_2 )) ) / ( Bx_2 * sp_2-atan( Bx_2 * sp
 %Test Formula   KDS 2/7/14
 %u = slip ratio
 u=-1:.001:1;
-LongSlip = Dx_2*sin(Cx_2*atan(Bx_2*u-Ex_2*(Bx_2*u-atan(Bx_2*u))));
-figure;
-hhh(1) = subplot(2,1,1); % upper plot
-plot(u,LongSlip)
-hold on;
+%LongSlip = Dx_2*sin(Cx_2*atan(Bx_2*u-Ex_2*(Bx_2*u-atan(Bx_2*u))));
+%figure;
+%hhh(1) = subplot(2,1,1); % upper plot
+%plot(u,LongSlip)
+%hold on;
 
 %------------------  Lateral Slip Characteristics  ------------------------
 %   

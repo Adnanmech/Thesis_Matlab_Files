@@ -13,9 +13,9 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
 
 %fuzzyLogicDesigner
 %Load Fuzzy Inference System Controllers
-Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
-Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
-Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
+Fuzzy_Slip_Ctl_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
+Fuzzy_Slip_Ctl_ABS = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
+Fuzzy_AYC_Ctl      = readfis('Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
 
 %Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_VLC_2');      %VLC FIS
 %Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS_2');      %ABS FIS
@@ -23,18 +23,93 @@ Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working D
 
 %PassBand = 100;
 %StopBand = 200;
+
+
+%%
+%ABS Test
+Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
+
+Throttle_Step_Time = 0.2;       %Step time of throttle signal
+Throttle_Init_Val = 0;          %Initial throttle value
+Throttle_Final_Val = -0.99;        %Final throttle value
+
+Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
+SA_Start_Time = 500;            %Don't Care since channel not selected
+SA_Slope = 1;                   %Don't Care since channel not selected
+SA_Upper_Sat_Lim = 10;
+SA_Lower_Sat_Lim = -10;
+
+Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
+%%
+% %%
+% %VLC Test
+% Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
+% 
+% Throttle_Step_Time = 0.2;       %Step time of throttle signal
+% Throttle_Init_Val = 0;          %Initial throttle value
+% Throttle_Final_Val = 1;         %Final throttle value
+% 
+% Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
+% SA_Start_Time = 500;            %Don't Care since channel not selected
+% SA_Slope = 1;                   %Don't Care since channel not selected
+% 
+% Vx0 = 0.01;                     % Initial vehicle longitude speed [m/s]
+% 
+% %%
+% %%
+% %Constant Steering Angle Test
+% Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
+% 
+% Throttle_Step_Time = 500;       %Step time of throttle signal
+% Throttle_Init_Val = 0;          %Initial throttle value
+% Throttle_Final_Val = .1;        %Final throttle value (DOESN'T MATTER)
+% 
+% Steering_Input_Select = 2;      %Steering Angle Selection (2 = Ramp)
+% SA_Start_Time = .2;
+% SA_Slope = 1;
+% 
+% Vx0 =13.41;                     % Initial vehicle longitude speed [m/s]
+% 
+% %%
+% %%
+% %Split-u Test
+% Split_u_Time_On = 1;          %Set time for split-u to start (Keep off w large time)
+% 
+% Throttle_Step_Time = 1.5;       %Step time of throttle signal
+% Throttle_Init_Val = 0;          %Initial throttle value
+% Throttle_Final_Val = -1;        %Final throttle value (DOESN'T MATTER)
+% 
+% Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
+% SA_Start_Time = .2;
+% SA_Slope = 1;
+% 
+% Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
+% %%
+%%
+%Variables wich remain constant for all tests
+
+Vy0 = 0.0001;                   % Initial vehicle lateral speed [m/s]
+r0 = 0.0001;                    % Initial yaw rate [rad/s]
+
+SR_Eq_Accel_Brake_Threshold = -0.01;       %Throttle position threshold for Slip Ratio to change definitions from Accel to Brake or Vice-Versa
+
 T_Avail = 150;          % Peak Torque available by motors [Nm]
 
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
+z = 0.00033;            %e-motor time constant
 %D_Slip = 0.1;            % Desired slip for PID
 
-Vx0 = 26.82;             % Initial vehicle longitude speed [m/s] note: was 60*1000/3600   KDS 10/16, 
-                        % DO NOT USE EXTREMELY SMALL START SPEEDS
-                        % Initial negative speeds seem to not work....
-Vy0 = 0.001;                % Initial vehicle lateral speed [m/s]
-r0 = 0;                 % Initial yaw rate [rad/s]
+%%
+% % Sliding Mode Controller Settings
+% Target_SR = 0.1;
+
+%%
+% Fuzzy Controller Settings
+Yaw_Ctrl_Gain = 1;
+Slip_Ratio_Ctrl_Gain = 0.4;
+%%
 
 %% Parameters
 g = 9.81;               %   Gravity acceleration [m/s^2]
@@ -49,7 +124,7 @@ Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 Jw = 1.2;            %   Wheel rotational moment of inertial >>Inertia = Mass(at radius r) * radius^2; sum multiple masses at diff radii for total
                     %   Value should be 0.3-0.5
 
-Rw = .3;           %   Wheel rolling radius [m]
+Rw = .33;           %   Wheel rolling radius [m]
 
 % Magic formular (Longitudinal)
 Kxnorm = 30;      % normalized stiffness
@@ -58,8 +133,8 @@ Kxnorm = 30;      % normalized stiffness
 Muxp = .99;         % peak friction coefficient
 Muxs = 0.5;         % sliding friction coefficient was .5 kds 5/16/14
 %(Condition 2)
-Muxp_2 = 0.2;         % peak friction coefficient
-Muxs_2 = 0.1;       % sliding friction coefficient 
+Muxp_2 = 0.3;         % peak friction coefficient
+Muxs_2 = 0.29;       % sliding friction coefficient 
 
 
 % Magic formular (Lateral)
@@ -70,8 +145,8 @@ Fz = m*g/4;
 Muyp0 = 0.85;       % static peak friction coefficient
 Muys = 0.80;        % friction coefficient when sliding 
 %(Condition 2)
-Muyp0_2 = 0.2;       % static peak friction coefficient
-Muys_2 = 0.15;        % friction coefficient when sliding 
+Muyp0_2 = 0.3;       % static peak friction coefficient
+Muys_2 = 0.29;        % friction coefficient when sliding 
 
 % Combined slip parameters
 %(Condition 1)
@@ -252,11 +327,11 @@ Ex_2 = ( Bx_2 * sp_2 - tan( pi / ( 2 * Cx_2 )) ) / ( Bx_2 * sp_2-atan( Bx_2 * sp
 %Test Formula   KDS 2/7/14
 %u = slip ratio
 u=-1:.001:1;
-LongSlip = Dx_2*sin(Cx_2*atan(Bx_2*u-Ex_2*(Bx_2*u-atan(Bx_2*u))));
-figure;
-hhh(1) = subplot(2,1,1); % upper plot
-plot(u,LongSlip)
-hold on;
+%LongSlip = Dx_2*sin(Cx_2*atan(Bx_2*u-Ex_2*(Bx_2*u-atan(Bx_2*u))));
+%figure;
+%hhh(1) = subplot(2,1,1); % upper plot
+%plot(u,LongSlip)
+%hold on;
 
 %------------------  Lateral Slip Characteristics  ------------------------
 %   
