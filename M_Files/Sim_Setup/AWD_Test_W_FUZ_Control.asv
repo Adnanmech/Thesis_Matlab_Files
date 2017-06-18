@@ -134,8 +134,8 @@ Jw = 1.2;            %   Wheel rotational moment of inertial >>Inertia = Mass(at
 Rw = .33;           %   Wheel rolling radius [m]
 
 % Magic formular (Longitudinal)
-Kxnorm = 30;      % normalized stiffness
-Kxnorm_2 = 8;
+Kxnorm = 10;      % normalized stiffness
+
 %(Condition 1)
 Muxp = .99;         % peak friction coefficient
 Muxs = 0.5;         % sliding friction coefficient was .5 kds 5/16/14
@@ -327,25 +327,26 @@ Ex = ( Bx * sp - tan( pi / ( 2 * Cx )) ) / ( Bx * sp-atan( Bx * sp ) );
 %(Condition 2)
 Dx_2 = Muxp_2;
 Cx_2 = 2 - 2/pi * asin( Muxs_2/Muxp_2 );
-Bx_2 = Kxnorm_2 / ( Cx_2*Dx_2 );
+Bx_2 = Kxnorm / ( Cx_2*Dx_2 );
 sp_2 = 3 / ( Bx_2*Cx_2 );   % slip ratio at which Mu is max.
 Ex_2 = ( Bx_2 * sp_2 - tan( pi / ( 2 * Cx_2 )) ) / ( Bx_2 * sp_2-atan( Bx_2 * sp_2 ) );
 
 %Test Formula   KDS 2/7/14
 %u = slip ratio
-%  u=-1:.001:1;
-%  LongSlip = Dx_2*sin(Cx_2*atan(Bx_2*u-Ex_2*(Bx_2*u-atan(Bx_2*u))));
-%  figure;
-%  hhh(1) = subplot(2,1,1); % upper plot
-%  plot(u,LongSlip)
-%  hold on;
-
-%u = slip ratio
 % u=-1:.001:1;
-% LongSlip = Dx*sin(Cx*atan(Bx*u-Ex*(Bx*u-atan(Bx*u))));
+% LongSlip = Dx_2*sin(Cx_2*atan(Bx_2*u-Ex_2*(Bx_2*u-atan(Bx_2*u))));
+% figure;
 % hhh(1) = subplot(2,1,1); % upper plot
 % plot(u,LongSlip)
 % hold on;
+
+%u = slip ratio
+u=-1:.001:1;
+LongSlip = Dx*sin(Cx*atan(Bx*u-Ex*(Bx*u-atan(Bx*u))));
+figure;
+hhh(1) = subplot(2,1,1); % upper plot
+plot(u,LongSlip)
+hold on;
 
 %------------------  Lateral Slip Characteristics  ------------------------
 %   

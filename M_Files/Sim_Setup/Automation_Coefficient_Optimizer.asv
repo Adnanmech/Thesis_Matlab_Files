@@ -20,12 +20,8 @@ VMC_Vy = repmat(100, int32(stop_time*1000), nsp);
 VMC_r  = repmat(100, int32(stop_time*1000), nsp);
 
 %Set up sim values
-addpath('M_Files/Sim_Setup');
-run('AWD_Test_W_FUZ_Control.m');
-
-%add paths for sim files
 addpath('All_Combined');
-addpath('Fuzzy_Controller_Files');
+AWD_Test_W_FUZ_Control
 
 sim_pts = 10;
 sim_pts_la = 5;

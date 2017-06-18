@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.561"
+    ComputedModelVersion    "1.560"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC_ALGO2"
@@ -77,16 +77,16 @@ Model {
 	}
 	Object {
 	  $ObjectID		  7
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "4095"
+	  LoadSaveID		  "4050"
 	  Extents		  [1312.0, 804.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
+	  Offset		  [90.0, -71.0]
 	}
 	Object {
 	  $ObjectID		  8
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1312.0, 804.0]
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jun 17 14:45:38 2017"
+  LastModifiedDate	  "Sat Jun 17 13:05:09 2017"
   RTWModifiedTimeStamp	  419605990
-  ModelVersionFormat	  "1.%<AutoIncrement:561>"
+  ModelVersionFormat	  "1.%<AutoIncrement:560>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -2288,7 +2288,7 @@ Model {
       System {
 	Name			"FL Tire Mode"
 	Location		[166, 53, 1721, 1034]
-	Open			off
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -3428,24 +3428,24 @@ Model {
 	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
 	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData2','DataLoggingSaveFormat','StructureWithTime','DataLogg"
 	  "ingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDis"
-	  "plays',{struct('MinYLimReal','-0.3431','MaxYLimReal','0.10401','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag',"
-	  "'0.3431','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor"
-	  "',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0"
-	  ".623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.71"
-	  "7647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalL"
-	  "abel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Slip Ratio'}},'ShowCon"
-	  "tent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.3431','MaxYLimReal','0.10401','YLabel"
-	  "Real','','MinYLimMag','0.00000','MaxYLimMag','0.3431','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPh"
-	  "ase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder'"
-	  ",[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745"
-	  "098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803"
-	  "9215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumL"
-	  "ines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'"
-	  "OnceAtStop',false,'PreviousAutoscale','XY','PreviousZoomMode','ZoomY'),extmgr.Configuration('Tools','Measurements',"
-	  "true,'Version','2016a','Measurements',struct('tcursors',struct('XCoordinates',[1.70582524271845 5.25],'YCoordinates"
-	  "',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpa"
-	  "cing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[30"
-	  "5 213 1589 954],'VisibleAtModelOpen','on')"
+	  "plays',{struct('MinYLimReal','-65.22002','MaxYLimReal','19.3634','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag"
+	  "','65.22002','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickC"
+	  "olor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450980392156"
+	  "86 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;"
+	  "0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<Sig"
+	  "nalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Slip Ratio'}},'Sho"
+	  "wContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-65.22002','MaxYLimReal','19.3634','"
+	  "YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','65.22002','LegendVisibility','Off','XGrid',true,'YGrid',true,'P"
+	  "lotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'Col"
+	  "orOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.3921"
+	  "56862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0"
+	  "745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{"
+	  "}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation"
+	  "',true,'OnceAtStop',false,'PreviousAutoscale','XY','PreviousZoomMode','ZoomY'),extmgr.Configuration('Tools','Measur"
+	  "ements',true,'Version','2016a','Measurements',struct('tcursors',struct('XCoordinates',[1.70582524271845 5.25],'YCoo"
+	  "rdinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockC"
+	  "ursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Locat"
+	  "ion',[305 213 1589 954])"
 	}
 	Block {
 	  BlockType		  Scope
@@ -4118,7 +4118,7 @@ Model {
       System {
 	Name			"FR Tire Mode"
 	Location		[166, 53, 1721, 1034]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -4634,14 +4634,14 @@ Model {
 	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
 	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData16','DataLoggingSaveFormat','StructureWithTime','DataLog"
 	  "gingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDi"
-	  "splays',{struct('MinYLimReal','-0.50898','MaxYLimReal','0.27289','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag"
-	  "','0.50898','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickCo"
+	  "splays',{struct('MinYLimReal','-0.00317','MaxYLimReal','0.00314','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag"
+	  "','0.00317','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickCo"
 	  "lor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074509803921568"
 	  "6 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0"
 	  ".717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<Sign"
 	  "alLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Slip Ratio'}},'Show"
-	  "Content',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.50898','MaxYLimReal','0.27289','YL"
-	  "abelReal','','MinYLimMag','0.00000','MaxYLimMag','0.50898','LegendVisibility','off','XGrid',true,'YGrid',true,'Plot"
+	  "Content',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.00317','MaxYLimReal','0.00314','YL"
+	  "abelReal','','MinYLimMag','0.00000','MaxYLimMag','0.00317','LegendVisibility','off','XGrid',true,'YGrid',true,'Plot"
 	  "MagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorO"
 	  "rder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.3921568"
 	  "62745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745"
@@ -6737,7 +6737,7 @@ Model {
       ModelNameDialog	      "Controller_ABS_VLC_AYC_ALGO2.mdl"
       SimulationMode	      "Normal"
       Variant		      off
-      ModelReferenceVersion   "1.422"
+      ModelReferenceVersion   "1.420"
       List {
 	ListType		InputPortNames
 	port0			"Vx_cont"
@@ -10390,7 +10390,7 @@ Model {
       ",'Measurements',true,'Version','2016a','Measurements',struct('traceselector',struct('Line',1),'tcursors',struct("
       "'XCoordinates',[1.43104667609618 9.07673267326732],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCurs"
       "ors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanel"
-      "Open',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[796 246 1832 903])"
+      "Open',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[796 246 1832 903],'VisibleAtModelOpen','on')"
       NumInputPorts	      "3"
     }
     Block {
@@ -13770,7 +13770,7 @@ MatData {
   }
   DataRecord {
     Tag			    DataTag1
-    Data		    "  %)30     .    N ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
+    Data		    "  %)30     .    R ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
     "9Y0FQK4&%T:',   !V97)I9GE\";&M(86YD;&5S '9N=DUG<DED>           86-T:79E1W)O=7        !R97%$:7-P4')C;G0      &)L:T1"
     "I<W!-;V1E        9W)O=7!#;G0           !G<F]U<%)E<4-N=        &=R;W5P1$]/4E-I9       ;6]D96Q(              !B;&]C:"
     "T@              &]V97)I9&53971T:6YG<P        X    P    !@    @    &          4    (               !          D    "
@@ -13779,9 +13779,9 @@ MatData {
     "            \\#\\.    ,     8    (    !@         %    \"                0         )          X    P    !@    @    "
     "&          4    (               !          D         #@   #@    &    \"     8         !0    @    !     0    $     "
     "    \"0    @           #P/PX    P    !@    @    &          4    (               !          D         #@   #     & "
-    "   \"     8         !0    @               $         \"0         .    ,     8    (    !@         %    \"           "
-    "     0         )          X    P    !@    @    &          4    (               !          D         #@   #     &  "
-    "  \"     8         !0    @               $         \"0         "
+    "   \"     8         !0    @               $         \"0         .    .     8    (    !@         %    \"     $    !"
+    "     0         )    \"         !   ! #@   #@    &    \"     8         !0    @    !     0    $         \"0    @    "
+    "   !  !B*0 X    P    !@    @    &          4    (               !          D         "
   }
 }
 #Finite State Machines
