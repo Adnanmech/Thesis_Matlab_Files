@@ -152,7 +152,7 @@ drawnow
 
 %% 5. define the motion coordinates
 step = 1;               % initialize data stepper
-time = 20;               % time of simulation display [seconds]
+time = 10;               % time of simulation display [seconds]
 fps = 40;               % Frames/second desired
 samples_p_sec = 1000;  % Samples per second of model simulation
                
@@ -214,7 +214,7 @@ for i = 1:(samples_taken - 1)
     
     translation = makehgtform('translate',[latitude(i) longitude(i) altitude(i)]);
     %line drawn from COG of vehicle
-    line([latitude(i) latitude(i+1)],[longitude(i) longitude(i+1)],'color',[1 0 1]);
+    line([latitude(i) latitude(i+1)],[longitude(i) longitude(i+1)],'color',[0 1 0]);
     
     %Line drawn from center of FR wheel
     %line([latitude_s(i) latitude_s(i+1)],[longitude_s(i) longitude_s(i+1)],'color',[1 0 1]);
@@ -297,8 +297,8 @@ for i = 1:(samples_taken - 1)
     
     %fixed axes limits
 
-    set(main_vehicle_plot,'ylim',[-5 75]);
-    set(main_vehicle_plot,'xlim',[-5 75]);
+    set(main_vehicle_plot,'ylim',[-5 140]);
+    set(main_vehicle_plot,'xlim',[-5 400]);
     
     pause(1/(20000*fps));
     
