@@ -1,5 +1,8 @@
 %clear all; close all; clc;
 fprintf('Loading data for rear wheel driving model...')
+
+open_system('All_Combined\AWD_EV_MODEL_rev2.mdl')
+open_system('All_Combined\Controller_ABS_VLC_AYC_ALGO2.mdl')
 %set_param('AWD_EV_MODEL','AlgebraicLoopSolver','LineSearch')
 set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
@@ -138,7 +141,7 @@ Kxnorm = 30;      % normalized stiffness
 Kxnorm_2 = 8;
 %(Condition 1)
 Muxp = .99;         % peak friction coefficient
-Muxs = 0.5;         % sliding friction coefficient was .5 kds 5/16/14
+Muxs = 0.27;         % sliding friction coefficient was .5 kds 5/16/14
 %(Condition 2)
 Muxp_2 = 0.3;         % peak friction coefficient
 Muxs_2 = 0.29;       % sliding friction coefficient 
@@ -341,11 +344,12 @@ Ex_2 = ( Bx_2 * sp_2 - tan( pi / ( 2 * Cx_2 )) ) / ( Bx_2 * sp_2-atan( Bx_2 * sp
 %  hold on;
 
 %u = slip ratio
-% u=-1:.001:1;
-% LongSlip = Dx*sin(Cx*atan(Bx*u-Ex*(Bx*u-atan(Bx*u))));
-% hhh(1) = subplot(2,1,1); % upper plot
-% plot(u,LongSlip)
-% hold on;
+ u=-1:.001:1;
+ LongSlip = Dx*sin(Cx*atan(Bx*u-Ex*(Bx*u-atan(Bx*u))));
+ %figure;
+ hhh(1) = subplot(2,1,1); % upper plot
+ plot(u,LongSlip)
+ hold on;
 
 %------------------  Lateral Slip Characteristics  ------------------------
 %   
@@ -418,16 +422,16 @@ Ey_2 = ( By_2 * ap_2 - tan( pi / ( 2 * Cy_2 )))/( By_2 * ap_2 - atan( By_2 * ap_
 
 %Test Formula   KDS 2/7/14
 %uu = steering angle (rads)
-% uu = -1:.001:1;
-% lz = tan(u);
-% angle = -1:.001:1;
-% degrees = uu*180/pi;
-% pz = tan(angle);
-% %LatSlip = (Dy*sin(Cy*atan(By*u-Ey*(By*u-atan(By*u)))));
-% LatSlip = (Dy*sin(Cy*atan(By*uu-Ey*(By*uu-atan(By*uu)))));
+uu = -1:.001:1;
+lz = tan(u);
+angle = -1:.001:1;
+degrees = uu*180/pi;
+pz = tan(angle);
+%LatSlip = (Dy*sin(Cy*atan(By*u-Ey*(By*u-atan(By*u)))));
+LatSlip = (Dy*sin(Cy*atan(By*uu-Ey*(By*uu-atan(By*uu)))));
 
-%hhh(2) = subplot(2,1,2); % lower plot
-%plot(degrees,LatSlip)
+hhh(2) = subplot(2,1,2); % lower plot
+plot(degrees,LatSlip)
 %valuefin=pz*LatSlip;
 %hold off;
 
