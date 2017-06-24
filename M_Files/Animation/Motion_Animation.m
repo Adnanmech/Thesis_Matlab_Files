@@ -214,7 +214,7 @@ for i = 1:(samples_taken - 1)
     
     translation = makehgtform('translate',[latitude(i) longitude(i) altitude(i)]);
     %line drawn from COG of vehicle
-    line([latitude(i) latitude(i+1)],[longitude(i) longitude(i+1)],'color',[0 1 0]);
+    line([latitude(i) latitude(i+1)],[longitude(i) longitude(i+1)],'color',[0 .1 .5]);
     
     %Line drawn from center of FR wheel
     %line([latitude_s(i) latitude_s(i+1)],[longitude_s(i) longitude_s(i+1)],'color',[1 0 1]);

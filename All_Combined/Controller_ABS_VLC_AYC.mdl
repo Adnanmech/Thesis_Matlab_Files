@@ -115,7 +115,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.156"
+    ComputedModelVersion    "1.158"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -151,7 +151,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [183.0, 155.0, 1490.0, 836.0]
+      Location		      [260.0, 193.0, 1490.0, 836.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -187,9 +187,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Jun 21 21:52:20 2017"
-  RTWModifiedTimeStamp	  419982420
-  ModelVersionFormat	  "1.%<AutoIncrement:156>"
+  LastModifiedDate	  "Thu Jun 22 19:11:42 2017"
+  RTWModifiedTimeStamp	  420042418
+  ModelVersionFormat	  "1.%<AutoIncrement:158>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1705,7 +1705,7 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC"
-    Location		    [183, 155, 1673, 991]
+    Location		    [260, 193, 1750, 1029]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
@@ -1848,7 +1848,7 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[183, 155, 1673, 991]
+	Location		[260, 191, 1750, 1027]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
@@ -1860,7 +1860,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"60"
+	ZoomFactor		"40"
 	Block {
 	  BlockType		  Inport
 	  Name			  "longitudinal speed [m/s]"
@@ -2118,7 +2118,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Torque Gains and Saturation"
-	    Location		    [183, 155, 1673, 991]
+	    Location		    [179, 109, 1669, 945]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2215,7 +2215,7 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Outport
-	      Name		      "Controlled Torque FL [Nm]"
+	      Name		      "Controlled Torque  [Nm]"
 	      SID		      "30"
 	      Position		      [955, 168, 985, 182]
 	      ZOrder		      -36
@@ -2233,7 +2233,7 @@ Model {
 	      ZOrder		      12
 	      SrcBlock		      "Product"
 	      SrcPort		      1
-	      DstBlock		      "Controlled Torque FL [Nm]"
+	      DstBlock		      "Controlled Torque  [Nm]"
 	      DstPort		      1
 	    }
 	    Line {
@@ -2245,10 +2245,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      14
 	      SrcBlock		      "Slip Ratio [%]"
 	      SrcPort		      1
@@ -2256,10 +2252,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      15
 	      SrcBlock		      "Mux1"
 	      SrcPort		      1
@@ -2267,10 +2259,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      16
 	      SrcBlock		      "Wheel Accel [m/s^2]"
 	      SrcPort		      1
@@ -2279,10 +2267,6 @@ Model {
 	      DstPort		      2
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      17
 	      SrcBlock		      "Slip Ratio Gain"
 	      SrcPort		      1
@@ -2291,6 +2275,10 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
+	      FontName		      "Helvetica"
+	      FontSize		      9
+	      FontWeight	      "normal"
+	      FontAngle		      "normal"
 	      ZOrder		      26
 	      SrcBlock		      "Abs"
 	      SrcPort		      1
@@ -2311,7 +2299,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FR Torque Gains and Saturation"
-	    Location		    [183, 155, 1673, 991]
+	    Location		    [179, 109, 1669, 945]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2438,10 +2426,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      4
 	      SrcBlock		      "Slip Ratio [%]"
 	      SrcPort		      1
@@ -2449,10 +2433,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      5
 	      SrcBlock		      "Mux1"
 	      SrcPort		      1
@@ -2460,10 +2440,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      6
 	      SrcBlock		      "Wheel Accel [m/s^2]"
 	      SrcPort		      1
@@ -2472,10 +2448,6 @@ Model {
 	      DstPort		      2
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      7
 	      SrcBlock		      "Slip Ratio Gain"
 	      SrcPort		      1
@@ -2540,7 +2512,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Fuzzy Yaw Controller"
-	    Location		    [183, 155, 1673, 991]
+	    Location		    [179, 109, 1669, 945]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2552,7 +2524,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "60"
+	    ZoomFactor		    "100"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Yaw Error [rad/s]"
@@ -3703,10 +3675,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      4
 	      SrcBlock		      "Slip Ratio [%]"
 	      SrcPort		      1
@@ -3714,10 +3682,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      5
 	      SrcBlock		      "Mux1"
 	      SrcPort		      1
@@ -3725,10 +3689,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      6
 	      SrcBlock		      "Wheel Accel [m/s^2]"
 	      SrcPort		      1
@@ -3737,10 +3697,6 @@ Model {
 	      DstPort		      2
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      7
 	      SrcBlock		      "Slip Ratio Gain"
 	      SrcPort		      1
@@ -3896,10 +3852,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      4
 	      SrcBlock		      "Slip Ratio [%]"
 	      SrcPort		      1
@@ -3907,10 +3859,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      5
 	      SrcBlock		      "Mux1"
 	      SrcPort		      1
@@ -3918,10 +3866,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      6
 	      SrcBlock		      "Wheel Accel [m/s^2]"
 	      SrcPort		      1
@@ -3930,10 +3874,6 @@ Model {
 	      DstPort		      2
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      7
 	      SrcBlock		      "Slip Ratio Gain"
 	      SrcPort		      1
@@ -4056,7 +3996,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Reference/Error Generator"
-	    Location		    [183, 155, 1673, 991]
+	    Location		    [179, 109, 1669, 945]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -4156,22 +4096,22 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData24','DataLoggingSaveFormat','StructureWithTi"
 	      "me','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',tr"
-	      "ue,'SerializedDisplays',{struct('MinYLimReal','-0.02251','MaxYLimReal','0.00815','YLabelReal','','MinYLimMag','"
-	      "0.00000','MaxYLimMag','0.02251','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCo"
-	      "lor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
-	      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313"
-	      "72549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803921568"
-	      "6 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLin"
-	      "es',1,'LineNames',{{'Yaw error'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimR"
-	      "eal','-0.02251','MaxYLimReal','0.00815','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.02251','LegendVi"
-	      "sibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509"
-	      "803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411"
-	      "764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.71764705"
-	      "8823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLab"
-	      "el>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',tr"
-	      "ue,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','"
-	      "XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[347 220"
-	      " 1713 899])"
+	      "ue,'SerializedDisplays',{struct('MinYLimReal','-0.08221','MaxYLimReal','0.6633','YLabelReal','','MinYLimMag','0"
+	      ".00000','MaxYLimMag','0.6633','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColo"
+	      "r',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666666"
+	      "66666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372"
+	      "549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
+	      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines"
+	      "',1,'LineNames',{{'Yaw error'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimRea"
+	      "l','-0.08221','MaxYLimReal','0.6633','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.6633','LegendVisibi"
+	      "lity','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.6862745098039"
+	      "22 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.6235294117647"
+	      "06 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823"
+	      "529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>'"
+	      ",'LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'"
+	      "Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY')"
+	      ",extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[347 220 171"
+	      "3 899])"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -4184,25 +4124,25 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData25','DataLoggingSaveFormat','StructureWithTi"
 	      "me','SampleTime','.001','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visua"
-	      "ls','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-0.02117','MaxYLimReal','0.02646','YLabelRea"
-	      "l','','MinYLimMag','0.00000','MaxYLimMag','0.02646','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMag"
+	      "ls','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-0.09708','MaxYLimReal','0.86134','YLabelRea"
+	      "l','','MinYLimMag','0.00000','MaxYLimMag','0.86134','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMag"
 	      "Phase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'Color"
 	      "Order',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.39"
 	      "2156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1"
 	      ";1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChanne"
 	      "lNames',{{}},'NumLines',2,'LineNames',{{'yaw rate [rad/s]','Desired Yaw Calc'}},'ShowContent',true,'Placement',"
-	      "1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.02117','MaxYLimReal','0.02646','YLabelReal','','MinYLimM"
-	      "ag','0.00000','MaxYLimMag','0.02646','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'A"
+	      "1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.09708','MaxYLimReal','0.86134','YLabelReal','','MinYLimM"
+	      "ag','0.00000','MaxYLimMag','0.86134','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'A"
 	      "xesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0"
 	      "666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0"
 	      ".831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039"
 	      "215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'N"
 	      "umLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation'"
 	      ",true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','"
-	      "2016a','Measurements',struct('traceselector',struct('Line',2),'tcursors',struct('XCoordinates',[23.068936877076"
-	      "4 18.75],'YCoordinates',[-0.00692287085837974 0],'CursorChannels',[2 2],'WaveformCursors',true,'ShowHorizontal'"
-	      ",false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPane"
-	      "lOpen',1)))),'Version','2016a','Location',[487 391 1434 688])"
+	      "2016a','Measurements',struct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',[23.068936877076"
+	      "4 18.75],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVer"
+	      "tical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'V"
+	      "ersion','2016a','Location',[415 348 1630 849],'VisibleAtModelOpen','on')"
 	    }
 	    Block {
 	      BlockType		      Sum

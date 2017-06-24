@@ -63,8 +63,8 @@ Fuzzy_Slip_Ctl_ABS_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS_VLC'
 Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
 
 Throttle_Step_Time = 500;       %Step time of throttle signal
-Throttle_Init_Val = 1;          %Initial throttle value
-Throttle_Final_Val = 0;        %Final throttle value (DOESN'T MATTER)
+Throttle_Init_Val = 0.35;          %Initial throttle value
+Throttle_Final_Val = 0.03;        %Final throttle value (DOESN'T MATTER)
 
 Steering_Input_Select = 2;      %Steering Angle Selection (2 = Ramp)
 SA_Start_Time = .2;
@@ -111,8 +111,6 @@ z = 0.00033;   %e-motor time constant
 
 %%
 % Fuzzy Controller Settings
-Yaw_Ctrl_Gain = .2;
-Slip_Ratio_Ctrl_Gain = 1;
 %%
 
 %% Parameters

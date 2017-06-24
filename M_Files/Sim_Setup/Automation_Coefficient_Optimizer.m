@@ -10,14 +10,16 @@ Simulation_Count = 0; %Counts the simulation iteration number
 
 gdp = 0;   %Number of actual saved control gain points (initialized to zero)
 nsp = 10;  %Max number of saved control gain points
-stop_time = 20.001;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
-min_Vx = repmat(100, 1, nsp);
+stop_time = 10.001;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
+min_rms_YE = repmat(100, 1, nsp);
 Yaw_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
 Slip_Ratio_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
+Wheel_Accel_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
 
 VMC_Vx = repmat(100, stop_time*1000, nsp);
 VMC_Vy = repmat(100, stop_time*1000, nsp);
 VMC_r  = repmat(100, stop_time*1000, nsp);
+VMC_YE = repmat(100, stop_time*1000, nsp);
 
 %Set up sim values
 addpath('M_Files/Sim_Setup'); 
@@ -28,91 +30,103 @@ addpath('All_Combined');
 addpath('Fuzzy_Controller_Files');
 
 sim_pts = 20;
-for cntr=1:sim_pts
+for cntr=10:sim_pts
     for cntr1=10:sim_pts
-        %update workspace
-        %whos
-        
-        %make edits to sim values
-        %Lat_Accel_Err_Gain = (cntr3/(2*sim_pts_la) + 0.5)*1
-        Yaw_Ctrl_Gain = (cntr/sim_pts)*1 
-        Slip_Ratio_Ctrl_Gain = (cntr1/sim_pts)*1 
-        
-        %simulate and collect data
-        Simulation_Count = Simulation_Count + 1
-        %assignin('base', 'Simulation_Count', Simulation_Count)
-        sim('All_Combined/AWD_EV_MODEL_rev2.mdl')%,'CaptureErrors', 'on')
-        
-        %analyze data and make decision
-        min_Vx_new = min(abs(VMC(:,16)));  %Check min Vx
-        if  VMC(3000,16) < 10 ...            %make sure velocity is less than 5m/s by 5s
-                && max(abs(VMC(:,17))) < 1 ...     %make sure Vy lower than 1m/s the entire time.
-                && max(VMC(:,18)) < 0.08;    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
-            if min_Vx_new < min_Vx(1);
-                for s = 1:(nsp-1)
-                    min_Vx_X(1,s+1) = min_Vx(1,s);
-                    Yaw_Ctrl_Gain_Lowest_X(1,s+1) = Yaw_Ctrl_Gain_Lowest(1,s);
-                    Slip_Ratio_Ctrl_Gain_Lowest_X(1,s+1) = Slip_Ratio_Ctrl_Gain_Lowest(1,s);
+        for cntr2=10:sim_pts
+            %update workspace
+            %whos
+            
+            %make edits to sim values
+            %Lat_Accel_Err_Gain = (cntr3/(2*sim_pts_la) + 0.5)*1
+            Yaw_Ctrl_Gain = (cntr/sim_pts)*1.5
+            Slip_Ratio_Ctrl_Gain = (cntr1/sim_pts)*1.5
+            Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts)*1.5
+            
+            %simulate and collect data
+            Simulation_Count = Simulation_Count + 1
+            %assignin('base', 'Simulation_Count', Simulation_Count)
+            sim('All_Combined/AWD_EV_MODEL_rev2.mdl')%,'CaptureErrors', 'on')
+            
+            %analyze data and make decision
+            min_rms_YE_new = min(rms(VMC(:,15)));  %Check min rms Yaw error
+            if  VMC(4000,16) > 9% ...            %make sure velocity is greater than 7m/s by 4s
+                %&& max(abs(VMC(:,17))) < 1 ...     %make sure Vy lower than 1m/s the entire time.
+                %&& max(VMC(:,18)) < 0.08;    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
+                if min_rms_YE_new < min_rms_YE(1);
+                    for s = 1:(nsp-1)
+                        min_rms_YE_X(1,s+1) = min_rms_YE(1,s);
+                        Yaw_Ctrl_Gain_Lowest_X(1,s+1) = Yaw_Ctrl_Gain_Lowest(1,s);
+                        Slip_Ratio_Ctrl_Gain_Lowest_X(1,s+1) = Slip_Ratio_Ctrl_Gain_Lowest(1,s);
+                        
+                        VMC_Vx_X(:,s+1) = VMC_Vx(:,s);
+                        VMC_Vy_X(:,s+1) = VMC_Vy(:,s);
+                        VMC_r_X (:,s+1) = VMC_r (:,s);
+                        VMC_YE_X(:,s+1) = VMC_YE(:,s);
+                    end
+                    %Place value in 1st slot of dummy (X) arrays
+                    min_rms_YE_X(1,1) = min_rms_YE_new;
+                    Yaw_Ctrl_Gain_Lowest_X(1,1) = Yaw_Ctrl_Gain;
+                    Slip_Ratio_Ctrl_Gain_Lowest_X(1,1) = Slip_Ratio_Ctrl_Gain;
+                    Wheel_Accel_Ctrl_Gain_Lowest_X(1,1) = Wheel_Accel_Ctrl_Gain;
                     
-                    VMC_Vx_X(:,s+1) = VMC_Vx(:,s);
-                    VMC_Vy_X(:,s+1) = VMC_Vy(:,s);
-                    VMC_r_X (:,s+1) = VMC_r (:,s);
+                    VMC_Vx_X(:,1) = VMC(:,16);
+                    VMC_Vy_X(:,1) = VMC(:,17);
+                    VMC_r_X (:,1) = VMC(:,18);
+                    VMC_YE_X(:,1) = VMC(:,15);
+                    
+                    %set newly constructed arrays to variable
+                    min_rms_YE = min_rms_YE_X;
+                    Yaw_Ctrl_Gain_Lowest = Yaw_Ctrl_Gain_Lowest_X;
+                    Slip_Ratio_Ctrl_Gain_Lowest = Slip_Ratio_Ctrl_Gain_Lowest_X;
+                    Wheel_Accel_Ctrl_Gain_Lowest = Wheel_Accel_Ctrl_Gain_Lowest_X;
+                    
+                    Gains(1,:) = Yaw_Ctrl_Gain_Lowest_X;
+                    Gains(2,:) = Slip_Ratio_Ctrl_Gain_Lowest_X;
+                    Gains(3,:) = Wheel_Accel_Ctrl_Gain_Lowest_X;
+                    
+                    VMC_Vx = VMC_Vx_X;
+                    VMC_Vy = VMC_Vy_X;
+                    VMC_r  = VMC_r_X;
+                    VMC_YE = VMC_YE_X;
+                    
+                    gdp = gdp + 1;
+                    
+                    break
+                else
+                    dummy=1;
                 end
-                %Place value in 1st slot of dummy (X) arrays
-                min_Vx_X(1,1) = min_Vx_new;
-                Yaw_Ctrl_Gain_Lowest_X(1,1) = Yaw_Ctrl_Gain;
-                Slip_Ratio_Ctrl_Gain_Lowest_X(1,1) = Slip_Ratio_Ctrl_Gain;
                 
-                VMC_Vx_X(:,1) = VMC(:,16);
-                VMC_Vy_X(:,1) = VMC(:,17);
-                VMC_r_X (:,1) = VMC(:,18);
                 
-                %set newly constructed arrays to variable
-                min_Vx = min_Vx_X;
-                Yaw_Ctrl_Gain_Lowest = Yaw_Ctrl_Gain_Lowest_X;
-                Slip_Ratio_Ctrl_Gain_Lowest = Slip_Ratio_Ctrl_Gain_Lowest_X;
-                
-                Gains(1,:) = Yaw_Ctrl_Gain_Lowest_X;
-                Gains(2,:) = Slip_Ratio_Ctrl_Gain_Lowest_X;
-                
-                VMC_Vx = VMC_Vx_X;
-                VMC_Vy = VMC_Vy_X;
-                VMC_r  = VMC_r_X;
-                
-                gdp = gdp + 1;
-                
-                break
             else
                 dummy=1;
+                
             end
-            
-            
-        else
-            dummy=1;
-            
         end
     end
 end
 
 %save workspace to file
 
-Filename_c = sprintf('Fuzzy_Control_CSA_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_c = sprintf('Fuzzy_Control_CSA_3variables_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
 save(Filename_c);
 
 figure % new figure
 hold on
-ax1 = subplot(3,1,1); % top subplot
+ax1 = subplot(4,1,1); % top subplot
 hold on
-ax2 = subplot(3,1,2); % bottom subplot
+ax2 = subplot(4,1,2); % bottom subplot
 hold on
-ax3 = subplot(3,1,3); % bottom subplot
+ax3 = subplot(4,1,3); % bottom subplot
+hold on
+ax4 = subplot(4,1,4); % bottom subplot
 
 for m = 1:gdp
     hold on
     plot(ax1,VMC(:,10),VMC_Vx (:,m))
     plot(ax2,VMC(:,10),VMC_Vy (:,m))
     plot(ax3,VMC(:,10),VMC_r (:,m))
+    plot(ax4,VMC(:,10),VMC_YE (:,m))
 end
 
-Filename_fig = sprintf('Fuzzy_Control_CSA_Test_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_fig = sprintf('Fuzzy_Control_CSA_Test_3variables_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_fig);
