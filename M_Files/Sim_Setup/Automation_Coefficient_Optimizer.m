@@ -28,10 +28,10 @@ run('AWD_Test_W_FUZ_Control.m');
 addpath('All_Combined');
 addpath('Fuzzy_Controller_Files');
 
-sim_pts = 20;
+sim_pts = 10;
 for cntr=1:sim_pts
-    for cntr1=10:sim_pts
-        for cntr2=10:sim_pts
+    for cntr1=1:sim_pts
+        for cntr2=1:sim_pts
 
         
             %update workspace
@@ -39,9 +39,9 @@ for cntr=1:sim_pts
             
             %make edits to sim values
             %Lat_Accel_Err_Gain = (cntr3/(2*sim_pts_la) + 0.5)*1
-            Yaw_Ctrl_Gain = (cntr/sim_pts)*1.5
-            Slip_Ratio_Ctrl_Gain = (cntr1/sim_pts)*1.5
-            Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts)*1.5
+            Yaw_Ctrl_Gain = (cntr/sim_pts)*1
+            Slip_Ratio_Ctrl_Gain = (cntr1/sim_pts)*1
+            Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts)*1
             
             %simulate and collect data
             Simulation_Count = Simulation_Count + 1
