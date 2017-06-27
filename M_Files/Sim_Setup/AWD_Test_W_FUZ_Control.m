@@ -136,7 +136,7 @@ Kxnorm = 30;      % normalized stiffness
 
 %(Condition 1)
 Muxp = .99;         % peak friction coefficient
-Muxs = 0.5;         % sliding friction coefficient was .5 kds 5/16/14
+Muxs = 0.27;         % sliding friction coefficient was .5 kds 5/16/14
 %(Condition 2)
 Muxp_2 = 0.3;         % peak friction coefficient
 Muxs_2 = 0.29;       % sliding friction coefficient 
