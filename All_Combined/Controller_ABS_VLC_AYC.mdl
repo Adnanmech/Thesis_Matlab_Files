@@ -115,7 +115,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.159"
+    ComputedModelVersion    "1.165"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -151,7 +151,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [260.0, 193.0, 1490.0, 836.0]
+      Location		      [206.0, 100.0, 1490.0, 836.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -177,7 +177,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1247.0, 662.0]
 	ZoomFactor		[0.59999999999999987]
-	Offset			[31.16666666666606, 25.916666666666856]
+	Offset			[-2.2737367544323206e-13, -2.2737367544323206e-13]
       }
     }
   }
@@ -187,9 +187,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jun 24 12:43:35 2017"
-  RTWModifiedTimeStamp	  420205671
-  ModelVersionFormat	  "1.%<AutoIncrement:159>"
+  LastModifiedDate	  "Tue Jun 27 11:10:47 2017"
+  RTWModifiedTimeStamp	  420462093
+  ModelVersionFormat	  "1.%<AutoIncrement:165>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1705,7 +1705,7 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC"
-    Location		    [260, 193, 1750, 1029]
+    Location		    [206, 100, 1696, 936]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
@@ -1719,7 +1719,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "60"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "518"
+    SIDHighWatermark	    "522"
     Block {
       BlockType		      Inport
       Name		      "Vx_cont"
@@ -1848,7 +1848,7 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[260, 191, 1750, 1027]
+	Location		[206, 100, 1696, 936]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
@@ -2118,7 +2118,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Torque Gains and Saturation"
-	    Location		    [179, 109, 1669, 945]
+	    Location		    [206, 100, 1696, 936]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2178,6 +2178,17 @@ Model {
 	      SourceType	      "FIS"
 	      ContentPreviewEnabled   off
 	      fis		      "Fuzzy_Slip_Ctl_ABS_VLC"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      "519"
+	      Position		      [210, 245, 240, 275]
+	      ZOrder		      150
+	      Gain		      "Wheel_Accel_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Mux
@@ -2263,8 +2274,8 @@ Model {
 	      SrcBlock		      "Wheel Accel [m/s^2]"
 	      SrcPort		      1
 	      Points		      [103, 0; 0, -50]
-	      DstBlock		      "Mux1"
-	      DstPort		      2
+	      DstBlock		      "Gain"
+	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      17
@@ -2281,6 +2292,13 @@ Model {
 	      DstBlock		      "Slip Ratio Gain"
 	      DstPort		      1
 	    }
+	    Line {
+	      ZOrder		      33
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "Mux1"
+	      DstPort		      2
+	    }
 	  }
 	}
 	Block {
@@ -2295,7 +2313,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FR Torque Gains and Saturation"
-	    Location		    [179, 109, 1669, 945]
+	    Location		    [206, 100, 1696, 936]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2355,6 +2373,17 @@ Model {
 	      SourceType	      "FIS"
 	      ContentPreviewEnabled   off
 	      fis		      "Fuzzy_Slip_Ctl_ABS_VLC"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      "520"
+	      Position		      [200, 245, 230, 275]
+	      ZOrder		      151
+	      Gain		      "Wheel_Accel_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Mux
@@ -2440,8 +2469,8 @@ Model {
 	      SrcBlock		      "Wheel Accel [m/s^2]"
 	      SrcPort		      1
 	      Points		      [103, 0; 0, -50]
-	      DstBlock		      "Mux1"
-	      DstPort		      2
+	      DstBlock		      "Gain"
+	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      7
@@ -2457,6 +2486,13 @@ Model {
 	      SrcPort		      1
 	      DstBlock		      "Slip Ratio Gain"
 	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "Mux1"
+	      DstPort		      2
 	    }
 	  }
 	}
@@ -2508,7 +2544,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Fuzzy Yaw Controller"
-	    Location		    [179, 109, 1669, 945]
+	    Location		    [206, 100, 1696, 936]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3544,7 +3580,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "RL Torque Gains and Saturation"
-	    Location		    [183, 155, 1673, 991]
+	    Location		    [206, 100, 1696, 936]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3604,6 +3640,17 @@ Model {
 	      SourceType	      "FIS"
 	      ContentPreviewEnabled   off
 	      fis		      "Fuzzy_Slip_Ctl_ABS_VLC"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      "521"
+	      Position		      [200, 245, 230, 275]
+	      ZOrder		      151
+	      Gain		      "Wheel_Accel_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Mux
@@ -3689,8 +3736,8 @@ Model {
 	      SrcBlock		      "Wheel Accel [m/s^2]"
 	      SrcPort		      1
 	      Points		      [103, 0; 0, -50]
-	      DstBlock		      "Mux1"
-	      DstPort		      2
+	      DstBlock		      "Gain"
+	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      7
@@ -3707,6 +3754,13 @@ Model {
 	      DstBlock		      "Slip Ratio Gain"
 	      DstPort		      1
 	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "Mux1"
+	      DstPort		      2
+	    }
 	  }
 	}
 	Block {
@@ -3721,7 +3775,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "RR Torque Gains and Saturation"
-	    Location		    [183, 155, 1673, 991]
+	    Location		    [206, 100, 1696, 936]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3781,6 +3835,17 @@ Model {
 	      SourceType	      "FIS"
 	      ContentPreviewEnabled   off
 	      fis		      "Fuzzy_Slip_Ctl_ABS_VLC"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      "522"
+	      Position		      [200, 245, 230, 275]
+	      ZOrder		      151
+	      Gain		      "Wheel_Accel_Ctrl_Gain"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Mux
@@ -3866,8 +3931,8 @@ Model {
 	      SrcBlock		      "Wheel Accel [m/s^2]"
 	      SrcPort		      1
 	      Points		      [103, 0; 0, -50]
-	      DstBlock		      "Mux1"
-	      DstPort		      2
+	      DstBlock		      "Gain"
+	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      7
@@ -3883,6 +3948,13 @@ Model {
 	      SrcPort		      1
 	      DstBlock		      "Slip Ratio Gain"
 	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "Mux1"
+	      DstPort		      2
 	    }
 	  }
 	}
@@ -3992,7 +4064,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Reference/Error Generator"
-	    Location		    [179, 109, 1669, 945]
+	    Location		    [206, 100, 1696, 936]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -4092,22 +4164,22 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData24','DataLoggingSaveFormat','StructureWithTi"
 	      "me','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',tr"
-	      "ue,'SerializedDisplays',{struct('MinYLimReal','-0.08221','MaxYLimReal','0.6633','YLabelReal','','MinYLimMag','0"
-	      ".00000','MaxYLimMag','0.6633','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColo"
-	      "r',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666666"
-	      "66666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372"
-	      "549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
-	      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines"
-	      "',1,'LineNames',{{'Yaw error'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimRea"
-	      "l','-0.08221','MaxYLimReal','0.6633','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.6633','LegendVisibi"
-	      "lity','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.6862745098039"
-	      "22 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.6235294117647"
-	      "06 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823"
-	      "529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>'"
-	      ",'LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'"
-	      "Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY')"
-	      ",extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[347 220 171"
-	      "3 899])"
+	      "ue,'SerializedDisplays',{struct('MinYLimReal','-0.02054','MaxYLimReal','0.01832','YLabelReal','','MinYLimMag','"
+	      "0.00000','MaxYLimMag','0.02054','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCo"
+	      "lor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
+	      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313"
+	      "72549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803921568"
+	      "6 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLin"
+	      "es',1,'LineNames',{{'Yaw error'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimR"
+	      "eal','-0.02054','MaxYLimReal','0.01832','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.02054','LegendVi"
+	      "sibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509"
+	      "803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411"
+	      "764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.71764705"
+	      "8823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLab"
+	      "el>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',tr"
+	      "ue,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','"
+	      "XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[347 220"
+	      " 1713 899])"
 	    }
 	    Block {
 	      BlockType		      Scope

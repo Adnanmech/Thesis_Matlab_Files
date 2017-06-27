@@ -32,8 +32,6 @@ sim_pts = 10;
 for cntr=1:sim_pts
     for cntr1=1:sim_pts
         for cntr2=1:sim_pts
-
-        
             %update workspace
             %whos
             
@@ -50,7 +48,7 @@ for cntr=1:sim_pts
             
             %analyze data and make decision
             min_Vx_new = min(abs(VMC(:,16)));  %Check min Vx
-            if  VMC(3000,16) < 12 ...            %make sure velocity is less than 12m/s by 3s
+            if  VMC(3000,16) < 16 ...            %make sure velocity is less than 12m/s by 3s
                     && max(abs(VMC(:,17))) < 1 ...     %make sure Vy lower than 1m/s the entire time.
                     && max(VMC(:,18)) < 0.08;    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
                 if min_Vx_new < min_Vx(1);
@@ -116,6 +114,10 @@ hold on
 ax2 = subplot(3,1,2); % bottom subplot
 hold on
 ax3 = subplot(3,1,3); % bottom subplot
+
+if gdp > 10
+    gdp = 10;
+end 
 
 for m = 1:gdp
     hold on
