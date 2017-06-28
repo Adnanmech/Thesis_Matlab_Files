@@ -121,7 +121,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.425"
+    ComputedModelVersion    "1.430"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -157,7 +157,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [273.0, 15.0, 1534.0, 973.0]
+      Location		      [229.0, 51.0, 1534.0, 973.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -179,11 +179,11 @@ Model {
 	$ObjectID		6
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"50"
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
 	Extents			[1291.0, 799.0]
-	ZoomFactor		[1.5]
-	Offset			[826.15000000000077, 195.00000000000006]
+	ZoomFactor		[0.8]
+	Offset			[0.0, 0.0]
       }
     }
   }
@@ -193,9 +193,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jun 17 15:05:57 2017"
-  RTWModifiedTimeStamp	  419612755
-  ModelVersionFormat	  "1.%<AutoIncrement:425>"
+  LastModifiedDate	  "Tue Jun 27 16:58:11 2017"
+  RTWModifiedTimeStamp	  420420914
+  ModelVersionFormat	  "1.%<AutoIncrement:430>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1920,8 +1920,8 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC_ALGO2"
-    Location		    [273, 15, 1807, 988]
-    Open		    off
+    Location		    [229, 51, 1763, 1024]
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -2063,7 +2063,7 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[273, 15, 1807, 988]
+	Location		[229, 51, 1763, 1024]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
@@ -2075,7 +2075,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"60"
+	ZoomFactor		"40"
 	Block {
 	  BlockType		  Inport
 	  Name			  "longitudinal speed [m/s]"
@@ -2236,7 +2236,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Slip Controller"
-	    Location		    [273, 15, 1807, 988]
+	    Location		    [229, 51, 1763, 1024]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2565,8 +2565,8 @@ Model {
 	      FilterType	      "FIR"
 	      DesignForMinimumOrder   on
 	      FilterOrder	      "50"
-	      PassbandFrequency	      "400"
-	      StopbandFrequency	      "450"
+	      PassbandFrequency	      "200"
+	      StopbandFrequency	      "250"
 	      PassbandRipple	      "0.1"
 	      StopbandAttenuation     "80"
 	      InheritSampleRate	      on
@@ -3146,7 +3146,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FR Slip Controller"
-	    Location		    [273, 15, 1807, 988]
+	    Location		    [229, 51, 1763, 1024]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3158,7 +3158,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "125"
+	    ZoomFactor		    "60"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Slip Ratio [%]"
@@ -3475,8 +3475,8 @@ Model {
 	      FilterType	      "FIR"
 	      DesignForMinimumOrder   on
 	      FilterOrder	      "50"
-	      PassbandFrequency	      "100"
-	      StopbandFrequency	      "150"
+	      PassbandFrequency	      "200"
+	      StopbandFrequency	      "250"
 	      PassbandRipple	      "0.1"
 	      StopbandAttenuation     "80"
 	      InheritSampleRate	      on
@@ -3751,10 +3751,6 @@ Model {
 	      DstPort		      2
 	    }
 	    Line {
-	      FontName		      "Helvetica"
-	      FontSize		      9
-	      FontWeight	      "normal"
-	      FontAngle		      "normal"
 	      ZOrder		      20
 	      SrcBlock		      "Switch1"
 	      SrcPort		      1
@@ -4035,8 +4031,8 @@ Model {
 	      FilterType	      "FIR"
 	      DesignForMinimumOrder   on
 	      FilterOrder	      "50"
-	      PassbandFrequency	      "100"
-	      StopbandFrequency	      "130"
+	      PassbandFrequency	      "200"
+	      StopbandFrequency	      "250"
 	      PassbandRipple	      "0.1"
 	      StopbandAttenuation     "80"
 	      InheritSampleRate	      on
@@ -4989,7 +4985,7 @@ Model {
 	  "true,'Version','2016a','Measurements',struct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',[1.0"
 	  "7849293563579 0.00079356770259349],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHori"
 	  "zontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsP"
-	  "anelOpen',1)))),'Version','2016a','Location',[1 677 859 1079],'WindowStyle','docked','VisibleAtModelOpen','on')"
+	  "anelOpen',1)))),'Version','2016a','Location',[1 670 808 1079],'WindowStyle','docked')"
 	}
 	Block {
 	  BlockType		  Scope
@@ -5455,8 +5451,8 @@ Model {
 	      FilterType	      "FIR"
 	      DesignForMinimumOrder   on
 	      FilterOrder	      "50"
-	      PassbandFrequency	      "100"
-	      StopbandFrequency	      "150"
+	      PassbandFrequency	      "200"
+	      StopbandFrequency	      "250"
 	      PassbandRipple	      "0.1"
 	      StopbandAttenuation     "80"
 	      InheritSampleRate	      on
@@ -6354,8 +6350,8 @@ Model {
 	      FilterType	      "FIR"
 	      DesignForMinimumOrder   on
 	      FilterOrder	      "50"
-	      PassbandFrequency	      "100"
-	      StopbandFrequency	      "150"
+	      PassbandFrequency	      "200"
+	      StopbandFrequency	      "250"
 	      PassbandRipple	      "0.1"
 	      StopbandAttenuation     "80"
 	      InheritSampleRate	      on
@@ -7005,8 +7001,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Controller"
-	    Location		    [273, 15, 1807, 988]
-	    Open		    on
+	    Location		    [229, 51, 1763, 1024]
+	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -7017,7 +7013,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "150"
+	    ZoomFactor		    "60"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Yaw Error"

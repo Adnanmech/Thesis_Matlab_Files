@@ -109,11 +109,11 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 % Sliding Mode Controller Settings
 Target_SR = 0.1;
 PWM_Low_Lim = 0.05;
-Slip_Err_P_Gain = 0.9;
-Slip_Err_D_Gain = 0.1;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
 PWM_SW_Threshold = 0;
-Yaw_Ctrl_Gain = 0.1;
-Lat_Accel_Err_Gain = 0.6;
+Yaw_Ctrl_Gain = 0.2;
+Slip_Err_P_Gain = 0.8;
+Slip_Err_D_Gain = 1;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
+Lat_Accel_Err_Gain = 0.2;
 
 %Motor Model
 z=0.00033;
@@ -124,7 +124,7 @@ m  = 1350;              %   Mass of the vehicle [kg]
 Lf = 1.5;               %   Distance from front axle to CoG [m]
 Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
-hg = 0.3;               %   Hight of CoG [m]
+hg = 0.5;               %   Hight of CoG [m]
 
 Cf = 90000;             %Front Cornering Stiffness
 Cr = 90000;             %Rear Cornering Stiffness
