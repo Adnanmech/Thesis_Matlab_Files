@@ -1,5 +1,8 @@
 %clear all; close all; clc;
 fprintf('Loading data for rear wheel driving model...')
+
+open_system('All_Combined\AWD_EV_MODEL_rev2.mdl')
+open_system('All_Combined\Controller_ABS_VLC_AYC.mdl')
 %set_param('AWD_EV_MODEL','AlgebraicLoopSolver','LineSearch')
 set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
@@ -13,9 +16,10 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 
 %fuzzyLogicDesigner
 %Load Fuzzy Inference System Controllers
-Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
-Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
-Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
+%Fuzzy_Slip_Ctl_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
+%Fuzzy_Slip_Ctl_ABS = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
+Fuzzy_AYC_Ctl      = readfis('Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
+Fuzzy_Slip_Ctl_ABS_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS_VLC');    %ABS FIS
 
 %Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_VLC_2');      %VLC FIS
 %Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS_2');      %ABS FIS
@@ -98,7 +102,7 @@ T_Avail = 150;          % Peak Torque available by motors [Nm]
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
-z = 0.00033;
+z = 0.00033;            %e-motor time constant
 %D_Slip = 0.1;            % Desired slip for PID
 
 %%
@@ -107,8 +111,9 @@ z = 0.00033;
 
 %%
 % Fuzzy Controller Settings
-Yaw_Ctrl_Gain = 0.9;
-Slip_Ratio_Ctrl_Gain = 0.8;
+Yaw_Ctrl_Gain = 0.5;
+Slip_Ratio_Ctrl_Gain = .2;
+Wheel_Accel_Ctrl_Gain = .9;
 %%
 
 %% Parameters
@@ -117,7 +122,7 @@ m  = 1350;              %   Mass of the vehicle [kg]
 Lf = 1.5;               %   Distance from front axle to CoG [m]
 Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
-hg = 0.3;               %   Hight of CoG [m]
+hg = 0.5;               %   Hight of CoG [m]
 
 Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 %Jw changed from 12 -> 1.2. Wheel is being treated as hollow ring.
@@ -131,7 +136,7 @@ Kxnorm = 30;      % normalized stiffness
 
 %(Condition 1)
 Muxp = .99;         % peak friction coefficient
-Muxs = 0.5;         % sliding friction coefficient was .5 kds 5/16/14
+Muxs = 0.27;         % sliding friction coefficient was .5 kds 5/16/14
 %(Condition 2)
 Muxp_2 = 0.3;         % peak friction coefficient
 Muxs_2 = 0.29;       % sliding friction coefficient 
