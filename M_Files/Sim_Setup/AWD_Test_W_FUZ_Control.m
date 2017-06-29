@@ -1,5 +1,8 @@
 %clear all; close all; clc;
 fprintf('Loading data for rear wheel driving model...')
+
+open_system('All_Combined\AWD_EV_MODEL_rev2.mdl')
+open_system('All_Combined\Controller_ABS_VLC_AYC_ALGO2.mdl')
 %set_param('AWD_EV_MODEL','AlgebraicLoopSolver','LineSearch')
 set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
@@ -19,9 +22,10 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %plottools('off')
 %plotfis(Fuzzy_AYC_Ctl)             //plots whole FIS
 %Load Fuzzy Inference System Controllers
-Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
-Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
-Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
+
+%Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
+%Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
+%Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\MATLAB_Files\Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
 
 %Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_VLC_2');      %VLC FIS
 %Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS_2');      %ABS FIS
@@ -48,15 +52,17 @@ Fuzzy_AYC_Ctl      = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working D
 %VLC Test
 Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
 
-Throttle_Step_Time = 0.05;       %Step time of throttle signal
+Throttle_Step_Time = 0.2;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
 Throttle_Final_Val = 1;         %Final throttle value
 
 Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
 SA_Start_Time = 500;            %Don't Care since channel not selected
 SA_Slope = 1;                   %Don't Care since channel not selected
+SA_Upper_Sat_Lim = 10;
+SA_Lower_Sat_Lim = -10;
 
-Vx0 = 0.6;                     % Initial vehicle longitude speed [m/s]
+Vx0 = 0.4;                     % Initial vehicle longitude speed [m/s]
 
 %%
 %%
@@ -93,7 +99,7 @@ Vx0 = 0.6;                     % Initial vehicle longitude speed [m/s]
 Vy0 = 0.0001;                   % Initial vehicle lateral speed [m/s]
 r0 = 0.0001;                    % Initial yaw rate [rad/s]
 
-SR_Eq_Accel_Brake_Threshold = -0.1;       %Throttle position threshold for Slip Ratio to change definitions from Accel to Brake or Vice-Versa
+SR_Eq_Accel_Brake_Threshold = 0.001;       %Throttle position threshold for Slip Ratio to change definitions from Accel to Brake or Vice-Versa
 
 T_Avail = 150;          % Peak Torque available by motors [Nm]
 
@@ -104,11 +110,16 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 %%
 %%
 % Sliding Mode Controller Settings
-Target_SR = -0.3;
+Target_SR = 0.1;
 PWM_Low_Lim = 0.05;
-Slip_Err_P_Gain = 1;
-Slip_Err_D_Gain = .1;
 PWM_SW_Threshold = 0;
+Yaw_Ctrl_Gain = 0.2;
+Slip_Err_P_Gain = 0.8;
+Slip_Err_D_Gain = 1;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
+Lat_Accel_Err_Gain = 0.2;
+
+%Motor Model
+z=0.00033;
 
 %% Parameters
 g = 9.81;               %   Gravity acceleration [m/s^2]
@@ -116,7 +127,7 @@ m  = 1350;              %   Mass of the vehicle [kg]
 Lf = 1.5;               %   Distance from front axle to CoG [m]
 Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
-hg = 0.3;               %   Hight of CoG [m]
+hg = 0.5;               %   Hight of CoG [m]
 
 Cf = 90000;             %Front Cornering Stiffness
 Cr = 90000;             %Rear Cornering Stiffness
@@ -126,14 +137,14 @@ Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 Jw = 1.2;            %   Wheel rotational moment of inertial >>Inertia = Mass(at radius r) * radius^2; sum multiple masses at diff radii for total
                     %   Value should be 0.3-0.5
 
-Rw = .3;           %   Wheel rolling radius [m]
+Rw = .33;           %   Wheel rolling radius [m]
 
 % Magic formular (Longitudinal)
 Kxnorm = 30;      % normalized stiffness
-
+Kxnorm_2 = 8;
 %(Condition 1)
 Muxp = .99;         % peak friction coefficient
-Muxs = 0.5;         % sliding friction coefficient was .5 kds 5/16/14
+Muxs = 0.27;         % sliding friction coefficient was .5 kds 5/16/14
 %(Condition 2)
 Muxp_2 = 0.3;         % peak friction coefficient
 Muxs_2 = 0.29;       % sliding friction coefficient 
@@ -322,7 +333,7 @@ Ex = ( Bx * sp - tan( pi / ( 2 * Cx )) ) / ( Bx * sp-atan( Bx * sp ) );
 %(Condition 2)
 Dx_2 = Muxp_2;
 Cx_2 = 2 - 2/pi * asin( Muxs_2/Muxp_2 );
-Bx_2 = Kxnorm / ( Cx_2*Dx_2 );
+Bx_2 = Kxnorm_2 / ( Cx_2*Dx_2 );
 sp_2 = 3 / ( Bx_2*Cx_2 );   % slip ratio at which Mu is max.
 Ex_2 = ( Bx_2 * sp_2 - tan( pi / ( 2 * Cx_2 )) ) / ( Bx_2 * sp_2-atan( Bx_2 * sp_2 ) );
 

@@ -194,7 +194,7 @@ Model {
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
   LastModifiedDate	  "Tue Jun 27 17:57:54 2017"
-  RTWModifiedTimeStamp	  420486808
+  RTWModifiedTimeStamp	  420489253
   ModelVersionFormat	  "1.%<AutoIncrement:431>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
@@ -2063,7 +2063,7 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[229, 51, 1763, 1024]
+	Location		[254, 183, 1788, 1156]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
@@ -2236,7 +2236,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Slip Controller"
-	    Location		    [229, 51, 1763, 1024]
+	    Location		    [254, 183, 1788, 1156]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3146,7 +3146,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FR Slip Controller"
-	    Location		    [229, 51, 1763, 1024]
+	    Location		    [254, 183, 1788, 1156]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3946,7 +3946,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Lateral Acceleration Controller"
-	    Location		    [273, 15, 1807, 988]
+	    Location		    [254, 183, 1788, 1156]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -4327,7 +4327,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Lateral Acceleration Reference/Error Generator"
-	    Location		    [273, 15, 1807, 988]
+	    Location		    [254, 183, 1788, 1156]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -5114,7 +5114,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "RL Slip Controller"
-	    Location		    [273, 15, 1807, 988]
+	    Location		    [254, 183, 1788, 1156]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -6021,7 +6021,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "RR Slip Controller"
-	    Location		    [273, 15, 1807, 988]
+	    Location		    [254, 183, 1788, 1156]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -7001,7 +7001,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Controller"
-	    Location		    [229, 51, 1763, 1024]
+	    Location		    [254, 183, 1788, 1156]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -7013,7 +7013,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "60"
+	    ZoomFactor		    "100"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Yaw Error"

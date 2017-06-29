@@ -123,7 +123,27 @@ z1 = [p1_1(3) p2_1(3) p3_1(3) p4_1(3)];
 
 %% 4. create a group object and parent surfaces
 combinedobject = hgtransform('parent',main_vehicle_plot);
+c1 = hgtransform('parent',main_vehicle_plot);
+c2 = hgtransform('parent',main_vehicle_plot);
+c3 = hgtransform('parent',main_vehicle_plot);
+c4 = hgtransform('parent',main_vehicle_plot);
+c5 = hgtransform('parent',main_vehicle_plot);
+c6 = hgtransform('parent',main_vehicle_plot);
+c7 = hgtransform('parent',main_vehicle_plot);
+c8 = hgtransform('parent',main_vehicle_plot);
+c9 = hgtransform('parent',main_vehicle_plot);
+c10 = hgtransform('parent',main_vehicle_plot);
 set(h(1:6), 'parent', combinedobject)
+h1 = copyobj(h,c1);
+h2 = copyobj(h,c2);
+h3 = copyobj(h,c3);
+h4 = copyobj(h,c4);
+h5 = copyobj(h,c5);
+h6 = copyobj(h,c6);
+h7 = copyobj(h,c7);
+h8 = copyobj(h,c8);
+h9 = copyobj(h,c9);
+h10 = copyobj(h,c10);
 
     %##FrontWheels = hgtransform('parent',myaxes);
     %##set(h(3:4), 'parent', FrontWheels)
@@ -132,7 +152,7 @@ drawnow
 
 %% 5. define the motion coordinates
 step = 1;               % initialize data stepper
-time = 5;               % time of simulation display [seconds]
+time = 10;               % time of simulation display [seconds]
 fps = 40;               % Frames/second desired
 samples_p_sec = 1000;  % Samples per second of model simulation
                
@@ -194,7 +214,7 @@ for i = 1:(samples_taken - 1)
     
     translation = makehgtform('translate',[latitude(i) longitude(i) altitude(i)]);
     %line drawn from COG of vehicle
-    %line([latitude(i) latitude(i+1)],[longitude(i) longitude(i+1)],'color',[1 0 1]);
+    line([latitude(i) latitude(i+1)],[longitude(i) longitude(i+1)],'color',[0 .1 .5]);
     
     %Line drawn from center of FR wheel
     %line([latitude_s(i) latitude_s(i+1)],[longitude_s(i) longitude_s(i+1)],'color',[1 0 1]);
@@ -225,10 +245,37 @@ for i = 1:(samples_taken - 1)
    
     %rotation1 = makehgtform('xrotate', (pi/180)*(bearing(i)));
     %rotation2 = makehgtform('yrotate', (pi/180)*(bearing(i)));
-    rotation3 = makehgtform('zrotate', (bearing(i)));
-     
+    rotation3 = makehgtform('zrotate', (bearing(i))); 
     set(combinedobject, 'matrix', translation*rotation3);
     
+    %use object copy to plot multiple cars on plot?
+    %https://www.mathworks.com/help/matlab/ref/hgtransform.html
+    car_cnt = 10;
+    switch i
+        case 1
+            set(c1, 'matrix', translation*rotation3);
+        case 2*samples_taken/car_cnt
+            set(c2, 'matrix', translation*rotation3);
+        case 3*samples_taken/car_cnt
+            set(c3, 'matrix', translation*rotation3);
+        case 4*samples_taken/car_cnt
+            set(c4, 'matrix', translation*rotation3);
+        case 5*samples_taken/car_cnt
+            set(c5, 'matrix', translation*rotation3);
+        case 6*samples_taken/car_cnt
+            set(c6, 'matrix', translation*rotation3);
+        case 7*samples_taken/car_cnt
+            set(c7, 'matrix', translation*rotation3);
+        case 8*samples_taken/car_cnt
+            set(c8, 'matrix', translation*rotation3);
+        case 9*samples_taken/car_cnt
+            set(c9, 'matrix', translation*rotation3);
+        case 10*samples_taken/car_cnt
+            set(c10, 'matrix', translation*rotation3);
+        
+        otherwise
+        
+    end
     
 %     %Rotate Steering wheels on Z-axis
 %         zdir = [0 0 1];
@@ -245,12 +292,13 @@ for i = 1:(samples_taken - 1)
      
     %Statement to keep camera focused on vehicle whilst moving
     %The axes limits are track the vehicle 
-    set(main_vehicle_plot,'ylim',[-10+longitude(i) 10+longitude(i)]);
-    set(main_vehicle_plot,'xlim',[-3+latitude(i) 3+latitude(i)]);
+    %set(main_vehicle_plot,'ylim',[-10+longitude(i) 10+longitude(i)]);
+    %set(main_vehicle_plot,'xlim',[-3+latitude(i) 3+latitude(i)]);
     
     %fixed axes limits
-    %set(main_vehicle_plot,'ylim',[-20 150]);
-    %set(main_vehicle_plot,'xlim',[50 150]);
+
+    set(main_vehicle_plot,'ylim',[-5 140]);
+    set(main_vehicle_plot,'xlim',[-5 400]);
     
     pause(1/(20000*fps));
     
