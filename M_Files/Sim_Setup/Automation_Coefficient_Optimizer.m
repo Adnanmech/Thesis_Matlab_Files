@@ -10,7 +10,7 @@ Simulation_Count = 0; %Counts the simulation iteration number
 
 gdp = 0;   %Number of actual saved control gain points (initialized to zero)
 nsp = 10;  %Max number of saved control gain points
-stop_time = 10.001;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
+stop_time = 7.001;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
 min_rms_YE = repmat(100, 1, nsp);
 Yaw_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
 Slip_Ratio_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
@@ -29,18 +29,19 @@ run('AWD_Test_W_FUZ_Control.m');
 addpath('All_Combined');
 addpath('Fuzzy_Controller_Files');
 
-sim_pts = 20;
-for cntr=10:sim_pts
-    for cntr1=10:sim_pts
-        for cntr2=10:sim_pts
+sim_pts = 10;
+sim_pts_2 = 10;
+for cntr=sim_pts:-1:1
+    for cntr1=sim_pts:-1:1
+        for cntr2=sim_pts_2:-1:1
             %update workspace
             %whos
             
             %make edits to sim values
             %Lat_Accel_Err_Gain = (cntr3/(2*sim_pts_la) + 0.5)*1
-            Yaw_Ctrl_Gain = (cntr/sim_pts)*1.5
-            Slip_Ratio_Ctrl_Gain = (cntr1/sim_pts)*1.5
-            Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts)*1.5
+            Yaw_Ctrl_Gain = 1+(cntr1/sim_pts)*3
+            Slip_Ratio_Ctrl_Gain = (cntr/sim_pts)*1
+            Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts_2)*1
             
             %simulate and collect data
             Simulation_Count = Simulation_Count + 1
@@ -48,8 +49,10 @@ for cntr=10:sim_pts
             sim('All_Combined/AWD_EV_MODEL_rev2.mdl')%,'CaptureErrors', 'on')
             
             %analyze data and make decision
-            min_rms_YE_new = min(rms(VMC(:,15)));  %Check min rms Yaw error
-            if  VMC(4000,16) > 9% ...            %make sure velocity is greater than 7m/s by 4s
+            min_rms_YE_new = rms(VMC(:,15));  %Check min rms Yaw error
+            YE_Saved(Simulation_Count) = min_rms_YE_new
+            min_rms_YE
+            %if  VMC(4000,16) > 3% ...            %make sure velocity is greater than 7m/s by 4s
                 %&& max(abs(VMC(:,17))) < 1 ...     %make sure Vy lower than 1m/s the entire time.
                 %&& max(VMC(:,18)) < 0.08;    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
                 if min_rms_YE_new < min_rms_YE(1);
@@ -57,6 +60,7 @@ for cntr=10:sim_pts
                         min_rms_YE_X(1,s+1) = min_rms_YE(1,s);
                         Yaw_Ctrl_Gain_Lowest_X(1,s+1) = Yaw_Ctrl_Gain_Lowest(1,s);
                         Slip_Ratio_Ctrl_Gain_Lowest_X(1,s+1) = Slip_Ratio_Ctrl_Gain_Lowest(1,s);
+						Wheel_Accel_Ctrl_Gain_Lowest_X(1,s+1) = Wheel_Accel_Ctrl_Gain_Lowest(1,s);
                         
                         VMC_Vx_X(:,s+1) = VMC_Vx(:,s);
                         VMC_Vy_X(:,s+1) = VMC_Vy(:,s);
@@ -97,18 +101,18 @@ for cntr=10:sim_pts
                 end
                 
                 
-            else
-                dummy=1;
+            %else
+            %    dummy=1;
                 
-            end
+            %end
         end
     end
 end
 
 %save workspace to file
 
-Filename_c = sprintf('Fuzzy_Control_CSA_3variables_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
-save(Filename_c);
+Filename_mat = sprintf('Fuzzy_Control_CSA_3vars_FIXD_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+save(Filename_mat);
 
 figure % new figure
 hold on
@@ -120,6 +124,10 @@ ax3 = subplot(4,1,3); % bottom subplot
 hold on
 ax4 = subplot(4,1,4); % bottom subplot
 
+if gdp > 10
+	gdp = 10;
+end 
+
 for m = 1:gdp
     hold on
     plot(ax1,VMC(:,10),VMC_Vx (:,m))
@@ -128,5 +136,5 @@ for m = 1:gdp
     plot(ax4,VMC(:,10),VMC_YE (:,m))
 end
 
-Filename_fig = sprintf('Fuzzy_Control_CSA_Test_3variables_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_fig = sprintf('Fuzzy_Control_CSA_Test_3vars_FIXD_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_fig);

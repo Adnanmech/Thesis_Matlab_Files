@@ -72,7 +72,7 @@ SA_Slope = 3;
 SA_Upper_Sat_Lim = 5;
 SA_Lower_Sat_Lim = -5;
 
-Vx0 =1;                     % Initial vehicle longitude speed [m/s]
+Vx0 =13.4;                     % Initial vehicle longitude speed [m/s]
 
 %%
 % %%
@@ -111,9 +111,9 @@ z = 0.00033;   %e-motor time constant
 
 %%
 % Fuzzy Controller Settings
-Yaw_Ctrl_Gain = 1.35;
-Slip_Ratio_Ctrl_Gain = 0.75;
-Wheel_Accel_Ctrl_Gain = 0.825;
+Yaw_Ctrl_Gain = 1.9;
+Slip_Ratio_Ctrl_Gain = 1;
+Wheel_Accel_Ctrl_Gain = 1;
 %%
 
 %% Parameters
@@ -122,7 +122,7 @@ m  = 1350;              %   Mass of the vehicle [kg]
 Lf = 1.5;               %   Distance from front axle to CoG [m]
 Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
-hg = 0.3;               %   Hight of CoG [m]
+hg = 0.5;               %   Hight of CoG [m]
 
 Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 %Jw changed from 12 -> 1.2. Wheel is being treated as hollow ring.
@@ -136,7 +136,7 @@ Kxnorm = 30;      % normalized stiffness
 
 %(Condition 1)
 Muxp = .99;         % peak friction coefficient
-Muxs = 0.5;         % sliding friction coefficient was .5 kds 5/16/14
+Muxs = 0.27;         % sliding friction coefficient was .5 kds 5/16/14
 %(Condition 2)
 Muxp_2 = 0.3;         % peak friction coefficient
 Muxs_2 = 0.29;       % sliding friction coefficient 

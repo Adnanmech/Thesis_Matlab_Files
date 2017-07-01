@@ -133,6 +133,16 @@ c7 = hgtransform('parent',main_vehicle_plot);
 c8 = hgtransform('parent',main_vehicle_plot);
 c9 = hgtransform('parent',main_vehicle_plot);
 c10 = hgtransform('parent',main_vehicle_plot);
+c11 = hgtransform('parent',main_vehicle_plot);
+c12 = hgtransform('parent',main_vehicle_plot);
+c13 = hgtransform('parent',main_vehicle_plot);
+c14 = hgtransform('parent',main_vehicle_plot);
+c15 = hgtransform('parent',main_vehicle_plot);
+c16 = hgtransform('parent',main_vehicle_plot);
+c17 = hgtransform('parent',main_vehicle_plot);
+c18 = hgtransform('parent',main_vehicle_plot);
+c19 = hgtransform('parent',main_vehicle_plot);
+c20 = hgtransform('parent',main_vehicle_plot);
 set(h(1:6), 'parent', combinedobject)
 h1 = copyobj(h,c1);
 h2 = copyobj(h,c2);
@@ -144,6 +154,16 @@ h7 = copyobj(h,c7);
 h8 = copyobj(h,c8);
 h9 = copyobj(h,c9);
 h10 = copyobj(h,c10);
+h11 = copyobj(h,c11);
+h12 = copyobj(h,c12);
+h13 = copyobj(h,c13);
+h14 = copyobj(h,c14);
+h15 = copyobj(h,c15);
+h16 = copyobj(h,c16);
+h17 = copyobj(h,c17);
+h18 = copyobj(h,c18);
+h19 = copyobj(h,c19);
+h20 = copyobj(h,c20);
 
     %##FrontWheels = hgtransform('parent',myaxes);
     %##set(h(3:4), 'parent', FrontWheels)
@@ -152,7 +172,7 @@ drawnow
 
 %% 5. define the motion coordinates
 step = 1;               % initialize data stepper
-time = 10;               % time of simulation display [seconds]
+time = 20;               % time of simulation display [seconds]
 fps = 40;               % Frames/second desired
 samples_p_sec = 1000;  % Samples per second of model simulation
                
@@ -250,7 +270,7 @@ for i = 1:(samples_taken - 1)
     
     %use object copy to plot multiple cars on plot?
     %https://www.mathworks.com/help/matlab/ref/hgtransform.html
-    car_cnt = 10;
+    car_cnt = 20;
     switch i
         case 1
             set(c1, 'matrix', translation*rotation3);
@@ -272,9 +292,29 @@ for i = 1:(samples_taken - 1)
             set(c9, 'matrix', translation*rotation3);
         case 10*samples_taken/car_cnt
             set(c10, 'matrix', translation*rotation3);
+        case 11*samples_taken/car_cnt
+            set(c11, 'matrix', translation*rotation3);
+        case 12*samples_taken/car_cnt
+            set(c12, 'matrix', translation*rotation3);
+        case 13*samples_taken/car_cnt
+            set(c13, 'matrix', translation*rotation3);
+        case 14*samples_taken/car_cnt
+            set(c14, 'matrix', translation*rotation3);
+        case 15*samples_taken/car_cnt
+            set(c15, 'matrix', translation*rotation3);
+        case 16*samples_taken/car_cnt
+            set(c16, 'matrix', translation*rotation3);
+        case 17*samples_taken/car_cnt
+            set(c17, 'matrix', translation*rotation3);
+        case 18*samples_taken/car_cnt
+            set(c18, 'matrix', translation*rotation3);
+        case 19*samples_taken/car_cnt
+            set(c19, 'matrix', translation*rotation3);
+        case 20*samples_taken/car_cnt
+            set(c20, 'matrix', translation*rotation3);
         
         otherwise
-        
+            %set(c11, 'matrix', translation*rotation3);
     end
     
 %     %Rotate Steering wheels on Z-axis
