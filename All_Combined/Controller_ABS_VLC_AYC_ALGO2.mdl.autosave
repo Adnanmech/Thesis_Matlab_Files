@@ -179,11 +179,11 @@ Model {
 	$ObjectID		6
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"114"
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
 	Extents			[1291.0, 754.0]
-	ZoomFactor		[0.59999999999999987]
-	Offset			[-242.25331968573494, -68.949581350745234]
+	ZoomFactor		[0.8]
+	Offset			[0.0, 0.0]
       }
     }
   }
@@ -194,7 +194,7 @@ Model {
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
   LastModifiedDate	  "Fri Jun 30 00:22:07 2017"
-  RTWModifiedTimeStamp	  420681067
+  RTWModifiedTimeStamp	  420683846
   ModelVersionFormat	  "1.%<AutoIncrement:456>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
@@ -1921,7 +1921,7 @@ Model {
   System {
     Name		    "Controller_ABS_VLC_AYC_ALGO2"
     Location		    [80, 127, 1614, 1055]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -2236,7 +2236,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Slip Controller"
-	    Location		    [80, 126, 1614, 1055]
+	    Location		    [80, 127, 1614, 1055]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2248,7 +2248,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "80"
+	    ZoomFactor		    "100"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Slip Ratio [%]"
@@ -7485,7 +7485,7 @@ Model {
 	  System {
 	    Name		    "Yaw Reference/Error Generator"
 	    Location		    [80, 127, 1614, 1055]
-	    Open		    on
+	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -7744,7 +7744,7 @@ Model {
 	      "2016a','Measurements',struct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',[23.068936877076"
 	      "4 18.75],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVer"
 	      "tical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'V"
-	      "ersion','2016a','Location',[-71 278 873 1000],'VisibleAtModelOpen','on')"
+	      "ersion','2016a','Location',[-71 278 873 1000])"
 	    }
 	    Block {
 	      BlockType		      Scope
