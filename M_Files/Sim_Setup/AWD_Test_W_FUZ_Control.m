@@ -1,5 +1,8 @@
 %clear all; close all; clc;
 fprintf('Loading data for rear wheel driving model...')
+
+open_system('All_Combined\AWD_EV_MODEL_rev2.mdl')
+open_system('All_Combined\Controller_ABS_VLC_AYC.mdl')
 %set_param('AWD_EV_MODEL','AlgebraicLoopSolver','LineSearch')
 set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
@@ -13,9 +16,10 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 
 %fuzzyLogicDesigner
 %Load Fuzzy Inference System Controllers
-Fuzzy_Slip_Ctl_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
-Fuzzy_Slip_Ctl_ABS = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
+%Fuzzy_Slip_Ctl_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
+%Fuzzy_Slip_Ctl_ABS = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
 Fuzzy_AYC_Ctl      = readfis('Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
+Fuzzy_Slip_Ctl_ABS_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS_VLC');    %ABS FIS
 
 %Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_VLC_2');      %VLC FIS
 %Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS_2');      %ABS FIS
@@ -73,17 +77,17 @@ Fuzzy_AYC_Ctl      = readfis('Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %A
 %
 %%
 %Split-u Test
-Split_u_Time_On = 1;          %Set time for split-u to start (Keep off w large time)
+Split_u_Time_On = 0.2;          %Set time for split-u to start (Keep off w large time)
 
-Throttle_Step_Time = 1.5;       %Step time of throttle signal
+Throttle_Step_Time = 0.5;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
 Throttle_Final_Val = -1;        %Final throttle value (DOESN'T MATTER)
 
 Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
 SA_Start_Time = .2;
 SA_Slope = 1;
-SA_Upper_Sat_Lim = 10;
-SA_Lower_Sat_Lim = -10;
+SA_Upper_Sat_Lim = 5;
+SA_Lower_Sat_Lim = -5;
 
 Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
 %%
@@ -100,13 +104,7 @@ T_Avail = 150;          % Peak Torque available by motors [Nm]
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
-z = 0.00033;
-
-m_2 = 1;
-m_1 = 5000;
-m_0 = 6250000;
-
-n_0 = 6250000;
+z = 0.00033;   %e-motor time constant
 %D_Slip = 0.1;            % Desired slip for PID
 
 %%
@@ -115,10 +113,9 @@ n_0 = 6250000;
 
 %%
 % Fuzzy Controller Settings
-Yaw_Ctrl_Gain = 0.8;     %previously = 0.5 (produced good split-u test results.
-Torque_Diff_Gain = 1.2;
-Slip_Ratio_Ctrl_Gain = 0.4;
-
+Yaw_Ctrl_Gain = 2.4;
+Slip_Ratio_Ctrl_Gain = 1;
+Wheel_Accel_Ctrl_Gain = 1;
 %%
 
 %% Parameters
@@ -127,7 +124,7 @@ m  = 1350;              %   Mass of the vehicle [kg]
 Lf = 1.5;               %   Distance from front axle to CoG [m]
 Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
-hg = 0.3;               %   Hight of CoG [m]
+hg = 0.5;               %   Hight of CoG [m]
 
 Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 %Jw changed from 12 -> 1.2. Wheel is being treated as hollow ring.
@@ -138,10 +135,10 @@ Rw = .33;           %   Wheel rolling radius [m]
 
 % Magic formular (Longitudinal)
 Kxnorm = 30;      % normalized stiffness
-
+Kxnorm_2 = 15;
 %(Condition 1)
 Muxp = .99;         % peak friction coefficient
-Muxs = 0.5;         % sliding friction coefficient was .5 kds 5/16/14
+Muxs = 0.27;         % sliding friction coefficient was .5 kds 5/16/14
 %(Condition 2)
 Muxp_2 = 0.3;         % peak friction coefficient
 Muxs_2 = 0.29;       % sliding friction coefficient 
@@ -330,17 +327,21 @@ Ex = ( Bx * sp - tan( pi / ( 2 * Cx )) ) / ( Bx * sp-atan( Bx * sp ) );
 %(Condition 2)
 Dx_2 = Muxp_2;
 Cx_2 = 2 - 2/pi * asin( Muxs_2/Muxp_2 );
-Bx_2 = Kxnorm / ( Cx_2*Dx_2 );
+Bx_2 = Kxnorm_2 / ( Cx_2*Dx_2 );
 sp_2 = 3 / ( Bx_2*Cx_2 );   % slip ratio at which Mu is max.
 Ex_2 = ( Bx_2 * sp_2 - tan( pi / ( 2 * Cx_2 )) ) / ( Bx_2 * sp_2-atan( Bx_2 * sp_2 ) );
 
 %Test Formula   KDS 2/7/14
 %u = slip ratio
 u=-1:.001:1;
-LongSlip = Dx_2*sin(Cx_2*atan(Bx_2*u-Ex_2*(Bx_2*u-atan(Bx_2*u))));
+LongSlip = Dx*sin(Cx*atan(Bx*u-Ex*(Bx*u-atan(Bx*u))));
+LongSlip_ice = Dx_2*sin(Cx_2*atan(Bx_2*u-Ex_2*(Bx_2*u-atan(Bx_2*u))));
 figure;
 hhh(1) = subplot(2,1,1); % upper plot
-plot(u,LongSlip)
+hold on;
+plot(hhh(1),u,LongSlip)
+hold on;
+plot(hhh(1),u,LongSlip_ice)
 hold on;
 
 %------------------  Lateral Slip Characteristics  ------------------------
@@ -421,9 +422,12 @@ degrees = uu*180/pi;
 pz = tan(angle);
 %LatSlip = (Dy*sin(Cy*atan(By*u-Ey*(By*u-atan(By*u)))));
 LatSlip = (Dy*sin(Cy*atan(By*uu-Ey*(By*uu-atan(By*uu)))));
-
-%hhh(2) = subplot(2,1,2); % lower plot
-%plot(degrees,LatSlip)
+LatSlip_ice = (Dy_2*sin(Cy_2*atan(By_2*uu-Ey_2*(By_2*uu-atan(By_2*uu)))));
+hhh(2) = subplot(2,1,2); % lower plot
+hold on
+plot(degrees,LatSlip)
+hold on
+plot(degrees,LatSlip_ice)
 %valuefin=pz*LatSlip;
 %hold off;
 
