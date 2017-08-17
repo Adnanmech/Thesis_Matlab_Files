@@ -166,8 +166,8 @@ grid(LAEP,'on')
 LAEP.XMinorGrid = 'on'
 LAEP.YMinorGrid = 'on'
 
-%xlim(YEP,[0 4.902])
-%xlim(LAEP,[0 4.902])
+xlim(YEP,[0 5])
+xlim(LAEP,[0 5])
 
 xlabel(LAEP,'Time [s]','FontSize',16)
 
@@ -186,15 +186,15 @@ f1.PaperPosition = [0 0 6 3];
 saveas(f1,'D:\SkyDrive\Thesis Paper and Other Works\Thesis LaTeX Rev1\Figures\Rev1\SMC_ABS_T_SA.jpg')
 
 f2.PaperUnits = 'inches';
-f2.PaperPosition = [0 0 6 3];
+f2.PaperPosition = [0 0 6 6];
 saveas(f2,'D:\SkyDrive\Thesis Paper and Other Works\Thesis LaTeX Rev1\Figures\Rev1\SMC_ABS_SR.jpg')
 
 f3.PaperUnits = 'inches';
-f3.PaperPosition = [0 0 6 3];
+f3.PaperPosition = [0 0 6 6];
 saveas(f3,'D:\SkyDrive\Thesis Paper and Other Works\Thesis LaTeX Rev1\Figures\Rev1\SMC_ABS_TQ.jpg')
 
 f4.PaperUnits = 'inches';
-f4.PaperPosition = [0 0 6 3];
+f4.PaperPosition = [0 0 6 5];
 saveas(f4,'D:\SkyDrive\Thesis Paper and Other Works\Thesis LaTeX Rev1\Figures\Rev1\SMC_ABS_VxVyr.jpg')
 
 f5.PaperUnits = 'inches';
