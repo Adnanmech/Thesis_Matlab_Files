@@ -7,7 +7,7 @@ ThotP = subplot(2,1,1)
 plot(VMC(:,10), VMC(:,5))  %Throttle
 
 SAP = subplot(2,1,2)
-plot(VMC(:,10), VMC(:,4))  %Steering Angle
+plot(VMC(:,10), VMC(:,4)*180/3.14)  %Steering Angle
 
 grid(ThotP,'on')
 ThotP.XMinorGrid = 'on'
@@ -17,7 +17,7 @@ SAP.XMinorGrid = 'on'
 SAP.YMinorGrid = 'on'
 
 ylim(ThotP,[-1.1 1.1])
-ylim(SAP,[-1.1 1.1])
+ylim(SAP,[-1.1 10.1])
 
 xlabel(SAP,'Time [s]','FontSize',12)
 
@@ -45,7 +45,7 @@ plot(VMC(:,10), VMC(:,13))  %RL_SR
 SRRR = subplot(4,1,4)
 plot(VMC(:,10), VMC(:,14))  %RR_SR
 
-axis([SRFL SRFR SRRL SRRR],[0 4.902 -0.3 0.11])
+axis([SRFL SRFR SRRL SRRR],[0 20 -0.11 0.11])
 grid(SRFL,'on')
 SRFL.XMinorGrid = 'on'
 SRFL.YMinorGrid = 'on'
@@ -181,6 +181,22 @@ set(LAEP,'FontSize',14)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Save Figures
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%f1.PaperUnits = 'inches';
-%f1.PaperPosition = [0 0 6 3];
-%saveas(f1,'D:\SkyDrive\Thesis Paper and Other Works\Thesis LaTeX Rev1\Figures\Rev1\SMC_T_SA.jpg')
+f1.PaperUnits = 'inches';
+f1.PaperPosition = [0 0 6 3];
+saveas(f1,'D:\SkyDrive\Thesis Paper and Other Works\Thesis LaTeX Rev1\Figures\Rev1\SMC_CSA_T_SA.jpg')
+
+f2.PaperUnits = 'inches';
+f2.PaperPosition = [0 0 6 3];
+saveas(f2,'D:\SkyDrive\Thesis Paper and Other Works\Thesis LaTeX Rev1\Figures\Rev1\SMC_CSA_SR.jpg')
+
+f3.PaperUnits = 'inches';
+f3.PaperPosition = [0 0 6 3];
+saveas(f3,'D:\SkyDrive\Thesis Paper and Other Works\Thesis LaTeX Rev1\Figures\Rev1\SMC_CSA_TQ.jpg')
+
+f4.PaperUnits = 'inches';
+f4.PaperPosition = [0 0 6 3];
+saveas(f4,'D:\SkyDrive\Thesis Paper and Other Works\Thesis LaTeX Rev1\Figures\Rev1\SMC_CSA_VxVyr.jpg')
+
+f5.PaperUnits = 'inches';
+f5.PaperPosition = [0 0 6 3];
+saveas(f5,'D:\SkyDrive\Thesis Paper and Other Works\Thesis LaTeX Rev1\Figures\Rev1\SMC_CSA_ERRs.jpg')

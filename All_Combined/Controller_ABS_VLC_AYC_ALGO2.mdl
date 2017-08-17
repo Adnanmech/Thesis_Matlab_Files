@@ -121,7 +121,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.457"
+    ComputedModelVersion    "1.458"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -179,11 +179,11 @@ Model {
 	$ObjectID		6
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"1"
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
 	Extents			[1291.0, 754.0]
-	ZoomFactor		[0.29999999999999993]
-	Offset			[-912.50000000000045, -806.00000000000023]
+	ZoomFactor		[0.8]
+	Offset			[0.0, 0.0]
       }
     }
   }
@@ -193,9 +193,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Jul 04 01:22:07 2017"
-  RTWModifiedTimeStamp	  420683846
-  ModelVersionFormat	  "1.%<AutoIncrement:457>"
+  LastModifiedDate	  "Wed Aug 16 23:51:35 2017"
+  RTWModifiedTimeStamp	  424822671
+  ModelVersionFormat	  "1.%<AutoIncrement:458>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1921,7 +1921,7 @@ Model {
   System {
     Name		    "Controller_ABS_VLC_AYC_ALGO2"
     Location		    [80, 127, 1614, 1055]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -2064,7 +2064,7 @@ Model {
       System {
 	Name			"ABS/VLC/AYC Control"
 	Location		[80, 127, 1614, 1055]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
 	ScreenColor		"white"
