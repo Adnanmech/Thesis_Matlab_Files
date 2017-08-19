@@ -115,7 +115,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.165"
+    ComputedModelVersion    "1.166"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -173,11 +173,11 @@ Model {
 	$ObjectID		6
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"1"
 	Extents			[1247.0, 662.0]
-	ZoomFactor		[0.59999999999999987]
-	Offset			[-2.2737367544323206e-13, -2.2737367544323206e-13]
+	ZoomFactor		[0.4]
+	Offset			[337.24999999999864, -238.08333333333258]
       }
     }
   }
@@ -187,9 +187,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Jun 27 11:10:47 2017"
-  RTWModifiedTimeStamp	  420462093
-  ModelVersionFormat	  "1.%<AutoIncrement:165>"
+  LastModifiedDate	  "Thu Aug 17 23:56:52 2017"
+  RTWModifiedTimeStamp	  424914383
+  ModelVersionFormat	  "1.%<AutoIncrement:166>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1634,6 +1634,21 @@ Model {
       SampleTime	      "-1"
     }
     Block {
+      BlockType		      Saturate
+      UpperLimitSource	      "Dialog"
+      UpperLimit	      "0.5"
+      LowerLimitSource	      "Dialog"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
       BlockType		      Scope
       DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
       NumInputPorts	      "1"
@@ -1706,7 +1721,7 @@ Model {
   System {
     Name		    "Controller_ABS_VLC_AYC"
     Location		    [206, 100, 1696, 936]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -1719,7 +1734,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "60"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "522"
+    SIDHighWatermark	    "526"
     Block {
       BlockType		      Inport
       Name		      "Vx_cont"
@@ -1849,7 +1864,7 @@ Model {
       System {
 	Name			"ABS/VLC/AYC Control"
 	Location		[206, 100, 1696, 936]
-	Open			off
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
 	ScreenColor		"white"
@@ -3986,6 +4001,50 @@ Model {
 	  "rsion','2016a')),'Version','2016a','Location',[8 83 1632 938])"
 	}
 	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  SID			  "523"
+	  Ports			  [1, 1]
+	  Position		  [3120, 380, 3150, 410]
+	  ZOrder		  81
+	  InputPortMap		  "u0"
+	  UpperLimit		  "150"
+	  LowerLimit		  "-150"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation1"
+	  SID			  "524"
+	  Ports			  [1, 1]
+	  Position		  [3120, 575, 3150, 605]
+	  ZOrder		  82
+	  InputPortMap		  "u0"
+	  UpperLimit		  "150"
+	  LowerLimit		  "-150"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation2"
+	  SID			  "525"
+	  Ports			  [1, 1]
+	  Position		  [3110, 800, 3140, 830]
+	  ZOrder		  83
+	  InputPortMap		  "u0"
+	  UpperLimit		  "150"
+	  LowerLimit		  "-150"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation3"
+	  SID			  "526"
+	  Ports			  [1, 1]
+	  Position		  [3075, 1020, 3105, 1050]
+	  ZOrder		  84
+	  InputPortMap		  "u0"
+	  UpperLimit		  "150"
+	  LowerLimit		  "-150"
+	}
+	Block {
 	  BlockType		  Switch
 	  Name			  "Switch1"
 	  SID			  "371"
@@ -4679,7 +4738,7 @@ Model {
 	  ZOrder		  143
 	  SrcBlock		  "Switch1"
 	  SrcPort		  1
-	  DstBlock		  "Gain"
+	  DstBlock		  "Saturation"
 	  DstPort		  1
 	}
 	Line {
@@ -4715,7 +4774,7 @@ Model {
 	  ZOrder		  156
 	  SrcBlock		  "Switch2"
 	  SrcPort		  1
-	  DstBlock		  "Gain1"
+	  DstBlock		  "Saturation1"
 	  DstPort		  1
 	}
 	Line {
@@ -4751,7 +4810,7 @@ Model {
 	  ZOrder		  166
 	  SrcBlock		  "Switch3"
 	  SrcPort		  1
-	  DstBlock		  "Gain2"
+	  DstBlock		  "Saturation2"
 	  DstPort		  1
 	}
 	Line {
@@ -4787,7 +4846,7 @@ Model {
 	  ZOrder		  176
 	  SrcBlock		  "Switch4"
 	  SrcPort		  1
-	  DstBlock		  "Gain3"
+	  DstBlock		  "Saturation3"
 	  DstPort		  1
 	}
 	Line {
@@ -4870,34 +4929,6 @@ Model {
 	  }
 	}
 	Line {
-	  ZOrder		  480
-	  SrcBlock		  "FL Torque Gains and Saturation"
-	  SrcPort		  1
-	  DstBlock		  "Gain4"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  496
-	  SrcBlock		  "FR Torque Gains and Saturation"
-	  SrcPort		  1
-	  DstBlock		  "Gain5"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  500
-	  SrcBlock		  "RL Torque Gains and Saturation"
-	  SrcPort		  1
-	  DstBlock		  "Gain7"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  504
-	  SrcBlock		  "RR Torque Gains and Saturation"
-	  SrcPort		  1
-	  DstBlock		  "Gain8"
-	  DstPort		  1
-	}
-	Line {
 	  ZOrder		  493
 	  SrcBlock		  "FL_WA"
 	  SrcPort		  1
@@ -4924,6 +4955,62 @@ Model {
 	  SrcPort		  1
 	  DstBlock		  "RR Torque Gains and Saturation"
 	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  566
+	  SrcBlock		  "FL Torque Gains and Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Gain4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  568
+	  SrcBlock		  "FR Torque Gains and Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Gain5"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  570
+	  SrcBlock		  "RL Torque Gains and Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Gain7"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  572
+	  SrcBlock		  "RR Torque Gains and Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Gain8"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  567
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  569
+	  SrcBlock		  "Saturation1"
+	  SrcPort		  1
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  571
+	  SrcBlock		  "Saturation2"
+	  SrcPort		  1
+	  DstBlock		  "Gain2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  573
+	  SrcBlock		  "Saturation3"
+	  SrcPort		  1
+	  DstBlock		  "Gain3"
+	  DstPort		  1
 	}
 	Annotation {
 	  SID			  "440"
