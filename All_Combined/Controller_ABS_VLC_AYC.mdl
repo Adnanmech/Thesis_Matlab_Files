@@ -115,7 +115,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.164"
+    ComputedModelVersion    "1.166"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -173,11 +173,11 @@ Model {
 	$ObjectID		6
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"50"
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
 	Extents			[1247.0, 662.0]
-	ZoomFactor		[0.8]
-	Offset			[507.5, 0.0]
+	ZoomFactor		[0.59999999999999987]
+	Offset			[-2.2737367544323206e-13, -1.1368683772161603e-13]
       }
     }
   }
@@ -187,9 +187,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Jul 04 22:16:38 2017"
-  RTWModifiedTimeStamp	  420863054
-  ModelVersionFormat	  "1.%<AutoIncrement:164>"
+  LastModifiedDate	  "Sun Aug 20 22:47:18 2017"
+  RTWModifiedTimeStamp	  425166393
+  ModelVersionFormat	  "1.%<AutoIncrement:166>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1634,6 +1634,21 @@ Model {
       SampleTime	      "-1"
     }
     Block {
+      BlockType		      Saturate
+      UpperLimitSource	      "Dialog"
+      UpperLimit	      "0.5"
+      LowerLimitSource	      "Dialog"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
       BlockType		      Scope
       DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
       NumInputPorts	      "1"
@@ -1706,7 +1721,7 @@ Model {
   System {
     Name		    "Controller_ABS_VLC_AYC"
     Location		    [182, 129, 1672, 965]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -1719,7 +1734,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "60"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "522"
+    SIDHighWatermark	    "526"
     Block {
       BlockType		      Inport
       Name		      "Vx_cont"
@@ -1860,7 +1875,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"40"
+	ZoomFactor		"60"
 	Block {
 	  BlockType		  Inport
 	  Name			  "longitudinal speed [m/s]"
@@ -2545,7 +2560,7 @@ Model {
 	  System {
 	    Name		    "Fuzzy Yaw Controller"
 	    Location		    [182, 129, 1672, 965]
-	    Open		    on
+	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2556,7 +2571,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "80"
+	    ZoomFactor		    "60"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Yaw Error [rad/s]"
@@ -3986,6 +4001,50 @@ Model {
 	  "rsion','2016a')),'Version','2016a','Location',[8 83 1632 938])"
 	}
 	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  SID			  "523"
+	  Ports			  [1, 1]
+	  Position		  [3150, 380, 3180, 410]
+	  ZOrder		  77
+	  InputPortMap		  "u0"
+	  UpperLimit		  "150"
+	  LowerLimit		  "-150"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation1"
+	  SID			  "524"
+	  Ports			  [1, 1]
+	  Position		  [3115, 575, 3145, 605]
+	  ZOrder		  78
+	  InputPortMap		  "u0"
+	  UpperLimit		  "150"
+	  LowerLimit		  "-150"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation2"
+	  SID			  "525"
+	  Ports			  [1, 1]
+	  Position		  [3100, 800, 3130, 830]
+	  ZOrder		  79
+	  InputPortMap		  "u0"
+	  UpperLimit		  "150"
+	  LowerLimit		  "-150"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation3"
+	  SID			  "526"
+	  Ports			  [1, 1]
+	  Position		  [3075, 1020, 3105, 1050]
+	  ZOrder		  80
+	  InputPortMap		  "u0"
+	  UpperLimit		  "150"
+	  LowerLimit		  "-150"
+	}
+	Block {
 	  BlockType		  Switch
 	  Name			  "Switch1"
 	  SID			  "371"
@@ -4678,7 +4737,7 @@ Model {
 	  ZOrder		  143
 	  SrcBlock		  "Switch1"
 	  SrcPort		  1
-	  DstBlock		  "Gain"
+	  DstBlock		  "Saturation"
 	  DstPort		  1
 	}
 	Line {
@@ -4714,7 +4773,7 @@ Model {
 	  ZOrder		  156
 	  SrcBlock		  "Switch2"
 	  SrcPort		  1
-	  DstBlock		  "Gain1"
+	  DstBlock		  "Saturation1"
 	  DstPort		  1
 	}
 	Line {
@@ -4750,7 +4809,7 @@ Model {
 	  ZOrder		  166
 	  SrcBlock		  "Switch3"
 	  SrcPort		  1
-	  DstBlock		  "Gain2"
+	  DstBlock		  "Saturation2"
 	  DstPort		  1
 	}
 	Line {
@@ -4786,7 +4845,7 @@ Model {
 	  ZOrder		  176
 	  SrcBlock		  "Switch4"
 	  SrcPort		  1
-	  DstBlock		  "Gain3"
+	  DstBlock		  "Saturation3"
 	  DstPort		  1
 	}
 	Line {
@@ -4923,6 +4982,34 @@ Model {
 	  SrcPort		  1
 	  DstBlock		  "RR Torque Gains and Saturation"
 	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  562
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  563
+	  SrcBlock		  "Saturation1"
+	  SrcPort		  1
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  564
+	  SrcBlock		  "Saturation2"
+	  SrcPort		  1
+	  DstBlock		  "Gain2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  565
+	  SrcBlock		  "Saturation3"
+	  SrcPort		  1
+	  DstBlock		  "Gain3"
+	  DstPort		  1
 	}
 	Annotation {
 	  SID			  "440"

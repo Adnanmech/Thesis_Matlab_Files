@@ -113,9 +113,9 @@ z = 0.00033;   %e-motor time constant
 
 %%
 % Fuzzy Controller Settings
-Yaw_Ctrl_Gain = 2.4;
+Yaw_Ctrl_Gain = 1.6;
 Slip_Ratio_Ctrl_Gain = 1;
-Wheel_Accel_Ctrl_Gain = 1;
+Wheel_Accel_Ctrl_Gain = 0.8;
 %%
 
 %% Parameters

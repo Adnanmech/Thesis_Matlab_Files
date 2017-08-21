@@ -10,7 +10,7 @@ Simulation_Count = 0; %Counts the simulation iteration number
 
 gdp = 0;   %Number of actual saved control gain points (initialized to zero)
 nsp = 10;  %Max number of saved control gain points
-stop_time = 7.001;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
+stop_time = 5.001;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
 min_Vx = repmat(100, 1, nsp);
 min_rms_YE = repmat(100, 1, nsp);
 Yaw_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
@@ -40,7 +40,7 @@ for cntr=sim_pts:-1:1
             
             %make edits to sim values
             %Lat_Accel_Err_Gain = (cntr3/(2*sim_pts_la) + 0.5)*1
-            Yaw_Ctrl_Gain = (cntr1/sim_pts)*3
+            Yaw_Ctrl_Gain = (cntr1/sim_pts)*2
             Slip_Ratio_Ctrl_Gain = (cntr/sim_pts)*2
             Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts_2)*2
             
@@ -53,7 +53,7 @@ for cntr=sim_pts:-1:1
 			min_Vx_new = min(abs(VMC(:,16)));  %Check min Vx
 			Vx_Saved(Simulation_Count) = min_Vx_new
             min_Vx
-            if  VMC(6000,16) < 17 ...            %make sure velocity is lower than 17m/s by 6s
+            if  VMC(5000,16) < 25 ...            %make sure velocity is lower than 17m/s by 6s
                     && max(abs(VMC(:,17))) < 2 ...     %make sure Vy lower than 1m/s the entire time.
                     && max(VMC(:,18)) < 0.18;    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
                 if min_Vx_new < min_Vx(1);
@@ -111,7 +111,7 @@ end
 
 %save workspace to file
 
-Filename_mat = sprintf('Fuzzy_Control_Split-u_3vars_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_mat = sprintf('Fuzzy_Control_Split-u_3vars_wsat_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
 save(Filename_mat);
 
 figure % new figure
@@ -136,5 +136,5 @@ for m = 1:gdp
     plot(ax4,VMC(:,10),VMC_YE (:,m))
 end
 
-Filename_fig = sprintf('Fuzzy_Control_Split-u_3vars_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_fig = sprintf('Fuzzy_Control_Split-u_3vars_wsat_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_fig);
