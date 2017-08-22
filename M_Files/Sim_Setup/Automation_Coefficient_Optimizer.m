@@ -39,9 +39,9 @@ for cntr=sim_pts:-1:1
             
             %make edits to sim values
             %Lat_Accel_Err_Gain = (cntr3/(2*sim_pts_la) + 0.5)*1
-            Yaw_Ctrl_Gain = 1+(cntr1/sim_pts)*3
-            Slip_Ratio_Ctrl_Gain = (cntr/sim_pts)*1
-            Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts_2)*1
+            Yaw_Ctrl_Gain = (cntr1/sim_pts)*2
+            Slip_Ratio_Ctrl_Gain = (cntr/sim_pts)*2
+            Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts_2)*2
             
             %simulate and collect data
             Simulation_Count = Simulation_Count + 1
@@ -111,7 +111,7 @@ end
 
 %save workspace to file
 
-Filename_mat = sprintf('Fuzzy_Control_CSA_3vars_FIXD_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_mat = sprintf('Fuzzy_Control_CSA_3vars_FIXD_wsat_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
 save(Filename_mat);
 
 figure % new figure
@@ -136,5 +136,5 @@ for m = 1:gdp
     plot(ax4,VMC(:,10),VMC_YE (:,m))
 end
 
-Filename_fig = sprintf('Fuzzy_Control_CSA_Test_3vars_FIXD_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_fig = sprintf('Fuzzy_Control_CSA_Test_3vars_FIXD_wsat_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_fig);
