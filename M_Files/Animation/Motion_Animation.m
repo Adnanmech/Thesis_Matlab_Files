@@ -337,8 +337,8 @@ for i = 1:(samples_taken - 1)
     
     %fixed axes limits
 
-    set(main_vehicle_plot,'ylim',[-5 140]);
-    set(main_vehicle_plot,'xlim',[-5 400]);
+    set(main_vehicle_plot,'ylim',[-140 140]);
+    set(main_vehicle_plot,'xlim',[-50 400]);
     
     pause(1/(20000*fps));
     
