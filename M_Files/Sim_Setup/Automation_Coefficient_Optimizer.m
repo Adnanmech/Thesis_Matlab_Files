@@ -33,14 +33,15 @@ addpath('Fuzzy_Controller_Files');
 sim_pts = 10;
 sim_pts_2 = 10;
 for cntr=sim_pts:-1:1
-    for cntr1=sim_pts:-1:1
-        for cntr2=sim_pts_2:-1:1
+    %for cntr1=sim_pts:-1:1
+        for cntr2=1:sim_pts_2
             %update workspace
             %whos
             
             %make edits to sim values
             %Lat_Accel_Err_Gain = (cntr3/(2*sim_pts_la) + 0.5)*1
-            Yaw_Ctrl_Gain = (cntr1/sim_pts)*2
+            %Yaw_Ctrl_Gain = (cntr1/sim_pts)*2
+            Yaw_Ctrl_Gain = 1.6
             Slip_Ratio_Ctrl_Gain = (cntr/sim_pts)*2
             Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts_2)*2
             
@@ -106,12 +107,12 @@ for cntr=sim_pts:-1:1
                 dummy=1;
             end
         end
-    end
+    %end
 end
 
 %save workspace to file
 
-Filename_mat = sprintf('Fuzzy_Control_Split-u_3vars_wsat_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_mat = sprintf('Fuzzy_Control_Split-u_3vars_wsat_wFCswap_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
 save(Filename_mat);
 
 figure % new figure
@@ -136,5 +137,5 @@ for m = 1:gdp
     plot(ax4,VMC(:,10),VMC_YE (:,m))
 end
 
-Filename_fig = sprintf('Fuzzy_Control_Split-u_3vars_wsat_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_fig = sprintf('Fuzzy_Control_Split-u_3vars_wsat_wFCswap_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_fig);
