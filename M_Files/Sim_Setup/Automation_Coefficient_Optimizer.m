@@ -111,7 +111,7 @@ end
 
 %save workspace to file
 
-Filename_mat = sprintf('Fuzzy_Control_CSA_3vars_FIXD_wsat_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_mat = sprintf('Fuzzy_Control_CSA_3vars_FIXD_wsat_wFCSwap_NEWFC_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
 save(Filename_mat);
 
 figure % new figure
@@ -136,5 +136,5 @@ for m = 1:gdp
     plot(ax4,VMC(:,10),VMC_YE (:,m))
 end
 
-Filename_fig = sprintf('Fuzzy_Control_CSA_Test_3vars_FIXD_wsat_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_fig = sprintf('Fuzzy_Control_CSA_Test_3vars_FIXD_wsat_wFCSwap_NEWFC_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_fig);

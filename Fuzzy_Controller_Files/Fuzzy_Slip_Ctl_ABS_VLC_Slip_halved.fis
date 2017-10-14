@@ -1,0 +1,81 @@
+[System]
+Name='Fuzzy_Slip_Ctl_ABS_VLC_Slip_halved'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=35
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='som'
+
+[Input1]
+Name='dw/dt'
+Range=[-100 100]
+NumMFs=5
+MF1='nm':'trapmf',[-77 -50 -50 -23]
+MF2='z':'trapmf',[-27 0 0 27]
+MF3='nb':'trapmf',[-Inf -Inf -100 -73]
+MF4='pm':'trapmf',[23 50 50 77]
+MF5='pb':'trapmf',[73 100 Inf Inf]
+
+[Input2]
+Name='SR'
+Range=[0 0.25]
+NumMFs=7
+MF1='z':'trapmf',[-Inf -Inf 0 0.035]
+MF2='s':'trimf',[0.025 0.034 0.061]
+MF3='c':'trimf',[0.036 0.05 0.065]
+MF4='m':'trimf',[0.045 0.065 0.081]
+MF5='rb':'trimf',[0.061 0.081 0.102]
+MF6='b':'trimf',[0.081 0.101 0.115]
+MF7='vb':'trapmf',[0.106 0.125 Inf Inf]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=5
+MF1='z':'trimf',[-0.25 0 0.25]
+MF2='s':'trimf',[0 0.25 0.5]
+MF3='m':'trimf',[0.25 0.5 0.75]
+MF4='nu':'trimf',[0.5 0.75 1]
+MF5='u':'trimf',[0.75 1 1.25]
+
+[Rules]
+3 1, 5 (1) : 1
+3 2, 5 (1) : 1
+3 3, 5 (1) : 1
+3 4, 4 (1) : 1
+3 5, 3 (1) : 1
+3 6, 2 (1) : 1
+3 7, 1 (1) : 1
+1 1, 5 (1) : 1
+1 2, 5 (1) : 1
+1 3, 5 (1) : 1
+1 4, 5 (1) : 1
+1 5, 4 (1) : 1
+1 6, 3 (1) : 1
+1 7, 1 (1) : 1
+2 1, 5 (1) : 1
+2 2, 5 (1) : 1
+2 3, 5 (1) : 1
+2 4, 5 (1) : 1
+2 5, 4 (1) : 1
+2 6, 2 (1) : 1
+2 7, 1 (1) : 1
+4 1, 5 (1) : 1
+4 2, 5 (1) : 1
+4 3, 4 (1) : 1
+4 4, 2 (1) : 1
+4 5, 1 (1) : 1
+4 6, 1 (1) : 1
+4 7, 1 (1) : 1
+5 1, 5 (1) : 1
+5 2, 4 (1) : 1
+5 3, 2 (1) : 1
+5 4, 1 (1) : 1
+5 5, 1 (1) : 1
+5 6, 1 (1) : 1
+5 7, 1 (1) : 1
