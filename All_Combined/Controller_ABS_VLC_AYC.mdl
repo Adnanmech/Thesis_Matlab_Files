@@ -115,7 +115,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.175"
+    ComputedModelVersion    "1.176"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -183,11 +183,11 @@ Model {
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "502"
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1247.0, 644.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
+	  ZoomFactor		  [0.59999999999999987]
+	  Offset		  [-2.2737367544323206e-13, -1.1368683772161603e-13]
 	}
 	PropName		"EditorsInfo"
       }
@@ -199,9 +199,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Sep 01 00:29:39 2017"
-  RTWModifiedTimeStamp	  426126510
-  ModelVersionFormat	  "1.%<AutoIncrement:175>"
+  LastModifiedDate	  "Sat Oct 14 12:28:29 2017"
+  RTWModifiedTimeStamp	  429883859
+  ModelVersionFormat	  "1.%<AutoIncrement:176>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1733,7 +1733,7 @@ Model {
   System {
     Name		    "Controller_ABS_VLC_AYC"
     Location		    [430, 137, 1920, 958]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -3624,7 +3624,7 @@ Model {
 	  "Version','2016a','Measurements',struct('traceselector',struct('Line',2),'tcursors',struct('XCoordinates',[0.0004320"
 	  "39065202784 0.00079356770259349],'YCoordinates',[NaN NaN],'CursorChannels',[2 2],'WaveformCursors',true,'ShowHorizo"
 	  "ntal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPan"
-	  "elOpen',1)))),'Version','2016a','Location',[1 564 923 1079],'WindowStyle','docked','VisibleAtModelOpen','on')"
+	  "elOpen',1)))),'Version','2016a','Location',[1 564 923 1079],'WindowStyle','docked')"
 	}
 	Block {
 	  BlockType		  Reference
@@ -3953,7 +3953,7 @@ Model {
 	  System {
 	    Name		    "RR Torque Gains and Saturation"
 	    Location		    [430, 137, 1920, 958]
-	    Open		    on
+	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"

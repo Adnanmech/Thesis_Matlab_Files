@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.503"
+    ComputedModelVersion    "1.504"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC"
@@ -94,9 +94,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Oct 13 22:43:46 2017"
-  RTWModifiedTimeStamp	  429835419
-  ModelVersionFormat	  "1.%<AutoIncrement:503>"
+  LastModifiedDate	  "Sat Oct 14 12:28:34 2017"
+  RTWModifiedTimeStamp	  429883693
+  ModelVersionFormat	  "1.%<AutoIncrement:504>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -198,7 +198,7 @@ Model {
 	  $ObjectID		  10
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
-	  StopTime		  "7"
+	  StopTime		  "20"
 	  AbsTol		  "auto"
 	  FixedStep		  "0.001"
 	  InitialStep		  "auto"
@@ -6376,7 +6376,7 @@ Model {
       ModelNameDialog	      "Controller_ABS_VLC_AYC.mdl"
       SimulationMode	      "Normal"
       Variant		      off
-      ModelReferenceVersion   "1.174"
+      ModelReferenceVersion   "1.176"
       List {
 	ListType		InputPortNames
 	port0			"Vx_cont"
@@ -10294,7 +10294,7 @@ Model {
       "nts',struct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',[1.49379457917261 11.1178217821782"
       "],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',t"
       "rue,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','"
-      "2016a','Location',[10 318 1425 975])"
+      "2016a','Location',[1 75 1921 1039])"
       NumInputPorts	      "3"
     }
     Block {
