@@ -51,9 +51,9 @@ sim_pts = 10;
             min_Vx_new = min(abs(VMC(:,16)));  %Check min Vx
             if  VMC(3000,16) < 16 ...            %make sure velocity is less than 12m/s by 3s
                     && max(abs(VMC(:,17))) < 1 ...     %make sure Vy lower than 1m/s the entire time.
-                    && max(VMC(:,18)) < 0.08...    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
-                    && mean(VMC(1000:3000,13)) > -0.1...
-                    && mean(VMC(1000:3000,14)) > -0.1;
+                    && max(VMC(:,18)) < 0.08;    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
+                    %&& mean(VMC(1000:3000,13)) > -0.1...
+                    %&& mean(VMC(1000:3000,14)) > -0.1;
                 if min_Vx_new < min_Vx(1);
                     for s = 1:(nsp-1)
                         min_Vx_X(1,s+1) = min_Vx(1,s);
@@ -107,7 +107,7 @@ sim_pts = 10;
 
 %save workspace to file
 
-Filename_c = sprintf('Fuzzy_Control_ABS_3var_wsat_swappedFC_Sliplim_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_c = sprintf('Fuzzy_Control_ABS_3var_wsat_swappedFC_Sliplim_FIXD_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
 save(Filename_c);
 
 figure % new figure
@@ -129,5 +129,5 @@ for m = 1:gdp
     plot(ax3,VMC(:,10),VMC_r (:,m))
 end
 
-Filename_fig = sprintf('Fuzzy_Control_ABS_3var_wsat_swappedFC_Sliplim_Test_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_fig = sprintf('Fuzzy_Control_ABS_3var_wsat_swappedFC_Sliplim_FIXD_Test_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_fig);

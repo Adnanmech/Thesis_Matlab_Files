@@ -115,7 +115,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.176"
+    ComputedModelVersion    "1.177"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -176,8 +176,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[1247.0, 647.0]
-	ZoomFactor		[0.59999999999999987]
-	Offset			[-2.2737367544323206e-13, -1.1368683772161603e-13]
+	ZoomFactor		[0.5]
+	Offset			[-404.33333333333303, -207.33333333333303]
       }
     }
   }
@@ -187,9 +187,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Aug 29 14:43:30 2017"
-  RTWModifiedTimeStamp	  425917835
-  ModelVersionFormat	  "1.%<AutoIncrement:176>"
+  LastModifiedDate	  "Sat Oct 14 18:16:03 2017"
+  RTWModifiedTimeStamp	  429904521
+  ModelVersionFormat	  "1.%<AutoIncrement:177>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1732,7 +1732,7 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "60"
+    ZoomFactor		    "50"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "530"
     Block {

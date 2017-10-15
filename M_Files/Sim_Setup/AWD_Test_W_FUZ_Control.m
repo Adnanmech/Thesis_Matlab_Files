@@ -19,7 +19,7 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %Fuzzy_Slip_Ctl_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
 %Fuzzy_Slip_Ctl_ABS = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
 Fuzzy_AYC_Ctl      = readfis('Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
-Fuzzy_Slip_Ctl_ABS_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS_VLC');    %ABS FIS
+Fuzzy_Slip_Ctl_ABS_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS_VLC_FIXD');    %ABS FIS
 
 %Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_VLC_2');      %VLC FIS
 %Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS_2');      %ABS FIS
@@ -112,8 +112,8 @@ z = 0.00033;            %e-motor time constant
 %%
 % Fuzzy Controller Settings
 Yaw_Ctrl_Gain = 0.2;
-Slip_Ratio_Ctrl_Gain = 2;
-Wheel_Accel_Ctrl_Gain = 2;
+Slip_Ratio_Ctrl_Gain = 1;
+Wheel_Accel_Ctrl_Gain = 0.4;
 %%
 
 %% Parameters
