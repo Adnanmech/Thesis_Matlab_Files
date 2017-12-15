@@ -43,10 +43,10 @@ for cntr3=sim_pts:-1:1
 				
 				%make edits to sim values
 				%Lat_Accel_Err_Gain = (cntr3/(2*sim_pts_la) + 0.5)*1
-				Lat_Accel_Err_Gain = (cntr/sim_pts)*1
-				Yaw_Ctrl_Gain = (cntr1/sim_pts)*1
-				Slip_Err_P_Gain = (cntr2/sim_pts)*1
-				Slip_Err_D_Gain = (cntr3/sim_pts)*1
+				Lat_Accel_Err_Gain = (cntr/sim_pts)*2
+				Yaw_Ctrl_Gain = (cntr1/sim_pts)*2
+				Slip_Err_P_Gain = (cntr2/sim_pts)*2
+				Slip_Err_D_Gain = (cntr3/sim_pts)*2
 				
 				%simulate and collect data
 				Simulation_Count = Simulation_Count + 1
