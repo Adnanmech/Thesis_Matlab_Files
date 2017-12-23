@@ -80,9 +80,9 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %%
 %%
 %Split-u Test
-Split_u_Time_On = 0.2;          %Set time for split-u to start (Keep off w large time)
+Split_u_Time_On = 0;          %Set time for split-u to start (Keep off w large time)
 
-Throttle_Step_Time = 0.5;       %Step time of throttle signal
+Throttle_Step_Time = 0;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
 Throttle_Final_Val = -1;        %Final throttle value (DOESN'T MATTER)
 
@@ -114,9 +114,9 @@ Target_SR = 0.1;
 PWM_Low_Lim = 0.05;
 PWM_SW_Threshold = 0;
 Yaw_Ctrl_Gain = 0.2;
-Slip_Err_P_Gain = 1;
-Slip_Err_D_Gain = 1;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
-Lat_Accel_Err_Gain = 0.1;
+Slip_Err_P_Gain = 2;
+Slip_Err_D_Gain = 0.2;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
+Lat_Accel_Err_Gain = 0.2;
 
 Slip_Pass_Band = 200;
 Slip_Stop_Band = 250;
