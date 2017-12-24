@@ -1,3 +1,4 @@
+
 %clear all; close all; clc;
 fprintf('Loading data for rear wheel driving model...')
 
@@ -77,9 +78,9 @@ Fuzzy_Slip_Ctl_ABS_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS_VLC_
 %
 %%
 %Split-u Test
-Split_u_Time_On = 0.2;          %Set time for split-u to start (Keep off w large time)
+Split_u_Time_On = 0;          %Set time for split-u to start (Keep off w large time)
 
-Throttle_Step_Time = 0.5;       %Step time of throttle signal
+Throttle_Step_Time = 0;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
 Throttle_Final_Val = -1;        %Final throttle value (DOESN'T MATTER)
 

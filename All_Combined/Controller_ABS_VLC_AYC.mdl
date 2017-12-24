@@ -151,7 +151,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [430.0, 137.0, 1490.0, 821.0]
+      Location		      [211.0, 221.0, 1490.0, 821.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -177,7 +177,7 @@ Model {
 	LoadSaveID		"50"
 	Extents			[1247.0, 647.0]
 	ZoomFactor		[1.25]
-	Offset			[196.23333333333284, -50.7166666666667]
+	Offset			[196.23333333333284, -51.199999999999989]
       }
     }
   }
@@ -187,7 +187,7 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Aug 29 23:13:46 2017"
+  LastModifiedDate	  "Tue Dec 19 22:33:16 2017"
   RTWModifiedTimeStamp	  425947938
   ModelVersionFormat	  "1.%<AutoIncrement:174>"
   ConfigurationManager	  "none"
@@ -2708,7 +2708,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Fuzzy Yaw Controller"
-	    Location		    [430, 137, 1920, 958]
+	    Location		    [211, 221, 1701, 1042]
 	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
