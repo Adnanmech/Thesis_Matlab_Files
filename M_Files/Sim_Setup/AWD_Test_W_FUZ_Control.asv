@@ -111,9 +111,9 @@ z = 0.00033;   %e-motor time constant
 
 %%
 % Fuzzy Controller Settings
-Yaw_Ctrl_Gain = 2;
-Slip_Ratio_Ctrl_Gain = 2.8;
-Wheel_Accel_Ctrl_Gain = 0.6;
+Yaw_Ctrl_Gain = 1.8;
+Slip_Ratio_Ctrl_Gain = 2.4;
+Wheel_Accel_Ctrl_Gain = 0.8;
 %%
 
 %% Parameters
@@ -124,8 +124,7 @@ Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
 hg = 0.5;               %   Hight of CoG [m]
 
-Cf = 200000;
-Cr = 200000;
+Cf =
 
 Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 %Jw changed from 12 -> 1.2. Wheel is being treated as hollow ring.
