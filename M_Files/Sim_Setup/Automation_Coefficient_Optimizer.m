@@ -91,7 +91,7 @@ sim_pts = 10;
                     
                     gdp = gdp + 1;
                     
-                    break
+                    %break
                 else
                     dummy=1;
                 end

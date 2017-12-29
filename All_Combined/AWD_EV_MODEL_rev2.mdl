@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.504"
+    ComputedModelVersion    "1.505"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC"
@@ -72,7 +72,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[915.0, 737.0]
 	ZoomFactor		[0.39999999999999997]
-	Offset			[-96.92566844919088, -221.24745352686728]
+	Offset			[-96.9256684491902, -221.24745352686728]
       }
     }
   }
@@ -82,9 +82,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Oct 14 18:16:03 2017"
-  RTWModifiedTimeStamp	  429904309
-  ModelVersionFormat	  "1.%<AutoIncrement:504>"
+  LastModifiedDate	  "Thu Dec 28 20:22:59 2017"
+  RTWModifiedTimeStamp	  436393378
+  ModelVersionFormat	  "1.%<AutoIncrement:505>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -186,7 +186,7 @@ Model {
 	  $ObjectID		  9
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
-	  StopTime		  "5"
+	  StopTime		  "3"
 	  AbsTol		  "auto"
 	  FixedStep		  "0.001"
 	  InitialStep		  "auto"
