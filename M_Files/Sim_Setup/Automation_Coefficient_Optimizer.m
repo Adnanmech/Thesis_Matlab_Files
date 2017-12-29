@@ -8,8 +8,8 @@ warning('off','all');
 Simulation_Count = 0; %Counts the simulation iteration number
 gdp = 0;
 nsp = 10;  %number of saved control gain points
-stop_time = 3.101;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
-Vx_arr = repmat(100, 1, nsp);
+stop_time = 5.001;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
+Vx_arr = repmat(10000, 1, nsp);
 Yaw_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
 Slip_Err_P_Gain_Lowest = repmat(100, 1, nsp);
 Slip_Err_D_Gain_Lowest = repmat(100, 1, nsp);
@@ -27,20 +27,20 @@ run('AWD_Test_W_FUZ_Control.m');
 addpath('All_Combined');
 addpath('Fuzzy_Controller_Files');
 
-sim_pts = 5;
+sim_pts = 10;
 sim_pts_la = 5;
 for cntr3=sim_pts:-1:1
     for cntr2=sim_pts:-1:1
-        for cntr=sim_pts:-1:1
-            for cntr1=sim_pts:-1:1
+        %for cntr=sim_pts:-1:1
+            %for cntr1=sim_pts:-1:1
                 %update workspace
                 %whos
                 
                 %make edits to sim values
-                Lat_Accel_Err_Gain = (cntr/sim_pts)*1
-                Yaw_Ctrl_Gain = (cntr1/sim_pts)*1
-                Slip_Err_P_Gain = (cntr2/sim_pts)*1
-                Slip_Err_D_Gain = (cntr3/sim_pts)*1
+                Lat_Accel_Err_Gain = 0.2%(cntr/sim_pts)*1
+                Yaw_Ctrl_Gain = 0.2%(cntr1/sim_pts)*1
+                Slip_Err_P_Gain = (cntr2/sim_pts)*2
+                Slip_Err_D_Gain = (cntr3/sim_pts)*2
                 
                 %simulate and collect data
                 Simulation_Count = Simulation_Count + 1
@@ -48,10 +48,10 @@ for cntr3=sim_pts:-1:1
                 sim('All_Combined\AWD_EV_MODEL_rev2.mdl')%, 'CaptureErrors', 'on')
                 
                 %analyze data and make decision
-                min_new = min(abs(VMC(:,16)));          %Check min Vx
+                min_new = find(VMC(:,16)<0,1);          %Check min Vx
                 if  VMC(3000,16) < 16 ...                %make sure Vx is lower than 12m/s by 3s
-                        && max(abs(VMC(:,17))) < 1 ...  %make sure Vy lowoer than 1m/s the entire time.
-                        && max(VMC(:,18)) < 0.08;       %make sure yaw rate does not exceed 0.08rad(4.5deg)/s
+                        && max(abs(VMC(:,17))) < 2 ...  %make sure Vy lowoer than 1m/s the entire time.
+                        && max(VMC(:,18)) < 0.18;       %make sure yaw rate does not exceed 0.08rad(4.5deg)/s
                     if min_new < Vx_arr(1);
                         for s = 1:(nsp-1)
                             Vx_arr_X(1,s+1) = Vx_arr(1,s);
@@ -91,7 +91,7 @@ for cntr3=sim_pts:-1:1
                         VMC_r  = VMC_r_X;
                         
                         gdp = gdp + 1;
-                        break
+                        %break
                     else
                         dummy=1;
                     end
@@ -101,8 +101,8 @@ for cntr3=sim_pts:-1:1
                     dummy=1;
                     
                 end
-            end
-        end
+            %end
+        %end
     end
 end
 

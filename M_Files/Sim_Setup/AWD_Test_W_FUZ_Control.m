@@ -111,8 +111,8 @@ Target_SR = 0.1;
 PWM_Low_Lim = 0.05;
 PWM_SW_Threshold = 0;
 Yaw_Ctrl_Gain = 0.2;
-Slip_Err_P_Gain = 0.8;
-Slip_Err_D_Gain = 1;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
+Slip_Err_P_Gain = 1.6;
+Slip_Err_D_Gain = 2;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
 Lat_Accel_Err_Gain = 0.2;
 
 %Motor Model
