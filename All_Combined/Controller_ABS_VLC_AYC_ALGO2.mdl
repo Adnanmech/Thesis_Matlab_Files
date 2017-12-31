@@ -121,7 +121,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.464"
+    ComputedModelVersion    "1.466"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -157,7 +157,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [80.0, 127.0, 1534.0, 928.0]
+      Location		      [80.0, 112.0, 1534.0, 928.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -179,11 +179,11 @@ Model {
 	$ObjectID		6
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"114"
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
 	Extents			[1291.0, 754.0]
-	ZoomFactor		[0.59999999999999987]
-	Offset			[-445.30381579432674, 45.088406919699992]
+	ZoomFactor		[0.8]
+	Offset			[0.0, 0.0]
       }
     }
   }
@@ -193,9 +193,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Dec 24 01:40:15 2017"
-  RTWModifiedTimeStamp	  435951308
-  ModelVersionFormat	  "1.%<AutoIncrement:464>"
+  LastModifiedDate	  "Sat Dec 30 15:57:19 2017"
+  RTWModifiedTimeStamp	  436549927
+  ModelVersionFormat	  "1.%<AutoIncrement:466>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1920,8 +1920,8 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC_ALGO2"
-    Location		    [80, 127, 1614, 1055]
-    Open		    off
+    Location		    [80, 112, 1614, 1040]
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -2063,7 +2063,7 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[80, 127, 1614, 1055]
+	Location		[80, 112, 1614, 1040]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
@@ -6021,7 +6021,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "RR Slip Controller"
-	    Location		    [80, 127, 1614, 1055]
+	    Location		    [80, 112, 1614, 1040]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -7001,7 +7001,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Controller"
-	    Location		    [80, 127, 1614, 1055]
+	    Location		    [80, 112, 1614, 1040]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -7013,7 +7013,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "80"
+	    ZoomFactor		    "100"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Yaw Error"
@@ -7484,8 +7484,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Reference/Error Generator"
-	    Location		    [80, 127, 1614, 1055]
-	    Open		    on
+	    Location		    [80, 112, 1614, 1040]
+	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -7496,7 +7496,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "60"
+	    ZoomFactor		    "125"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Longitudinal Speed [m/s]"
@@ -7757,25 +7757,25 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1','DataLoggingSaveFormat','StructureWithTim"
 	      "e','SampleTime','.001','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visual"
-	      "s','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-0.11876','MaxYLimReal','0.69205','YLabelReal"
-	      "','','MinYLimMag','0.00000','MaxYLimMag','0.69205','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagP"
+	      "s','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-0.10777','MaxYLimReal','0.63149','YLabelReal"
+	      "','','MinYLimMag','0.00000','MaxYLimMag','0.63149','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagP"
 	      "hase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorO"
 	      "rder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392"
 	      "156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;"
 	      "1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannel"
 	      "Names',{{}},'NumLines',2,'LineNames',{{'Divide','yaw rate [rad/s]'}},'ShowContent',true,'Placement',1)},'Displa"
-	      "yPropertyDefaults',struct('MinYLimReal','-0.11876','MaxYLimReal','0.69205','YLabelReal','','MinYLimMag','0.0000"
-	      "0','MaxYLimMag','0.69205','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',["
+	      "yPropertyDefaults',struct('MinYLimReal','-0.10777','MaxYLimReal','0.63149','YLabelReal','','MinYLimMag','0.0000"
+	      "0','MaxYLimMag','0.63149','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',["
 	      "0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666666666"
 	      "6667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313725490"
 	      "19608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.65"
 	      "0980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,"
 	      "'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'Once"
-	      "AtStop',false,'PreviousAutoscale','XY','PreviousZoomMode','ZoomY'),extmgr.Configuration('Tools','Measurements',"
-	      "true,'Version','2016a','Measurements',struct('traceselector',struct('Line',2),'tcursors',struct('XCoordinates',"
-	      "[23.0689368770764 18.75],'YCoordinates',[NaN NaN],'CursorChannels',[2 2],'WaveformCursors',true,'ShowHorizontal"
-	      "',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPan"
-	      "elOpen',1)))),'Version','2016a','Location',[61 117 1679 904])"
+	      "AtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a','Mea"
+	      "surements',struct('traceselector',struct('Line',2),'tcursors',struct('XCoordinates',[23.0689368770764 18.75],'Y"
+	      "Coordinates',[NaN NaN],'CursorChannels',[2 2],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true"
+	      ",'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','20"
+	      "16a','Location',[61 117 1679 904])"
 	    }
 	    Block {
 	      BlockType		      Sum

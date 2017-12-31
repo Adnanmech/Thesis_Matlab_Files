@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.578"
+    ComputedModelVersion    "1.580"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC_ALGO2"
@@ -82,7 +82,7 @@ Model {
 	  LoadSaveID		  "0"
 	  Extents		  [1312.0, 773.0]
 	  ZoomFactor		  [0.59999999999999987]
-	  Offset		  [-567.36666666666338, -259.2666666666679]
+	  Offset		  [-567.36666666666338, -274.33333333333331]
 	}
 	Object {
 	  $ObjectID		  8
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Dec 24 01:40:26 2017"
-  RTWModifiedTimeStamp	  435948927
-  ModelVersionFormat	  "1.%<AutoIncrement:578>"
+  LastModifiedDate	  "Sat Dec 30 15:57:19 2017"
+  RTWModifiedTimeStamp	  436543534
+  ModelVersionFormat	  "1.%<AutoIncrement:580>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -6877,7 +6877,7 @@ Model {
       ModelNameDialog	      "Controller_ABS_VLC_AYC_ALGO2.mdl"
       SimulationMode	      "Normal"
       Variant		      off
-      ModelReferenceVersion   "1.464"
+      ModelReferenceVersion   "1.466"
       List {
 	ListType		InputPortNames
 	port0			"Vx_cont"
@@ -10626,8 +10626,8 @@ Model {
       "extmgr.Configuration('Tools','Measurements',true,'Version','2016a','Measurements',struct('traceselector',struct("
       "'Line',1),'tcursors',struct('XCoordinates',[4.92085076708508 9.07673267326732],'YCoordinates',[NaN NaN],'CursorC"
       "hannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'Snap"
-      "ToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[672 249 1708 906"
-      "])"
+      "ToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[1921 75 3841 107"
+      "9])"
       NumInputPorts	      "3"
     }
     Block {
