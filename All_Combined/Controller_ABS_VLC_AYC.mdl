@@ -115,7 +115,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.174"
+    ComputedModelVersion    "1.176"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -151,7 +151,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [211.0, 221.0, 1490.0, 821.0]
+      Location		      [211.0, 219.0, 1490.0, 821.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -173,11 +173,11 @@ Model {
 	$ObjectID		6
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"50"
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
 	Extents			[1247.0, 647.0]
-	ZoomFactor		[1.25]
-	Offset			[196.23333333333284, -51.199999999999989]
+	ZoomFactor		[0.59999999999999987]
+	Offset			[-2.2737367544323206e-13, -1.1368683772161603e-13]
       }
     }
   }
@@ -187,9 +187,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Dec 19 22:33:16 2017"
-  RTWModifiedTimeStamp	  425947938
-  ModelVersionFormat	  "1.%<AutoIncrement:174>"
+  LastModifiedDate	  "Sun Dec 31 15:57:45 2017"
+  RTWModifiedTimeStamp	  436622672
+  ModelVersionFormat	  "1.%<AutoIncrement:176>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1720,8 +1720,8 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC"
-    Location		    [430, 137, 1920, 958]
-    Open		    off
+    Location		    [211, 219, 1701, 1040]
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -1863,7 +1863,7 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[430, 137, 1920, 958]
+	Location		[211, 221, 1701, 1042]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
@@ -1875,7 +1875,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"50"
+	ZoomFactor		"60"
 	Block {
 	  BlockType		  Inport
 	  Name			  "longitudinal speed [m/s]"
@@ -2133,7 +2133,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Torque Gains and Saturation"
-	    Location		    [430, 137, 1920, 958]
+	    Location		    [211, 219, 1701, 1040]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2709,7 +2709,7 @@ Model {
 	  System {
 	    Name		    "Fuzzy Yaw Controller"
 	    Location		    [211, 221, 1701, 1042]
-	    Open		    on
+	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2720,7 +2720,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "125"
+	    ZoomFactor		    "100"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Yaw Error [rad/s]"
