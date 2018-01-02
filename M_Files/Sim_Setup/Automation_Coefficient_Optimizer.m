@@ -9,12 +9,16 @@ warning('off','all');
 Simulation_Count = 0; %Counts the simulation iteration number
 
 gdp = 0;   %Number of actual saved control gain points (initialized to zero)
-nsp = 10;  %Max number of saved control gain points
+nsp = 50;  %Max number of saved control gain points
 stop_time = 3.001;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
 min_Vx = repmat(100, 1, nsp);
+min_Vx_X = repmat(100, 1, nsp);
 Yaw_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
+Yaw_Ctrl_Gain_Lowest_X = repmat(100, 1, nsp);
 Slip_Ratio_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
+Slip_Ratio_Ctrl_Gain_Lowest_X = repmat(100, 1, nsp);
 Wheel_Accel_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
+Wheel_Accel_Ctrl_Gain_Lowest_X = repmat(100, 1, nsp);
 
 VMC_Vx = repmat(100, stop_time*1000, nsp);
 VMC_Vy = repmat(100, stop_time*1000, nsp);
@@ -28,7 +32,7 @@ run('AWD_Test_W_FUZ_Control.m');
 addpath('All_Combined');
 addpath('Fuzzy_Controller_Files');
 
-sim_pts = 10;
+sim_pts = 15;
 %for cntr=1:sim_pts
     for cntr1=1:sim_pts
         for cntr2=sim_pts:-1:1
@@ -39,8 +43,8 @@ sim_pts = 10;
             %Lat_Accel_Err_Gain = (cntr3/(2*sim_pts_la) + 0.5)*1
             %Yaw_Ctrl_Gain = (cntr/sim_pts)*2
             Yaw_Ctrl_Gain = 0.2
-            Slip_Ratio_Ctrl_Gain = (cntr1/sim_pts)*2
-            Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts)*2
+            Slip_Ratio_Ctrl_Gain = (cntr1/sim_pts)*3
+            Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts)*3
             
             %simulate and collect data
             Simulation_Count = Simulation_Count + 1
@@ -51,7 +55,7 @@ sim_pts = 10;
             min_Vx_new = min(abs(VMC(:,16)));  %Check min Vx
             if  VMC(3000,16) < 16 ...            %make sure velocity is less than 12m/s by 3s
                     && max(abs(VMC(:,17))) < 1 ...     %make sure Vy lower than 1m/s the entire time.
-                    && max(VMC(:,18)) < 0.08;    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
+                    && max(VMC(:,18)) < 0.18;    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
                     %&& mean(VMC(1000:3000,13)) > -0.1...
                     %&& mean(VMC(1000:3000,14)) > -0.1;
                 if min_Vx_new < min_Vx(1);
