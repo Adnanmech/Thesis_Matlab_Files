@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.579"
+    ComputedModelVersion    "1.581"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC_ALGO2"
@@ -79,19 +79,19 @@ Model {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "4050"
+	  LoadSaveID		  "4056"
 	  Extents		  [1312.0, 773.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [22.166666666666856, -174.83333333333331]
+	  ZoomFactor		  [0.8]
+	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  8
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "4050"
 	  Extents		  [1312.0, 773.0]
-	  ZoomFactor		  [0.4]
-	  Offset		  [-483.90000000000032, -448.23333333333335]
+	  ZoomFactor		  [1.25]
+	  Offset		  [59.800000000000068, -144.20000000000007]
 	}
 	Object {
 	  $ObjectID		  9
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Dec 23 15:05:14 2017"
-  RTWModifiedTimeStamp	  435940061
-  ModelVersionFormat	  "1.%<AutoIncrement:579>"
+  LastModifiedDate	  "Tue Jan 02 22:48:02 2018"
+  RTWModifiedTimeStamp	  436832483
+  ModelVersionFormat	  "1.%<AutoIncrement:581>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -800,7 +800,7 @@ Model {
 	  $ObjectID		  25
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
-	  StopTime		  "8.5"
+	  StopTime		  "9"
 	  AbsTol		  "auto"
 	  FixedStep		  "0.001"
 	  InitialStep		  "auto"
@@ -1794,7 +1794,7 @@ Model {
   System {
     Name		    "AWD_EV_MODEL_rev2"
     Location		    [232, 40, 1787, 990]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -2337,7 +2337,7 @@ Model {
       }
       System {
 	Name			"FL Tire Mode"
-	Location		[269, 69, 1824, 1019]
+	Location		[232, 40, 1787, 990]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -2349,7 +2349,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"125"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Torque [Nm]"
@@ -2444,8 +2444,8 @@ Model {
 	  }
 	  System {
 	    Name		    "Magic Formula"
-	    Location		    [52, 39, 1607, 1020]
-	    Open		    off
+	    Location		    [232, 40, 1787, 990]
+	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3504,24 +3504,24 @@ Model {
 	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
 	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData2','DataLoggingSaveFormat','StructureWithTime','DataLogg"
 	  "ingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDis"
-	  "plays',{struct('MinYLimReal','-4.99441','MaxYLimReal','3.46837','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag'"
-	  ",'4.99441','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickCol"
+	  "plays',{struct('MinYLimReal','-0.63399','MaxYLimReal','0.14239','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag'"
+	  ",'0.63399','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickCol"
 	  "or',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686"
 	  " 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0."
 	  "717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<Signa"
 	  "lLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Saturation1'}},'Show"
-	  "Content',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-4.99441','MaxYLimReal','3.46837','YL"
-	  "abelReal','','MinYLimMag','0.00000','MaxYLimMag','4.99441','LegendVisibility','Off','XGrid',true,'YGrid',true,'Plot"
+	  "Content',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.63399','MaxYLimReal','0.14239','YL"
+	  "abelReal','','MinYLimMag','0.00000','MaxYLimMag','0.63399','LegendVisibility','Off','XGrid',true,'YGrid',true,'Plot"
 	  "MagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorO"
 	  "rder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.3921568"
 	  "62745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745"
 	  "098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},"
 	  "'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',t"
-	  "rue,'OnceAtStop',false,'PreviousAutoscale','XY','PreviousZoomMode','ZoomY'),extmgr.Configuration('Tools','Measureme"
-	  "nts',true,'Version','2016a','Measurements',struct('tcursors',struct('XCoordinates',[1.70582524271845 5.25],'YCoordi"
-	  "nates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCurs"
-	  "orSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location"
-	  "',[2097 109 3381 1001])"
+	  "rue,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a'"
+	  ",'Measurements',struct('tcursors',struct('XCoordinates',[1.70582524271845 5.25],'YCoordinates',[NaN NaN],'CursorCha"
+	  "nnels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToDat"
+	  "a',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[2097 109 3381 1001],'Vis"
+	  "ibleAtModelOpen','on')"
 	}
 	Block {
 	  BlockType		  Scope
@@ -5236,7 +5236,7 @@ Model {
       Variant		      off
       System {
 	Name			"Force Composition"
-	Location		[269, 69, 1824, 1019]
+	Location		[232, 40, 1787, 990]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -6919,7 +6919,7 @@ Model {
       ModelNameDialog	      "Controller_ABS_VLC_AYC_ALGO2.mdl"
       SimulationMode	      "Normal"
       Variant		      off
-      ModelReferenceVersion   "1.461"
+      ModelReferenceVersion   "1.463"
       List {
 	ListType		InputPortNames
 	port0			"Vx_cont"
@@ -10638,8 +10638,8 @@ Model {
       "xtmgr.Configuration('Tools','Measurements',true,'Version','2016a','Measurements',struct('traceselector',struct('"
       "Line',1),'tcursors',struct('XCoordinates',[4.92085076708508 9.07673267326732],'YCoordinates',[NaN NaN],'CursorCh"
       "annels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapT"
-      "oData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[550 343 1586 1000"
-      "])"
+      "oData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[2030 185 3066 842"
+      "],'VisibleAtModelOpen','on')"
       NumInputPorts	      "3"
     }
     Block {
