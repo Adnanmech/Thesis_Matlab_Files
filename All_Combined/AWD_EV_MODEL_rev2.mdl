@@ -71,8 +71,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[915.0, 737.0]
-	ZoomFactor		[0.39999999999999997]
-	Offset			[-96.9256684491902, -221.24745352686728]
+	ZoomFactor		[0.8]
+	Offset			[139.14099821747698, -106.88078686020049]
       }
     }
   }
@@ -82,8 +82,8 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Dec 28 20:22:59 2017"
-  RTWModifiedTimeStamp	  436393378
+  LastModifiedDate	  "Mon Apr 23 16:40:17 2018"
+  RTWModifiedTimeStamp	  446401985
   ModelVersionFormat	  "1.%<AutoIncrement:505>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
@@ -1175,7 +1175,7 @@ Model {
   System {
     Name		    "AWD_EV_MODEL_rev2"
     Location		    [704, 94, 1862, 1005]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1186,7 +1186,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "40"
+    ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "5513"
     Block {
@@ -1896,7 +1896,7 @@ Model {
       }
       System {
 	Name			"FL Tire Mode"
-	Location		[261, 105, 1813, 1042]
+	Location		[704, 94, 1862, 1005]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -1908,7 +1908,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Torque [Nm]"
@@ -10170,37 +10170,37 @@ Model {
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingVariableName','StatesOutpus1','DataLoggingSaveFormat','StructureWithTim"
       "e','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true"
-      ",'SerializedDisplays',{struct('MinYLimReal','-3.35269','MaxYLimReal','30.17285','YLabelReal','','MinYLimMag','0."
-      "00000','MaxYLimMag','30.17285','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColo"
+      ",'SerializedDisplays',{struct('MinYLimReal','-3.35327','MaxYLimReal','30.17288','YLabelReal','','MinYLimMag','0."
+      "00000','MaxYLimMag','30.17288','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColo"
       "r',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666666"
       "6666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137254"
       "9019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.6"
       "50980392156863],'Title','Logitudinal speed [m/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'Num"
       "Lines',1,'LineNames',{{'longitudinal speed [m/s]'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-0.0"
-      "0658','MaxYLimReal','0.00518','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid"
-      "',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450980392"
-      "2 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470588"
-      "2353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569"
-      " 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Lateral speed [m/s]','LinePropertiesC"
-      "ache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'lateral speed [m/s]'}},'ShowContent',true,"
-      "'Placement',2),struct('MinYLimReal','-0.27392','MaxYLimReal','0.55243','YLabelReal','','MinYLimMag','0','MaxYLim"
-      "Mag','10','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickC"
-      "olor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450980392"
-      "15686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.07450980392"
-      "15686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Titl"
-      "e','Yaw rate [deg/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'rad "
-      "-> deg1'}},'ShowContent',true,'Placement',3)},'DisplayPropertyDefaults',struct('YLabelReal','','AxesColor',[0 0 "
-      "0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;"
-      "0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 "
-      "0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392"
-      "156863],'Title','Logitudinal speed [m/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0"
-      ",'LineNames',{{[]}},'ShowContent',true,'Placement',1),'DisplayLayoutDimensions',[3 1],'TimeRangeSamples','20','T"
-      "imeRangeFrames','20'),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale'"
-      ",'XY','PreviousZoomMode','ZoomY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a','Measuremen"
-      "ts',struct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',[4.56847360912981 11.1178217821782]"
-      ",'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',tr"
-      "ue,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2"
-      "016a','Location',[492 278 1528 935])"
+      "0979','MaxYLimReal','0.004','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid',"
+      "true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 "
+      "0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.4117647058823"
+      "53 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1"
+      ";0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Lateral speed [m/s]','LinePropertiesCac"
+      "he',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'lateral speed [m/s]'}},'ShowContent',true,'P"
+      "lacement',2),struct('MinYLimReal','-0.23571','MaxYLimReal','0.69274','YLabelReal','','MinYLimMag','0','MaxYLimMa"
+      "g','10','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickCol"
+      "or',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215"
+      "686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215"
+      "686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title'"
+      ",'Yaw rate [deg/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'rad ->"
+      " deg1'}},'ShowContent',true,'Placement',3)},'DisplayPropertyDefaults',struct('YLabelReal','','AxesColor',[0 0 0]"
+      ",'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0."
+      "0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0."
+      "0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.65098039215"
+      "6863],'Title','Logitudinal speed [m/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'"
+      "LineNames',{{[]}},'ShowContent',true,'Placement',1),'DisplayLayoutDimensions',[3 1],'TimeRangeSamples','20','Tim"
+      "eRangeFrames','20'),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','"
+      "XY','PreviousZoomMode','ZoomY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a','Measurements"
+      "',struct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',[4.56847360912981 11.1178217821782],'"
+      "YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true"
+      ",'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','201"
+      "6a','Location',[492 278 1528 935])"
       NumInputPorts	      "3"
     }
     Block {
@@ -13619,7 +13619,7 @@ MatData {
   }
   DataRecord {
     Tag			    DataTag1
-    Data		    "  %)30     .    N ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
+    Data		    "  %)30     .    R ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
     "9Y0FQK4&%T:',   !V97)I9GE\";&M(86YD;&5S '9N=DUG<DED>           86-T:79E1W)O=7        !R97%$:7-P4')C;G0      &)L:T1"
     "I<W!-;V1E        9W)O=7!#;G0           !G<F]U<%)E<4-N=        &=R;W5P1$]/4E-I9       ;6]D96Q(              !B;&]C:"
     "T@              &]V97)I9&53971T:6YG<P        X    P    !@    @    &          4    (               !          D    "
@@ -13628,9 +13628,9 @@ MatData {
     "            \\#\\.    ,     8    (    !@         %    \"                0         )          X    P    !@    @    "
     "&          4    (               !          D         #@   #@    &    \"     8         !0    @    !     0    $     "
     "    \"0    @           #P/PX    P    !@    @    &          4    (               !          D         #@   #     & "
-    "   \"     8         !0    @               $         \"0         .    ,     8    (    !@         %    \"           "
-    "     0         )          X    P    !@    @    &          4    (               !          D         #@   #     &  "
-    "  \"     8         !0    @               $         \"0         "
+    "   \"     8         !0    @               $         \"0         .    .     8    (    !@         %    \"     $    !"
+    "     0         )    \"         !   ! #@   #@    &    \"     8         !0    @    !     0    $         \"0    @    "
+    "   #  )B+0 X    P    !@    @    &          4    (               !          D         "
   }
   DataRecord {
     Tag			    DataTag2
@@ -13702,7 +13702,7 @@ MatData {
   }
   DataRecord {
     Tag			    DataTag3
-    Data		    "  %)30     .    N ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
+    Data		    "  %)30     .    R ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
     "9Y0FQK4&%T:',   !V97)I9GE\";&M(86YD;&5S '9N=DUG<DED>           86-T:79E1W)O=7        !R97%$:7-P4')C;G0      &)L:T1"
     "I<W!-;V1E        9W)O=7!#;G0           !G<F]U<%)E<4-N=        &=R;W5P1$]/4E-I9       ;6]D96Q(              !B;&]C:"
     "T@              &]V97)I9&53971T:6YG<P        X    P    !@    @    &          4    (               !          D    "
@@ -13711,8 +13711,8 @@ MatData {
     "            \\#\\.    ,     8    (    !@         %    \"                0         )          X    P    !@    @    "
     "&          4    (               !          D         #@   #@    &    \"     8         !0    @    !     0    $     "
     "    \"0    @           #P/PX    P    !@    @    &          4    (               !          D         #@   #     & "
-    "   \"     8         !0    @               $         \"0         .    ,     8    (    !@         %    \"           "
-    "     0         )          X    P    !@    @    &          4    (               !          D         #@   #     &  "
-    "  \"     8         !0    @               $         \"0         "
+    "   \"     8         !0    @               $         \"0         .    .     8    (    !@         %    \"     $    !"
+    "     0         )    \"         !   ! #@   #@    &    \"     8         !0    @    !     0    $         \"0    @    "
+    "   !  <B+0 X    P    !@    @    &          4    (               !          D         "
   }
 }

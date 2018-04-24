@@ -32,19 +32,20 @@ run('AWD_Test_W_FUZ_Control.m');
 addpath('All_Combined');
 addpath('Fuzzy_Controller_Files');
 
-sim_pts = 15;
+sim_pts_wa = 8;
+sim_pts_slip = 8; 
 %for cntr=1:sim_pts
-    for cntr1=1:sim_pts
-        for cntr2=sim_pts:-1:1
+    for cntr1=1:sim_pts_slip
+        for cntr2=sim_pts_wa:-1:1
             %update workspace
             %whos
             
             %make edits to sim values
             %Lat_Accel_Err_Gain = (cntr3/(2*sim_pts_la) + 0.5)*1
             %Yaw_Ctrl_Gain = (cntr/sim_pts)*2
-            Yaw_Ctrl_Gain = 0.2
-            Slip_Ratio_Ctrl_Gain = (cntr1/sim_pts)*3
-            Wheel_Accel_Ctrl_Gain = (cntr2/sim_pts)*3
+            Yaw_Ctrl_Gain = 0
+            Slip_Ratio_Ctrl_Gain = cntr1*2 - 1
+            Wheel_Accel_Ctrl_Gain = cntr2*0.125
             
             %simulate and collect data
             Simulation_Count = Simulation_Count + 1
@@ -58,26 +59,27 @@ sim_pts = 15;
                     && max(VMC(:,18)) < 0.18;    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
                     %&& mean(VMC(1000:3000,13)) > -0.1...
                     %&& mean(VMC(1000:3000,14)) > -0.1;
-                if min_Vx_new < min_Vx(1);
-                    for s = 1:(nsp-1)
-                        min_Vx_X(1,s+1) = min_Vx(1,s);
-                        Yaw_Ctrl_Gain_Lowest_X(1,s+1) = Yaw_Ctrl_Gain_Lowest(1,s);
-                        Slip_Ratio_Ctrl_Gain_Lowest_X(1,s+1) = Slip_Ratio_Ctrl_Gain_Lowest(1,s);
-                        Wheel_Accel_Ctrl_Gain_Lowest_X(1,s+1) = Wheel_Accel_Ctrl_Gain_Lowest(1,s);
-                        
-                        VMC_Vx_X(:,s+1) = VMC_Vx(:,s);
-                        VMC_Vy_X(:,s+1) = VMC_Vy(:,s);
-                        VMC_r_X (:,s+1) = VMC_r (:,s);
-                    end
+                for num = 1:(nsp-1)
+                    if min_Vx_new < min_Vx(num);
+                        for s = num:nsp
+                            min_Vx_X(1,s+1) = min_Vx(1,s);
+                            Yaw_Ctrl_Gain_Lowest_X(1,s+1) = Yaw_Ctrl_Gain_Lowest(1,s);
+                            Slip_Ratio_Ctrl_Gain_Lowest_X(1,s+1) = Slip_Ratio_Ctrl_Gain_Lowest(1,s);
+                            Wheel_Accel_Ctrl_Gain_Lowest_X(1,s+1) = Wheel_Accel_Ctrl_Gain_Lowest(1,s);
+                            
+                            VMC_Vx_X(:,s+1) = VMC_Vx(:,s);
+                            VMC_Vy_X(:,s+1) = VMC_Vy(:,s);
+                            VMC_r_X (:,s+1) = VMC_r (:,s);
+                        end
                     %Place value in 1st slot of dummy (X) arrays
-                    min_Vx_X(1,1) = min_Vx_new;
-                    Yaw_Ctrl_Gain_Lowest_X(1,1) = Yaw_Ctrl_Gain;
-                    Slip_Ratio_Ctrl_Gain_Lowest_X(1,1) = Slip_Ratio_Ctrl_Gain;
-                    Wheel_Accel_Ctrl_Gain_Lowest_X(1,1) = Wheel_Accel_Ctrl_Gain;
+                    min_Vx_X(1,num) = min_Vx_new;
+                    Yaw_Ctrl_Gain_Lowest_X(1,num) = Yaw_Ctrl_Gain;
+                    Slip_Ratio_Ctrl_Gain_Lowest_X(1,num) = Slip_Ratio_Ctrl_Gain;
+                    Wheel_Accel_Ctrl_Gain_Lowest_X(1,num) = Wheel_Accel_Ctrl_Gain;
                     
-                    VMC_Vx_X(:,1) = VMC(:,16);
-                    VMC_Vy_X(:,1) = VMC(:,17);
-                    VMC_r_X (:,1) = VMC(:,18);
+                    VMC_Vx_X(:,num) = VMC(:,16);
+                    VMC_Vy_X(:,num) = VMC(:,17);
+                    VMC_r_X (:,num) = VMC(:,18);
                     
                     %set newly constructed arrays to variable
                     min_Vx = min_Vx_X;
@@ -95,11 +97,11 @@ sim_pts = 15;
                     
                     gdp = gdp + 1;
                     
-                    %break
-                else
-                    dummy=1;
+                    break
+                    else
+                        dummy=1;
+                    end
                 end
-                
                 
             else
                 dummy=1;
@@ -111,7 +113,7 @@ sim_pts = 15;
 
 %save workspace to file
 
-Filename_c = sprintf('Fuzzy_Control_ABS_3var_wsat_swappedFC_Sliplim_FIXD_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_c = sprintf('Fuzzy_Control_ABS_3var_wsat_swappedFC_Sliplim_FIXD_Test_175Nm_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
 save(Filename_c);
 
 figure % new figure
@@ -122,8 +124,8 @@ ax2 = subplot(3,1,2); % bottom subplot
 hold on
 ax3 = subplot(3,1,3); % bottom subplot
 
-if gdp > 10
-    gdp = 10;
+if gdp > nsp
+    gdp = nsp;
 end 
 
 for m = 1:gdp
@@ -133,5 +135,5 @@ for m = 1:gdp
     plot(ax3,VMC(:,10),VMC_r (:,m))
 end
 
-Filename_fig = sprintf('Fuzzy_Control_ABS_3var_wsat_swappedFC_Sliplim_FIXD_Test_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_fig = sprintf('Fuzzy_Control_ABS_3var_wsat_swappedFC_Sliplim_FIXD_Test_fig_175Nm_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_fig);

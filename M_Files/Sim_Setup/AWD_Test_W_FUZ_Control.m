@@ -97,12 +97,12 @@ r0 = 0.0001;                    % Initial yaw rate [rad/s]
 
 SR_Eq_Accel_Brake_Threshold = -0.01;       %Throttle position threshold for Slip Ratio to change definitions from Accel to Brake or Vice-Versa
 
-T_Avail = 150;          % Peak Torque available by motors [Nm]
+T_Avail = 175;          % Peak Torque available by motors [Nm]
 
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
-z = 0.00033;            %e-motor time constant
+z = 0.001;            %e-motor time constant
 %D_Slip = 0.1;            % Desired slip for PID
 
 %%
@@ -111,9 +111,9 @@ z = 0.00033;            %e-motor time constant
 
 %%
 % Fuzzy Controller Settings
-Yaw_Ctrl_Gain = 0.2;
+Yaw_Ctrl_Gain = 0;
 Slip_Ratio_Ctrl_Gain = 1;
-Wheel_Accel_Ctrl_Gain = 0.4;
+Wheel_Accel_Ctrl_Gain = 0.25;
 %%
 
 %% Parameters
