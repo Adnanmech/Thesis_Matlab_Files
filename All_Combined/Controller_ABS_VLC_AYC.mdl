@@ -115,7 +115,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.177"
+    ComputedModelVersion    "1.178"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -151,7 +151,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [430.0, 137.0, 1490.0, 821.0]
+      Location		      [2239.0, 168.0, 1490.0, 821.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -187,9 +187,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Oct 14 18:16:03 2017"
-  RTWModifiedTimeStamp	  429904521
-  ModelVersionFormat	  "1.%<AutoIncrement:177>"
+  LastModifiedDate	  "Tue Apr 24 00:18:30 2018"
+  RTWModifiedTimeStamp	  446429262
+  ModelVersionFormat	  "1.%<AutoIncrement:178>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1720,7 +1720,7 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC"
-    Location		    [430, 137, 1920, 958]
+    Location		    [2239, 168, 3729, 989]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
