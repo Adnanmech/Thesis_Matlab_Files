@@ -98,7 +98,7 @@ r0 = 0.0001;                    % Initial yaw rate [rad/s]
 
 SR_Eq_Accel_Brake_Threshold = -0.01;       %Throttle position threshold for Slip Ratio to change definitions from Accel to Brake or Vice-Versa
 
-T_Avail = 150;          % Peak Torque available by motors [Nm]
+T_Avail = 175;          % Peak Torque available by motors [Nm]
 
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
@@ -107,16 +107,17 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 %%
 %%
 % Sliding Mode Controller Settings
-Target_SR = 0.1;
+Target_SR = 0.08;   %ABS Test
 PWM_Low_Lim = 0.05;
 PWM_SW_Threshold = 0;
 Yaw_Ctrl_Gain = 0.2;
-Slip_Err_P_Gain = 1.6;
-Slip_Err_D_Gain = 2;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
-Lat_Accel_Err_Gain = 0.2;
+Slip_Err_P_Gain = 154;
+Tau_SRC = 0.001;
+%Slip_Err_D_Gain = 2;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
+%Lat_Accel_Err_Gain = 0.2;  %fixed from paper as 0.15
 
 %Motor Model
-z=0.00033;
+z=0.001;
 
 %% Parameters
 g = 9.81;               %   Gravity acceleration [m/s^2]
