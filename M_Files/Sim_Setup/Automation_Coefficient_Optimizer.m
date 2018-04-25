@@ -256,6 +256,10 @@ end
 xlabel('freq');
 ylabel('Gain');
 
+%save total rms error surface plot
+Filename_3d_SURFC_fig_Tot_rms_err = sprintf('Sliding_Mode_Control_ABS_Test_rms_err_3d_SURFC_fig_175Nm_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+savefig(Filename_3d_SURFC_fig_Tot_rms_err);
+
 %plot rms errors vs P Gain
 figure % new figure
 hold on
