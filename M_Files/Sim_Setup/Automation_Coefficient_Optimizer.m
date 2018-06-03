@@ -10,7 +10,8 @@ Simulation_Count = 0; %Counts the simulation iteration number
 
 gdp = 0;   %Number of actual saved control gain points (initialized to zero)
 nsp = 50;  %Max number of saved control gain points
-stop_time = 5.501;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
+stop_time = 10.001;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
+run_time = stop_time - 0.001;
 min_rms_YE = repmat(100, 1, nsp);
 min_rms_YE_X = repmat(100, 1, nsp);
 Lat_Accel_Err_Gain_Lowest = repmat(100, 1, nsp);
@@ -36,35 +37,36 @@ addpath('All_Combined');
 addpath('Fuzzy_Controller_Files');
 
 
-sim_pts = 60;
-sim_pts_la = 10;
+sim_pts_yaw_P = 96;
+sim_pts_la = 8;
 %for cntr3=sim_pts:-1:1
     %for cntr2=sim_pts:-1:1
-       %for cntr1=sim_pts:-1:1
-            for cntr=1:sim_pts
+       for cntr1=1:sim_pts_la
+            for cntr=1:sim_pts_yaw_P
                 %update workspace
                 %whos
                 
-                
                 %make edits to sim values
-                Lat_Accel_Err_Gain = ??
+                Lat_Accel_Err_Gain = 0.75 + cntr1*0.05
                 Slip_Err_P_Gain = 154;%35 + 15*cntr
-                Yaw_Err_P_Gain = 3^(-10+cntr/3)
-                Yaw_Ctrl_Gain = ??
+                Yaw_Err_P_Gain = exp(1)^(-4.25 + cntr/8)
+                %Yaw_Ctrl_Gain = 150
                 %simulate and collect data
                 Simulation_Count = Simulation_Count + 1
                 %assignin('base', 'Simulation_Count', Simulation_Count)
                 sim('All_Combined\AWD_EV_MODEL_rev2.mdl')%,'CaptureErrors', 'on')
                 
                 %generate yaw error rms info
-                yaw_rms_err(cntr) = rms(VMC(:,15));
+                yaw_rms_err(cntr,cntr1) = rms(VMC(:,15));
                 Yaw_Err_P_Gain_Saved(cntr) = Yaw_Err_P_Gain;
+                Lat_Accel_Err_Gain_Saved(cntr1) = Lat_Accel_Err_Gain; 
+                
                 %analyze data and make decision
                 min_rms_YE_new = rms(VMC(:,15));  %Check min rms Yaw error
                 YE_Saved(Simulation_Count) = min_rms_YE_new
                 min_rms_YE
-                if  VMC(4000,16) > 15 ...            %make sure velocity is greater than 5m/s by 5s
-                    && max(VMC(1:5400,16)) >  VMC(5500,16)%...     %make sure Vy lower than 1m/s the entire time.
+                if  VMC(4000,16) > 14 %...            %make sure velocity is greater than 5m/s by 5s
+                    %&& max(VMC(1:5400,16)) >  VMC(5500,16)%...     %make sure Vy lower than 1m/s the entire time.
                     %		&& max(VMC(:,18)) < 0.08;    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
                     for num = 1:(nsp-1)
                         if min_rms_YE_new < min_rms_YE(num);
@@ -122,22 +124,27 @@ sim_pts_la = 10;
                     
                 end
             end
-        %end
+        end
     %end
 %end
 
 %save workspace to file
-Filename_mat = sprintf('Sliding_Mode_Control_CSA_w50kcnrstiffns_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_mat = sprintf('Sliding_Mode_Control_CSA_w50kcnrstiffns_wNew_SAS_Throttl_WTFiltr_Test_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
 save(Filename_mat);
 
-
-
 figure
+set(gca, 'YScale', 'log')
 hold on
-scatter(Yaw_Err_P_Gain_Saved, yaw_rms_err)
+PGaintt = Yaw_Err_P_Gain_Saved';
+LAGaintt = Lat_Accel_Err_Gain_Saved';
+surfc(LAGaintt, PGaintt, yaw_rms_err)
+%zlim([0.02 0.09])
+hold on
+
+%scatter(Yaw_Err_P_Gain_Saved, yaw_rms_err)
 
 %Save figure
-Filename_yrmserr_v_ygain_fig = sprintf('Sliding_Mode_Control_CSA_w50kcnrstiffns_Test_yrmserr_v_ygain_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_yrmserr_v_ygain_fig = sprintf('Sliding_Mode_Control_CSA_w50kcnrstiffns_wNew_SAS_Throttl_WTFiltr_Test_yrmserr_v_ygain_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_yrmserr_v_ygain_fig);
 
 figure % new figure
@@ -162,5 +169,5 @@ for m = 1:gdp
     plot(ax4,VMC(:,10),VMC_YE (:,m))
 end
 
-Filename_fig = sprintf('Sliding_Mode_Control_CSA_w50kcnrstiffns_Test_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_fig = sprintf('Sliding_Mode_Control_CSA_w50kcnrstiffns_wNew_SAS_Throttl_WTFiltr_Test_fig_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_fig);

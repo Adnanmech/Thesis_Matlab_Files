@@ -67,18 +67,24 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %Constant Steering Angle Test
 Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
 
-Throttle_Step_Time = 500;       %Step time of throttle signal
-Throttle_Init_Val = 0.35;          %Initial throttle value
-Throttle_Final_Val = 0.03;        %Final throttle value (DOESN'T MATTER)
+%not used atm%%%%%
+Throttle_Step_Time = 1.9;       %Step time of throttle signal
+Throttle_Init_Val = 0;          %Initial throttle value
+Throttle_Final_Val = 0.2;        %Final throttle value (DOESN'T MATTER)
+%%%%%%%%%%%%%%%%%%%
 
 Steering_Input_Select = 2;      %Steering Angle Selection (2 = Ramp)
 SA_Start_Time = .2;
-SA_Slope = 3;
+SA_Slope = 2;
 SA_Upper_Sat_Lim = 5;
 SA_Lower_Sat_Lim = -5;
 
-Vx0 =13.4;                     % Initial vehicle longitude speed [m/s]
+Throt_Slope = 0.5
+Throt_Start_Time = 2.4
+Throt_Upper_Sat_Lim = 0.2
+Throt_Lower_Sat_Lim = 0
 
+Vx0 = 13.4;                     % Initial vehicle longitude speed [m/s] 
 %%
 %%
 % %Split-u Test
@@ -98,7 +104,7 @@ Vx0 =13.4;                     % Initial vehicle longitude speed [m/s]
 %Variables wich remain constant for all tests
 Vy0 = 0.0001;                   % Initial vehicle lateral speed [m/s]
 r0 = 0.0001;                    % Initial yaw rate [rad/s]
-
+chicken = 2;
 SR_Eq_Accel_Brake_Threshold = 0.001;       %Throttle position threshold for Slip Ratio to change definitions from Accel to Brake or Vice-Versa
 
 T_Avail = 175;          % Peak Torque available by motors [Nm]
@@ -114,12 +120,14 @@ Target_SR = 0.08;   %ABS Test
 PWM_Low_Lim = 0.0;
 PWM_SW_Threshold = 0;
 
+Lat_Accel_Err_Gain = 0.85;  %calcd from paper as 0.15, but may not work right
 Slip_Err_P_Gain = 154;
-Yaw_Err_P_Gain = 150;
-Yaw_Ctrl_Gain = 30;
-Lat_Accel_Err_Gain = 0.2;  %calcd from paper as 0.15, but may not work right
+Yaw_Err_P_Gain = 0.3679;
+Yaw_Ctrl_Gain = 150;
+
 Tau_SRC = 1/(2*pi*10);
 Tau_Yaw = 1/(2*pi*20);
+Tau_WT = 1/(2*pi*0.5);
 
 
 %Slip_Pass_Band = 200;
@@ -135,8 +143,6 @@ Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
 hg = 0.5;               %   Hight of CoG [m]
 
-Cf = 200000;             %Front Cornering Stiffness
-Cr = 200000;             %Rear Cornering Stiffness
 
 Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 %Jw changed from 12 -> 1.2. Wheel is being treated as hollow ring.
@@ -157,8 +163,6 @@ Muxs_2 = 0.29;       % sliding friction coefficient
 
 
 % Magic formular (Lateral)
-Ky0 = 90000;        % static cornering stiffness [N/rad]    A_KDS (prev 90000)
-Fz0 = 3000;         % static vertical load     [N]          A_KDS (prev 3000)
 Fz = m*g/4;
 %(Condition 1)
 Muyp0 = 0.85;       % static peak friction coefficient
