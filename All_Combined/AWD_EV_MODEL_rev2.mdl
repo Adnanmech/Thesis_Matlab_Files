@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.577"
+    ComputedModelVersion    "1.579"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC_ALGO2"
@@ -121,9 +121,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Apr 25 17:13:37 2018"
-  RTWModifiedTimeStamp	  446497783
-  ModelVersionFormat	  "1.%<AutoIncrement:577>"
+  LastModifiedDate	  "Tue Jun 05 01:52:52 2018"
+  RTWModifiedTimeStamp	  450054999
+  ModelVersionFormat	  "1.%<AutoIncrement:579>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -809,7 +809,7 @@ Model {
 	  $ObjectID		  26
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
-	  StopTime		  "5"
+	  StopTime		  "4"
 	  AbsTol		  "auto"
 	  FixedStep		  "0.001"
 	  InitialStep		  "auto"
@@ -3515,9 +3515,9 @@ Model {
 	  "ines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'"
 	  "OnceAtStop',false,'PreviousAutoscale','XY','PreviousZoomMode','ZoomY'),extmgr.Configuration('Tools','Measurements',"
 	  "true,'Version','2016a','Measurements',struct('tcursors',struct('XCoordinates',[1.70582524271845 4.3],'YCoordinates'"
-	  ",[-0.0694486630216858 0.406245341614505],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'Show"
-	  "Vertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Ve"
-	  "rsion','2016a','Location',[67 237 1351 978])"
+	  ",[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpac"
+	  "ing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[67 "
+	  "237 1351 978])"
 	}
 	Block {
 	  BlockType		  Scope
@@ -5203,7 +5203,7 @@ Model {
       Variant		      off
       System {
 	Name			"Force Composition"
-	Location		[2029, 18, 3584, 999]
+	Location		[2067, 50, 3622, 1045]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -6886,7 +6886,7 @@ Model {
       ModelNameDialog	      "Controller_ABS_VLC_AYC_ALGO2.mdl"
       SimulationMode	      "Normal"
       Variant		      off
-      ModelReferenceVersion   "1.443"
+      ModelReferenceVersion   "1.447"
       List {
 	ListType		InputPortNames
 	port0			"Vx_cont"
@@ -10553,20 +10553,20 @@ Model {
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingVariableName','StatesOutpus1','DataLoggingSaveFormat','StructureWithTim"
       "e','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true"
-      ",'SerializedDisplays',{struct('MinYLimReal','-3.35329','MaxYLimReal','30.17259','YLabelReal','','MinYLimMag','0."
+      ",'SerializedDisplays',{struct('MinYLimReal','-3.35324','MaxYLimReal','30.17259','YLabelReal','','MinYLimMag','0."
       "00000','MaxYLimMag','30.17259','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColo"
       "r',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666666"
       "6666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137254"
       "9019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.6"
       "50980392156863],'Title','Logitudinal speed [m/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'Num"
       "Lines',1,'LineNames',{{'longitudinal speed [m/s]'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-0.0"
-      "0148','MaxYLimReal','0.00411','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid"
+      "0116','MaxYLimReal','0.00094','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid"
       "',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450980392"
       "2 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470588"
       "2353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569"
       " 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Lateral speed [m/s]','LinePropertiesC"
       "ache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'lateral speed [m/s]'}},'ShowContent',true,"
-      "'Placement',2),struct('MinYLimReal','-0.31583','MaxYLimReal','0.22678','YLabelReal','','MinYLimMag','0.00000','M"
+      "'Placement',2),struct('MinYLimReal','-0.21184','MaxYLimReal','0.18282','YLabelReal','','MinYLimMag','0.00000','M"
       "axYLimMag','57.15989','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0"
       "],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0"
       ".0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0"
@@ -10580,9 +10580,9 @@ Model {
       "'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'DisplayLayoutDimensions',[3 1]),extmgr.Config"
       "uration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools'"
       ",'Measurements',true,'Version','2016a','Measurements',struct('traceselector',struct('Line',1),'tcursors',struct("
-      "'XCoordinates',[4.30090206185567 0.196713917525773],'YCoordinates',[NaN 26.8200023714323],'CursorChannels',[1 1]"
-      ",'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,"
-      "'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[637 165 1735 985])"
+      "'XCoordinates',[4.30090206185567 0.196713917525773],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCur"
+      "sors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPane"
+      "lOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[637 165 1735 985])"
       NumInputPorts	      "3"
     }
     Block {

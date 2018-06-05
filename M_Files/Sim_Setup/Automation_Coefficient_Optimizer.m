@@ -28,11 +28,11 @@ run('AWD_Test_W_FUZ_Control.m');
 addpath('All_Combined');
 addpath('Fuzzy_Controller_Files');
 
-sim_pts = 11;   %20
+sim_pts = 29;   %20
 sim_pts_f_SR = 27;  %10
 %for cntr3=sim_pts:-1:1
 for cntr=1:sim_pts
-    for cntr1=1:sim_pts_f_SR
+    %for cntr1=1:sim_pts_f_SR
         %for cntr1=sim_pts:-1:1
         %update workspace
         %whos
@@ -40,9 +40,12 @@ for cntr=1:sim_pts
         %make edits to sim values
         %Lat_Accel_Err_Gain = 0.2;%(cntr/sim_pts)*1
         Yaw_Ctrl_Gain = 0.2;%(cntr1/sim_pts)*1
-        Slip_Err_P_Gain = 35 + 15*cntr
-        Tau_SRC = 1/(2*pi*(31 - cntr1))
-        %Slip_Err_D_Gain = (cntr3/sim_pts)*2
+        
+        %Slip_Err_P_Gain = 35 + 15*cntr
+        %Tau_SRC = 1/(2*pi*(31 - cntr1))
+        
+        Slip_Err_P_Gain = exp(-15 + cntr)
+        Tau_SRC = 1/(2*pi*250)
         
         %simulate and collect data
         Simulation_Count = Simulation_Count + 1
@@ -50,7 +53,7 @@ for cntr=1:sim_pts
         sim('All_Combined\AWD_EV_MODEL_rev2.mdl')%, 'CaptureErrors', 'on')
         
         %Save f_SR values
-        f_SR_Saved(cntr1) = 1/(2*pi*Tau_SRC)
+%        f_SR_Saved(cntr1) = 1/(2*pi*Tau_SRC)
         
         %generate rms error information
         Slip_Err_Gain_Saved(cntr) = Slip_Err_P_Gain
@@ -117,7 +120,7 @@ for cntr=1:sim_pts
         end
         
         %end
-    end
+    %end
 end
 %end
 

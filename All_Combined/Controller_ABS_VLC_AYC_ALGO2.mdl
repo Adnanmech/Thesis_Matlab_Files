@@ -121,7 +121,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.443"
+    ComputedModelVersion    "1.447"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -193,9 +193,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Apr 25 17:13:33 2018"
-  RTWModifiedTimeStamp	  446507323
-  ModelVersionFormat	  "1.%<AutoIncrement:443>"
+  LastModifiedDate	  "Tue Jun 05 01:52:52 2018"
+  RTWModifiedTimeStamp	  450062591
+  ModelVersionFormat	  "1.%<AutoIncrement:447>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -2083,7 +2083,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"60"
+	ZoomFactor		"50"
 	Block {
 	  BlockType		  Inport
 	  Name			  "longitudinal speed [m/s]"
@@ -6183,7 +6183,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Controller"
-	    Location		    [175, 28, 1709, 1001]
+	    Location		    [2090, 134, 3624, 1107]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200

@@ -111,8 +111,9 @@ Target_SR = 0.08;   %ABS Test
 PWM_Low_Lim = 0.05;
 PWM_SW_Threshold = 0;
 Yaw_Ctrl_Gain = 0.2;
-Slip_Err_P_Gain = 154;
-Tau_SRC = 0.001;
+Slip_Err_P_Gain = 5000;
+Tau_SRC = 1/(2*pi*(4));
+fcutoff_SRC = 1/(2*pi*(Tau_SRC));
 %Slip_Err_D_Gain = 2;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
 %Lat_Accel_Err_Gain = 0.2;  %fixed from paper as 0.15
 
