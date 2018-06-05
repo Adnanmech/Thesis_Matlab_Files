@@ -115,7 +115,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.178"
+    ComputedModelVersion    "1.179"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -187,9 +187,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Apr 24 00:18:30 2018"
-  RTWModifiedTimeStamp	  446429262
-  ModelVersionFormat	  "1.%<AutoIncrement:178>"
+  LastModifiedDate	  "Tue Jun 05 01:41:24 2018"
+  RTWModifiedTimeStamp	  450063580
+  ModelVersionFormat	  "1.%<AutoIncrement:179>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1863,7 +1863,7 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[430, 137, 1920, 958]
+	Location		[2239, 168, 3729, 989]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
@@ -2133,7 +2133,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Torque Gains and Saturation"
-	    Location		    [430, 137, 1920, 958]
+	    Location		    [2239, 168, 3729, 989]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2708,7 +2708,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Fuzzy Yaw Controller"
-	    Location		    [430, 137, 1920, 958]
+	    Location		    [2239, 168, 3729, 989]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -4274,7 +4274,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Reference/Error Generator"
-	    Location		    [206, 100, 1696, 936]
+	    Location		    [2239, 168, 3729, 989]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200

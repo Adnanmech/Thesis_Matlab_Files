@@ -7,12 +7,12 @@
 warning('off','all');
 
 Simulation_Count = 0; %Counts the simulation iteration number
-
+tstart = 200; %time that braking starts in ms
 gdp = 0;   %Number of actual saved control gain points (initialized to zero)
 nsp = 50;  %Max number of saved control gain points
-stop_time = 3.001;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
-min_Vx = repmat(100, 1, nsp);
-min_Vx_X = repmat(100, 1, nsp);
+stop_time = 5.001;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
+tot_rms_err = repmat(100, 1, nsp);
+tot_rms_err_X = repmat(100, 1, nsp);
 Yaw_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
 Yaw_Ctrl_Gain_Lowest_X = repmat(100, 1, nsp);
 Slip_Ratio_Ctrl_Gain_Lowest = repmat(100, 1, nsp);
@@ -52,17 +52,25 @@ sim_pts_slip = 8;
             %assignin('base', 'Simulation_Count', Simulation_Count)
             sim('All_Combined/AWD_EV_MODEL_rev2.mdl')%,'CaptureErrors', 'on')
             
+            %generate rms error information
+            FL_rms_err(cntr1,cntr2) = rms(VMC(tstart:find(VMC(:,16)<0.01,1),11) - -0.1)
+            FR_rms_err(cntr1,cntr2) = rms(VMC(tstart:find(VMC(:,16)<0.01,1),12) - -0.1)
+            RL_rms_err(cntr1,cntr2) = rms(VMC(tstart:find(VMC(:,16)<0.01,1),13) - -0.1)
+            RR_rms_err(cntr1,cntr2) = rms(VMC(tstart:find(VMC(:,16)<0.01,1),14) - -0.1)
+            
+            tot_rms_err(Simulation_Count) =  FL_rms_err(cntr1,cntr2) + FR_rms_err(cntr1,cntr2) + RL_rms_err(cntr1,cntr2) + RR_rms_err(cntr1,cntr2)
+            
             %analyze data and make decision
-            min_Vx_new = min(abs(VMC(:,16)));  %Check min Vx
+            tot_rms_err_new = min(tot_rms_err);  %Check min rms err
             if  VMC(3000,16) < 16 ...            %make sure velocity is less than 12m/s by 3s
                     && max(abs(VMC(:,17))) < 1 ...     %make sure Vy lower than 1m/s the entire time.
                     && max(VMC(:,18)) < 0.18;    % make sure yaw rate does not exceed 0.08rad(4.5deg)/s
                     %&& mean(VMC(1000:3000,13)) > -0.1...
                     %&& mean(VMC(1000:3000,14)) > -0.1;
                 for num = 1:(nsp-1)
-                    if min_Vx_new < min_Vx(num);
+                    if tot_rms_err_new < tot_rms_err(num);
                         for s = num:nsp
-                            min_Vx_X(1,s+1) = min_Vx(1,s);
+                            tot_rms_err_X(1,s+1) = tot_rms_err(1,s);
                             Yaw_Ctrl_Gain_Lowest_X(1,s+1) = Yaw_Ctrl_Gain_Lowest(1,s);
                             Slip_Ratio_Ctrl_Gain_Lowest_X(1,s+1) = Slip_Ratio_Ctrl_Gain_Lowest(1,s);
                             Wheel_Accel_Ctrl_Gain_Lowest_X(1,s+1) = Wheel_Accel_Ctrl_Gain_Lowest(1,s);
@@ -72,7 +80,7 @@ sim_pts_slip = 8;
                             VMC_r_X (:,s+1) = VMC_r (:,s);
                         end
                     %Place value in 1st slot of dummy (X) arrays
-                    min_Vx_X(1,num) = min_Vx_new;
+                    tot_rms_err_X(1,num) = tot_rms_err_new;
                     Yaw_Ctrl_Gain_Lowest_X(1,num) = Yaw_Ctrl_Gain;
                     Slip_Ratio_Ctrl_Gain_Lowest_X(1,num) = Slip_Ratio_Ctrl_Gain;
                     Wheel_Accel_Ctrl_Gain_Lowest_X(1,num) = Wheel_Accel_Ctrl_Gain;
@@ -82,7 +90,7 @@ sim_pts_slip = 8;
                     VMC_r_X (:,num) = VMC(:,18);
                     
                     %set newly constructed arrays to variable
-                    min_Vx = min_Vx_X;
+                    tot_rms_err = tot_rms_err_X;
                     Yaw_Ctrl_Gain_Lowest = Yaw_Ctrl_Gain_Lowest_X;
                     Slip_Ratio_Ctrl_Gain_Lowest = Slip_Ratio_Ctrl_Gain_Lowest_X;
                     Wheel_Accel_Ctrl_Gain_Lowest = Wheel_Accel_Ctrl_Gain_Lowest_X;
@@ -113,7 +121,7 @@ sim_pts_slip = 8;
 
 %save workspace to file
 
-Filename_c = sprintf('Fuzzy_Control_ABS_3var_wsat_swappedFC_Sliplim_FIXD_Test_175Nm_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_c = sprintf('Fuzzy_Control_ABS_Test_175Nm_T1_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
 save(Filename_c);
 
 figure % new figure
@@ -135,5 +143,5 @@ for m = 1:gdp
     plot(ax3,VMC(:,10),VMC_r (:,m))
 end
 
-Filename_fig = sprintf('Fuzzy_Control_ABS_3var_wsat_swappedFC_Sliplim_FIXD_Test_fig_175Nm_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_fig = sprintf('Fuzzy_Control_ABS_Test_fig_175Nm_T1_%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_fig);
