@@ -143,8 +143,8 @@ Muxs_2 = 0.29;       % sliding friction coefficient
 
 
 % Magic formular (Lateral)
-Ky0 = 90000;        % static cornering stiffness [N/rad]
-Fz0 = 3000;         % static vertical load     [N]
+Ky0 = 65000;        % static cornering stiffness [N/rad]
+Fz0 = 3300;         % static vertical load     [N]
 Fz = m*g/4;
 %(Condition 1)
 Muyp0 = 0.85;       % static peak friction coefficient
