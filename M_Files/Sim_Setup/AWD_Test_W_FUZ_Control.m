@@ -62,6 +62,10 @@ Fuzzy_Slip_Ctl_ABS_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS_VLC_
 % %%
 %% Constant Steering Angle Test
 % Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
+%Not used atm%%%%%
+Throt_Slope = 0.5
+Throt_Start_Time = 2.4
+%%%%%%%%%%%%%%%%%%%
 % 
 % Throttle_Step_Time = 500;       %Step time of throttle signal
 % Throttle_Init_Val = 0;          %Initial throttle value
@@ -83,6 +87,8 @@ Split_u_Time_On = 0;          %Set time for split-u to start (Keep off w large t
 Throttle_Step_Time = 0;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
 Throttle_Final_Val = -1;        %Final throttle value (DOESN'T MATTER)
+Throt_Upper_Sat_Lim = 1
+Throt_Lower_Sat_Lim = -1
 
 Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
 SA_Start_Time = .2;
@@ -100,12 +106,12 @@ r0 = 0.0001;                    % Initial yaw rate [rad/s]
 
 SR_Eq_Accel_Brake_Threshold = 0.001;       %Throttle position threshold for Slip Ratio to change definitions from Accel to Brake or Vice-Versa
 
-T_Avail = 150;          % Peak Torque available by motors [Nm]
+T_Avail = 175;          % Peak Torque available by motors [Nm]
 
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 
-z = 0.00033;   %e-motor time constant
+z = 0.001;   %e-motor time constant
 %D_Slip = 0.1;            % Desired slip for PID
 
 %%
@@ -114,9 +120,11 @@ z = 0.00033;   %e-motor time constant
 
 %%
 % Fuzzy Controller Settings
-Yaw_Ctrl_Gain = 1.8;
-Slip_Ratio_Ctrl_Gain = 2.6;
-Wheel_Accel_Ctrl_Gain = 0.2;
+Yaw_Ctrl_Gain = 6.1;
+Slip_Ratio_Ctrl_Gain = 13;
+Wheel_Accel_Ctrl_Gain = 0.125;
+dYaw_Ctrl_Gain = 0.086;
+Tau_WT = 1/(2*pi*0.5);
 %%
 
 %% Parameters
@@ -126,6 +134,9 @@ Lf = 1.5;               %   Distance from front axle to CoG [m]
 Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
 hg = 0.5;               %   Hight of CoG [m]
+
+Cf = 130000;
+Cr = 130000;
 
 Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 %Jw changed from 12 -> 1.2. Wheel is being treated as hollow ring.
@@ -146,8 +157,8 @@ Muxs_2 = 0.29;       % sliding friction coefficient
 
 
 % Magic formular (Lateral)
-Ky0 = 90000;        % static cornering stiffness [N/rad]
-Fz0 = 3000;         % static vertical load     [N]
+Ky0 = 65000;        % static cornering stiffness [N/rad]
+Fz0 = 3300;         % static vertical load     [N]
 Fz = m*g/4;
 %(Condition 1)
 Muyp0 = 0.85;       % static peak friction coefficient
