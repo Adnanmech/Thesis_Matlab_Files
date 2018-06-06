@@ -175,7 +175,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [2068.0, 25.0, 1748.0, 987.0]
+      Location		      [-6.0, 0.0, 1545.0, 830.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -197,21 +197,21 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1505.0, 810.0]
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "1"
+	  Extents		  [1679.0, 877.0]
 	  ZoomFactor		  [0.8]
 	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  7
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "535"
-	  Extents		  [1505.0, 810.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-19.833333333333258, 170.5]
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1679.0, 823.0]
+	  ZoomFactor		  [0.79999999999999971]
+	  Offset		  [-2.2737367544323206e-13, -5.6843418860808015e-14]
 	}
 	PropName		"EditorsInfo"
       }
@@ -223,7 +223,7 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Apr 27 03:12:25 2018"
+  LastModifiedDate	  "Wed Jun 06 15:20:17 2018"
   RTWModifiedTimeStamp	  446699521
   ModelVersionFormat	  "1.%<AutoIncrement:207>"
   ConfigurationManager	  "none"
@@ -1764,7 +1764,7 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC"
-    Location		    [2068, 25, 3816, 1012]
+    Location		    [-6, 0, 1539, 830]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
@@ -1943,8 +1943,8 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[2062, 111, 3810, 1098]
-	Open			off
+	Location		[114, 31, 1659, 904]
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
 	ScreenColor		"white"
@@ -4595,8 +4595,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Reference/Error Generator1"
-	    Location		    [2062, 111, 3810, 1098]
-	    Open		    on
+	    Location		    [-6, 0, 1539, 830]
+	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -6003,7 +6003,7 @@ Model {
 	  ";\">2. FR wheel and RR wheel ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span></p>\n<p style=\" margin-top:0px; ma"
 	  "rgin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-fami"
 	  "ly:'Arial'; font-size:22px;\">(Currently set up as 1)</span></p></body></html>"
-	  Position		  [1534, -91, 2272, 15]
+	  Position		  [1534, -91, 2276, 15]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off

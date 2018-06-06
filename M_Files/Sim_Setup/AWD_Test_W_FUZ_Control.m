@@ -119,9 +119,9 @@ z = 0.001;   %e-motor time constant
 %%
 % Fuzzy Controller Settings
 Yaw_Ctrl_Gain = 7.1;
-Slip_Ratio_Ctrl_Gain = 3;
+Slip_Ratio_Ctrl_Gain = 7;
 Wheel_Accel_Ctrl_Gain = 0.25;
-dYaw_Ctrl_Gain = 0.119;
+dYaw_Ctrl_Gain = 0.086;
 Tau_WT = 1/(2*pi*0.5);
 %%
 
@@ -133,8 +133,8 @@ Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
 hg = 0.5;               %   Hight of CoG [m]
 
-Cf = 100000;
-Cr = 100000;
+Cf = 130000;
+Cr = 130000;
 
 Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 %Jw changed from 12 -> 1.2. Wheel is being treated as hollow ring.
@@ -155,7 +155,7 @@ Muxs_2 = 0.29;       % sliding friction coefficient
 
 
 % Magic formular (Lateral)
-Ky0 = 50000;        % static cornering stiffness [N/rad]
+Ky0 = 65000;        % static cornering stiffness [N/rad]
 Fz0 = 3300;         % static vertical load     [N]
 Fz = m*g/4;
 %(Condition 1)

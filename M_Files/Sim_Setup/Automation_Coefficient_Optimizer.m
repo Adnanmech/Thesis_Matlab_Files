@@ -127,7 +127,7 @@ end
 
 %save workspace to file
 
-Filename_mat = sprintf('Fuzzy_Control_CSA_w50kCnrStfns_wNewSAS_Throttl_WTFiltr_Test_175Nm_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_mat = sprintf('Fuzzy_Control_CSA_Test_175Nm_T1_%s.mat', datestr(now,'mm-dd-yyyy_HH-MM'));
 save(Filename_mat);
 
 figure % new figure
@@ -152,5 +152,5 @@ for m = 1:gdp
     plot(ax4,VMC(:,10),VMC_YE (:,m))
 end
 
-Filename_fig = sprintf('Fuzzy_Control_CSA_w50kCnrStfns_wNewSAS_Throttl_WTFiltr_Test_175Nm_fig%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
+Filename_fig = sprintf('Fuzzy_Control_CSA_Test_175Nm_T1_fig%s.fig', datestr(now,'mm-dd-yyyy_HH-MM'));
 savefig(Filename_fig);
