@@ -92,6 +92,11 @@ SA_Slope = 1;
 SA_Upper_Sat_Lim = 5;
 SA_Lower_Sat_Lim = -5;
 
+Throt_Slope = 0.5
+Throt_Start_Time = 2.4
+Throt_Upper_Sat_Lim = 0.2
+Throt_Lower_Sat_Lim = 0
+
 Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
 %%
 %%
@@ -101,7 +106,7 @@ r0 = 0.0001;                    % Initial yaw rate [rad/s]
 
 SR_Eq_Accel_Brake_Threshold = 0.001;       %Throttle position threshold for Slip Ratio to change definitions from Accel to Brake or Vice-Versa
 
-T_Avail = 150;          % Peak Torque available by motors [Nm]
+T_Avail = 175;          % Peak Torque available by motors [Nm]
 
 GRR = 10;               % Gear reduction ratio (GRR:1) -> Multiplies torque
 GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
@@ -110,18 +115,24 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 %%
 %%
 % Sliding Mode Controller Settings
-Target_SR = 0.1;
-PWM_Low_Lim = 0.05;
+Target_SR = 0.08;   %ABS Test
+PWM_Low_Lim = 0.0;
 PWM_SW_Threshold = 0;
-Yaw_Ctrl_Gain = 0.2;
-Slip_Err_P_Gain = 2;
-Slip_Err_D_Gain = 0.2;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
-Lat_Accel_Err_Gain = 0.2;
 
-Slip_Pass_Band = 200;
-Slip_Stop_Band = 250;
+Lat_Accel_Err_Gain = 0.85;  %calcd from paper as 0.15, but may not work right
+Slip_Err_P_Gain = 5000;
+Yaw_Err_P_Gain = 1.648;
+Yaw_Ctrl_Gain = 150;
+
+Tau_SRC = 1/(2*pi*4);
+Tau_Yaw = 1/(2*pi*20);
+Tau_WT = 1/(2*pi*0.5);
+
+
+%Slip_Pass_Band = 200;
+%Slip_Stop_Band = 250;
 %Motor Model
-z=0.00033;
+z=0.001;
 
 %% Parameters
 g = 9.81;               %   Gravity acceleration [m/s^2]
@@ -131,8 +142,8 @@ Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
 hg = 0.5;               %   Hight of CoG [m]
 
-Cf = 200000;             %Front Cornering Stiffness
-Cr = 200000;             %Rear Cornering Stiffness
+Cf = 130000;             %Front Cornering Stiffness
+Cr = 130000;             %Rear Cornering Stiffness
 
 Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 %Jw changed from 12 -> 1.2. Wheel is being treated as hollow ring.
@@ -153,8 +164,8 @@ Muxs_2 = 0.29;       % sliding friction coefficient
 
 
 % Magic formular (Lateral)
-Ky0 = 90000;        % static cornering stiffness [N/rad]
-Fz0 = 3000;         % static vertical load     [N]
+Ky0 = 65000;        % static cornering stiffness [N/rad]    A_KDS (prev 90000)
+Fz0 = 3300;         % static vertical load     [N]          A_KDS (prev 3000) 1350/4=337.5 kg/wheel,337.5*9.81 = 3310N
 Fz = m*g/4;
 %(Condition 1)
 Muyp0 = 0.85;       % static peak friction coefficient
