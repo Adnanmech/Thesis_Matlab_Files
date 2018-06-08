@@ -139,7 +139,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.207"
+    ComputedModelVersion    "1.208"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -175,7 +175,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-6.0, 0.0, 1545.0, 830.0]
+      Location		      [378.0, 161.0, 1140.0, 545.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -200,7 +200,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "1"
-	  Extents		  [1679.0, 877.0]
+	  Extents		  [2099.0, 1096.0]
 	  ZoomFactor		  [0.8]
 	  Offset		  [0.0, 0.0]
 	}
@@ -209,9 +209,9 @@ Model {
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1679.0, 823.0]
-	  ZoomFactor		  [0.79999999999999971]
-	  Offset		  [-2.2737367544323206e-13, -5.6843418860808015e-14]
+	  Extents		  [1173.0, 467.0]
+	  ZoomFactor		  [0.7999999999999996]
+	  Offset		  [-3.4106051316484809e-13, -5.6843418860808015e-14]
 	}
 	PropName		"EditorsInfo"
       }
@@ -223,9 +223,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Jun 06 15:20:17 2018"
-  RTWModifiedTimeStamp	  446699521
-  ModelVersionFormat	  "1.%<AutoIncrement:207>"
+  LastModifiedDate	  "Thu Jun 07 13:14:10 2018"
+  RTWModifiedTimeStamp	  450277931
+  ModelVersionFormat	  "1.%<AutoIncrement:208>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1764,8 +1764,8 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC"
-    Location		    [-6, 0, 1539, 830]
-    Open		    on
+    Location		    [378, 161, 1518, 706]
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -1943,8 +1943,8 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[114, 31, 1659, 904]
-	Open			on
+	Location		[-5, 0, 1539, 829]
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
 	ScreenColor		"white"
