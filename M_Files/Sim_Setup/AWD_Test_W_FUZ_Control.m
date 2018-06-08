@@ -121,11 +121,11 @@ PWM_Low_Lim = 0.0;
 PWM_SW_Threshold = 0;
 
 Lat_Accel_Err_Gain = 0.85;  %calcd from paper as 0.15, but may not work right
-Slip_Err_P_Gain = 154;
-Yaw_Err_P_Gain = 0.3679;
+Slip_Err_P_Gain = 5000;
+Yaw_Err_P_Gain = 1.648;
 Yaw_Ctrl_Gain = 150;
 
-Tau_SRC = 1/(2*pi*10);
+Tau_SRC = 1/(2*pi*4);
 Tau_Yaw = 1/(2*pi*20);
 Tau_WT = 1/(2*pi*0.5);
 
@@ -143,8 +143,8 @@ Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
 hg = 0.5;               %   Hight of CoG [m]
 
-Cf = 65000;             %Front Cornering Stiffness
-Cr = 65000;             %Rear Cornering Stiffness
+Cf = 130000;             %Front Cornering Stiffness
+Cr = 130000;             %Rear Cornering Stiffness
 
 Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 %Jw changed from 12 -> 1.2. Wheel is being treated as hollow ring.
@@ -166,7 +166,7 @@ Muxs_2 = 0.29;       % sliding friction coefficient
 
 % Magic formular (Lateral)
 Ky0 = 65000;        % static cornering stiffness [N/rad]    A_KDS (prev 90000)
-Fz0 = 3310;         % static vertical load     [N]          A_KDS (prev 3000) 1350/4=337.5 kg/wheel,337.5*9.81 = 3310N
+Fz0 = 3300;         % static vertical load     [N]          A_KDS (prev 3000) 1350/4=337.5 kg/wheel,337.5*9.81 = 3310N
 Fz = m*g/4;
 %(Condition 1)
 Muyp0 = 0.85;       % static peak friction coefficient

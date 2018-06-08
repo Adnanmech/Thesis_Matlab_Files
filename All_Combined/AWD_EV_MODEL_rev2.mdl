@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.589"
+    ComputedModelVersion    "1.591"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC_ALGO2"
@@ -46,7 +46,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [273.0, 77.0, 1555.0, 995.0]
+      Location		      [2129.0, 24.0, 1555.0, 995.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -121,9 +121,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue May 29 23:15:03 2018"
-  RTWModifiedTimeStamp	  449536503
-  ModelVersionFormat	  "1.%<AutoIncrement:589>"
+  LastModifiedDate	  "Thu Jun 07 15:44:41 2018"
+  RTWModifiedTimeStamp	  450287078
+  ModelVersionFormat	  "1.%<AutoIncrement:591>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1802,7 +1802,7 @@ Model {
   }
   System {
     Name		    "AWD_EV_MODEL_rev2"
-    Location		    [273, 77, 1828, 1072]
+    Location		    [2129, 24, 3684, 1019]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -5203,7 +5203,7 @@ Model {
       Variant		      off
       System {
 	Name			"Force Composition"
-	Location		[2162, 76, 3717, 1071]
+	Location		[273, 77, 1828, 1072]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -6886,7 +6886,7 @@ Model {
       ModelNameDialog	      "Controller_ABS_VLC_AYC_ALGO2.mdl"
       SimulationMode	      "Normal"
       Variant		      off
-      ModelReferenceVersion   "1.497"
+      ModelReferenceVersion   "1.499"
       List {
 	ListType		InputPortNames
 	port0			"Vx_cont"
@@ -7033,7 +7033,7 @@ Model {
       }
       System {
 	Name			"RL Tire Mode"
-	Location		[2162, 76, 3717, 1071]
+	Location		[273, 77, 1828, 1072]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -10580,9 +10580,10 @@ Model {
       ",'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'DisplayLayoutDimensions',[3 1]),extmgr.Confi"
       "guration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY','PreviousZoomMode','ZoomOut'"
       "),extmgr.Configuration('Tools','Measurements',true,'Version','2016a','Measurements',struct('traceselector',struc"
-      "t('Line',1),'tcursors',struct('XCoordinates',[19 0.196713917525773],'YCoordinates',[NaN NaN],'CursorChannels',[1"
-      " 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',fal"
-      "se,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[321 162 1676 982])"
+      "t('Line',1),'tcursors',struct('XCoordinates',[30 0.196713917525773],'YCoordinates',[16.532086843098 13.400002371"
+      "466],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing"
+      "',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[221"
+      "4 131 3569 951],'VisibleAtModelOpen','on')"
       NumInputPorts	      "3"
     }
     Block {
