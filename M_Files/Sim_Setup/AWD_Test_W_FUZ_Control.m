@@ -4,8 +4,8 @@ fprintf('Loading data for rear wheel driving model...')
 open_system('All_Combined\AWD_EV_MODEL_rev2.mdl')
 open_system('All_Combined\Controller_ABS_VLC_AYC_ALGO2.mdl')
 %set_param('AWD_EV_MODEL','AlgebraicLoopSolver','LineSearch')
-set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
-%set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
+%set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
+set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
 %USE ABOVE STATEMENT IF SOLVER HAS CONVERGENCE ERROR!!!!!!!!!!
 
 %% Inputs
@@ -39,7 +39,7 @@ Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large
 
 Throttle_Step_Time = 0.2;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
-Throttle_Final_Val = -1;        %Final throttle value
+Throttle_Final_Val = -0.5;        %Final throttle value
 
 Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
 SA_Start_Time = 500;            %Don't Care since channel not selected
@@ -107,18 +107,25 @@ GRR_E = .99;            % Gear reduction efficiency (.95-.99 for Spur/Helical)
 %%
 %%
 % Sliding Mode Controller Settings
-Target_SR = 0.08;   %ABS Test
+Target_SR = 0.1;   %ABS Test
 PWM_Low_Lim = 0.05;
 PWM_SW_Threshold = 0;
 Yaw_Ctrl_Gain = 0.2;
-Slip_Err_P_Gain = 5000;
+%Slip_Err_P_Gain = 5000;
 Tau_SRC = 1/(2*pi*(4));
 fcutoff_SRC = 1/(2*pi*(Tau_SRC));
 %Slip_Err_D_Gain = 2;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
 %Lat_Accel_Err_Gain = 0.2;  %fixed from paper as 0.15
+SE_P_Gain = 1200;
+SE_I_Gain = 160000;
+SE_P_Gain_FL = 1200;
+SE_I_Gain_FL = 160000;
+WT_P_Gain = 0;
+%WT_I_Gain = 0.5;
+f_WT_cutoff = 1;
 
 %Motor Model
-z=0.001;
+z=0.005;
 
 %% Parameters
 g = 9.81;               %   Gravity acceleration [m/s^2]
@@ -127,6 +134,10 @@ Lf = 1.5;               %   Distance from front axle to CoG [m]
 Lr = 1.5;               %   Distance from rear axle to CoG [m]
 Lw = 1.5;               %   Distance between wheels [m]
 hg = 0.5;               %   Hight of CoG [m]
+Ixx = 0.8*(m*(Lw/2)^2);              %   Moment of Inertia roll axis
+Iyy = 0.8*(m*((Lr+Lf)/2)^2);              %   Moment of inertia pitch axis
+%Kspr = ??;              %   spring constants of suspension
+%Cdamp = ??;             %   damping coefficient of suspension
 
 Cf = 90000;             %Front Cornering Stiffness
 Cr = 90000;             %Rear Cornering Stiffness
@@ -135,7 +146,6 @@ Jz = 1/12*m*((Lf+Lr)^2+Lw^2);    %   Body moment of inertia around vertical axle
 %Jw changed from 12 -> 1.2. Wheel is being treated as hollow ring.
 Jw = 1.2;            %   Wheel rotational moment of inertial >>Inertia = Mass(at radius r) * radius^2; sum multiple masses at diff radii for total
                     %   Value should be 0.3-0.5
-
 Rw = .33;           %   Wheel rolling radius [m]
 
 % Magic formular (Longitudinal)
