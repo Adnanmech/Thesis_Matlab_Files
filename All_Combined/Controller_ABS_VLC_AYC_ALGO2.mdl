@@ -121,7 +121,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.500"
+    ComputedModelVersion    "1.503"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -157,7 +157,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [2076.0, 78.0, 1534.0, 973.0]
+      Location		      [103.0, 58.0, 1338.0, 706.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -179,11 +179,11 @@ Model {
 	$ObjectID		6
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1291.0, 799.0]
-	ZoomFactor		[0.8]
-	Offset			[0.0, 0.0]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"457"
+	Extents			[1420.0, 672.0]
+	ZoomFactor		[0.4]
+	Offset			[19.236319903787262, -348.06197634796627]
       }
     }
   }
@@ -191,11 +191,11 @@ Model {
   Creator		  "MR Spyder"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "MR Spyder"
+  LastModifiedBy	  "kschmutz"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Jun 07 15:46:06 2018"
-  RTWModifiedTimeStamp	  450287090
-  ModelVersionFormat	  "1.%<AutoIncrement:500>"
+  LastModifiedDate	  "Fri Jul 20 20:59:38 2018"
+  RTWModifiedTimeStamp	  450562271
+  ModelVersionFormat	  "1.%<AutoIncrement:503>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1928,8 +1928,8 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC_ALGO2"
-    Location		    [2076, 78, 3610, 1051]
-    Open		    on
+    Location		    [364, 132, 1896, 1004]
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -2071,7 +2071,7 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[2076, 78, 3610, 1051]
+	Location		[103, 58, 1441, 764]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
@@ -2083,7 +2083,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"80"
+	ZoomFactor		"30"
 	Block {
 	  BlockType		  Inport
 	  Name			  "longitudinal speed [m/s]"
@@ -3889,8 +3889,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Lateral Acceleration Reference/Error Generator"
-	    Location		    [2076, 78, 3610, 1051]
-	    Open		    off
+	    Location		    [103, 58, 1441, 764]
+	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3901,7 +3901,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "40"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Longitudinal Speed [m/s]"
@@ -6729,7 +6729,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Reference/Error Generator"
-	    Location		    [2076, 78, 3610, 1051]
+	    Location		    [103, 58, 1441, 764]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -6958,8 +6958,7 @@ Model {
 	      "PreviousZoomMode','ZoomY'),extmgr.Configuration('Tools','Measurements',true,'Version','2016a','Measurements',st"
 	      "ruct('tcursors',struct('XCoordinates',[5.97435897435897 4.5],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'W"
 	      "aveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'S"
-	      "ettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[363 234 1729 913],'VisibleAtMod"
-	      "elOpen','on')"
+	      "ettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[-52.6 255 1313 934.2])"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -7018,8 +7017,7 @@ Model {
 	      "nfiguration('Tools','Measurements',true,'Measurements',struct('traceselector',struct('Line',1),'tcursors',struc"
 	      "t('XCoordinates',[14.8219862585884 14.822],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',tr"
 	      "ue,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',"
-	      "0,'MeasurementsPanelOpen',1)),'Version','2016a')),'Version','2016a','Position',[327 443 1162 420],'VisibleAtMod"
-	      "elOpen','on')"
+	      "0,'MeasurementsPanelOpen',1)),'Version','2016a')),'Version','2016a','Position',[187 222 1162 420])"
 	    }
 	    Block {
 	      BlockType		      Sum

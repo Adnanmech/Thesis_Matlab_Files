@@ -8,7 +8,7 @@ warning('off','all');
 Simulation_Count = 0; %Counts the simulation iteration number
 gdp = 0;
 nsp = 50;  %number of saved control gain points
-stop_time = 4.101;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
+stop_time = 5.101;   %simulation run time (HAS TO BE CHANGED HERE AND ALSO IN MODEL FILE)
 Vx_arr = repmat(100, 1, nsp);
 Vx_arr_X = repmat(100, 1, nsp);
 Lat_Accel_Err_Gain_Lowest = repmat(100, 1, nsp);
@@ -129,6 +129,7 @@ save(Filename_mat);
 
 figure
 set(gca, 'YScale', 'log')
+set(gca, 'XScale', 'log')
 hold on
 PGaintt = Yaw_Err_P_Gain_Saved';
 LAGaintt = Lat_Accel_Err_Gain_Saved';

@@ -95,7 +95,7 @@ SA_Lower_Sat_Lim = -5;
 Throt_Slope = 0.5
 Throt_Start_Time = 2.4
 Throt_Upper_Sat_Lim = 0.2
-Throt_Lower_Sat_Lim = 0
+Throt_Lower_Sat_Lim = -1
 
 Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
 %%
@@ -119,9 +119,9 @@ Target_SR = 0.08;   %ABS Test
 PWM_Low_Lim = 0.0;
 PWM_SW_Threshold = 0;
 
-Lat_Accel_Err_Gain = 0.85;  %calcd from paper as 0.15, but may not work right
+Lat_Accel_Err_Gain = 8;  %calcd from paper as 0.15, but may not work right
 Slip_Err_P_Gain = 5000;
-Yaw_Err_P_Gain = 1.648;
+Yaw_Err_P_Gain = 1;
 Yaw_Ctrl_Gain = 150;
 
 Tau_SRC = 1/(2*pi*4);
