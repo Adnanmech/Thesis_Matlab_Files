@@ -4,8 +4,8 @@ fprintf('Loading data for rear wheel driving model...')
 open_system('All_Combined\AWD_EV_MODEL_rev2.mdl')
 open_system('All_Combined\Controller_ABS_VLC_AYC_ALGO2.mdl')
 %set_param('AWD_EV_MODEL','AlgebraicLoopSolver','LineSearch')
-set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
-%set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
+%set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
+set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
 %USE ABOVE STATEMENT IF SOLVER HAS CONVERGENCE ERROR!!!!!!!!!!
 
 %% Inputs
@@ -35,7 +35,7 @@ Fuzzy_AYC_Ctl      = readfis('Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %A
 
 %%
 %ABS Test
-Split_u_Time_On = 3;          %Set time for split-u to start (Keep off w large time)
+Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
 
 Throttle_Step_Time = 0.0;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
@@ -45,7 +45,7 @@ Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
 SA_Start_Time = 500;            %Don't Care since channel not selected
 SA_Slope = 1;                   %Don't Care since channel not selected
 
-Vx0 =46.82;                     % Initial vehicle longitude speed [m/s]
+Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
 %%
 %%
 %VLC Test
@@ -116,16 +116,16 @@ Tau_SRC = 1/(2*pi*(4));
 fcutoff_SRC = 1/(2*pi*(Tau_SRC));
 %Slip_Err_D_Gain = 2;     %small D gain results in better (harder stopping) control (0.01) but exeeds limit (SR=0.1)
 %Lat_Accel_Err_Gain = 0.2;  %fixed from paper as 0.15
-SE_P_Gain = 4;
-SE_D_Gain = 0.1;
-SE_Alpha_Gain = 60;
-SE_Beta_Gain = 1000;
+SE_P_Gain = 200;
+SE_D_Gain = 200;
+SE_Alpha_Gain = 145;
+SE_Beta_Gain = 100;
 WT_P_Gain = 0;
 %WT_I_Gain = 0.5;
 f_WT_cutoff = 1;
 
 %Motor Model
-z=0.005;
+z=0.001;
 
 %% Parameters
 g = 9.81;               %   Gravity acceleration [m/s^2]
