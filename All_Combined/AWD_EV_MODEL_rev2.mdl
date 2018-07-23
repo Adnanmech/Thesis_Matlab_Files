@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.604"
+    ComputedModelVersion    "1.606"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC_ALGO2"
@@ -68,21 +68,21 @@ Model {
 	Dimension		6
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "4050"
+	  LoadSaveID		  "2975"
 	  Extents		  [1693.0, 879.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [90.0, -71.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-35.580952380952453, -58.276190476190664]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "4056"
 	  Extents		  [1693.0, 879.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [937.51666666669337, 275.86714139324783]
+	  ZoomFactor		  [1.75]
+	  Offset		  [339.28571428571428, 86.857142857142861]
 	}
 	Object {
 	  $ObjectID		  8
@@ -104,7 +104,7 @@ Model {
 	}
 	Object {
 	  $ObjectID		  10
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "3877"
 	  Extents		  [1693.0, 879.0]
@@ -130,9 +130,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jul 21 14:57:16 2018"
-  RTWModifiedTimeStamp	  453940121
-  ModelVersionFormat	  "1.%<AutoIncrement:604>"
+  LastModifiedDate	  "Sun Jul 22 18:52:27 2018"
+  RTWModifiedTimeStamp	  454100449
+  ModelVersionFormat	  "1.%<AutoIncrement:606>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1812,7 +1812,7 @@ Model {
   System {
     Name		    "AWD_EV_MODEL_rev2"
     Location		    [-8, -8, 1928, 1048]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1823,9 +1823,9 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "150"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "5728"
+    SIDHighWatermark	    "5731"
     Block {
       BlockType		      Gain
       Name		      "Available Torque [Nm]"
@@ -2475,7 +2475,7 @@ Model {
       System {
 	Name			"FL Tire Mode"
 	Location		[-8, -8, 1928, 1048]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2582,7 +2582,7 @@ Model {
 	  System {
 	    Name		    "Magic Formula"
 	    Location		    [-8, -8, 1928, 1048]
-	    Open		    off
+	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3272,14 +3272,37 @@ Model {
 	      Name		      "Repeating\nSequence\nInterpolated1"
 	      SID		      "5726"
 	      Ports		      [0, 1]
-	      Position		      [625, 170, 655, 200]
-	      ZOrder		      219
+	      Position		      [720, 336, 780, 374]
+	      ZOrder		      220
 	      LibraryVersion	      "1.386"
 	      SourceBlock	      "simulink/Sources/Repeating\nSequence\nInterpolated"
 	      SourceType	      "Repeating Sequence Interpolated"
 	      ContentPreviewEnabled   off
-	      OutValues		      "[0 0 5 5 0 0 5 5 0 0].'"
-	      TimeValues	      "[0 1 1.001 1.5 1.501 3 3.001 3.5 3.501 10].'"
+	      OutValues		      "[0 0 5 5 0 0 5 5 0 0 5 5 0 0].'"
+	      TimeValues	      "[0 1 1.001 1.5 1.501 3 3.001 3.5 3.501 5 5.001 5.5 5.501 10].'"
+	      LookUpMeth	      "Interpolation-Use End Values"
+	      tsamp		      "0.001"
+	      OutMin		      "[]"
+	      OutMax		      "[]"
+	      OutDataTypeStr	      "double"
+	      OutputDataTypeScalingMode	"double"
+	      OutDataType	      "fixdt(0,8)"
+	      OutScaling	      "2^-10"
+	      LockScale		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Repeating\nSequence\nInterpolated2"
+	      SID		      "5730"
+	      Ports		      [0, 1]
+	      Position		      [590, 166, 650, 204]
+	      ZOrder		      221
+	      LibraryVersion	      "1.386"
+	      SourceBlock	      "simulink/Sources/Repeating\nSequence\nInterpolated"
+	      SourceType	      "Repeating Sequence Interpolated"
+	      ContentPreviewEnabled   off
+	      OutValues		      "[0 0 5 5 0 0 5 5 0 0 0 0 0 0].'"
+	      TimeValues	      "[0 1 1.001 1.5 1.501 3 3.001 3.5 3.501 5 5.001 5.5 5.501 10].'"
 	      LookUpMeth	      "Interpolation-Use End Values"
 	      tsamp		      "0.001"
 	      OutMin		      "[]"
@@ -3357,7 +3380,7 @@ Model {
 	      "66666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831"
 	      "372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980392156"
 	      "86 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLi"
-	      "nes',1,'LineNames',{{'Repeating Sequence Interpolated1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDe"
+	      "nes',1,'LineNames',{{'Repeating Sequence Interpolated2'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDe"
 	      "faults',struct('MinYLimReal','-0.625','MaxYLimReal','5.625','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag'"
 	      ",'5.625','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickC"
 	      "olor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.62352941176470"
@@ -3506,10 +3529,10 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      43
-	      SrcBlock		      "Repeating\nSequence\nInterpolated1"
+	      ZOrder		      44
+	      SrcBlock		      "Repeating\nSequence\nInterpolated2"
 	      SrcPort		      1
-	      Points		      [30, 0]
+	      Points		      [35, 0]
 	      Branch {
 		ZOrder			34
 		DstBlock		"Scope2"
@@ -5128,16 +5151,39 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "Repeating\nSequence\nInterpolated1"
-	      SID		      "5727"
+	      SID		      "5729"
 	      Ports		      [0, 1]
-	      Position		      [630, 170, 660, 200]
-	      ZOrder		      221
+	      Position		      [595, 166, 655, 204]
+	      ZOrder		      222
 	      LibraryVersion	      "1.386"
 	      SourceBlock	      "simulink/Sources/Repeating\nSequence\nInterpolated"
 	      SourceType	      "Repeating Sequence Interpolated"
 	      ContentPreviewEnabled   off
-	      OutValues		      "[0 0 5 5 0 0 5 5 0 0].'"
-	      TimeValues	      "[0 1 1.001 1.5 1.501 3 3.001 3.5 3.501 10].'"
+	      OutValues		      "[0 0 5 5 0 0 5 5 0 0 0 0 0 0].'"
+	      TimeValues	      "[0 1 1.001 1.5 1.501 3 3.001 3.5 3.501 5 5.001 5.5 5.501 10].'"
+	      LookUpMeth	      "Interpolation-Use End Values"
+	      tsamp		      "0.001"
+	      OutMin		      "[]"
+	      OutMax		      "[]"
+	      OutDataTypeStr	      "double"
+	      OutputDataTypeScalingMode	"double"
+	      OutDataType	      "fixdt(0,8)"
+	      OutScaling	      "2^-10"
+	      LockScale		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Repeating\nSequence\nInterpolated2"
+	      SID		      "5731"
+	      Ports		      [0, 1]
+	      Position		      [755, 391, 815, 429]
+	      ZOrder		      223
+	      LibraryVersion	      "1.386"
+	      SourceBlock	      "simulink/Sources/Repeating\nSequence\nInterpolated"
+	      SourceType	      "Repeating Sequence Interpolated"
+	      ContentPreviewEnabled   off
+	      OutValues		      "[0 0 5 5 0 0 5 5 0 0 5 5 0 0].'"
+	      TimeValues	      "[0 1 1.001 1.5 1.501 3 3.001 3.5 3.501 5 5.001 5.5 5.501 10].'"
 	      LookUpMeth	      "Interpolation-Use End Values"
 	      tsamp		      "0.001"
 	      OutMin		      "[]"
@@ -5293,10 +5339,10 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      19
+	      ZOrder		      22
 	      SrcBlock		      "Repeating\nSequence\nInterpolated1"
 	      SrcPort		      1
-	      Points		      [30, 0]
+	      Points		      [35, 0]
 	      Branch {
 		ZOrder			21
 		Points			[0, 75]
@@ -11537,20 +11583,20 @@ Model {
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingVariableName','StatesOutpus1','DataLoggingSaveFormat','StructureWithTim"
       "e','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true"
-      ",'SerializedDisplays',{struct('MinYLimReal','-7.34711','MaxYLimReal','52.83857','YLabelReal','','MinYLimMag','0."
-      "00000','MaxYLimMag','52.83857','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColo"
+      ",'SerializedDisplays',{struct('MinYLimReal','-7.54535','MaxYLimReal','52.86059','YLabelReal','','MinYLimMag','0."
+      "00000','MaxYLimMag','52.86059','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColo"
       "r',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666666"
       "6666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137254"
       "9019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.6"
       "50980392156863],'Title','Logitudinal speed [m/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'Num"
-      "Lines',1,'LineNames',{{'longitudinal speed [m/s]'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-2.4"
-      "9941','MaxYLimReal','1.33952','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid"
+      "Lines',1,'LineNames',{{'longitudinal speed [m/s]'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-1.6"
+      "2237','MaxYLimReal','2.77622','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid"
       "',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450980392"
       "2 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470588"
       "2353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569"
       " 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Lateral speed [m/s]','LinePropertiesC"
       "ache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'lateral speed [m/s]'}},'ShowContent',true,"
-      "'Placement',2),struct('MinYLimReal','-193.18506','MaxYLimReal','21.76742','YLabelReal','','MinYLimMag','0.00000'"
+      "'Placement',2),struct('MinYLimReal','-23.31645','MaxYLimReal','204.84869','YLabelReal','','MinYLimMag','0.00000'"
       ",'MaxYLimMag','57.15989','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 "
       "0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666666666666"
       "7;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137254901960"
@@ -11564,9 +11610,10 @@ Model {
       "}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'DisplayLayoutDimensions',[3 1]),extmgr.Con"
       "figuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Too"
       "ls','Measurements',true,'Version','2016a','Measurements',struct('traceselector',struct('Line',1),'tcursors',stru"
-      "ct('XCoordinates',[10.0243650895141 5.40592783505155],'YCoordinates',[NaN 0.703593054721145],'CursorChannels',[1"
-      " 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',fal"
-      "se,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[1 75 1921 1039])"
+      "ct('XCoordinates',[10.0243650895141 5.34149484536082],'YCoordinates',[NaN 0.0834007817239452],'CursorChannels',["
+      "1 1],'WaveformCursors',true,'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',fa"
+      "lse,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1)))),'Version','2016a','Location',[632 181 1730 1001],'Visibl"
+      "eAtModelOpen','on')"
       NumInputPorts	      "3"
     }
     Block {
@@ -12120,8 +12167,8 @@ Model {
       Variant		      off
       System {
 	Name			"Wheel States"
-	Location		[2039, 54, 3594, 1043]
-	Open			off
+	Location		[-8, -8, 1928, 1048]
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -12132,7 +12179,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"150"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Vehicle Long. speed [m/s]"
