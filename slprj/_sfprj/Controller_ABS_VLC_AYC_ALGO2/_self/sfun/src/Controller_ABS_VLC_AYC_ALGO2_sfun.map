@@ -1,0 +1,1440 @@
+ Controller_ABS_VLC_AYC_ALGO2_sfun
+
+ Timestamp is 5b6541c9 (Fri Aug 03 23:03:53 2018)
+
+ Preferred load address is 0000000180000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000e0f2H .text$mn                CODE
+ 0001:0000e100 0000007bH .text$x                 CODE
+ 0002:00000000 00000498H .idata$5                DATA
+ 0002:00000498 00000008H .CRT$XCA                DATA
+ 0002:000004a0 00000008H .CRT$XCZ                DATA
+ 0002:000004a8 00000008H .CRT$XIA                DATA
+ 0002:000004b0 00000008H .CRT$XIAA               DATA
+ 0002:000004b8 00000008H .CRT$XIC                DATA
+ 0002:000004c0 00000008H .CRT$XIZ                DATA
+ 0002:000004d0 00000710H .rdata                  DATA
+ 0002:00000be0 00000008H .rtc$IAA                DATA
+ 0002:00000be8 00000008H .rtc$IZZ                DATA
+ 0002:00000bf0 00000008H .rtc$TAA                DATA
+ 0002:00000bf8 00000008H .rtc$TZZ                DATA
+ 0002:00000c00 00000754H .xdata                  DATA
+ 0002:00001360 00000067H .edata                  DATA
+ 0002:000013c8 0000008cH .idata$2                DATA
+ 0002:00001454 00000014H .idata$3                DATA
+ 0002:00001468 00000498H .idata$4                DATA
+ 0002:00001900 00000d0cH .idata$6                DATA
+ 0003:00000000 00001a78H .data                   DATA
+ 0003:00001a80 000006b8H .bss                    DATA
+ 0004:00000000 000008e8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000180000000     <linker-defined>
+ 0001:00000000       Controller_ABS_VLC_AYC_ALGO2_initializer 0000000180001000 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:00000010       Controller_ABS_VLC_AYC_ALGO2_terminator 0000000180001010 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:00000020       load_Controller_ABS_VLC_AYC_ALGO2_optimization_info 0000000180001020 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:000000d0       unload_Controller_ABS_VLC_AYC_ALGO2_optimization_info 00000001800010d0 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:00000100       sf_Controller_ABS_VLC_AYC_ALGO2_method_dispatcher 0000000180001100 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:00000150       sf_Controller_ABS_VLC_AYC_ALGO2_process_check_sum_call 0000000180001150 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:00000700       sf_Controller_ABS_VLC_AYC_ALGO2_autoinheritance_info 0000000180001700 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:000008e0       sf_Controller_ABS_VLC_AYC_ALGO2_get_eml_resolved_functions_info 00000001800018e0 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:00000a60       sf_Controller_ABS_VLC_AYC_ALGO2_third_party_uses_info 0000000180001a60 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:00000c30       sf_Controller_ABS_VLC_AYC_ALGO2_jit_fallback_info 0000000180001c30 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:00000e00       sf_Controller_ABS_VLC_AYC_ALGO2_updateBuildInfo_args_info 0000000180001e00 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:00000fd0       Controller_ABS_VLC_AYC_ALGO2_debug_initialize 0000000180001fd0 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:00001050       Controller_ABS_VLC_AYC_ALGO2_register_exported_symbols 0000000180002050 f   Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0001:00001060       sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_eml_resolved_functions_info 0000000180002060 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000010e0       sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_check_sum 00000001800020e0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000011b0       c2_Controller_ABS_VLC_AYC_ALGO2_method_dispatcher 00000001800021b0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004320       sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_post_codegen_info 0000000180005320 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000043f0       sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_autoinheritance_info 00000001800053f0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004cb0       sf_c2_Controller_ABS_VLC_AYC_ALGO2_third_party_uses_info 0000000180005cb0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004ce0       sf_c2_Controller_ABS_VLC_AYC_ALGO2_jit_fallback_info 0000000180005ce0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004e70       sf_c2_Controller_ABS_VLC_AYC_ALGO2_updateBuildInfo_args_info 0000000180005e70 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00005b30       mexFunction                0000000180006b30 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00006f00       _ssSetInputPortDirectFeedThroughFcn 0000000180007f00 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:000070b0       _ssGetInputPortSignalPtrsFcn 00000001800080b0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007380       _ssGetInputPortSignalFcn   0000000180008380 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007650       _ssSetInputPortReusableFcn 0000000180008650 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007730       _ssSetOutputPortReusableFcn 0000000180008730 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007810       _ssSetSymbolicDimsSupport  0000000180008810 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007880       _ssRegisterSymbolicDimsExpr 0000000180008880 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007900       _ssRegisterSymbolicDims    0000000180008900 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:000079a0       _ssRegisterSymbolicDimsString 00000001800089a0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007a20       _ssRegisterSymbolicDimsIntValue 0000000180008a20 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007a90       _ssRegisterSymbolicDimsPlus 0000000180008a90 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007b10       _ssRegisterSymbolicDimsMinus 0000000180008b10 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007b90       _ssRegisterSymbolicDimsMultiply 0000000180008b90 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007c10       _ssRegisterSymbolicDimsDivide 0000000180008c10 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007c90       _ssGetNumSymbolicDims      0000000180008c90 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007d00       _ssGetSymbolicDim          0000000180008d00 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007d80       _ssSetInputPortSymbolicDimsId 0000000180008d80 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007df0       _ssGetCompInputPortSymbolicDimsId 0000000180008df0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007e60       _ssSetCompInputPortSymbolicDimsId 0000000180008e60 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007ed0       _ssSetOutputPortSymbolicDimsId 0000000180008ed0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007f40       _ssGetCompOutputPortSymbolicDimsId 0000000180008f40 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00007fb0       _ssSetCompOutputPortSymbolicDimsId 0000000180008fb0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008020       _ssSetCompDWorkSymbolicDimsId 0000000180009020 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008090       ssGetIsZeroCrossControlDisabled 0000000180009090 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008100       ssSetIsInputPortUsedForContZcSignal 0000000180009100 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008170       ssSetZcSignalIsZcElementDisc 0000000180009170 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008220       ssSetZcSignalName          0000000180009220 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008290       ssSetZcSignalWidth         0000000180009290 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008300       ssSetZcSignalZcEventType   0000000180009300 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008370       ssSetZcSignalType          0000000180009370 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:000083e0       ssSetZcSignalZcTol         00000001800093e0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008450       ssSetZcSignalNeedsEventNotification 0000000180009450 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:000084c0       ssCreateAndAddZcSignalInfo 00000001800094c0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008530       ssCloneAndAddZcSignalInfo  0000000180009530 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:000085a0       ssGetNumZcSignals          00000001800095a0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008610       ssGetZcSignalVector        0000000180009610 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008680       ssGetZcSignalName          0000000180009680 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:000086f0       ssGetZcSignalWidth         00000001800096f0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008760       ssGetZcSignalZcEventType   0000000180009760 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:000087d0       ssGetZcSignalZcEvents      00000001800097d0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008840       ssGetZcSignalType          0000000180009840 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:000088b0       ssGetZcSignalZcTol         00000001800098b0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008930       ssGetZcSignalNeedsEventNotification 0000000180009930 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:000089a0       ssGetZcSignalIsZcElementDisc 00000001800099a0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008a40       ssGetIsInputPortElementContinuous 0000000180009a40 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008ae0       ssGetDTypeIdFromMxArray    0000000180009ae0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008c00       ssWriteRTWStr              0000000180009c00 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008c60       ssWriteRTWNameValuePair    0000000180009c60 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00009160       ssWriteRTWParamSettings    000000018000a160 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00009850       ssWriteRTWParameters       000000018000a850 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00009e20       ssWriteRTWWorkVect         000000018000ae20 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000a310       ssWriteRTWMxVectParam      000000018000b310 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000a390       ssWriteRTWMx2dMatParam     000000018000b390 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000a420       _ssSetInputPortMatrixDimensions 000000018000b420 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000a520       _ssSetOutputPortMatrixDimensions 000000018000b520 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000a620       _ssSetInputPortVectorDimension 000000018000b620 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000a6d0       _ssSetOutputPortVectorDimension 000000018000b6d0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000a780       ssIsRunTimeParamTunable    000000018000b780 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000a7f0       ssGetSFuncBlockHandle      000000018000b7f0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000a860       _ssGetCurrentInputPortWidth 000000018000b860 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000a980       _ssGetCurrentOutputPortWidth 000000018000b980 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000aaa0       _ssGetCallSystemNumFcnCallDestinations 000000018000baa0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000ab10       ssGetParameterTuningCompliance 000000018000bb10 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000ab80       ssWarning                  000000018000bb80 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000ac70       _ssGetAbsTol               000000018000bc70 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000ace0       _ssSetStateAbsTol          000000018000bce0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000adc0       sf_process_check_sum_call  000000018000bdc0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000ae10       sf_process_autoinheritance_call 000000018000be10 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000b040       sf_process_get_third_party_uses_info_call 000000018000c040 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000b270       sf_process_get_jit_fallback_info_call 000000018000c270 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000b4a0       sf_process_get_updateBuildInfo_args_info_call 000000018000c4a0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000b6d0       sf_process_get_eml_resolved_functions_info_call 000000018000c6d0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000b8d0       sf_mex_unlock_call         000000018000c8d0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bb70       sf_machine_global_initializer_called 000000018000cb70 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bba0       sf_machine_global_method_dispatcher 000000018000cba0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bc00       sf_machine_global_terminator 000000018000cc00 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bc50       sf_register_machine_exported_symbols 000000018000cc50 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bc70       callCustomFcn              000000018000cc70 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bc80       sf_machine_global_initializer 000000018000cc80 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bd00       mdlGetSimState             000000018000cd00 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bd40       mdlSetSimState             000000018000cd40 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c5a0       ProcessMexSfunctionEveryCall 000000018000d5a0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000d2a6       sf_load_rtw_optimization_info 000000018000e2a6 f   sf_runtime:sf_runtime.dll
+ 0001:0000d2ac       sf_debug_initialize_machine 000000018000e2ac f   sf_runtime:sf_runtime.dll
+ 0001:0000d2b2       sf_debug_set_machine_event_thresholds 000000018000e2b2 f   sf_runtime:sf_runtime.dll
+ 0001:0000d2b8       sf_debug_set_machine_data_thresholds 000000018000e2b8 f   sf_runtime:sf_runtime.dll
+ 0001:0000d2be       sf_init_ChartRunTimeInfo   000000018000e2be f   sf_runtime:sf_runtime.dll
+ 0001:0000d2c4       sf_free_ChartRunTimeInfo   000000018000e2c4 f   sf_runtime:sf_runtime.dll
+ 0001:0000d2ca       sf_get_chart_instance_ptr  000000018000e2ca f   sf_runtime:sf_runtime.dll
+ 0001:0000d2d0       sf_rtw_info_uint_prop      000000018000e2d0 f   sf_runtime:sf_runtime.dll
+ 0001:0000d2d6       sf_update_buildInfo        000000018000e2d6 f   sf_runtime:sf_runtime.dll
+ 0001:0000d2dc       sf_is_chart_inlinable      000000018000e2dc f   sf_runtime:sf_runtime.dll
+ 0001:0000d2e2       sf_mark_chart_reusable_outputs 000000018000e2e2 f   sf_runtime:sf_runtime.dll
+ 0001:0000d2e8       sf_mark_chart_expressionable_inputs 000000018000e2e8 f   sf_runtime:sf_runtime.dll
+ 0001:0000d2ee       sim_mode_is_rtw_gen        000000018000e2ee f   sf_runtime:sf_runtime.dll
+ 0001:0000d2f4       sim_mode_is_external       000000018000e2f4 f   sf_runtime:sf_runtime.dll
+ 0001:0000d2fa       sim_mode_is_modelref_sim   000000018000e2fa f   sf_runtime:sf_runtime.dll
+ 0001:0000d300       sf_clear_rtw_identifier    000000018000e300 f   sf_runtime:sf_runtime.dll
+ 0001:0000d306       sf_set_rtw_dwork_info      000000018000e306 f   sf_runtime:sf_runtime.dll
+ 0001:0000d30c       sf_get_time                000000018000e30c f   sf_runtime:sf_runtime.dll
+ 0001:0000d312       sf_is_first_init_cond      000000018000e312 f   sf_runtime:sf_runtime.dll
+ 0001:0000d318       sf_set_chart_accesses_machine_info 000000018000e318 f   sf_runtime:sf_runtime.dll
+ 0001:0000d31e       sf_mex_printf              000000018000e31e f   sf_runtime:sf_runtime.dll
+ 0001:0000d324       sf_mex_call_debug          000000018000e324 f   sf_runtime:sf_runtime.dll
+ 0001:0000d32a       sf_mex_error_message       000000018000e32a f   sf_runtime:sf_runtime.dll
+ 0001:0000d330       sf_mex_create              000000018000e330 f   sf_runtime:sf_runtime.dll
+ 0001:0000d336       sf_mex_createcellmatrix    000000018000e336 f   sf_runtime:sf_runtime.dll
+ 0001:0000d33c       sf_mex_setcell             000000018000e33c f   sf_runtime:sf_runtime.dll
+ 0001:0000d342       sf_mex_getcell             000000018000e342 f   sf_runtime:sf_runtime.dll
+ 0001:0000d348       sf_mex_assign              000000018000e348 f   sf_runtime:sf_runtime.dll
+ 0001:0000d34e       sf_mex_dup                 000000018000e34e f   sf_runtime:sf_runtime.dll
+ 0001:0000d354       sf_mex_destroy             000000018000e354 f   sf_runtime:sf_runtime.dll
+ 0001:0000d35a       sf_mex_import              000000018000e35a f   sf_runtime:sf_runtime.dll
+ 0001:0000d360       sf_mex_decode_encoded_mx_struct_array 000000018000e360 f   sf_runtime:sf_runtime.dll
+ 0001:0000d366       ssGetInputPortSignal_wrapper 000000018000e366 f   sf_runtime:sf_runtime.dll
+ 0001:0000d36c       ssGetOutputPortSignal_wrapper 000000018000e36c f   sf_runtime:sf_runtime.dll
+ 0001:0000d372       sf_eml_array_bounds_check  000000018000e372 f   sf_runtime:sf_runtime.dll
+ 0001:0000d378       sf_integer_check           000000018000e378 f   sf_runtime:sf_runtime.dll
+ 0001:0000d37e       sf_debug_initialize_chart  000000018000e37e f   sf_runtime:sf_runtime.dll
+ 0001:0000d384       sf_debug_call              000000018000e384 f   sf_runtime:sf_runtime.dll
+ 0001:0000d38a       eml_debug_line_call        000000018000e38a f   sf_runtime:sf_runtime.dll
+ 0001:0000d390       cv_eml_eval                000000018000e390 f   sf_runtime:sf_runtime.dll
+ 0001:0000d396       cv_eval_relational         000000018000e396 f   sf_runtime:sf_runtime.dll
+ 0001:0000d39c       cv_eml_init_script         000000018000e39c f   sf_runtime:sf_runtime.dll
+ 0001:0000d3a2       cv_eml_init_fcn            000000018000e3a2 f   sf_runtime:sf_runtime.dll
+ 0001:0000d3a8       cv_eml_init_saturation     000000018000e3a8 f   sf_runtime:sf_runtime.dll
+ 0001:0000d3ae       cv_eml_init_if             000000018000e3ae f   sf_runtime:sf_runtime.dll
+ 0001:0000d3b4       cv_eml_init_relational     000000018000e3b4 f   sf_runtime:sf_runtime.dll
+ 0001:0000d3ba       sf_debug_reset_current_state_configuration 000000018000e3ba f   sf_runtime:sf_runtime.dll
+ 0001:0000d3c0       sf_debug_check_for_state_inconsistency 000000018000e3c0 f   sf_runtime:sf_runtime.dll
+ 0001:0000d3c6       sf_debug_set_chart_data_props 000000018000e3c6 f   sf_runtime:sf_runtime.dll
+ 0001:0000d3cc       sf_debug_set_chart_data_compiled_props 000000018000e3cc f   sf_runtime:sf_runtime.dll
+ 0001:0000d3d2       sf_debug_symbol_scope_push 000000018000e3d2 f   sf_runtime:sf_runtime.dll
+ 0001:0000d3d8       sf_debug_symbol_scope_push_eml 000000018000e3d8 f   sf_runtime:sf_runtime.dll
+ 0001:0000d3de       sf_debug_symbol_scope_pop  000000018000e3de f   sf_runtime:sf_runtime.dll
+ 0001:0000d3e4       sf_debug_symbol_scope_add_eml 000000018000e3e4 f   sf_runtime:sf_runtime.dll
+ 0001:0000d3ea       sf_debug_symbol_scope_add_eml_importable 000000018000e3ea f   sf_runtime:sf_runtime.dll
+ 0001:0000d3f0       sf_debug_set_instance_data_value_ptr 000000018000e3f0 f   sf_runtime:sf_runtime.dll
+ 0001:0000d3f6       sf_debug_set_chart_disable_implicit_casting 000000018000e3f6 f   sf_runtime:sf_runtime.dll
+ 0001:0000d3fc       sf_debug_set_chart_event_thresholds 000000018000e3fc f   sf_runtime:sf_runtime.dll
+ 0001:0000d402       sf_debug_set_chart_state_info 000000018000e402 f   sf_runtime:sf_runtime.dll
+ 0001:0000d408       sf_debug_set_chart_decomposition 000000018000e408 f   sf_runtime:sf_runtime.dll
+ 0001:0000d40e       sf_debug_set_chart_substate_count 000000018000e40e f   sf_runtime:sf_runtime.dll
+ 0001:0000d414       sf_debug_data_range_wrapper 000000018000e414 f   sf_runtime:sf_runtime.dll
+ 0001:0000d41a       cv_eval_saturation         000000018000e41a f   sf_runtime:sf_runtime.dll
+ 0001:0000d420       sf_debug_cv_init_trans     000000018000e420 f   sf_runtime:sf_runtime.dll
+ 0001:0000d426       sf_debug_cv_init_chart     000000018000e426 f   sf_runtime:sf_runtime.dll
+ 0001:0000d42c       sf_debug_cv_init_state     000000018000e42c f   sf_runtime:sf_runtime.dll
+ 0001:0000d432       sf_get_ChartInfoStruct_CodeGen 000000018000e432 f   sf_runtime:sf_runtime.dll
+ 0001:0000d438       sf_get_isEnhancedMooreMachine 000000018000e438 f   sf_runtime:sf_runtime.dll
+ 0001:0000d43e       sf_set_compiledInfo        000000018000e43e f   sf_runtime:sf_runtime.dll
+ 0001:0000d444       callMdlMethodAndReportError 000000018000e444 f   sf_runtime:sf_runtime.dll
+ 0001:0000d44a       call_sf_machine_global_method_dispatcher 000000018000e44a f   sf_runtime:sf_runtime.dll
+ 0001:0000d450       sf_mex_error_direct_call   000000018000e450 f   sf_runtime:sf_runtime.dll
+ 0001:0000d456       sf_clear_error_manager_info 000000018000e456 f   sf_runtime:sf_runtime.dll
+ 0001:0000d45c       sf_debug_create_debug_instance_struct 000000018000e45c f   sf_runtime:sf_runtime.dll
+ 0001:0000d462       sf_debug_terminate         000000018000e462 f   sf_runtime:sf_runtime.dll
+ 0001:0000d468       sf_debug_api               000000018000e468 f   sf_runtime:sf_runtime.dll
+ 0001:0000d46e       mxIsChar                   000000018000e46e f   libmx:libmx.dll
+ 0001:0000d474       mxGetPr                    000000018000e474 f   libmx:libmx.dll
+ 0001:0000d47a       mxGetScalar                000000018000e47a f   libmx:libmx.dll
+ 0001:0000d480       mxDestroyArray             000000018000e480 f   libmx:libmx.dll
+ 0001:0000d486       mxCreateDoubleMatrix_730   000000018000e486 f   libmx:libmx.dll
+ 0001:0000d48c       mxGetString_730            000000018000e48c f   libmx:libmx.dll
+ 0001:0000d492       mxDuplicateArray           000000018000e492 f   libmx:libmx.dll
+ 0001:0000d498       mxSetField_730             000000018000e498 f   libmx:libmx.dll
+ 0001:0000d49e       mxCreateDoubleScalar       000000018000e49e f   libmx:libmx.dll
+ 0001:0000d4a4       mxCreateString             000000018000e4a4 f   libmx:libmx.dll
+ 0001:0000d4aa       mxCreateCellMatrix_730     000000018000e4aa f   libmx:libmx.dll
+ 0001:0000d4b0       mxCreateCellArray_730      000000018000e4b0 f   libmx:libmx.dll
+ 0001:0000d4b6       mxCreateStructMatrix_730   000000018000e4b6 f   libmx:libmx.dll
+ 0001:0000d4bc       mxCreateStructArray_730    000000018000e4bc f   libmx:libmx.dll
+ 0001:0000d4c2       mxCalloc                   000000018000e4c2 f   libmx:libmx.dll
+ 0001:0000d4c8       mxGetM                     000000018000e4c8 f   libmx:libmx.dll
+ 0001:0000d4ce       mxGetClassID               000000018000e4ce f   libmx:libmx.dll
+ 0001:0000d4d4       mxIsNumeric                000000018000e4d4 f   libmx:libmx.dll
+ 0001:0000d4da       mxIsComplex                000000018000e4da f   libmx:libmx.dll
+ 0001:0000d4e0       mxGetN                     000000018000e4e0 f   libmx:libmx.dll
+ 0001:0000d4e6       mexMakeArrayPersistent     000000018000e4e6 f   libmex:libmex.dll
+ 0001:0000d4ec       mexErrMsgTxt               000000018000e4ec f   libmex:libmex.dll
+ 0001:0000d4f2       mexWarnMsgTxt              000000018000e4f2 f   libmex:libmex.dll
+ 0001:0000d4f8       mexCallMATLABWithObject    000000018000e4f8 f   libmex:libmex.dll
+ 0001:0000d4fe       mexLock                    000000018000e4fe f   libmex:libmex.dll
+ 0001:0000d504       mexUnlock                  000000018000e504 f   libmex:libmex.dll
+ 0001:0000d50a       mexIsLocked                000000018000e50a f   libmex:libmex.dll
+ 0001:0000d510       utMalloc                   000000018000e510 f   libut:libut.dll
+ 0001:0000d516       utFree                     000000018000e516 f   libut:libut.dll
+ 0001:0000d51c       muDoubleScalarRound        000000018000e51c f   libmwmathutil:libmwmathutil.dll
+ 0001:0000d524       __raise_securityfailure    000000018000e524 f   MSVCRT:gs_report.obj
+ 0001:0000d570       __report_gsfailure         000000018000e570 f   MSVCRT:gs_report.obj
+ 0001:0000d644       __report_rangecheckfailure 000000018000e644 f   MSVCRT:gs_report.obj
+ 0001:0000d658       __report_securityfailure   000000018000e658 f   MSVCRT:gs_report.obj
+ 0001:0000d6f4       __report_securityfailureEx 000000018000e6f4 f   MSVCRT:gs_report.obj
+ 0001:0000d802       strcmp                     000000018000e802 f   MSVCRT:MSVCR120.dll
+ 0001:0000d808       __GSHandlerCheck           000000018000e808 f   MSVCRT:gshandler.obj
+ 0001:0000d828       __GSHandlerCheckCommon     000000018000e828 f   MSVCRT:gshandler.obj
+ 0001:0000d8a0       __security_check_cookie    000000018000e8a0 f   MSVCRT:amdsecgs.obj
+ 0001:0000d8c0       memset                     000000018000e8c0 f   MSVCRT:MSVCR120.dll
+ 0001:0000d8c6       memcpy                     000000018000e8c6 f   MSVCRT:MSVCR120.dll
+ 0001:0000d8cc       strcat                     000000018000e8cc f   MSVCRT:MSVCR120.dll
+ 0001:0000d8d2       strlen                     000000018000e8d2 f   MSVCRT:MSVCR120.dll
+ 0001:0000d8d8       sprintf                    000000018000e8d8 f   MSVCRT:MSVCR120.dll
+ 0001:0000d8de       free                       000000018000e8de f   MSVCRT:MSVCR120.dll
+ 0001:0000d8e4       malloc                     000000018000e8e4 f   MSVCRT:MSVCR120.dll
+ 0001:0000d94c       NtCurrentTeb               000000018000e94c f i MSVCRT:crtdll.obj
+ 0001:0000d958       _CRT_INIT                  000000018000e958 f   MSVCRT:crtdll.obj
+ 0001:0000dba4       _DllMainCRTStartup         000000018000eba4 f   MSVCRT:crtdll.obj
+ 0001:0000dd1a       __crt_debugger_hook        000000018000ed1a f   MSVCRT:MSVCR120.dll
+ 0001:0000dd20       __crtUnhandledException    000000018000ed20 f   MSVCRT:MSVCR120.dll
+ 0001:0000dd26       __crtTerminateProcess      000000018000ed26 f   MSVCRT:MSVCR120.dll
+ 0001:0000dd2c       __crtCaptureCurrentContext 000000018000ed2c f   MSVCRT:MSVCR120.dll
+ 0001:0000dd32       __crtCapturePreviousContext 000000018000ed32 f   MSVCRT:MSVCR120.dll
+ 0001:0000dd38       __CppXcptFilter            000000018000ed38 f   MSVCRT:MSVCR120.dll
+ 0001:0000dd3e       _amsg_exit                 000000018000ed3e f   MSVCRT:MSVCR120.dll
+ 0001:0000dd50       _FindPESection             000000018000ed50 f   MSVCRT:pesect.obj
+ 0001:0000dda0       _IsNonwritableInCurrentImage 000000018000eda0 f   MSVCRT:pesect.obj
+ 0001:0000ddf0       _ValidateImageBase         000000018000edf0 f   MSVCRT:pesect.obj
+ 0001:0000de20       __atonexitinit             000000018000ee20 f   MSVCRT:atonexit.obj
+ 0001:0000de70       _onexit                    000000018000ee70 f   MSVCRT:atonexit.obj
+ 0001:0000df20       atexit                     000000018000ef20 f   MSVCRT:atonexit.obj
+ 0001:0000df38       __security_init_cookie     000000018000ef38 f   MSVCRT:gs_support.obj
+ 0001:0000dfe4       DllMain                    000000018000efe4 f   MSVCRT:dllmain.obj
+ 0001:0000e008       _malloc_crt                000000018000f008 f   MSVCRT:MSVCR120.dll
+ 0001:0000e010       _RTC_Initialize            000000018000f010 f   MSVCRT:initsect.obj
+ 0001:0000e048       _RTC_Terminate             000000018000f048 f   MSVCRT:initsect.obj
+ 0001:0000e080       _initterm                  000000018000f080 f   MSVCRT:MSVCR120.dll
+ 0001:0000e086       _initterm_e                000000018000f086 f   MSVCRT:MSVCR120.dll
+ 0001:0000e08c       __clean_type_info_names    000000018000f08c f   MSVCRT:tncleanup.obj
+ 0001:0000e098       __C_specific_handler       000000018000f098 f   MSVCRT:MSVCR120.dll
+ 0001:0000e09e       _lock                      000000018000f09e f   MSVCRT:MSVCR120.dll
+ 0001:0000e0a4       _unlock                    000000018000f0a4 f   MSVCRT:MSVCR120.dll
+ 0001:0000e0aa       _calloc_crt                000000018000f0aa f   MSVCRT:MSVCR120.dll
+ 0001:0000e0b0       __dllonexit                000000018000f0b0 f   MSVCRT:MSVCR120.dll
+ 0001:0000e0b6       __clean_type_info_names_internal 000000018000f0b6 f   MSVCRT:MSVCR120.dll
+ 0001:0000e0bc       IsDebuggerPresent          000000018000f0bc f   kernel32:KERNEL32.dll
+ 0001:0000e0c2       IsProcessorFeaturePresent  000000018000f0c2 f   kernel32:KERNEL32.dll
+ 0001:0000e0c8       EncodePointer              000000018000f0c8 f   kernel32:KERNEL32.dll
+ 0001:0000e0ce       DecodePointer              000000018000f0ce f   kernel32:KERNEL32.dll
+ 0001:0000e0d4       QueryPerformanceCounter    000000018000f0d4 f   kernel32:KERNEL32.dll
+ 0001:0000e0da       GetCurrentProcessId        000000018000f0da f   kernel32:KERNEL32.dll
+ 0001:0000e0e0       GetCurrentThreadId         000000018000f0e0 f   kernel32:KERNEL32.dll
+ 0001:0000e0e6       GetSystemTimeAsFileTime    000000018000f0e6 f   kernel32:KERNEL32.dll
+ 0001:0000e0ec       DisableThreadLibraryCalls  000000018000f0ec f   kernel32:KERNEL32.dll
+ 0002:00000000       __imp_GetSystemTimeAsFileTime 0000000180010000     kernel32:KERNEL32.dll
+ 0002:00000008       __imp_GetCurrentThreadId   0000000180010008     kernel32:KERNEL32.dll
+ 0002:00000010       __imp_GetCurrentProcessId  0000000180010010     kernel32:KERNEL32.dll
+ 0002:00000018       __imp_QueryPerformanceCounter 0000000180010018     kernel32:KERNEL32.dll
+ 0002:00000020       __imp_DecodePointer        0000000180010020     kernel32:KERNEL32.dll
+ 0002:00000028       __imp_EncodePointer        0000000180010028     kernel32:KERNEL32.dll
+ 0002:00000030       __imp_IsProcessorFeaturePresent 0000000180010030     kernel32:KERNEL32.dll
+ 0002:00000038       __imp_IsDebuggerPresent    0000000180010038     kernel32:KERNEL32.dll
+ 0002:00000040       __imp_DisableThreadLibraryCalls 0000000180010040     kernel32:KERNEL32.dll
+ 0002:00000048       \177KERNEL32_NULL_THUNK_DATA 0000000180010048     kernel32:KERNEL32.dll
+ 0002:00000050       __imp___clean_type_info_names_internal 0000000180010050     MSVCRT:MSVCR120.dll
+ 0002:00000058       __imp__onexit              0000000180010058     MSVCRT:MSVCR120.dll
+ 0002:00000060       __imp___dllonexit          0000000180010060     MSVCRT:MSVCR120.dll
+ 0002:00000068       __imp__calloc_crt          0000000180010068     MSVCRT:MSVCR120.dll
+ 0002:00000070       __imp__unlock              0000000180010070     MSVCRT:MSVCR120.dll
+ 0002:00000078       __imp__lock                0000000180010078     MSVCRT:MSVCR120.dll
+ 0002:00000080       __imp___C_specific_handler 0000000180010080     MSVCRT:MSVCR120.dll
+ 0002:00000088       __imp__initterm_e          0000000180010088     MSVCRT:MSVCR120.dll
+ 0002:00000090       __imp__initterm            0000000180010090     MSVCRT:MSVCR120.dll
+ 0002:00000098       __imp__malloc_crt          0000000180010098     MSVCRT:MSVCR120.dll
+ 0002:000000a0       __imp__amsg_exit           00000001800100a0     MSVCRT:MSVCR120.dll
+ 0002:000000a8       __imp___CppXcptFilter      00000001800100a8     MSVCRT:MSVCR120.dll
+ 0002:000000b0       __imp___crtCapturePreviousContext 00000001800100b0     MSVCRT:MSVCR120.dll
+ 0002:000000b8       __imp___crtCaptureCurrentContext 00000001800100b8     MSVCRT:MSVCR120.dll
+ 0002:000000c0       __imp___crtTerminateProcess 00000001800100c0     MSVCRT:MSVCR120.dll
+ 0002:000000c8       __imp___crtUnhandledException 00000001800100c8     MSVCRT:MSVCR120.dll
+ 0002:000000d0       __imp___crt_debugger_hook  00000001800100d0     MSVCRT:MSVCR120.dll
+ 0002:000000d8       __imp_malloc               00000001800100d8     MSVCRT:MSVCR120.dll
+ 0002:000000e0       __imp_free                 00000001800100e0     MSVCRT:MSVCR120.dll
+ 0002:000000e8       __imp_sprintf              00000001800100e8     MSVCRT:MSVCR120.dll
+ 0002:000000f0       __imp_strlen               00000001800100f0     MSVCRT:MSVCR120.dll
+ 0002:000000f8       __imp_strcat               00000001800100f8     MSVCRT:MSVCR120.dll
+ 0002:00000100       __imp_memcpy               0000000180010100     MSVCRT:MSVCR120.dll
+ 0002:00000108       __imp_memset               0000000180010108     MSVCRT:MSVCR120.dll
+ 0002:00000110       __imp_strcmp               0000000180010110     MSVCRT:MSVCR120.dll
+ 0002:00000118       \177MSVCR120_NULL_THUNK_DATA 0000000180010118     MSVCRT:MSVCR120.dll
+ 0002:00000120       __imp_mexLock              0000000180010120     libmex:libmex.dll
+ 0002:00000128       __imp_mexErrMsgTxt         0000000180010128     libmex:libmex.dll
+ 0002:00000130       __imp_mexIsLocked          0000000180010130     libmex:libmex.dll
+ 0002:00000138       __imp_mexUnlock            0000000180010138     libmex:libmex.dll
+ 0002:00000140       __imp_mexMakeArrayPersistent 0000000180010140     libmex:libmex.dll
+ 0002:00000148       __imp_mexCallMATLABWithObject 0000000180010148     libmex:libmex.dll
+ 0002:00000150       __imp_mexWarnMsgTxt        0000000180010150     libmex:libmex.dll
+ 0002:00000158       \177libmex_NULL_THUNK_DATA 0000000180010158     libmex:libmex.dll
+ 0002:00000160       __imp_muDoubleScalarRound  0000000180010160     libmwmathutil:libmwmathutil.dll
+ 0002:00000168       \177libmwmathutil_NULL_THUNK_DATA 0000000180010168     libmwmathutil:libmwmathutil.dll
+ 0002:00000170       __imp_mxGetN               0000000180010170     libmx:libmx.dll
+ 0002:00000178       __imp_mxIsComplex          0000000180010178     libmx:libmx.dll
+ 0002:00000180       __imp_mxIsNumeric          0000000180010180     libmx:libmx.dll
+ 0002:00000188       __imp_mxGetClassID         0000000180010188     libmx:libmx.dll
+ 0002:00000190       __imp_mxGetM               0000000180010190     libmx:libmx.dll
+ 0002:00000198       __imp_mxCalloc             0000000180010198     libmx:libmx.dll
+ 0002:000001a0       __imp_mxCreateStructArray_730 00000001800101a0     libmx:libmx.dll
+ 0002:000001a8       __imp_mxCreateStructMatrix_730 00000001800101a8     libmx:libmx.dll
+ 0002:000001b0       __imp_mxCreateCellArray_730 00000001800101b0     libmx:libmx.dll
+ 0002:000001b8       __imp_mxCreateCellMatrix_730 00000001800101b8     libmx:libmx.dll
+ 0002:000001c0       __imp_mxCreateString       00000001800101c0     libmx:libmx.dll
+ 0002:000001c8       __imp_mxCreateDoubleScalar 00000001800101c8     libmx:libmx.dll
+ 0002:000001d0       __imp_mxSetField_730       00000001800101d0     libmx:libmx.dll
+ 0002:000001d8       __imp_mxDuplicateArray     00000001800101d8     libmx:libmx.dll
+ 0002:000001e0       __imp_mxGetString_730      00000001800101e0     libmx:libmx.dll
+ 0002:000001e8       __imp_mxCreateDoubleMatrix_730 00000001800101e8     libmx:libmx.dll
+ 0002:000001f0       __imp_mxDestroyArray       00000001800101f0     libmx:libmx.dll
+ 0002:000001f8       __imp_mxGetScalar          00000001800101f8     libmx:libmx.dll
+ 0002:00000200       __imp_mxIsChar             0000000180010200     libmx:libmx.dll
+ 0002:00000208       __imp_mxGetPr              0000000180010208     libmx:libmx.dll
+ 0002:00000210       \177libmx_NULL_THUNK_DATA  0000000180010210     libmx:libmx.dll
+ 0002:00000218       __imp_utMalloc             0000000180010218     libut:libut.dll
+ 0002:00000220       __imp_utFree               0000000180010220     libut:libut.dll
+ 0002:00000228       \177libut_NULL_THUNK_DATA  0000000180010228     libut:libut.dll
+ 0002:00000230       __imp_call_sf_machine_global_method_dispatcher 0000000180010230     sf_runtime:sf_runtime.dll
+ 0002:00000238       __imp_sf_mex_error_direct_call 0000000180010238     sf_runtime:sf_runtime.dll
+ 0002:00000240       __imp_sf_clear_error_manager_info 0000000180010240     sf_runtime:sf_runtime.dll
+ 0002:00000248       __imp_sf_get_ChartInfoStruct_CodeGen 0000000180010248     sf_runtime:sf_runtime.dll
+ 0002:00000250       __imp_sf_debug_terminate   0000000180010250     sf_runtime:sf_runtime.dll
+ 0002:00000258       __imp_sf_debug_api         0000000180010258     sf_runtime:sf_runtime.dll
+ 0002:00000260       __imp_sf_debug_cv_init_state 0000000180010260     sf_runtime:sf_runtime.dll
+ 0002:00000268       __imp_sf_mark_chart_reusable_outputs 0000000180010268     sf_runtime:sf_runtime.dll
+ 0002:00000270       __imp_sf_debug_cv_init_chart 0000000180010270     sf_runtime:sf_runtime.dll
+ 0002:00000278       __imp_sf_debug_cv_init_trans 0000000180010278     sf_runtime:sf_runtime.dll
+ 0002:00000280       __imp_cv_eval_saturation   0000000180010280     sf_runtime:sf_runtime.dll
+ 0002:00000288       __imp_sf_debug_data_range_wrapper 0000000180010288     sf_runtime:sf_runtime.dll
+ 0002:00000290       __imp_sf_debug_set_chart_substate_count 0000000180010290     sf_runtime:sf_runtime.dll
+ 0002:00000298       __imp_sf_debug_set_chart_decomposition 0000000180010298     sf_runtime:sf_runtime.dll
+ 0002:000002a0       __imp_sf_debug_set_chart_state_info 00000001800102a0     sf_runtime:sf_runtime.dll
+ 0002:000002a8       __imp_sf_debug_set_chart_event_thresholds 00000001800102a8     sf_runtime:sf_runtime.dll
+ 0002:000002b0       __imp_callMdlMethodAndReportError 00000001800102b0     sf_runtime:sf_runtime.dll
+ 0002:000002b8       __imp_sf_debug_set_instance_data_value_ptr 00000001800102b8     sf_runtime:sf_runtime.dll
+ 0002:000002c0       __imp_sf_debug_symbol_scope_add_eml_importable 00000001800102c0     sf_runtime:sf_runtime.dll
+ 0002:000002c8       __imp_sf_debug_symbol_scope_add_eml 00000001800102c8     sf_runtime:sf_runtime.dll
+ 0002:000002d0       __imp_sf_debug_symbol_scope_pop 00000001800102d0     sf_runtime:sf_runtime.dll
+ 0002:000002d8       __imp_sf_debug_symbol_scope_push_eml 00000001800102d8     sf_runtime:sf_runtime.dll
+ 0002:000002e0       __imp_sf_debug_symbol_scope_push 00000001800102e0     sf_runtime:sf_runtime.dll
+ 0002:000002e8       __imp_sf_debug_set_chart_data_compiled_props 00000001800102e8     sf_runtime:sf_runtime.dll
+ 0002:000002f0       __imp_sf_debug_set_chart_data_props 00000001800102f0     sf_runtime:sf_runtime.dll
+ 0002:000002f8       __imp_sf_debug_check_for_state_inconsistency 00000001800102f8     sf_runtime:sf_runtime.dll
+ 0002:00000300       __imp_sf_debug_reset_current_state_configuration 0000000180010300     sf_runtime:sf_runtime.dll
+ 0002:00000308       __imp_cv_eml_init_relational 0000000180010308     sf_runtime:sf_runtime.dll
+ 0002:00000310       __imp_cv_eml_init_if       0000000180010310     sf_runtime:sf_runtime.dll
+ 0002:00000318       __imp_cv_eml_init_saturation 0000000180010318     sf_runtime:sf_runtime.dll
+ 0002:00000320       __imp_cv_eml_init_fcn      0000000180010320     sf_runtime:sf_runtime.dll
+ 0002:00000328       __imp_cv_eml_init_script   0000000180010328     sf_runtime:sf_runtime.dll
+ 0002:00000330       __imp_cv_eval_relational   0000000180010330     sf_runtime:sf_runtime.dll
+ 0002:00000338       __imp_cv_eml_eval          0000000180010338     sf_runtime:sf_runtime.dll
+ 0002:00000340       __imp_eml_debug_line_call  0000000180010340     sf_runtime:sf_runtime.dll
+ 0002:00000348       __imp_sf_set_compiledInfo  0000000180010348     sf_runtime:sf_runtime.dll
+ 0002:00000350       __imp_sf_debug_set_chart_disable_implicit_casting 0000000180010350     sf_runtime:sf_runtime.dll
+ 0002:00000358       __imp_sf_get_isEnhancedMooreMachine 0000000180010358     sf_runtime:sf_runtime.dll
+ 0002:00000360       __imp_sf_debug_call        0000000180010360     sf_runtime:sf_runtime.dll
+ 0002:00000368       __imp_sf_debug_initialize_chart 0000000180010368     sf_runtime:sf_runtime.dll
+ 0002:00000370       __imp_sf_integer_check     0000000180010370     sf_runtime:sf_runtime.dll
+ 0002:00000378       __imp_sf_eml_array_bounds_check 0000000180010378     sf_runtime:sf_runtime.dll
+ 0002:00000380       __imp_ssGetOutputPortSignal_wrapper 0000000180010380     sf_runtime:sf_runtime.dll
+ 0002:00000388       __imp_ssGetInputPortSignal_wrapper 0000000180010388     sf_runtime:sf_runtime.dll
+ 0002:00000390       __imp_sf_mex_decode_encoded_mx_struct_array 0000000180010390     sf_runtime:sf_runtime.dll
+ 0002:00000398       __imp_sf_mex_import        0000000180010398     sf_runtime:sf_runtime.dll
+ 0002:000003a0       __imp_sf_mex_destroy       00000001800103a0     sf_runtime:sf_runtime.dll
+ 0002:000003a8       __imp_sf_mex_dup           00000001800103a8     sf_runtime:sf_runtime.dll
+ 0002:000003b0       __imp_sf_mex_assign        00000001800103b0     sf_runtime:sf_runtime.dll
+ 0002:000003b8       __imp_sf_mex_getcell       00000001800103b8     sf_runtime:sf_runtime.dll
+ 0002:000003c0       __imp_sf_mex_setcell       00000001800103c0     sf_runtime:sf_runtime.dll
+ 0002:000003c8       __imp_sf_mex_createcellmatrix 00000001800103c8     sf_runtime:sf_runtime.dll
+ 0002:000003d0       __imp_sf_mex_create        00000001800103d0     sf_runtime:sf_runtime.dll
+ 0002:000003d8       __imp_sf_mex_error_message 00000001800103d8     sf_runtime:sf_runtime.dll
+ 0002:000003e0       __imp_sf_mex_call_debug    00000001800103e0     sf_runtime:sf_runtime.dll
+ 0002:000003e8       __imp_sf_mex_printf        00000001800103e8     sf_runtime:sf_runtime.dll
+ 0002:000003f0       __imp_sf_set_chart_accesses_machine_info 00000001800103f0     sf_runtime:sf_runtime.dll
+ 0002:000003f8       __imp_sf_is_first_init_cond 00000001800103f8     sf_runtime:sf_runtime.dll
+ 0002:00000400       __imp_sf_get_time          0000000180010400     sf_runtime:sf_runtime.dll
+ 0002:00000408       __imp_sf_set_rtw_dwork_info 0000000180010408     sf_runtime:sf_runtime.dll
+ 0002:00000410       __imp_sf_clear_rtw_identifier 0000000180010410     sf_runtime:sf_runtime.dll
+ 0002:00000418       __imp_sim_mode_is_modelref_sim 0000000180010418     sf_runtime:sf_runtime.dll
+ 0002:00000420       __imp_sim_mode_is_external 0000000180010420     sf_runtime:sf_runtime.dll
+ 0002:00000428       __imp_sim_mode_is_rtw_gen  0000000180010428     sf_runtime:sf_runtime.dll
+ 0002:00000430       __imp_sf_mark_chart_expressionable_inputs 0000000180010430     sf_runtime:sf_runtime.dll
+ 0002:00000438       __imp_sf_is_chart_inlinable 0000000180010438     sf_runtime:sf_runtime.dll
+ 0002:00000440       __imp_sf_update_buildInfo  0000000180010440     sf_runtime:sf_runtime.dll
+ 0002:00000448       __imp_sf_rtw_info_uint_prop 0000000180010448     sf_runtime:sf_runtime.dll
+ 0002:00000450       __imp_sf_get_chart_instance_ptr 0000000180010450     sf_runtime:sf_runtime.dll
+ 0002:00000458       __imp_sf_free_ChartRunTimeInfo 0000000180010458     sf_runtime:sf_runtime.dll
+ 0002:00000460       __imp_sf_init_ChartRunTimeInfo 0000000180010460     sf_runtime:sf_runtime.dll
+ 0002:00000468       __imp_sf_debug_set_machine_data_thresholds 0000000180010468     sf_runtime:sf_runtime.dll
+ 0002:00000470       __imp_sf_debug_set_machine_event_thresholds 0000000180010470     sf_runtime:sf_runtime.dll
+ 0002:00000478       __imp_sf_debug_initialize_machine 0000000180010478     sf_runtime:sf_runtime.dll
+ 0002:00000480       __imp_sf_debug_create_debug_instance_struct 0000000180010480     sf_runtime:sf_runtime.dll
+ 0002:00000488       __imp_sf_load_rtw_optimization_info 0000000180010488     sf_runtime:sf_runtime.dll
+ 0002:00000490       \177sf_runtime_NULL_THUNK_DATA 0000000180010490     sf_runtime:sf_runtime.dll
+ 0002:00000498       __xc_a                     0000000180010498     MSVCRT:cinitexe.obj
+ 0002:000004a0       __xc_z                     00000001800104a0     MSVCRT:cinitexe.obj
+ 0002:000004a8       __xi_a                     00000001800104a8     MSVCRT:cinitexe.obj
+ 0002:000004c0       __xi_z                     00000001800104c0     MSVCRT:cinitexe.obj
+ 0002:000004d0       __real@41b48881c0000000    00000001800104d0     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:000004d8       __real@41c7bf748b000000    00000001800104d8     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:000004e0       __real@41cb463144000000    00000001800104e0     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:000004e8       __real@41d89fcbf7400000    00000001800104e8     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:000004f0       __real@41d8f42a64800000    00000001800104f0     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:000004f8       __real@41db1c549ac00000    00000001800104f8     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000500       __real@41e439a0c9c00000    0000000180010500     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000508       __real@41e8080731200000    0000000180010508     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000510       __real@41e8583dfc000000    0000000180010510     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000518       __real@41e8cffe7aa00000    0000000180010518     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000520       __real@41eccac645e00000    0000000180010520     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000528       __real@41ee4c5503c00000    0000000180010528     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000530       __real@0000000000000000    0000000180010530     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000538       __real@3ff0000000000000    0000000180010538     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000540       __real@4000000000000000    0000000180010540     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000548       __real@4010000000000000    0000000180010548     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000550       __real@4024000000000000    0000000180010550     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000558       __real@4062e00000000000    0000000180010558     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000560       __real@4072d00000000000    0000000180010560     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000568       __real@4079000000000000    0000000180010568     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000570       __real@41b2587927000000    0000000180010570     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000578       __real@41c5245226000000    0000000180010578     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000580       __real@41dd55890d400000    0000000180010580     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000588       __real@41eae306f7200000    0000000180010588     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000590       __real@41f0000000000000    0000000180010590     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:000005a0       DYNAMIC_DIMENSION_DEF      00000001800105a0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000005c0       _ssBadLevel2InputAccessMsg 00000001800105c0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000750       _ssBadLevel2DirectFeedMsg  0000000180010750     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000890       _ssBadLevel2DirectFeedSolutionMsg 0000000180010890     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000900       _ssBadLevel2ZeroDirectFeedMsg 0000000180010900     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000a40       _ssBadLevel2ZeroDirectFeedMsg2 0000000180010a40     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000b28       __real@41602cbca0000000    0000000180010b28     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000b30       __real@bff0000000000000    0000000180010b30     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000b48       _pDefaultRawDllMain        0000000180010b48     MSVCRT:crtdll.obj
+ 0002:00000b48       _pRawDllMain               0000000180010b48     MSVCRT:crtdll.obj
+ 0002:00000b50       ?ProcessDetach@NativeDll@<CrtImplementationDetails>@@0IB 0000000180010b50     MSVCRT:initsect.obj
+ 0002:00000b54       ?ProcessAttach@NativeDll@<CrtImplementationDetails>@@0IB 0000000180010b54     MSVCRT:initsect.obj
+ 0002:00000b58       ?ThreadAttach@NativeDll@<CrtImplementationDetails>@@0IB 0000000180010b58     MSVCRT:initsect.obj
+ 0002:00000b5c       ?ThreadDetach@NativeDll@<CrtImplementationDetails>@@0IB 0000000180010b5c     MSVCRT:initsect.obj
+ 0002:00000b60       ?ProcessVerifier@NativeDll@<CrtImplementationDetails>@@0IB 0000000180010b60     MSVCRT:initsect.obj
+ 0002:00000b64       ?value@?$integral_constant@_N$0A@@std@@2_NB 0000000180010b64     MSVCRT:tncleanup.obj
+ 0002:00000b65       ?value@?$integral_constant@_N$00@std@@2_NB 0000000180010b65     MSVCRT:tncleanup.obj
+ 0002:00000b70       _load_config_used          0000000180010b70     MSVCRT:loadcfg.obj
+ 0002:00000be0       __rtc_iaa                  0000000180010be0     MSVCRT:initsect.obj
+ 0002:00000be8       __rtc_izz                  0000000180010be8     MSVCRT:initsect.obj
+ 0002:00000bf0       __rtc_taa                  0000000180010bf0     MSVCRT:initsect.obj
+ 0002:00000bf8       __rtc_tzz                  0000000180010bf8     MSVCRT:initsect.obj
+ 0002:000013c8       __IMPORT_DESCRIPTOR_sf_runtime 00000001800113c8     sf_runtime:sf_runtime.dll
+ 0002:000013dc       __IMPORT_DESCRIPTOR_libmx  00000001800113dc     libmx:libmx.dll
+ 0002:000013f0       __IMPORT_DESCRIPTOR_libmex 00000001800113f0     libmex:libmex.dll
+ 0002:00001404       __IMPORT_DESCRIPTOR_libut  0000000180011404     libut:libut.dll
+ 0002:00001418       __IMPORT_DESCRIPTOR_libmwmathutil 0000000180011418     libmwmathutil:libmwmathutil.dll
+ 0002:0000142c       __IMPORT_DESCRIPTOR_MSVCR120 000000018001142c     MSVCRT:MSVCR120.dll
+ 0002:00001440       __IMPORT_DESCRIPTOR_KERNEL32 0000000180011440     kernel32:KERNEL32.dll
+ 0002:00001454       __NULL_IMPORT_DESCRIPTOR   0000000180011454     sf_runtime:sf_runtime.dll
+ 0003:00001360       DYNAMIC_DIMENSION          0000000180014360     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001a60       __security_cookie          0000000180014a60     MSVCRT:gs_cookie.obj
+ 0003:00001a68       __security_cookie_complement 0000000180014a68     MSVCRT:gs_cookie.obj
+ 0003:00001a70       _fltused                   0000000180014a70     MSVCRT:dllsupp.obj
+ 0003:00001a74       __native_dllmain_reason    0000000180014a74     MSVCRT:natstart.obj
+ 0003:00001aa8       sfGlobalDebugInstanceStruct 0000000180014aa8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000020f8       ?__type_info_root_node@@3U__type_info_node@@A 00000001800150f8     MSVCRT:tncleanup.obj
+ 0003:00002108       _Controller_ABS_VLC_AYC_ALGO2MachineNumber_ 0000000180015108     <common>
+ 0003:00002110       __native_startup_lock      0000000180015110     <common>
+ 0003:00002118       __native_startup_state     0000000180015118     <common>
+ 0003:00002120       __onexitend                0000000180015120     <common>
+ 0003:00002128       __onexitbegin              0000000180015128     <common>
+ 0003:00002130       __dyn_tls_init_callback    0000000180015130     <common>
+
+ entry point at        0001:0000dba4
+
+ Static symbols
+
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     MSVCRT:MSVCR120.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwmathutil:libmwmathutil.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     libut:libut.dll
+ 0000:00000000       .debug$S                   0000000180000000     libut:libut.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     sf_runtime:sf_runtime.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0001:00001220       chart_debug_initialization 0000000180002220 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00001d70       chart_debug_initialize_data_addresses 0000000180002d70 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00001f50       initialize_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180002f50 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00001fc0       initialize_params_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180002fc0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00001fd0       enable_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180002fd0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00002000       disable_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180003000 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00002030       c2_update_debugger_state_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180003030 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00002040       get_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180003040 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000021c0       set_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800031c0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000022d0       finalize_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800032d0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000022e0       sf_gateway_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800032e0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000038c0       mdl_start_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800048c0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000038d0       initSimStructsc2_Controller_ABS_VLC_AYC_ALGO2 00000001800048d0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000038e0       init_script_number_translation 00000001800048e0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00003900       c2_sf_marshallOut          0000000180004900 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00003a00       c2_emlrt_marshallIn        0000000180004a00 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00003a70       c2_b_emlrt_marshallIn      0000000180004a70 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00003b50       c2_sf_marshallIn           0000000180004b50 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00003c30       c2_b_sf_marshallOut        0000000180004c30 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00003d80       c2_c_sf_marshallOut        0000000180004d80 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00003e30       c2_c_emlrt_marshallIn      0000000180004e30 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00003ec0       c2_b_sf_marshallIn         0000000180004ec0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00003f70       c2_d_sf_marshallOut        0000000180004f70 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004020       c2_d_emlrt_marshallIn      0000000180005020 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000040b0       c2_c_sf_marshallIn         00000001800050b0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004160       c2_f_emlrt_marshallIn      0000000180005160 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000041d0       c2_g_emlrt_marshallIn      00000001800051d0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004260       init_dsm_address_info      0000000180005260 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004270       init_simulink_io_address   0000000180005270 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004ea0       sf_get_sim_state_info_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180005ea0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004f70       sf_get_instance_specialization 0000000180005f70 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004f80       sf_opaque_initialize_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180005f80 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004fc0       sf_opaque_enable_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180005fc0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00004fe0       sf_opaque_disable_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180005fe0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00005000       sf_opaque_gateway_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180006000 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00005020       sf_opaque_get_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180006020 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00005050       sf_opaque_set_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180006050 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00005080       sf_opaque_terminate_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180006080 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00005120       mdlProcessParameters_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180006120 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000051e0       mdlSetWorkWidths_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800061e0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000058a0       mdlRTW_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800068a0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:000058e0       mdlStart_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800068e0 f   c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0001:00006e28       $LN120                     0000000180007e28     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00008ba4       $LN17                      0000000180009ba4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000912c       $LN26                      000000018000a12c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00009814       $LN23                      000000018000a814     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:00009df0       $LN26                      000000018000adf0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000b9c0       sf_debug_api_wrapper       000000018000c9c0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000ba10       ProcessMexSfunctionCmdLineCall 000000018000ca10 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bd80       mdlSetWorkWidths           000000018000cd80 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bdb0       mdlProcessParameters       000000018000cdb0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bde0       mdl_start_processing       000000018000cde0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000be90       mdl_terminate_processing   000000018000ce90 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bf10       mdlStart                   000000018000cf10 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bf40       mdlTerminate               000000018000cf40 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bf70       mdlInitializeSizes         000000018000cf70 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bfa0       mdlInitializeSampleTimes   000000018000cfa0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000bfd0       mdl_outputs_continuous_legacy 000000018000cfd0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c0d0       mdl_outputs_processing     000000018000d0d0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c1f0       mdl_zeroCrossings_processing 000000018000d1f0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c230       mdlZeroCrossings           000000018000d230 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c260       mdl_derivatives_processing 000000018000d260 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c2b0       mdlDerivatives             000000018000d2b0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c2e0       mdl_initialize_conditions_processing 000000018000d2e0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c330       mdlInitializeConditions    000000018000d330 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c360       mdl_ext_mode_exec_processing 000000018000d360 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c3a0       mdlExtModeExec             000000018000d3a0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c3d0       mdlRTW                     000000018000d3d0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c410       mdl_enable_processing      000000018000d410 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c450       mdlEnable                  000000018000d450 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c480       mdl_disable_processing     000000018000d480 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c4c0       mdlDisable                 000000018000d4c0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c4f0       mdlOutputs                 000000018000d4f0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c520       mdl_update_processing      000000018000d520 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c570       mdlUpdate                  000000018000d570 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c750       mdlGetTimeOfNextVarHit     000000018000d750 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c7a0       _RegNumInputPortsCB        000000018000d7a0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c820       _RegNumOutputPortsCB       000000018000d820 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000c8a0       _CreateSimStruct           000000018000d8a0 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000ca80       _ssFatalError              000000018000da80 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000cb50       _ProcessMexSfunctionCmdLineCall 000000018000db50 f   Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0001:0000d890       $$000000                   000000018000e890     MSVCRT:amdsecgs.obj
+ 0001:0000d8ec       pre_c_init                 000000018000e8ec f   MSVCRT:crtdll.obj
+ 0001:0000dbe4       __DllMainCRTStartup        000000018000ebe4 f   MSVCRT:crtdll.obj
+ 0001:0000e100       __DllMainCRTStartup$filt$0 000000018000f100 f   MSVCRT:crtdll.obj
+ 0001:0000e125       __DllMainCRTStartup$fin$1  000000018000f125 f   MSVCRT:crtdll.obj
+ 0001:0000e140       _IsNonwritableInCurrentImage$filt$0 000000018000f140 f   MSVCRT:pesect.obj
+ 0001:0000e160       _onexit$fin$0              000000018000f160 f   MSVCRT:atonexit.obj
+ 0002:000004b0       pcinit                     00000001800104b0     MSVCRT:crtdll.obj
+ 0002:000004b8       pinit                      00000001800104b8     MSVCRT:atonexit.obj
+ 0002:00000b38       GS_ExceptionPointers       0000000180010b38     MSVCRT:gs_report.obj
+ 0002:00000c00       $unwind$load_Controller_ABS_VLC_AYC_ALGO2_optimization_info 0000000180010c00     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000c08       $unwind$unload_Controller_ABS_VLC_AYC_ALGO2_optimization_info 0000000180010c08     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000c10       $unwind$sf_Controller_ABS_VLC_AYC_ALGO2_method_dispatcher 0000000180010c10     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000c18       $unwind$sf_Controller_ABS_VLC_AYC_ALGO2_process_check_sum_call 0000000180010c18     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000c28       $unwind$sf_Controller_ABS_VLC_AYC_ALGO2_autoinheritance_info 0000000180010c28     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000c38       $unwind$sf_Controller_ABS_VLC_AYC_ALGO2_get_eml_resolved_functions_info 0000000180010c38     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000c48       $unwind$sf_Controller_ABS_VLC_AYC_ALGO2_third_party_uses_info 0000000180010c48     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000c58       $unwind$sf_Controller_ABS_VLC_AYC_ALGO2_jit_fallback_info 0000000180010c58     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000c68       $unwind$sf_Controller_ABS_VLC_AYC_ALGO2_updateBuildInfo_args_info 0000000180010c68     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000c78       $unwind$Controller_ABS_VLC_AYC_ALGO2_debug_initialize 0000000180010c78     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0002:00000c80       $unwind$sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_eml_resolved_functions_info 0000000180010c80     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000c88       $unwind$sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_check_sum 0000000180010c88     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000c90       $unwind$c2_Controller_ABS_VLC_AYC_ALGO2_method_dispatcher 0000000180010c90     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000c98       $unwind$chart_debug_initialization 0000000180010c98     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000ca0       $unwind$chart_debug_initialize_data_addresses 0000000180010ca0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000ca8       $unwind$initialize_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010ca8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000cb0       $unwind$enable_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010cb0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000cb8       $unwind$disable_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010cb8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000cc0       $unwind$get_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010cc0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000cc8       $unwind$set_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010cc8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000cd0       $unwind$sf_gateway_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010cd0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000ce0       $unwind$c2_sf_marshallOut  0000000180010ce0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000ce8       $unwind$c2_emlrt_marshallIn 0000000180010ce8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000cf0       $unwind$c2_b_emlrt_marshallIn 0000000180010cf0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000cf8       $unwind$c2_sf_marshallIn   0000000180010cf8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d00       $unwind$c2_b_sf_marshallOut 0000000180010d00     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d08       $unwind$c2_c_sf_marshallOut 0000000180010d08     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d10       $unwind$c2_c_emlrt_marshallIn 0000000180010d10     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d18       $unwind$c2_b_sf_marshallIn 0000000180010d18     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d20       $unwind$c2_d_sf_marshallOut 0000000180010d20     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d28       $unwind$c2_d_emlrt_marshallIn 0000000180010d28     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d30       $unwind$c2_c_sf_marshallIn 0000000180010d30     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d38       $unwind$c2_f_emlrt_marshallIn 0000000180010d38     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d40       $unwind$c2_g_emlrt_marshallIn 0000000180010d40     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d48       $unwind$init_simulink_io_address 0000000180010d48     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d50       $unwind$sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_post_codegen_info 0000000180010d50     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d58       $unwind$sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_autoinheritance_info 0000000180010d58     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d68       $unwind$sf_c2_Controller_ABS_VLC_AYC_ALGO2_third_party_uses_info 0000000180010d68     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d70       $unwind$sf_c2_Controller_ABS_VLC_AYC_ALGO2_jit_fallback_info 0000000180010d70     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d80       $unwind$sf_c2_Controller_ABS_VLC_AYC_ALGO2_updateBuildInfo_args_info 0000000180010d80     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d88       $unwind$sf_get_sim_state_info_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010d88     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d90       $unwind$sf_opaque_initialize_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010d90     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000d98       $unwind$sf_opaque_enable_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010d98     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000da0       $unwind$sf_opaque_disable_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010da0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000da8       $unwind$sf_opaque_gateway_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010da8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000db0       $unwind$sf_opaque_get_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010db0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000db8       $unwind$sf_opaque_set_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010db8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000dc0       $unwind$sf_opaque_terminate_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010dc0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000dc8       $unwind$mdlProcessParameters_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010dc8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000dd0       $unwind$mdlSetWorkWidths_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010dd0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000dd8       $unwind$mdlRTW_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010dd8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000de0       $unwind$mdlStart_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180010de0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0002:00000de8       $unwind$mexFunction        0000000180010de8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000df0       $unwind$_ssSetInputPortDirectFeedThroughFcn 0000000180010df0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000df8       $unwind$_ssGetInputPortSignalPtrsFcn 0000000180010df8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e00       $unwind$_ssGetInputPortSignalFcn 0000000180010e00     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e08       $unwind$_ssSetInputPortReusableFcn 0000000180010e08     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e18       $unwind$_ssSetOutputPortReusableFcn 0000000180010e18     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e28       $unwind$_ssSetSymbolicDimsSupport 0000000180010e28     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e30       $unwind$_ssRegisterSymbolicDimsExpr 0000000180010e30     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e38       $unwind$_ssRegisterSymbolicDims 0000000180010e38     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e40       $unwind$_ssRegisterSymbolicDimsString 0000000180010e40     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e48       $unwind$_ssRegisterSymbolicDimsIntValue 0000000180010e48     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e50       $unwind$_ssRegisterSymbolicDimsPlus 0000000180010e50     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e58       $unwind$_ssRegisterSymbolicDimsMinus 0000000180010e58     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e60       $unwind$_ssRegisterSymbolicDimsMultiply 0000000180010e60     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e68       $unwind$_ssRegisterSymbolicDimsDivide 0000000180010e68     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e70       $unwind$_ssGetNumSymbolicDims 0000000180010e70     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e78       $unwind$_ssGetSymbolicDim  0000000180010e78     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e80       $unwind$_ssSetInputPortSymbolicDimsId 0000000180010e80     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e88       $unwind$_ssGetCompInputPortSymbolicDimsId 0000000180010e88     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e90       $unwind$_ssSetCompInputPortSymbolicDimsId 0000000180010e90     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000e98       $unwind$_ssSetOutputPortSymbolicDimsId 0000000180010e98     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000ea0       $unwind$_ssGetCompOutputPortSymbolicDimsId 0000000180010ea0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000ea8       $unwind$_ssSetCompOutputPortSymbolicDimsId 0000000180010ea8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000eb0       $unwind$_ssSetCompDWorkSymbolicDimsId 0000000180010eb0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000eb8       $unwind$ssGetIsZeroCrossControlDisabled 0000000180010eb8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000ec0       $unwind$ssSetIsInputPortUsedForContZcSignal 0000000180010ec0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000ec8       $unwind$ssSetZcSignalIsZcElementDisc 0000000180010ec8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000ed8       $unwind$ssSetZcSignalName  0000000180010ed8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000ee0       $unwind$ssSetZcSignalWidth 0000000180010ee0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000ee8       $unwind$ssSetZcSignalZcEventType 0000000180010ee8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000ef0       $unwind$ssSetZcSignalType  0000000180010ef0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000ef8       $unwind$ssSetZcSignalZcTol 0000000180010ef8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f00       $unwind$ssSetZcSignalNeedsEventNotification 0000000180010f00     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f08       $unwind$ssCreateAndAddZcSignalInfo 0000000180010f08     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f10       $unwind$ssCloneAndAddZcSignalInfo 0000000180010f10     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f18       $unwind$ssGetNumZcSignals  0000000180010f18     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f20       $unwind$ssGetZcSignalVector 0000000180010f20     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f28       $unwind$ssGetZcSignalName  0000000180010f28     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f30       $unwind$ssGetZcSignalWidth 0000000180010f30     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f38       $unwind$ssGetZcSignalZcEventType 0000000180010f38     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f40       $unwind$ssGetZcSignalZcEvents 0000000180010f40     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f48       $unwind$ssGetZcSignalType  0000000180010f48     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f50       $unwind$ssGetZcSignalZcTol 0000000180010f50     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f58       $unwind$ssGetZcSignalNeedsEventNotification 0000000180010f58     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f60       $unwind$ssGetZcSignalIsZcElementDisc 0000000180010f60     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f70       $unwind$ssGetIsInputPortElementContinuous 0000000180010f70     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f80       $unwind$ssGetDTypeIdFromMxArray 0000000180010f80     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f88       $unwind$ssWriteRTWStr      0000000180010f88     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f90       $unwind$ssWriteRTWNameValuePair 0000000180010f90     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000f98       $unwind$ssWriteRTWParamSettings 0000000180010f98     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000fa0       $unwind$ssWriteRTWParameters 0000000180010fa0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000fa8       $unwind$ssWriteRTWWorkVect 0000000180010fa8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000fbc       $unwind$ssWriteRTWMxVectParam 0000000180010fbc     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000fc4       $unwind$ssWriteRTWMx2dMatParam 0000000180010fc4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000fcc       $unwind$_ssSetInputPortMatrixDimensions 0000000180010fcc     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000fd8       $unwind$_ssSetOutputPortMatrixDimensions 0000000180010fd8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000fe4       $unwind$_ssSetInputPortVectorDimension 0000000180010fe4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000ff0       $unwind$_ssSetOutputPortVectorDimension 0000000180010ff0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00000ffc       $unwind$ssIsRunTimeParamTunable 0000000180010ffc     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001004       $unwind$ssGetSFuncBlockHandle 0000000180011004     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:0000100c       $unwind$_ssGetCurrentInputPortWidth 000000018001100c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001014       $unwind$_ssGetCurrentOutputPortWidth 0000000180011014     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:0000101c       $unwind$_ssGetCallSystemNumFcnCallDestinations 000000018001101c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001024       $unwind$ssGetParameterTuningCompliance 0000000180011024     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:0000102c       $unwind$ssWarning          000000018001102c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001040       $unwind$_ssGetAbsTol       0000000180011040     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001048       $unwind$sf_process_check_sum_call 0000000180011048     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001050       $unwind$sf_process_autoinheritance_call 0000000180011050     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001060       $unwind$sf_process_get_third_party_uses_info_call 0000000180011060     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001070       $unwind$sf_process_get_jit_fallback_info_call 0000000180011070     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001080       $unwind$sf_process_get_updateBuildInfo_args_info_call 0000000180011080     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001090       $unwind$sf_process_get_eml_resolved_functions_info_call 0000000180011090     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000010a0       $unwind$sf_mex_unlock_call 00000001800110a0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000010b0       $unwind$sf_debug_api_wrapper 00000001800110b0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000010b8       $unwind$ProcessMexSfunctionCmdLineCall 00000001800110b8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000010c0       $unwind$sf_machine_global_initializer_called 00000001800110c0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000010c8       $unwind$sf_machine_global_method_dispatcher 00000001800110c8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000010d0       $unwind$sf_machine_global_terminator 00000001800110d0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000010d8       $unwind$sf_register_machine_exported_symbols 00000001800110d8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000010e0       $unwind$sf_machine_global_initializer 00000001800110e0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000010e8       $unwind$mdlGetSimState     00000001800110e8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000010f0       $unwind$mdlSetSimState     00000001800110f0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000010f8       $unwind$mdlSetWorkWidths   00000001800110f8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001100       $unwind$mdlProcessParameters 0000000180011100     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001108       $unwind$mdl_start_processing 0000000180011108     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001110       $unwind$mdl_terminate_processing 0000000180011110     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001118       $unwind$mdlStart           0000000180011118     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001120       $unwind$mdlTerminate       0000000180011120     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001128       $unwind$mdlInitializeSizes 0000000180011128     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001130       $unwind$mdlInitializeSampleTimes 0000000180011130     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001138       $unwind$mdl_outputs_continuous_legacy 0000000180011138     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001140       $unwind$mdl_outputs_processing 0000000180011140     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001148       $unwind$mdl_zeroCrossings_processing 0000000180011148     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001150       $unwind$mdlZeroCrossings   0000000180011150     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001158       $unwind$mdl_derivatives_processing 0000000180011158     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001160       $unwind$mdlDerivatives     0000000180011160     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001168       $unwind$mdl_initialize_conditions_processing 0000000180011168     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001170       $unwind$mdlInitializeConditions 0000000180011170     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001178       $unwind$mdl_ext_mode_exec_processing 0000000180011178     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001180       $unwind$mdlExtModeExec     0000000180011180     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001188       $unwind$mdlRTW             0000000180011188     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001190       $unwind$mdl_enable_processing 0000000180011190     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001198       $unwind$mdlEnable          0000000180011198     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000011a0       $unwind$mdl_disable_processing 00000001800111a0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000011a8       $unwind$mdlDisable         00000001800111a8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000011b0       $unwind$mdlOutputs         00000001800111b0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000011b8       $unwind$mdl_update_processing 00000001800111b8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000011c0       $unwind$mdlUpdate          00000001800111c0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000011c8       $unwind$ProcessMexSfunctionEveryCall 00000001800111c8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000011d0       $unwind$_RegNumInputPortsCB 00000001800111d0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000011d8       $unwind$_RegNumOutputPortsCB 00000001800111d8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000011e0       $unwind$_CreateSimStruct   00000001800111e0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000011e8       $unwind$_ssFatalError      00000001800111e8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:000011f8       $unwind$_ProcessMexSfunctionCmdLineCall 00000001800111f8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0002:00001208       $unwind$__report_securityfailure 0000000180011208     MSVCRT:gs_report.obj
+ 0002:00001210       $unwind$__report_securityfailureEx 0000000180011210     MSVCRT:gs_report.obj
+ 0002:00001218       $unwind$__report_rangecheckfailure 0000000180011218     MSVCRT:gs_report.obj
+ 0002:00001220       $unwind$__raise_securityfailure 0000000180011220     MSVCRT:gs_report.obj
+ 0002:00001228       $unwind$__report_gsfailure 0000000180011228     MSVCRT:gs_report.obj
+ 0002:00001230       $unwind$__GSHandlerCheckCommon 0000000180011230     MSVCRT:gshandler.obj
+ 0002:00001238       $unwind$__GSHandlerCheck   0000000180011238     MSVCRT:gshandler.obj
+ 0002:00001240       $xdatasym                  0000000180011240     MSVCRT:amdsecgs.obj
+ 0002:00001244       $unwind$_CRT_INIT          0000000180011244     MSVCRT:crtdll.obj
+ 0002:00001260       $unwind$pre_c_init         0000000180011260     MSVCRT:crtdll.obj
+ 0002:00001268       $unwind$__DllMainCRTStartup 0000000180011268     MSVCRT:crtdll.obj
+ 0002:000012a4       $unwind$__DllMainCRTStartup$filt$0 00000001800112a4     MSVCRT:crtdll.obj
+ 0002:000012ac       $unwind$__DllMainCRTStartup$fin$1 00000001800112ac     MSVCRT:crtdll.obj
+ 0002:000012b4       $unwind$_DllMainCRTStartup 00000001800112b4     MSVCRT:crtdll.obj
+ 0002:000012c4       $unwind$_IsNonwritableInCurrentImage 00000001800112c4     MSVCRT:pesect.obj
+ 0002:000012e8       $unwind$_IsNonwritableInCurrentImage$filt$0 00000001800112e8     MSVCRT:pesect.obj
+ 0002:000012f0       $unwind$atexit             00000001800112f0     MSVCRT:atonexit.obj
+ 0002:000012f8       $unwind$_onexit            00000001800112f8     MSVCRT:atonexit.obj
+ 0002:00001318       $unwind$_onexit$fin$0      0000000180011318     MSVCRT:atonexit.obj
+ 0002:00001320       $unwind$__atonexitinit     0000000180011320     MSVCRT:atonexit.obj
+ 0002:00001328       $unwind$__security_init_cookie 0000000180011328     MSVCRT:gs_support.obj
+ 0002:00001334       $unwind$DllMain            0000000180011334     MSVCRT:dllmain.obj
+ 0002:0000133c       $unwind$_RTC_Initialize    000000018001133c     MSVCRT:initsect.obj
+ 0002:00001348       $unwind$_RTC_Terminate     0000000180011348     MSVCRT:initsect.obj
+ 0002:00001360       .edata                     0000000180011360     Controller_ABS_VLC_AYC_ALGO2_sfun.exp
+ 0002:00001388       rgpv                       0000000180011388     Controller_ABS_VLC_AYC_ALGO2_sfun.exp
+ 0002:0000138c       rgszName                   000000018001138c     Controller_ABS_VLC_AYC_ALGO2_sfun.exp
+ 0002:00001390       rgwOrd                     0000000180011390     Controller_ABS_VLC_AYC_ALGO2_sfun.exp
+ 0002:00001392       szName                     0000000180011392     Controller_ABS_VLC_AYC_ALGO2_sfun.exp
+ 0002:000013bb       $N00001                    00000001800113bb     Controller_ABS_VLC_AYC_ALGO2_sfun.exp
+ 0002:00002148       .idata$6                   0000000180012148     sf_runtime:sf_runtime.dll
+ 0002:000022c0       .idata$6                   00000001800122c0     libmx:libmx.dll
+ 0002:00002342       .idata$6                   0000000180012342     libmex:libmex.dll
+ 0002:00002364       .idata$6                   0000000180012364     libut:libut.dll
+ 0002:00002384       .idata$6                   0000000180012384     libmwmathutil:libmwmathutil.dll
+ 0002:00002468       .idata$6                   0000000180012468     MSVCRT:MSVCR120.dll
+ 0002:000025fe       .idata$6                   00000001800125fe     kernel32:KERNEL32.dll
+ 0003:00000000       $SG17417                   0000000180013000     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000020       $SG17426                   0000000180013020     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000038       $SG17451                   0000000180013038     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000050       $SG17460                   0000000180013050     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000068       $SG17485                   0000000180013068     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000088       $SG17494                   0000000180013088     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:000000a0       $SG17502                   00000001800130a0     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:000000a8       $SG17503                   00000001800130a8     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:000000c8       $SG17528                   00000001800130c8     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:000000e8       $SG17529                   00000001800130e8     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000108       $SG17263                   0000000180013108     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000120       $SG17269                   0000000180013120     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000128       $SG17280                   0000000180013128     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000134       $SG17291                   0000000180013134     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:0000013c       $SG17313                   000000018001313c     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000148       $SG17350                   0000000180013148     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000168       $SG17362                   0000000180013168     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00000180       $SG17383                   0000000180013180     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:000001a0       $SG17449                   00000001800131a0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000001a4       $SG17451                   00000001800131a4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000001a8       $SG17460                   00000001800131a8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000001b0       $SG17461                   00000001800131b0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000001b8       $SG17465                   00000001800131b8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000001e4       $SG17551                   00000001800131e4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000001ec       $SG17554                   00000001800131ec     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000001f0       $SG17466                   00000001800131f0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000021c       $SG17552                   000000018001321c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000224       $SG17555                   0000000180013224     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000022c       $SG17565                   000000018001322c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000234       $SG17567                   0000000180013234     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000238       $SG17564                   0000000180013238     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000240       $SG17568                   0000000180013240     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000248       $SG17576                   0000000180013248     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000250       $SG17577                   0000000180013250     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000258       $SG17582                   0000000180013258     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000025c       $SG17583                   000000018001325c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000264       $SG17601                   0000000180013264     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000026c       $SG17602                   000000018001326c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000274       $SG17607                   0000000180013274     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000278       $SG17608                   0000000180013278     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000280       $SG17658                   0000000180013280     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000284       $SG17729                   0000000180013284     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000288       $SG17745                   0000000180013288     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000028c       $SG17788                   000000018001328c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000290       $SG17822                   0000000180013290     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002a0       $SG17838                   00000001800132a0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002a4       $SG17922                   00000001800132a4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002ac       $SG18064                   00000001800132ac     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002b0       $SG17920                   00000001800132b0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002bc       $SG17923                   00000001800132bc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002c4       $SG18119                   00000001800132c4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002c8       $SG17921                   00000001800132c8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002d4       $SG17928                   00000001800132d4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002dc       $SG18120                   00000001800132dc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002e0       $SG17924                   00000001800132e0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002ec       $SG18121                   00000001800132ec     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002f0       $SG17925                   00000001800132f0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000002fc       $SG17249                   00000001800132fc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000300       $SG17926                   0000000180013300     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000308       $SG17927                   0000000180013308     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000310       $SG17929                   0000000180013310     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000318       $SG17930                   0000000180013318     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000328       $SG17931                   0000000180013328     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000338       $SG17934                   0000000180013338     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000350       $SG17935                   0000000180013350     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000035c       $SG17937                   000000018001335c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000364       $SG17938                   0000000180013364     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000036c       $SG17939                   000000018001336c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000374       $SG17940                   0000000180013374     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000037c       $SG17950                   000000018001337c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000384       $SG18012                   0000000180013384     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000038c       $SG17250                   000000018001338c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000390       $SG17941                   0000000180013390     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000039c       $SG17251                   000000018001339c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000003a0       $SG17942                   00000001800133a0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000003ac       $SG17946                   00000001800133ac     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000003b4       $SG17948                   00000001800133b4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000003bc       $SG17949                   00000001800133bc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000003c4       $SG17951                   00000001800133c4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000003cc       $SG18041                   00000001800133cc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000003d8       $SG17952                   00000001800133d8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000003f0       $SG17953                   00000001800133f0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000404       $SG17955                   0000000180013404     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000040c       $SG17956                   000000018001340c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000418       $SG17957                   0000000180013418     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000042c       $SG17958                   000000018001342c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000438       $SG17959                   0000000180013438     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000444       $SG17962                   0000000180013444     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000044c       $SG17964                   000000018001344c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000454       $SG17965                   0000000180013454     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000045c       $SG17966                   000000018001345c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000464       $SG17967                   0000000180013464     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000470       $SG17968                   0000000180013470     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000488       $SG17969                   0000000180013488     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000049c       $SG17971                   000000018001349c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000004a4       $SG17972                   00000001800134a4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000004b0       $SG17973                   00000001800134b0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000004c4       $SG17974                   00000001800134c4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000004d0       $SG17975                   00000001800134d0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000004dc       $SG17980                   00000001800134dc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000004e4       $SG17982                   00000001800134e4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000004ec       $SG17983                   00000001800134ec     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000004f4       $SG17984                   00000001800134f4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000004fc       $SG17985                   00000001800134fc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000508       $SG17986                   0000000180013508     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000520       $SG17987                   0000000180013520     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000534       $SG17989                   0000000180013534     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000053c       $SG17990                   000000018001353c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000548       $SG17991                   0000000180013548     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000055c       $SG17992                   000000018001355c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000568       $SG17993                   0000000180013568     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000574       $SG17998                   0000000180013574     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000057c       $SG18000                   000000018001357c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000584       $SG18001                   0000000180013584     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000058c       $SG18002                   000000018001358c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000594       $SG18003                   0000000180013594     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000005a0       $SG18004                   00000001800135a0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000005b8       $SG18005                   00000001800135b8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000005cc       $SG18007                   00000001800135cc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000005d4       $SG18008                   00000001800135d4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000005e0       $SG18009                   00000001800135e0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000005f4       $SG18010                   00000001800135f4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000600       $SG18011                   0000000180013600     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000610       $SG18013                   0000000180013610     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000061c       $SG18015                   000000018001361c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000624       $SG18016                   0000000180013624     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000062c       $SG18017                   000000018001362c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000634       $SG18018                   0000000180013634     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000640       $SG18019                   0000000180013640     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000650       $SG18020                   0000000180013650     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000065c       $SG18026                   000000018001365c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000664       $SG18028                   0000000180013664     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000066c       $SG18029                   000000018001366c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000674       $SG18030                   0000000180013674     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:0000067c       $SG18031                   000000018001367c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000688       $SG18032                   0000000180013688     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000006a0       $SG18033                   00000001800136a0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000006b4       $SG18035                   00000001800136b4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000006bc       $SG18036                   00000001800136bc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000006c8       $SG18037                   00000001800136c8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000006dc       $SG18038                   00000001800136dc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000006e8       $SG18039                   00000001800136e8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000006f8       $SG18040                   00000001800136f8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000700       $SG18043                   0000000180013700     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000710       $SG18052                   0000000180013710     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000720       $SG18053                   0000000180013720     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000730       $SG18054                   0000000180013730     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000740       $SG18055                   0000000180013740     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000750       $SG18056                   0000000180013750     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000768       $SG18057                   0000000180013768     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000780       $SG18058                   0000000180013780     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000798       $SG18059                   0000000180013798     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000007b0       $SG18060                   00000001800137b0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000007c8       $SG18061                   00000001800137c8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000007e0       $SG18066                   00000001800137e0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000007f0       $SG18068                   00000001800137f0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000007f8       $SG18080                   00000001800137f8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000820       $SG18081                   0000000180013820     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000848       $SG18082                   0000000180013848     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000868       $SG18083                   0000000180013868     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000888       $SG18090                   0000000180013888     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000008b0       $SG18091                   00000001800138b0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000008d0       $SG18096                   00000001800138d0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000008e0       $SG18097                   00000001800138e0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000008f0       $SG18098                   00000001800138f0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000008f8       $SG18099                   00000001800138f8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000900       $SG18102                   0000000180013900     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000980       $SG18103                   0000000180013980     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:000009fc       $SG18118                   00000001800139fc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000a04       $SG18122                   0000000180013a04     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000a10       $SG18128                   0000000180013a10     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000a20       $SG18169                   0000000180013a20     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000a38       $SG18259                   0000000180013a38     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000a60       c2_debug_family_names      0000000180013a60     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000aa8       $SG17244                   0000000180013aa8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000ab0       $SG17245                   0000000180013ab0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000ab8       $SG17246                   0000000180013ab8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000ac0       $SG17247                   0000000180013ac0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000ac8       $SG17248                   0000000180013ac8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000ad0       $SG17252                   0000000180013ad0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000ad8       $SG18282                   0000000180013ad8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000ae8       $SG18283                   0000000180013ae8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000b00       $SG18293                   0000000180013b00     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000b30       $SG18321                   0000000180013b30     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00000bb0       $SG19459                   0000000180013bb0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000be0       $SG19468                   0000000180013be0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000c18       $SG19473                   0000000180013c18     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000c4c       $SG17582                   0000000180013c4c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000c54       $SG19223                   0000000180013c54     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000c58       $SG17425                   0000000180013c58     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000c68       $SG19481                   0000000180013c68     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000ca0       $SG19489                   0000000180013ca0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000cd8       $SG19497                   0000000180013cd8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000d08       $SG19505                   0000000180013d08     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000d38       $SG19512                   0000000180013d38     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000d64       $SG19296                   0000000180013d64     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000d68       $SG17468                   0000000180013d68     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000d80       $SG19519                   0000000180013d80     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000db0       $SG19524                   0000000180013db0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000de0       $SG19532                   0000000180013de0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000e10       $SG19540                   0000000180013e10     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000e48       $SG19545                   0000000180013e48     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000e80       $SG17499                   0000000180013e80     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000ea0       $SG19553                   0000000180013ea0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000ed0       $SG19559                   0000000180013ed0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000ef8       $SG19564                   0000000180013ef8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000f18       $SG19569                   0000000180013f18     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000f48       $SG19574                   0000000180013f48     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000f68       $SG19579                   0000000180013f68     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000f88       $SG19584                   0000000180013f88     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000fa8       $SG19589                   0000000180013fa8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000fd0       $SG19594                   0000000180013fd0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00000ff8       $SG19599                   0000000180013ff8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001020       $SG18578                   0000000180014020     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001060       $SG18583                   0000000180014060     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001090       $SG19608                   0000000180014090     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000010b0       $SG18588                   00000001800140b0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000010f8       $SG19613                   00000001800140f8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001120       $SG19617                   0000000180014120     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001148       $SG19625                   0000000180014148     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001170       $SG18602                   0000000180014170     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000011a8       $SG17583                   00000001800141a8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000011c0       $SG19632                   00000001800141c0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000011e8       $SG17588                   00000001800141e8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000011f0       $SG17589                   00000001800141f0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001210       $SG17729                   0000000180014210     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001238       _sfcnName                  0000000180014238     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001258       $SG18882                   0000000180014258     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001290       $SG17746                   0000000180014290     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001308       $SG18874                   0000000180014308     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001348       $SG18896                   0000000180014348     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001368       $SG18041                   0000000180014368     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001370       $SG18042                   0000000180014370     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001378       $SG18063                   0000000180014378     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001388       $SG18087                   0000000180014388     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001394       $SG18089                   0000000180014394     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000013a0       $SG18092                   00000001800143a0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000013b0       $SG19220                   00000001800143b0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000013f0       $SG19242                   00000001800143f0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000013f8       $SG19243                   00000001800143f8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001400       $SG19244                   0000000180014400     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001408       $SG19250                   0000000180014408     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001410       $SG19245                   0000000180014410     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001478       $SG19248                   0000000180014478     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000014b8       $SG19253                   00000001800144b8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000014c0       $SG19256                   00000001800144c0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000014c8       $SG19258                   00000001800144c8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000014f8       $SG19260                   00000001800144f8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001508       $SG19288                   0000000180014508     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001514       $SG19290                   0000000180014514     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:0000151c       $SG19292                   000000018001451c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001528       $SG19294                   0000000180014528     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001538       $SG17247                   0000000180014538     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001558       $SG17252                   0000000180014558     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001578       $SG19321                   0000000180014578     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000015b0       $SG19302                   00000001800145b0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001658       $SG19324                   0000000180014658     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001690       $SG19328                   0000000180014690     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000016d8       $SG17285                   00000001800146d8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000016f8       $SG17290                   00000001800146f8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001718       $SG19357                   0000000180014718     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001720       $SG19334                   0000000180014720     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001768       $SG19337                   0000000180014768     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001788       $SG19359                   0000000180014788     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000017a0       $SG19361                   00000001800147a0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001840       $SG17323                   0000000180014840     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001858       $SG17328                   0000000180014858     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001878       $SG17361                   0000000180014878     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001898       $SG19434                   0000000180014898     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000018c8       $SG19442                   00000001800148c8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000018f0       $SG18360                   00000001800148f0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001960       $SG18370                   0000000180014960     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000019d0       $SG17366                   00000001800149d0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:000019f0       $SG17399                   00000001800149f0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001a10       $SG19450                   0000000180014a10     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001a40       $SG17404                   0000000180014a40     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001a80       sRtwOptimizationInfoStruct 0000000180014a80     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00001a88       sOptimizationInfoFlags     0000000180014a88     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0003:00001a90       $SG18070                   0000000180014a90     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00001a91       $SG18072                   0000000180014a91     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00001a92       $SG18087                   0000000180014a92     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00001a98       _sfTime_                   0000000180014a98     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0003:00001aa0       sfGlobalMdlStartCallCounts 0000000180014aa0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001aa4       $SG19237                   0000000180014aa4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001ab0       ?errmsg@?O@??ssWriteRTWWorkVect@@9@9 0000000180014ab0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0003:00001b80       GS_ExceptionRecord         0000000180014b80     MSVCRT:gs_report.obj
+ 0003:00001c20       GS_ContextRecord           0000000180014c20     MSVCRT:gs_report.obj
+ 0003:000020f0       DebuggerWasPresent         00000001800150f0     MSVCRT:gs_report.obj
+ 0003:000020f4       __proc_attached            00000001800150f4     MSVCRT:crtdll.obj
+ 0004:00000000       $pdata$load_Controller_ABS_VLC_AYC_ALGO2_optimization_info 0000000180016000     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0004:0000000c       $pdata$unload_Controller_ABS_VLC_AYC_ALGO2_optimization_info 000000018001600c     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0004:00000018       $pdata$sf_Controller_ABS_VLC_AYC_ALGO2_method_dispatcher 0000000180016018     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0004:00000024       $pdata$sf_Controller_ABS_VLC_AYC_ALGO2_process_check_sum_call 0000000180016024     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0004:00000030       $pdata$sf_Controller_ABS_VLC_AYC_ALGO2_autoinheritance_info 0000000180016030     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0004:0000003c       $pdata$sf_Controller_ABS_VLC_AYC_ALGO2_get_eml_resolved_functions_info 000000018001603c     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0004:00000048       $pdata$sf_Controller_ABS_VLC_AYC_ALGO2_third_party_uses_info 0000000180016048     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0004:00000054       $pdata$sf_Controller_ABS_VLC_AYC_ALGO2_jit_fallback_info 0000000180016054     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0004:00000060       $pdata$sf_Controller_ABS_VLC_AYC_ALGO2_updateBuildInfo_args_info 0000000180016060     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0004:0000006c       $pdata$Controller_ABS_VLC_AYC_ALGO2_debug_initialize 000000018001606c     Controller_ABS_VLC_AYC_ALGO2_sfun.obj
+ 0004:00000078       $pdata$sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_eml_resolved_functions_info 0000000180016078     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000084       $pdata$sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_check_sum 0000000180016084     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000090       $pdata$c2_Controller_ABS_VLC_AYC_ALGO2_method_dispatcher 0000000180016090     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:0000009c       $pdata$chart_debug_initialization 000000018001609c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000000a8       $pdata$chart_debug_initialize_data_addresses 00000001800160a8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000000b4       $pdata$initialize_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800160b4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000000c0       $pdata$enable_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800160c0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000000cc       $pdata$disable_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800160cc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000000d8       $pdata$get_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800160d8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000000e4       $pdata$set_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800160e4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000000f0       $pdata$sf_gateway_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800160f0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000000fc       $pdata$c2_sf_marshallOut   00000001800160fc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000108       $pdata$c2_emlrt_marshallIn 0000000180016108     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000114       $pdata$c2_b_emlrt_marshallIn 0000000180016114     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000120       $pdata$c2_sf_marshallIn    0000000180016120     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:0000012c       $pdata$c2_b_sf_marshallOut 000000018001612c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000138       $pdata$c2_c_sf_marshallOut 0000000180016138     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000144       $pdata$c2_c_emlrt_marshallIn 0000000180016144     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000150       $pdata$c2_b_sf_marshallIn  0000000180016150     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:0000015c       $pdata$c2_d_sf_marshallOut 000000018001615c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000168       $pdata$c2_d_emlrt_marshallIn 0000000180016168     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000174       $pdata$c2_c_sf_marshallIn  0000000180016174     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000180       $pdata$c2_f_emlrt_marshallIn 0000000180016180     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:0000018c       $pdata$c2_g_emlrt_marshallIn 000000018001618c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000198       $pdata$init_simulink_io_address 0000000180016198     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000001a4       $pdata$sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_post_codegen_info 00000001800161a4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000001b0       $pdata$sf_c2_Controller_ABS_VLC_AYC_ALGO2_get_autoinheritance_info 00000001800161b0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000001bc       $pdata$sf_c2_Controller_ABS_VLC_AYC_ALGO2_third_party_uses_info 00000001800161bc     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000001c8       $pdata$sf_c2_Controller_ABS_VLC_AYC_ALGO2_jit_fallback_info 00000001800161c8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000001d4       $pdata$sf_c2_Controller_ABS_VLC_AYC_ALGO2_updateBuildInfo_args_info 00000001800161d4     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000001e0       $pdata$sf_get_sim_state_info_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800161e0     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000001ec       $pdata$sf_opaque_initialize_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800161ec     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:000001f8       $pdata$sf_opaque_enable_c2_Controller_ABS_VLC_AYC_ALGO2 00000001800161f8     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000204       $pdata$sf_opaque_disable_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180016204     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000210       $pdata$sf_opaque_gateway_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180016210     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:0000021c       $pdata$sf_opaque_get_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 000000018001621c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000228       $pdata$sf_opaque_set_sim_state_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180016228     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000234       $pdata$sf_opaque_terminate_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180016234     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000240       $pdata$mdlProcessParameters_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180016240     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:0000024c       $pdata$mdlSetWorkWidths_c2_Controller_ABS_VLC_AYC_ALGO2 000000018001624c     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000258       $pdata$mdlRTW_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180016258     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000264       $pdata$mdlStart_c2_Controller_ABS_VLC_AYC_ALGO2 0000000180016264     c2_Controller_ABS_VLC_AYC_ALGO2.obj
+ 0004:00000270       $pdata$mexFunction         0000000180016270     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000027c       $pdata$_ssSetInputPortDirectFeedThroughFcn 000000018001627c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000288       $pdata$_ssGetInputPortSignalPtrsFcn 0000000180016288     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000294       $pdata$_ssGetInputPortSignalFcn 0000000180016294     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000002a0       $pdata$_ssSetInputPortReusableFcn 00000001800162a0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000002ac       $pdata$_ssSetOutputPortReusableFcn 00000001800162ac     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000002b8       $pdata$_ssSetSymbolicDimsSupport 00000001800162b8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000002c4       $pdata$_ssRegisterSymbolicDimsExpr 00000001800162c4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000002d0       $pdata$_ssRegisterSymbolicDims 00000001800162d0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000002dc       $pdata$_ssRegisterSymbolicDimsString 00000001800162dc     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000002e8       $pdata$_ssRegisterSymbolicDimsIntValue 00000001800162e8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000002f4       $pdata$_ssRegisterSymbolicDimsPlus 00000001800162f4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000300       $pdata$_ssRegisterSymbolicDimsMinus 0000000180016300     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000030c       $pdata$_ssRegisterSymbolicDimsMultiply 000000018001630c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000318       $pdata$_ssRegisterSymbolicDimsDivide 0000000180016318     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000324       $pdata$_ssGetNumSymbolicDims 0000000180016324     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000330       $pdata$_ssGetSymbolicDim   0000000180016330     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000033c       $pdata$_ssSetInputPortSymbolicDimsId 000000018001633c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000348       $pdata$_ssGetCompInputPortSymbolicDimsId 0000000180016348     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000354       $pdata$_ssSetCompInputPortSymbolicDimsId 0000000180016354     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000360       $pdata$_ssSetOutputPortSymbolicDimsId 0000000180016360     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000036c       $pdata$_ssGetCompOutputPortSymbolicDimsId 000000018001636c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000378       $pdata$_ssSetCompOutputPortSymbolicDimsId 0000000180016378     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000384       $pdata$_ssSetCompDWorkSymbolicDimsId 0000000180016384     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000390       $pdata$ssGetIsZeroCrossControlDisabled 0000000180016390     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000039c       $pdata$ssSetIsInputPortUsedForContZcSignal 000000018001639c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000003a8       $pdata$ssSetZcSignalIsZcElementDisc 00000001800163a8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000003b4       $pdata$ssSetZcSignalName   00000001800163b4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000003c0       $pdata$ssSetZcSignalWidth  00000001800163c0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000003cc       $pdata$ssSetZcSignalZcEventType 00000001800163cc     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000003d8       $pdata$ssSetZcSignalType   00000001800163d8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000003e4       $pdata$ssSetZcSignalZcTol  00000001800163e4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000003f0       $pdata$ssSetZcSignalNeedsEventNotification 00000001800163f0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000003fc       $pdata$ssCreateAndAddZcSignalInfo 00000001800163fc     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000408       $pdata$ssCloneAndAddZcSignalInfo 0000000180016408     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000414       $pdata$ssGetNumZcSignals   0000000180016414     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000420       $pdata$ssGetZcSignalVector 0000000180016420     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000042c       $pdata$ssGetZcSignalName   000000018001642c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000438       $pdata$ssGetZcSignalWidth  0000000180016438     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000444       $pdata$ssGetZcSignalZcEventType 0000000180016444     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000450       $pdata$ssGetZcSignalZcEvents 0000000180016450     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000045c       $pdata$ssGetZcSignalType   000000018001645c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000468       $pdata$ssGetZcSignalZcTol  0000000180016468     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000474       $pdata$ssGetZcSignalNeedsEventNotification 0000000180016474     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000480       $pdata$ssGetZcSignalIsZcElementDisc 0000000180016480     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000048c       $pdata$ssGetIsInputPortElementContinuous 000000018001648c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000498       $pdata$ssGetDTypeIdFromMxArray 0000000180016498     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000004a4       $pdata$ssWriteRTWStr       00000001800164a4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000004b0       $pdata$ssWriteRTWNameValuePair 00000001800164b0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000004bc       $pdata$ssWriteRTWParamSettings 00000001800164bc     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000004c8       $pdata$ssWriteRTWParameters 00000001800164c8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000004d4       $pdata$ssWriteRTWWorkVect  00000001800164d4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000004e0       $pdata$ssWriteRTWMxVectParam 00000001800164e0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000004ec       $pdata$ssWriteRTWMx2dMatParam 00000001800164ec     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000004f8       $pdata$_ssSetInputPortMatrixDimensions 00000001800164f8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000504       $pdata$_ssSetOutputPortMatrixDimensions 0000000180016504     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000510       $pdata$_ssSetInputPortVectorDimension 0000000180016510     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000051c       $pdata$_ssSetOutputPortVectorDimension 000000018001651c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000528       $pdata$ssIsRunTimeParamTunable 0000000180016528     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000534       $pdata$ssGetSFuncBlockHandle 0000000180016534     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000540       $pdata$_ssGetCurrentInputPortWidth 0000000180016540     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000054c       $pdata$_ssGetCurrentOutputPortWidth 000000018001654c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000558       $pdata$_ssGetCallSystemNumFcnCallDestinations 0000000180016558     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000564       $pdata$ssGetParameterTuningCompliance 0000000180016564     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000570       $pdata$ssWarning           0000000180016570     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000057c       $pdata$_ssGetAbsTol        000000018001657c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000588       $pdata$sf_process_check_sum_call 0000000180016588     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000594       $pdata$sf_process_autoinheritance_call 0000000180016594     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000005a0       $pdata$sf_process_get_third_party_uses_info_call 00000001800165a0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000005ac       $pdata$sf_process_get_jit_fallback_info_call 00000001800165ac     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000005b8       $pdata$sf_process_get_updateBuildInfo_args_info_call 00000001800165b8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000005c4       $pdata$sf_process_get_eml_resolved_functions_info_call 00000001800165c4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000005d0       $pdata$sf_mex_unlock_call  00000001800165d0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000005dc       $pdata$sf_debug_api_wrapper 00000001800165dc     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000005e8       $pdata$ProcessMexSfunctionCmdLineCall 00000001800165e8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000005f4       $pdata$sf_machine_global_initializer_called 00000001800165f4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000600       $pdata$sf_machine_global_method_dispatcher 0000000180016600     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000060c       $pdata$sf_machine_global_terminator 000000018001660c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000618       $pdata$sf_register_machine_exported_symbols 0000000180016618     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000624       $pdata$sf_machine_global_initializer 0000000180016624     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000630       $pdata$mdlGetSimState      0000000180016630     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000063c       $pdata$mdlSetSimState      000000018001663c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000648       $pdata$mdlSetWorkWidths    0000000180016648     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000654       $pdata$mdlProcessParameters 0000000180016654     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000660       $pdata$mdl_start_processing 0000000180016660     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000066c       $pdata$mdl_terminate_processing 000000018001666c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000678       $pdata$mdlStart            0000000180016678     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000684       $pdata$mdlTerminate        0000000180016684     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000690       $pdata$mdlInitializeSizes  0000000180016690     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000069c       $pdata$mdlInitializeSampleTimes 000000018001669c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000006a8       $pdata$mdl_outputs_continuous_legacy 00000001800166a8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000006b4       $pdata$mdl_outputs_processing 00000001800166b4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000006c0       $pdata$mdl_zeroCrossings_processing 00000001800166c0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000006cc       $pdata$mdlZeroCrossings    00000001800166cc     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000006d8       $pdata$mdl_derivatives_processing 00000001800166d8     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000006e4       $pdata$mdlDerivatives      00000001800166e4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000006f0       $pdata$mdl_initialize_conditions_processing 00000001800166f0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000006fc       $pdata$mdlInitializeConditions 00000001800166fc     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000708       $pdata$mdl_ext_mode_exec_processing 0000000180016708     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000714       $pdata$mdlExtModeExec      0000000180016714     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000720       $pdata$mdlRTW              0000000180016720     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000072c       $pdata$mdl_enable_processing 000000018001672c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000738       $pdata$mdlEnable           0000000180016738     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000744       $pdata$mdl_disable_processing 0000000180016744     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000750       $pdata$mdlDisable          0000000180016750     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000075c       $pdata$mdlOutputs          000000018001675c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000768       $pdata$mdl_update_processing 0000000180016768     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000774       $pdata$mdlUpdate           0000000180016774     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000780       $pdata$ProcessMexSfunctionEveryCall 0000000180016780     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:0000078c       $pdata$_RegNumInputPortsCB 000000018001678c     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:00000798       $pdata$_RegNumOutputPortsCB 0000000180016798     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000007a4       $pdata$_CreateSimStruct    00000001800167a4     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000007b0       $pdata$_ssFatalError       00000001800167b0     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000007bc       $pdata$_ProcessMexSfunctionCmdLineCall 00000001800167bc     Controller_ABS_VLC_AYC_ALGO2_sfun_registry.obj
+ 0004:000007c8       $pdata$__raise_securityfailure 00000001800167c8     MSVCRT:gs_report.obj
+ 0004:000007d4       $pdata$__report_gsfailure  00000001800167d4     MSVCRT:gs_report.obj
+ 0004:000007e0       $pdata$__report_rangecheckfailure 00000001800167e0     MSVCRT:gs_report.obj
+ 0004:000007ec       $pdata$__report_securityfailure 00000001800167ec     MSVCRT:gs_report.obj
+ 0004:000007f8       $pdata$__report_securityfailureEx 00000001800167f8     MSVCRT:gs_report.obj
+ 0004:00000804       $pdata$__GSHandlerCheck    0000000180016804     MSVCRT:gshandler.obj
+ 0004:00000810       $pdata$__GSHandlerCheckCommon 0000000180016810     MSVCRT:gshandler.obj
+ 0004:00000828       $pdata$pre_c_init          0000000180016828     MSVCRT:crtdll.obj
+ 0004:00000834       $pdata$_CRT_INIT           0000000180016834     MSVCRT:crtdll.obj
+ 0004:00000840       $pdata$_DllMainCRTStartup  0000000180016840     MSVCRT:crtdll.obj
+ 0004:0000084c       $pdata$__DllMainCRTStartup 000000018001684c     MSVCRT:crtdll.obj
+ 0004:00000858       $pdata$_IsNonwritableInCurrentImage 0000000180016858     MSVCRT:pesect.obj
+ 0004:00000864       $pdata$__atonexitinit      0000000180016864     MSVCRT:atonexit.obj
+ 0004:00000870       $pdata$_onexit             0000000180016870     MSVCRT:atonexit.obj
+ 0004:0000087c       $pdata$atexit              000000018001687c     MSVCRT:atonexit.obj
+ 0004:00000888       $pdata$__security_init_cookie 0000000180016888     MSVCRT:gs_support.obj
+ 0004:00000894       $pdata$DllMain             0000000180016894     MSVCRT:dllmain.obj
+ 0004:000008a0       $pdata$_RTC_Initialize     00000001800168a0     MSVCRT:initsect.obj
+ 0004:000008ac       $pdata$_RTC_Terminate      00000001800168ac     MSVCRT:initsect.obj
+ 0004:000008b8       $pdata$__DllMainCRTStartup$filt$0 00000001800168b8     MSVCRT:crtdll.obj
+ 0004:000008c4       $pdata$__DllMainCRTStartup$fin$1 00000001800168c4     MSVCRT:crtdll.obj
+ 0004:000008d0       $pdata$_IsNonwritableInCurrentImage$filt$0 00000001800168d0     MSVCRT:pesect.obj
+ 0004:000008dc       $pdata$_onexit$fin$0       00000001800168dc     MSVCRT:atonexit.obj

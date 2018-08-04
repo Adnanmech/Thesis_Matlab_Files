@@ -8,6 +8,20 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','LineSearch')
 %USE ABOVE STATEMENT IF SOLVER HAS CONVERGENCE ERROR!!!!!!!!!!
 
+CF = 90000;
+CR = 90000;
+m = 1350;
+J = 1265.625;
+a = 1.5;
+b = 1.5;
+
+eB = 0.1;
+ePSI = 0.1;
+V = 10;
+Vd = 1;
+
+eml.extrinsic('fcn_LQR');
+[Mz] = myfunction(Vd,V,eB,ePSI);
 
 %% Inputs
 %TFL = 0;               % Torque input of front left tire [Nm]
