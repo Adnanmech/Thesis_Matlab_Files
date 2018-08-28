@@ -40,13 +40,13 @@ Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large
 
 Throttle_Step_Time = 4.0;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
-Throttle_Final_Val = 0.0;        %Final throttle value
+Throttle_Final_Val = 0.05;        %Final throttle value
 
-Steering_Input_Select = 3;      %Steering Angle Selection (1 = No SA)
+Steering_Input_Select = 2;      %Steering Angle Selection (1 = No SA)
 SA_Start_Time = 1;            %Don't Care since channel not selected
 SA_Slope = 1;                   %Don't Care since channel not selected
 
-Vx0 =27.41;                     % Initial vehicle longitude speed [m/s]
+Vx0 =13.41;                     % Initial vehicle longitude speed [m/s]
 %%
 %%
 %VLC Test
@@ -122,10 +122,10 @@ SE_D_Gain = 0.1;
 SE_Alpha_Gain = 60;
 SE_Beta_Gain = 1000;
 
-YAW_P_Gain = 0.0008;
-YAW_D_Gain = 0.0001;
-YAW_Alpha_Gain = 0.01;
-YAW_Beta_Gain = 2;
+YAW_P_Gain = 30;
+YAW_D_Gain = 15;
+YAW_Alpha_Gain = 0.1;
+YAW_Beta_Gain = 4;
 
 R_SA_P_Gain = 0.08;
 R_SA_D_Gain = 0.01;

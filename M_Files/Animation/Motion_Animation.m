@@ -132,7 +132,7 @@ drawnow
 
 %% 5. define the motion coordinates
 step = 1;               % initialize data stepper
-time = 6;               % time of simulation display [seconds]
+time = 5;               % time of simulation display [seconds]
 fps = 40;               % Frames/second desired
 samples_p_sec = 1000;  % Samples per second of model simulation
                
@@ -249,7 +249,7 @@ for i = 1:(samples_taken - 1)
     %set(main_vehicle_plot,'xlim',[-3+latitude(i) 3+latitude(i)]);
     
     %fixed axes limits
-    set(main_vehicle_plot,'ylim',[-20 100]);
+    set(main_vehicle_plot,'ylim',[-20 130]);
     set(main_vehicle_plot,'xlim',[-50 50]);
     
     pause(1/(20000*fps));
