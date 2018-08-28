@@ -38,15 +38,15 @@ Fuzzy_AYC_Ctl      = readfis('Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %A
 %ABS Test
 Split_u_Time_On = 500;          %Set time for split-u to start (Keep off w large time)
 
-Throttle_Step_Time = 4.0;       %Step time of throttle signal
+Throttle_Step_Time = 0;       %Step time of throttle signal
 Throttle_Init_Val = 0;          %Initial throttle value
-Throttle_Final_Val = 0.05;        %Final throttle value
+Throttle_Final_Val = -1;        %Final throttle value
 
-Steering_Input_Select = 2;      %Steering Angle Selection (1 = No SA)
+Steering_Input_Select = 1;      %Steering Angle Selection (1 = No SA)
 SA_Start_Time = 1;            %Don't Care since channel not selected
 SA_Slope = 1;                   %Don't Care since channel not selected
 
-Vx0 =13.41;                     % Initial vehicle longitude speed [m/s]
+Vx0 =26.82;                     % Initial vehicle longitude speed [m/s]
 %%
 %%
 %VLC Test
