@@ -127,7 +127,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.707"
+    ComputedModelVersion    "1.708"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -163,7 +163,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [367.0, 124.0, 1534.0, 947.0]
+      Location		      [289.0, 80.0, 1534.0, 947.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -199,11 +199,11 @@ Model {
 	  LoadSaveID		  "1"
 	  Extents		  [1291.0, 770.0]
 	  ZoomFactor		  [0.59999999999999987]
-	  Offset		  [8.4571428571525757, -410.73333333333346]
+	  Offset		  [397.14047619048733, -376.26666666666756]
 	}
 	Object {
 	  $ObjectID		  8
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "50"
 	  Extents		  [1291.0, 770.0]
@@ -230,12 +230,12 @@ Model {
 	}
 	Object {
 	  $ObjectID		  11
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "1120"
 	  Extents		  [1291.0, 770.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-211.30238095237735, 659.03333333333148]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-840.91904761904334, 377.71666666666465]
 	}
 	Object {
 	  $ObjectID		  12
@@ -256,9 +256,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Aug 28 14:58:55 2018"
-  RTWModifiedTimeStamp	  457369131
-  ModelVersionFormat	  "1.%<AutoIncrement:707>"
+  LastModifiedDate	  "Tue Sep 18 17:45:51 2018"
+  RTWModifiedTimeStamp	  459182638
+  ModelVersionFormat	  "1.%<AutoIncrement:708>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -2030,7 +2030,7 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC_ALGO2"
-    Location		    [367, 124, 1901, 1071]
+    Location		    [289, 80, 1823, 1027]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
@@ -2182,7 +2182,7 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[367, 124, 1901, 1071]
+	Location		[289, 80, 1823, 1027]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
@@ -6653,7 +6653,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Controller1"
-	    Location		    [367, 124, 1901, 1071]
+	    Location		    [289, 80, 1823, 1027]
 	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -6665,7 +6665,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "80"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Velocity [m/s]"
@@ -7199,17 +7199,17 @@ Model {
 	      }
 	      Branch {
 		ZOrder			136
-		Points			[17, 0; 0, -5]
+		Points			[17, 0]
+		Branch {
+		  ZOrder		  384
+		  Points		  [0, -45]
+		  DstBlock		  "Derivative"
+		  DstPort		  1
+		}
 		Branch {
 		  ZOrder		  157
 		  Points		  [98, 0]
 		  DstBlock		  "Gain1"
-		  DstPort		  1
-		}
-		Branch {
-		  ZOrder		  97
-		  Points		  [0, -40]
-		  DstBlock		  "Derivative"
 		  DstPort		  1
 		}
 	      }
