@@ -127,7 +127,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.708"
+    ComputedModelVersion    "1.712"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -163,7 +163,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [289.0, 80.0, 1534.0, 947.0]
+      Location		      [199.0, 123.0, 1534.0, 947.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -198,8 +198,8 @@ Model {
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "1"
 	  Extents		  [1291.0, 770.0]
-	  ZoomFactor		  [0.59999999999999987]
-	  Offset		  [397.14047619048733, -376.26666666666756]
+	  ZoomFactor		  [1.0]
+	  Offset		  [405.30714285715749, -502.35000000000173]
 	}
 	Object {
 	  $ObjectID		  8
@@ -207,17 +207,17 @@ Model {
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "50"
 	  Extents		  [1291.0, 770.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-91.702380952348676, 11.03927947963075]
+	  ZoomFactor		  [0.5]
+	  Offset		  [-1176.8047619047284, -295.563101472751]
 	}
 	Object {
 	  $ObjectID		  9
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1291.0, 770.0]
 	  ZoomFactor		  [0.8]
-	  Offset		  [0.0, 0.0]
+	  Offset		  [77.985714285714266, 196.45575231289081]
 	}
 	Object {
 	  $ObjectID		  10
@@ -230,12 +230,12 @@ Model {
 	}
 	Object {
 	  $ObjectID		  11
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "1120"
 	  Extents		  [1291.0, 770.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-840.91904761904334, 377.71666666666465]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-583.32857142856665, 592.63067086260639]
 	}
 	Object {
 	  $ObjectID		  12
@@ -256,9 +256,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Sep 18 17:45:51 2018"
-  RTWModifiedTimeStamp	  459182638
-  ModelVersionFormat	  "1.%<AutoIncrement:708>"
+  LastModifiedDate	  "Wed Sep 19 16:35:48 2018"
+  RTWModifiedTimeStamp	  459273788
+  ModelVersionFormat	  "1.%<AutoIncrement:712>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -2030,7 +2030,7 @@ Model {
   }
   System {
     Name		    "Controller_ABS_VLC_AYC_ALGO2"
-    Location		    [289, 80, 1823, 1027]
+    Location		    [199, 123, 1733, 1070]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    212
@@ -2182,7 +2182,7 @@ Model {
       Variant		      off
       System {
 	Name			"ABS/VLC/AYC Control"
-	Location		[289, 80, 1823, 1027]
+	Location		[198, 61, 1732, 1008]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	212
@@ -2194,7 +2194,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"60"
+	ZoomFactor		"100"
 	Block {
 	  BlockType		  Inport
 	  Name			  "longitudinal speed [m/s]"
@@ -2340,7 +2340,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Slip Controller"
-	    Location		    [367, 124, 1901, 1071]
+	    Location		    [289, 80, 1823, 1027]
 	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3799,7 +3799,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Slip Controller2"
-	    Location		    [367, 124, 1901, 1071]
+	    Location		    [289, 80, 1823, 1027]
 	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -4388,7 +4388,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "FL Slip Controller3"
-	    Location		    [367, 124, 1901, 1071]
+	    Location		    [289, 80, 1823, 1027]
 	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -5284,7 +5284,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Controller"
-	    Location		    [367, 124, 1901, 1071]
+	    Location		    [198, 61, 1732, 1008]
 	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -5296,7 +5296,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "80"
+	    ZoomFactor		    "50"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Yaw Error"
@@ -6653,7 +6653,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Yaw Controller1"
-	    Location		    [289, 80, 1823, 1027]
+	    Location		    [199, 123, 1733, 1070]
 	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -6665,7 +6665,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "80"
+	    ZoomFactor		    "125"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Velocity [m/s]"
@@ -6694,7 +6694,7 @@ Model {
 	      BlockType		      Inport
 	      Name		      "V_SA"
 	      SID		      "1123"
-	      Position		      [-290, 1163, -260, 1177]
+	      Position		      [-640, 1163, -610, 1177]
 	      ZOrder		      8951
 	      Port		      "3"
 	      IconDisplay	      "Port number"
@@ -6737,7 +6737,7 @@ Model {
 	      BlockType		      DataTypeConversion
 	      Name		      "Data Type Conversion1"
 	      SID		      "1241"
-	      Position		      [-380, 848, -305, 882]
+	      Position		      [-420, 848, -345, 882]
 	      ZOrder		      8933
 	      OutDataTypeStr	      "uint32"
 	      RndMeth		      "Floor"
@@ -6765,13 +6765,6 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Derivative
-	      Name		      "Derivative"
-	      SID		      "1187"
-	      Position		      [-505, 485, -475, 515]
-	      ZOrder		      291
-	    }
-	    Block {
-	      BlockType		      Derivative
 	      Name		      "Derivative1"
 	      SID		      "1264"
 	      Position		      [90, 1390, 120, 1420]
@@ -6788,12 +6781,12 @@ Model {
 	      BlockType		      Gain
 	      Name		      "Gain"
 	      SID		      "1242"
-	      Position		      [-440, 700, -410, 730]
+	      Position		      [-438, 680, -392, 735]
 	      ZOrder		      8934
 	      BlockRotation	      270
 	      BlockMirror	      on
 	      NamePlacement	      "alternate"
-	      Gain		      "10"
+	      Gain		      "1000"
 	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
 	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
 	      SaturateOnIntegerOverflow	off
@@ -6914,7 +6907,6 @@ Model {
 	      SID		      "1286"
 	      Position		      [740, 972, 770, 1008]
 	      ZOrder		      8980
-	      CurrentSetting	      "0"
 	    }
 	    Block {
 	      BlockType		      Product
@@ -6965,7 +6957,7 @@ Model {
 	      Name		      "Scope"
 	      SID		      "1200"
 	      Ports		      [1]
-	      Position		      [-560, 729, -530, 761]
+	      Position		      [-560, 569, -530, 601]
 	      ZOrder		      304
 	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
@@ -7079,7 +7071,7 @@ Model {
 	      ZOrder		      8954
 	      ShowName		      off
 	      IconShape		      "round"
-	      Inputs		      "|++"
+	      Inputs		      "|+-"
 	      InputSameDT	      off
 	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
 	      SaturateOnIntegerOverflow	off
@@ -7193,34 +7185,16 @@ Model {
 	      Points		      [40, 0]
 	      Branch {
 		ZOrder			138
-		Points			[0, 200]
+		Points			[0, 40]
 		DstBlock		"Scope"
 		DstPort			1
 	      }
 	      Branch {
 		ZOrder			136
-		Points			[17, 0]
-		Branch {
-		  ZOrder		  384
-		  Points		  [0, -45]
-		  DstBlock		  "Derivative"
-		  DstPort		  1
-		}
-		Branch {
-		  ZOrder		  157
-		  Points		  [98, 0]
-		  DstBlock		  "Gain1"
-		  DstPort		  1
-		}
+		Points			[115, 0]
+		DstBlock		"Gain1"
+		DstPort			1
 	      }
-	    }
-	    Line {
-	      ZOrder		      159
-	      SrcBlock		      "Derivative"
-	      SrcPort		      1
-	      Points		      [45, 0]
-	      DstBlock		      "Gain"
-	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      176
@@ -7295,7 +7269,7 @@ Model {
 	      ZOrder		      185
 	      SrcBlock		      "Gain"
 	      SrcPort		      1
-	      Points		      [0, 23; 89, 0; 0, 27; 7, 0]
+	      Points		      [0, 18; 79, 0; 0, 27; 7, 0]
 	      Branch {
 		ZOrder			205
 		Points			[0, 195]
@@ -7312,14 +7286,15 @@ Model {
 	      ZOrder		      187
 	      SrcBlock		      "Gain1"
 	      SrcPort		      1
-	      Points		      [0, 155; 95, 0]
+	      Points		      [0, 155]
 	      Branch {
-		ZOrder			206
+		ZOrder			448
 		DstBlock		"Data Type Conversion1"
 		DstPort			1
 	      }
 	      Branch {
 		ZOrder			207
+		Points			[0, 205]
 		DstBlock		"Data Type Conversion3"
 		DstPort			1
 	      }
@@ -7392,32 +7367,6 @@ Model {
 	      SrcPort		      1
 	      DstBlock		      "Sum"
 	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      237
-	      SrcBlock		      "V_SA"
-	      SrcPort		      1
-	      Points		      [84, 0]
-	      Branch {
-		ZOrder			323
-		Points			[0, 35; 86, 0]
-		Branch {
-		  ZOrder		  325
-		  Points		  [0, 70]
-		  DstBlock		  "Gain9"
-		  DstPort		  1
-		}
-		Branch {
-		  ZOrder		  324
-		  DstBlock		  "Gain6"
-		  DstPort		  1
-		}
-	      }
-	      Branch {
-		ZOrder			322
-		DstBlock		"Mux"
-		DstPort			1
-	      }
 	    }
 	    Line {
 	      Name		      "FL Slip Error"
@@ -7576,6 +7525,42 @@ Model {
 	      SrcPort		      1
 	      DstBlock		      "Yaw Control Signal"
 	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      237
+	      SrcBlock		      "V_SA"
+	      SrcPort		      1
+	      Points		      [60, 0]
+	      Branch {
+		ZOrder			447
+		Points			[374, 0]
+		Branch {
+		  ZOrder		  323
+		  Points		  [0, 35; 86, 0]
+		  Branch {
+		    ZOrder		    325
+		    Points		    [0, 70]
+		    DstBlock		    "Gain9"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    324
+		    DstBlock		    "Gain6"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  ZOrder		  322
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		ZOrder			444
+		Points			[0, -549; 130, 0]
+		DstBlock		"Gain"
+		DstPort			1
+	      }
 	    }
 	    Annotation {
 	      SID		      "1204"
