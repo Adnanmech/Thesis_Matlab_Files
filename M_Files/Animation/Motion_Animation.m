@@ -132,8 +132,8 @@ drawnow
 
 %% 5. define the motion coordinates
 step = 1;               % initialize data stepper
-time = 5;               % time of simulation display [seconds]
-fps = 40;               % Frames/second desired
+time = 4;               % time of simulation display [seconds]
+fps = 400;               % Frames/second desired
 samples_p_sec = 1000;  % Samples per second of model simulation
                
 

@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.686"
+    ComputedModelVersion    "1.692"
     NumModelReferences	    1
     ModelReference {
       ModelRefBlockPath	      "AWD_EV_MODEL_rev2/Model|Controller_ABS_VLC_AYC_ALGO2"
@@ -46,7 +46,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [163.0, 89.0, 1635.0, 866.0]
+      Location		      [118.0, 125.0, 1635.0, 866.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -65,7 +65,7 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		10
+	Dimension		6
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
@@ -79,31 +79,13 @@ Model {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "3823"
-	  Extents		  [1522.0, 879.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
-	}
-	Object {
-	  $ObjectID		  8
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "3000"
 	  Extents		  [840.0, 751.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
 	Object {
-	  $ObjectID		  9
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "2781"
-	  Extents		  [1392.0, 689.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-386.90357142857187, -198.83833943833994]
-	}
-	Object {
-	  $ObjectID		  10
+	  $ObjectID		  8
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "3877"
@@ -112,16 +94,16 @@ Model {
 	  Offset		  [-262.75000000000011, -72.133333333333326]
 	}
 	Object {
-	  $ObjectID		  11
+	  $ObjectID		  9
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1392.0, 689.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-203.49047619050998, 704.33095238095166]
+	  ZoomFactor		  [1.25]
+	  Offset		  [1069.9333333333016, 1182.8666666666763]
 	}
 	Object {
-	  $ObjectID		  12
+	  $ObjectID		  10
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "5540"
@@ -130,25 +112,7 @@ Model {
 	  Offset		  [-2.125, -20.5]
 	}
 	Object {
-	  $ObjectID		  13
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "3766"
-	  Extents		  [1522.0, 879.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
-	}
-	Object {
-	  $ObjectID		  14
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "3838"
-	  Extents		  [1522.0, 879.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
-	}
-	Object {
-	  $ObjectID		  15
+	  $ObjectID		  11
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "5581"
@@ -166,9 +130,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "MR Spyder"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Sep 19 16:35:49 2018"
-  RTWModifiedTimeStamp	  459275531
-  ModelVersionFormat	  "1.%<AutoIncrement:686>"
+  LastModifiedDate	  "Thu Sep 20 23:14:14 2018"
+  RTWModifiedTimeStamp	  459385856
+  ModelVersionFormat	  "1.%<AutoIncrement:692>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -216,7 +180,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    16
+    $ObjectID		    12
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "AWD_EV_MODEL_rev2"
     Array {
@@ -261,13 +225,13 @@ Model {
     Type		    "Handle"
     Dimension		    2
     Simulink.ConfigSet {
-      $ObjectID		      17
+      $ObjectID		      13
       Version		      "1.16.2"
       Array {
 	Type			"Handle"
 	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  18
+	  $ObjectID		  14
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
 	  StopTime		  "4"
@@ -304,7 +268,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  19
+	  $ObjectID		  15
 	  Version		  "1.16.2"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -342,7 +306,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  20
+	  $ObjectID		  16
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -399,7 +363,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  21
+	  $ObjectID		  17
 	  Version		  "1.16.2"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -494,7 +458,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  22
+	  $ObjectID		  18
 	  Version		  "1.16.2"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -536,7 +500,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  23
+	  $ObjectID		  19
 	  Version		  "1.16.2"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  EnableRefExpFcnMdlSchedulingChecks on
@@ -552,7 +516,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  24
+	  $ObjectID		  20
 	  Version		  "1.16.2"
 	  SFSimEcho		  on
 	  SimCtrlC		  on
@@ -564,7 +528,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  25
+	  $ObjectID		  21
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -634,7 +598,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      26
+	      $ObjectID		      22
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -705,7 +669,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      27
+	      $ObjectID		      23
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -792,7 +756,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  28
+	  $ObjectID		  24
 	  Version		  "1.16.2"
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -825,7 +789,7 @@ Model {
 	  CovStopTime		  0
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  29
+	  $ObjectID		  25
 	  Version		  "1.16.2"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
@@ -845,13 +809,13 @@ Model {
       ConfigPrmDlgPosition     [ 512, 100, 1409, 896 ] 
     }
     Simulink.ConfigSet {
-      $ObjectID		      30
+      $ObjectID		      26
       Version		      "1.16.2"
       Array {
 	Type			"Handle"
 	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  31
+	  $ObjectID		  27
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
 	  StopTime		  "4"
@@ -888,7 +852,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  32
+	  $ObjectID		  28
 	  Version		  "1.16.2"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -926,7 +890,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  33
+	  $ObjectID		  29
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -983,7 +947,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  34
+	  $ObjectID		  30
 	  Version		  "1.16.2"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -1078,7 +1042,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  35
+	  $ObjectID		  31
 	  Version		  "1.16.2"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -1120,7 +1084,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  36
+	  $ObjectID		  32
 	  Version		  "1.16.2"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  EnableRefExpFcnMdlSchedulingChecks on
@@ -1136,7 +1100,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  37
+	  $ObjectID		  33
 	  Version		  "1.16.2"
 	  SFSimEcho		  on
 	  SimCtrlC		  on
@@ -1148,7 +1112,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  38
+	  $ObjectID		  34
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -1218,7 +1182,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      39
+	      $ObjectID		      35
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -1289,7 +1253,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      40
+	      $ObjectID		      36
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -1376,7 +1340,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  41
+	  $ObjectID		  37
 	  Version		  "1.16.2"
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -1409,7 +1373,7 @@ Model {
 	  CovStopTime		  0
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  42
+	  $ObjectID		  38
 	  Version		  "1.16.2"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
@@ -1432,11 +1396,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    30
+    $ObjectID		    26
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    43
+    $ObjectID		    39
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1852,7 +1816,7 @@ Model {
   }
   System {
     Name		    "AWD_EV_MODEL_rev2"
-    Location		    [163, 89, 1798, 955]
+    Location		    [118, 125, 1753, 991]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -1864,14 +1828,14 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "5775"
+    SIDHighWatermark	    "5885"
     Block {
       BlockType		      Goto
       Name		      "\n"
       SID		      "5760"
-      Position		      [355, 695, 395, 725]
+      Position		      [355, 605, 395, 635]
       ZOrder		      240
       GotoTag		      "R_SA"
     }
@@ -1947,14 +1911,6 @@ Model {
     }
     Block {
       BlockType		      Constant
-      Name		      "Constant2"
-      SID		      "5761"
-      Position		      [1415, 1565, 1445, 1595]
-      ZOrder		      241
-      Value		      "0"
-    }
-    Block {
-      BlockType		      Constant
       Name		      "Constant3"
       SID		      "5771"
       Position		      [95, 1330, 125, 1360]
@@ -2004,7 +1960,7 @@ Model {
       Variant		      off
       System {
 	Name			"E-Motor Model1"
-	Location		[163, 89, 1798, 955]
+	Location		[118, 125, 1753, 991]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -2545,7 +2501,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		44
+	$ObjectID		40
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('Tire.bmp'),'center')\nport_label('input', 1, 'Torque [Nm]')\nport_label('input', 2, 'Slip an"
 	"gle [rad]')\nport_label('input', 3, 'Long. speed [m/s]')\nport_label('input', 4, 'Vertical load [N]')\nport_label('in"
@@ -2554,7 +2510,7 @@ Model {
       }
       System {
 	Name			"FL Tire Mode"
-	Location		[163, 89, 1798, 955]
+	Location		[118, 125, 1753, 991]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -2652,7 +2608,7 @@ Model {
 	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    45
+	    $ObjectID		    41
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Magic Formula (Combined Slip)"
 	    Display		    "image(imread('Magic formula.jpg'),'center')\nport_label('input', 1, 'slip ratio')\nport_label('inpu"
@@ -4433,7 +4389,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		46
+	$ObjectID		42
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('Tire.bmp'),'center')\nport_label('input', 1, 'Torque [Nm]')\nport_label('input', 2, 'Slip an"
 	"gle [rad]')\nport_label('input', 3, 'Long. speed [m/s]')\nport_label('input', 4, 'Vertical load [N]')\nport_label('in"
@@ -4540,7 +4496,7 @@ Model {
 	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    47
+	    $ObjectID		    43
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Magic Formula (Combined Slip)"
 	    Display		    "image(imread('Magic formula.jpg'),'center')\nport_label('input', 1, 'slip ratio')\nport_label('inpu"
@@ -6033,19 +5989,19 @@ Model {
     }
     Block {
       BlockType		      SubSystem
-      Name		      "Force Composition"
-      SID		      "2781"
-      Ports		      [10, 3]
-      Position		      [1570, 287, 1760, 573]
-      ZOrder		      -24
+      Name		      "Force Composition1"
+      SID		      "5860"
+      Ports		      [9, 3]
+      Position		      [1560, 287, 1750, 573]
+      ZOrder		      297
       BackgroundColor	      "darkGreen"
       LibraryVersion	      "1.216"
       RequestExecContextInheritance off
       Variant		      off
       System {
-	Name			"Force Composition"
-	Location		[163, 89, 1798, 955]
-	Open			on
+	Name			"Force Composition1"
+	Location		[2045, 3, 3600, 998]
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -6056,11 +6012,11 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"117"
 	Block {
 	  BlockType		  Inport
 	  Name			  "FR Longitudinal force"
-	  SID			  "2782"
+	  SID			  "5861"
 	  Position		  [55, 18, 85, 32]
 	  ZOrder		  -1
 	  IconDisplay		  "Port number"
@@ -6068,7 +6024,7 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "FR Lateral force"
-	  SID			  "2783"
+	  SID			  "5862"
 	  Position		  [55, 48, 85, 62]
 	  ZOrder		  -2
 	  Port			  "2"
@@ -6077,7 +6033,7 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "FL Longitudinal force"
-	  SID			  "2784"
+	  SID			  "5863"
 	  Position		  [55, 78, 85, 92]
 	  ZOrder		  -3
 	  Port			  "3"
@@ -6086,7 +6042,7 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "FL Lateral force"
-	  SID			  "2785"
+	  SID			  "5864"
 	  Position		  [55, 108, 85, 122]
 	  ZOrder		  -4
 	  Port			  "4"
@@ -6095,7 +6051,7 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "RR Longitudinal force"
-	  SID			  "2786"
+	  SID			  "5865"
 	  Position		  [55, 138, 85, 152]
 	  ZOrder		  -5
 	  Port			  "5"
@@ -6104,7 +6060,7 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "RR Lateral force"
-	  SID			  "2787"
+	  SID			  "5866"
 	  Position		  [55, 168, 85, 182]
 	  ZOrder		  -6
 	  Port			  "6"
@@ -6113,7 +6069,7 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "RL Longitudinal force"
-	  SID			  "2788"
+	  SID			  "5867"
 	  Position		  [55, 198, 85, 212]
 	  ZOrder		  -7
 	  Port			  "7"
@@ -6122,7 +6078,7 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "RL Lateral force"
-	  SID			  "2789"
+	  SID			  "5868"
 	  Position		  [55, 228, 85, 242]
 	  ZOrder		  -8
 	  Port			  "8"
@@ -6131,26 +6087,17 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "Steering angle"
-	  SID			  "2790"
+	  SID			  "5869"
 	  Position		  [55, 258, 85, 272]
 	  ZOrder		  -9
 	  Port			  "9"
 	  IconDisplay		  "Port number"
 	}
 	Block {
-	  BlockType		  Inport
-	  Name			  "Rear Steering angle"
-	  SID			  "5734"
-	  Position		  [55, 288, 85, 302]
-	  ZOrder		  2
-	  Port			  "10"
-	  IconDisplay		  "Port number"
-	}
-	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn1"
-	  SID			  "2791"
-	  Position		  [265, 83, 550, 107]
+	  SID			  "5870"
+	  Position		  [265, 133, 550, 157]
 	  ZOrder		  -10
 	  ShowName		  off
 	  Expr			  "(u(1)+u(3))*sin(u(9))+(u(2)+u(4))*cos(u(9))+u(6)+u(8)"
@@ -6158,112 +6105,48 @@ Model {
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn2"
-	  SID			  "2792"
+	  SID			  "5871"
 	  Position		  [265, 180, 565, 200]
 	  ZOrder		  -11
 	  ShowName		  off
-	  Expr			  "(u(1)+u(3))*sin(u(9))*Lf+(u(2)+u(4))*cos(u(9))*Lf"
+	  Expr			  "(u(1)+u(3))*sin(u(9))*Lf+(u(2)+u(4))*cos(u(9))*Lf-(u(6)+u(8))*Lr"
 	}
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn3"
-	  SID			  "2793"
-	  Position		  [265, -8, 550, 18]
+	  SID			  "5872"
+	  Position		  [265, 77, 550, 103]
 	  ZOrder		  -12
 	  ShowName		  off
-	  Expr			  "(u(1)+u(3))*cos(u(9))-(u(2)+u(4))*sin(u(9))"
+	  Expr			  "(u(1)+u(3))*cos(u(9))-(u(2)+u(4))*sin(u(9))+u(5)+u(7)"
 	}
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn4"
-	  SID			  "2794"
+	  SID			  "5873"
 	  Position		  [265, 224, 565, 246]
 	  ZOrder		  -13
 	  ShowName		  off
-	  Expr			  "((u(3)-u(1))*cos(u(9))+(u(2)-u(4))*sin(u(9)))*Lw/2"
-	}
-	Block {
-	  BlockType		  Fcn
-	  Name			  "Fcn5"
-	  SID			  "5733"
-	  Position		  [265, 270, 565, 290]
-	  ZOrder		  1
-	  ShowName		  off
-	  Expr			  "(u(7)-u(5))*cos(u(10))*Lw/2 - (u(6) + u(8))*cos(u(10))*Lr"
-	}
-	Block {
-	  BlockType		  Fcn
-	  Name			  "Fcn6"
-	  SID			  "5735"
-	  Position		  [265, 310, 565, 330]
-	  ZOrder		  3
-	  ShowName		  off
-	  Expr			  "-(u(7)+u(5))*sin(u(10))*Lr + (u(6) - u(8))*sin(u(10))*Lw/2"
-	}
-	Block {
-	  BlockType		  Fcn
-	  Name			  "Fcn7"
-	  SID			  "5737"
-	  Position		  [265, 32, 550, 58]
-	  ZOrder		  5
-	  ShowName		  off
-	  Expr			  "(u(5)+u(7))*cos(u(10))-(u(6)+u(8))*sin(u(10))"
-	}
-	Block {
-	  BlockType		  Fcn
-	  Name			  "Fcn8"
-	  SID			  "5739"
-	  Position		  [265, 132, 550, 158]
-	  ZOrder		  7
-	  ShowName		  off
-	  Expr			  "(u(6)+u(8))*sin(u(10))+(u(5)+u(7))*cos(u(10))"
+	  Expr			  "((u(3)-u(1))*cos(u(9))+(u(2)-u(4))*sin(u(9))+u(7)-u(5))*Lw/2"
 	}
 	Block {
 	  BlockType		  Mux
 	  Name			  "Mux"
-	  SID			  "2795"
-	  Ports			  [10, 1]
-	  Position		  [185, 4, 190, 316]
+	  SID			  "5874"
+	  Ports			  [9, 1]
+	  Position		  [185, 15, 190, 275]
 	  ZOrder		  -14
 	  ShowName		  off
-	  Inputs		  "10"
+	  Inputs		  "9"
 	  DisplayOption		  "bar"
 	}
 	Block {
 	  BlockType		  Sum
 	  Name			  "Sum"
-	  SID			  "2796"
-	  Ports			  [4, 1]
-	  Position		  [620, 180, 650, 210]
+	  SID			  "5875"
+	  Ports			  [2, 1]
+	  Position		  [620, 180, 640, 200]
 	  ZOrder		  -15
-	  ShowName		  off
-	  IconShape		  "round"
-	  Inputs		  "||++++"
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Sum
-	  Name			  "Sum1"
-	  SID			  "5736"
-	  Ports			  [2, 1]
-	  Position		  [575, -10, 605, 20]
-	  ZOrder		  4
-	  ShowName		  off
-	  IconShape		  "round"
-	  Inputs		  "|++"
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Sum
-	  Name			  "Sum2"
-	  SID			  "5738"
-	  Ports			  [2, 1]
-	  Position		  [575, 80, 605, 110]
-	  ZOrder		  6
 	  ShowName		  off
 	  IconShape		  "round"
 	  Inputs		  "|++"
@@ -6274,7 +6157,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "Longitudinal force [N]"
-	  SID			  "2797"
+	  SID			  "5876"
 	  Position		  [705, 83, 735, 97]
 	  ZOrder		  -16
 	  IconDisplay		  "Port number"
@@ -6282,7 +6165,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "Lateral force [N]"
-	  SID			  "2798"
+	  SID			  "5877"
 	  Position		  [705, 138, 735, 152]
 	  ZOrder		  -17
 	  Port			  "2"
@@ -6291,7 +6174,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "Moment [N]"
-	  SID			  "2799"
+	  SID			  "5878"
 	  Position		  [705, 183, 735, 197]
 	  ZOrder		  -18
 	  Port			  "3"
@@ -6303,41 +6186,19 @@ Model {
 	  SrcPort		  1
 	  Points		  [30, 0]
 	  Branch {
-	    ZOrder		    43
-	    Points		    [0, -15]
-	    Branch {
-	      ZOrder		      41
-	      DstBlock		      "Fcn8"
-	      DstPort		      1
-	    }
-	    Branch {
-	      ZOrder		      30
-	      Points		      [0, -50]
-	      Branch {
-		ZOrder			2
-		Points			[0, -50]
-		Branch {
-		  ZOrder		  37
-		  DstBlock		  "Fcn7"
-		  DstPort		  1
-		}
-		Branch {
-		  ZOrder		  36
-		  Points		  [0, -40]
-		  DstBlock		  "Fcn3"
-		  DstPort		  1
-		}
-	      }
-	      Branch {
-		ZOrder			3
-		DstBlock		"Fcn1"
-		DstPort			1
-	      }
-	    }
+	    ZOrder		    2
+	    Points		    [0, -55]
+	    DstBlock		    "Fcn3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    3
+	    DstBlock		    "Fcn1"
+	    DstPort		    1
 	  }
 	  Branch {
 	    ZOrder		    4
-	    Points		    [0, 30]
+	    Points		    [0, 45]
 	    Branch {
 	      ZOrder		      5
 	      DstBlock		      "Fcn2"
@@ -6346,42 +6207,22 @@ Model {
 	    Branch {
 	      ZOrder		      6
 	      Points		      [0, 45]
-	      Branch {
-		ZOrder			26
-		DstBlock		"Fcn4"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			22
-		Points			[0, 45]
-		Branch {
-		  ZOrder		  28
-		  Points		  [0, 40]
-		  DstBlock		  "Fcn6"
-		  DstPort		  1
-		}
-		Branch {
-		  ZOrder		  27
-		  DstBlock		  "Fcn5"
-		  DstPort		  1
-		}
-	      }
+	      DstBlock		      "Fcn4"
+	      DstPort		      1
 	    }
 	  }
 	}
 	Line {
-	  ZOrder		  34
-	  SrcBlock		  "Sum1"
+	  ZOrder		  7
+	  SrcBlock		  "Fcn3"
 	  SrcPort		  1
-	  Points		  [39, 0; 0, 85]
 	  DstBlock		  "Longitudinal force [N]"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  39
-	  SrcBlock		  "Sum2"
+	  ZOrder		  8
+	  SrcBlock		  "Fcn1"
 	  SrcPort		  1
-	  Points		  [14, 0; 0, 50]
 	  DstBlock		  "Lateral force [N]"
 	  DstPort		  1
 	}
@@ -6389,7 +6230,6 @@ Model {
 	  ZOrder		  9
 	  SrcBlock		  "Sum"
 	  SrcPort		  1
-	  Points		  [0, -5]
 	  DstBlock		  "Moment [N]"
 	  DstPort		  1
 	}
@@ -6397,7 +6237,6 @@ Model {
 	  ZOrder		  10
 	  SrcBlock		  "Fcn2"
 	  SrcPort		  1
-	  Points		  [36, 0]
 	  DstBlock		  "Sum"
 	  DstPort		  1
 	}
@@ -6405,7 +6244,7 @@ Model {
 	  ZOrder		  11
 	  SrcBlock		  "Fcn4"
 	  SrcPort		  1
-	  Points		  [36, 0]
+	  Points		  [60, 0]
 	  DstBlock		  "Sum"
 	  DstPort		  2
 	}
@@ -6472,66 +6311,13 @@ Model {
 	  DstBlock		  "Mux"
 	  DstPort		  9
 	}
-	Line {
-	  ZOrder		  23
-	  SrcBlock		  "Fcn5"
-	  SrcPort		  1
-	  Points		  [48, 0]
-	  DstBlock		  "Sum"
-	  DstPort		  3
-	}
-	Line {
-	  ZOrder		  29
-	  SrcBlock		  "Fcn6"
-	  SrcPort		  1
-	  Points		  [65, 0]
-	  DstBlock		  "Sum"
-	  DstPort		  4
-	}
-	Line {
-	  ZOrder		  35
-	  SrcBlock		  "Fcn3"
-	  SrcPort		  1
-	  DstBlock		  "Sum1"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  38
-	  SrcBlock		  "Fcn7"
-	  SrcPort		  1
-	  Points		  [35, 0]
-	  DstBlock		  "Sum1"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  40
-	  SrcBlock		  "Fcn1"
-	  SrcPort		  1
-	  DstBlock		  "Sum2"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  42
-	  SrcBlock		  "Fcn8"
-	  SrcPort		  1
-	  Points		  [35, 0]
-	  DstBlock		  "Sum2"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  25
-	  SrcBlock		  "Rear Steering angle"
-	  SrcPort		  1
-	  DstBlock		  "Mux"
-	  DstPort		  10
-	}
       }
     }
     Block {
       BlockType		      From
       Name		      "From"
       SID		      "2800"
-      Position		      [1500, 356, 1540, 384]
+      Position		      [1490, 356, 1530, 384]
       ZOrder		      -25
       ShowName		      off
       GotoTag		      "FLFx"
@@ -6540,7 +6326,7 @@ Model {
       BlockType		      From
       Name		      "From1"
       SID		      "2801"
-      Position		      [1500, 386, 1540, 414]
+      Position		      [1490, 386, 1530, 414]
       ZOrder		      -26
       ShowName		      off
       GotoTag		      "FLFy"
@@ -6638,7 +6424,7 @@ Model {
       BlockType		      From
       Name		      "From2"
       SID		      "2808"
-      Position		      [1500, 296, 1540, 324]
+      Position		      [1490, 296, 1530, 324]
       ZOrder		      -37
       ShowName		      off
       GotoTag		      "FRFx"
@@ -6730,7 +6516,7 @@ Model {
       BlockType		      From
       Name		      "From3"
       SID		      "2809"
-      Position		      [1500, 326, 1540, 354]
+      Position		      [1490, 326, 1530, 354]
       ZOrder		      -48
       ShowName		      off
       GotoTag		      "FRFy"
@@ -6824,7 +6610,7 @@ Model {
       BlockType		      From
       Name		      "From4"
       SID		      "2810"
-      Position		      [1500, 476, 1540, 504]
+      Position		      [1490, 476, 1530, 504]
       ZOrder		      -59
       ShowName		      off
       GotoTag		      "RLFx"
@@ -6923,7 +6709,7 @@ Model {
       BlockType		      From
       Name		      "From5"
       SID		      "2811"
-      Position		      [1500, 506, 1540, 534]
+      Position		      [1490, 506, 1530, 534]
       ZOrder		      -68
       ShowName		      off
       GotoTag		      "RLFy"
@@ -6993,16 +6779,6 @@ Model {
     }
     Block {
       BlockType		      From
-      Name		      "From57"
-      SID		      "5382"
-      Position		      [1380, 1516, 1420, 1544]
-      ZOrder		      242
-      ShowName		      off
-      Commented		      "on"
-      GotoTag		      "LAE"
-    }
-    Block {
-      BlockType		      From
       Name		      "From58"
       SID		      "5669"
       Position		      [750, 280, 810, 310]
@@ -7021,7 +6797,7 @@ Model {
       BlockType		      From
       Name		      "From6"
       SID		      "2812"
-      Position		      [1500, 416, 1540, 444]
+      Position		      [1490, 416, 1530, 444]
       ZOrder		      -69
       ShowName		      off
       GotoTag		      "RRFx"
@@ -7069,11 +6845,11 @@ Model {
     Block {
       BlockType		      From
       Name		      "From65"
-      SID		      "5755"
-      Position		      [1540, 1601, 1605, 1629]
-      ZOrder		      235
+      SID		      "5884"
+      Position		      [1560, 1601, 1610, 1629]
+      ZOrder		      304
       ShowName		      off
-      GotoTag		      "R_SA_rad"
+      GotoTag		      "V_SA"
     }
     Block {
       BlockType		      From
@@ -7094,9 +6870,18 @@ Model {
     }
     Block {
       BlockType		      From
+      Name		      "From68"
+      SID		      "5885"
+      Position		      [1560, 1566, 1610, 1594]
+      ZOrder		      305
+      ShowName		      off
+      GotoTag		      "DYaw"
+    }
+    Block {
+      BlockType		      From
       Name		      "From7"
       SID		      "2813"
-      Position		      [1500, 446, 1540, 474]
+      Position		      [1490, 446, 1530, 474]
       ZOrder		      -70
       ShowName		      off
       GotoTag		      "RRFy"
@@ -7124,7 +6909,7 @@ Model {
       SID		      "5750"
       Position		      [140, 1125, 170, 1155]
       ZOrder		      232
-      Gain		      "2"
+      Gain		      "4"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -7584,7 +7369,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto33"
       SID		      "5046"
-      Position		      [350, 246, 395, 274]
+      Position		      [350, 231, 395, 259]
       ZOrder		      -100
       ShowName		      off
       GotoTag		      "TFL"
@@ -7593,7 +7378,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto34"
       SID		      "5047"
-      Position		      [350, 336, 395, 364]
+      Position		      [350, 306, 395, 334]
       ZOrder		      -101
       ShowName		      off
       GotoTag		      "TFR"
@@ -7602,7 +7387,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto35"
       SID		      "5048"
-      Position		      [350, 426, 395, 454]
+      Position		      [350, 381, 395, 409]
       ZOrder		      -102
       ShowName		      off
       GotoTag		      "TRL"
@@ -7611,7 +7396,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto36"
       SID		      "5049"
-      Position		      [350, 516, 395, 544]
+      Position		      [350, 456, 395, 484]
       ZOrder		      -103
       ShowName		      off
       GotoTag		      "TRR"
@@ -7656,7 +7441,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto40"
       SID		      "5313"
-      Position		      [350, 606, 395, 634]
+      Position		      [350, 531, 395, 559]
       ZOrder		      45
       ShowName		      off
       GotoTag		      "YE"
@@ -7678,6 +7463,24 @@ Model {
       ZOrder		      283
       ShowName		      off
       GotoTag		      "V_SA"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto43"
+      SID		      "5882"
+      Position		      [355, 681, 400, 709]
+      ZOrder		      301
+      ShowName		      off
+      GotoTag		      "DYaw"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto44"
+      SID		      "5883"
+      Position		      [355, 756, 400, 784]
+      ZOrder		      302
+      ShowName		      off
+      GotoTag		      "AYaw"
     }
     Block {
       BlockType		      Goto
@@ -7976,7 +7779,7 @@ Model {
       BlockType		      ModelReference
       Name		      "Model"
       SID		      "5035"
-      Ports		      [14, 6]
+      Ports		      [14, 8]
       Position		      [30, 212, 195, 798]
       ZOrder		      -17
       BackgroundColor	      "[1.000000, 0.501961, 0.501961]"
@@ -7984,7 +7787,7 @@ Model {
       ModelNameDialog	      "Controller_ABS_VLC_AYC_ALGO2.mdl"
       SimulationMode	      "Normal"
       Variant		      off
-      ModelReferenceVersion   "1.712"
+      ModelReferenceVersion   "1.716"
       List {
 	ListType		InputPortNames
 	port0			"Vx_cont"
@@ -8010,6 +7813,8 @@ Model {
 	port3			"TRR"
 	port4			"YE"
 	port5			"R_SA"
+	port6			"D_Yaw"
+	port7			"A_Yaw"
       }
       List {
 	ListType		OutputPortOutputBusAsStructs
@@ -8019,6 +7824,8 @@ Model {
 	port3			"off"
 	port4			"off"
 	port5			"off"
+	port6			"off"
+	port7			"off"
       }
       List {
 	ListType		InputPortLatchByCopyingInsideSignal
@@ -8125,7 +7932,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		48
+	$ObjectID		44
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('Tire.bmp'),'center')\nport_label('input', 1, 'Torque [Nm]')\nport_label('input', 2, 'Slip an"
 	"gle [rad]')\nport_label('input', 3, 'Long. speed [m/s]')\nport_label('input', 4, 'Vertical load [N]')\nport_label('in"
@@ -8232,7 +8039,7 @@ Model {
 	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    49
+	    $ObjectID		    45
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Magic Formula (Combined Slip)"
 	    Display		    "image(imread('Magic formula.jpg'),'center')\nport_label('input', 1, 'slip ratio')\nport_label('inpu"
@@ -9181,7 +8988,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		50
+	$ObjectID		46
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('Tire.bmp'),'center')\nport_label('input', 1, 'Torque [Nm]')\nport_label('input', 2, 'Slip an"
 	"gle [rad]')\nport_label('input', 3, 'Long. speed [m/s]')\nport_label('input', 4, 'Vertical load [N]')\nport_label('in"
@@ -9288,7 +9095,7 @@ Model {
 	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    51
+	    $ObjectID		    47
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Magic Formula (Combined Slip)"
 	    Display		    "image(imread('Magic formula.jpg'),'center')\nport_label('input', 1, 'slip ratio')\nport_label('inpu"
@@ -10667,7 +10474,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		52
+	$ObjectID		48
 	$ClassName		"Simulink.Mask"
 	Type			"Sigbuilder block"
 	Description		"Simulink:masks:SigbuilderBlock_MD"
@@ -10772,7 +10579,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		53
+	$ObjectID		49
 	$ClassName		"Simulink.Mask"
 	Type			"Sigbuilder block"
 	Description		"Simulink:masks:SigbuilderBlock_MD"
@@ -10877,7 +10684,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		54
+	$ObjectID		50
 	$ClassName		"Simulink.Mask"
 	Type			"Sigbuilder block"
 	Description		"Simulink:masks:SigbuilderBlock_MD"
@@ -11031,7 +10838,7 @@ Model {
       Variant		      off
       System {
 	Name			"Suspension"
-	Location		[163, 89, 1798, 955]
+	Location		[118, 125, 1753, 991]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -11714,7 +11521,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		55
+	$ObjectID		51
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('Vehicle.bmp'),'center')\nport_label('input', 1, 'Longitudinal force [N]')\nport_label('input"
 	"', 2, 'Lateral force [N]')\nport_label('input', 3, 'Moment [Nm]')\nport_label('output', 1, 'Longitudinal speed [m/s]'"
@@ -11743,7 +11550,7 @@ Model {
       }
       System {
 	Name			"Three DOF Vehicle Dynamics"
-	Location		[99, 130, 1754, 1056]
+	Location		[118, 125, 1753, 991]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -12213,7 +12020,7 @@ Model {
       Name		      "To Workspace"
       SID		      "4658"
       Ports		      [1]
-      Position		      [1840, 1250, 1900, 1280]
+      Position		      [1870, 1270, 1930, 1300]
       ZOrder		      -7
       VariableName	      "VMC"
       MaxDataPoints	      "inf"
@@ -12248,36 +12055,36 @@ Model {
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingVariableName','StatesOutpus1','DataLoggingSaveFormat','StructureWithTim"
       "e','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true"
-      ",'SerializedDisplays',{struct('MinYLimReal','-31.8354','MaxYLimReal','33.36731','YLabelReal','','MinYLimMag','0."
-      "00000','MaxYLimMag','33.36731','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColo"
-      "r',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666666"
-      "6666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137254"
-      "9019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.6"
-      "50980392156863],'Title','Logitudinal speed [m/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'Num"
-      "Lines',1,'LineNames',{{'longitudinal speed [m/s]'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-30."
-      "75828','MaxYLimReal','29.65647','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGr"
-      "id',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803"
-      "922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705"
-      "882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.2745098039215"
-      "69 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Lateral speed [m/s]','LinePropertie"
-      "sCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'lateral speed [m/s]'}},'ShowContent',tru"
-      "e,'Placement',2),struct('MinYLimReal','-136.54995','MaxYLimReal','20.25804','YLabelReal','','MinYLimMag','0.0000"
-      "0','MaxYLimMag','57.15989','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',["
-      "0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666"
-      "667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019"
-      "608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.65098"
-      "0392156863],'Title','Yaw rate [deg/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'L"
-      "ineNames',{{'rad -> deg1'}},'ShowContent',true,'Placement',3)},'DisplayPropertyDefaults',struct('YLabelReal','',"
-      "'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0."
-      "0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0"
-      ".831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980392"
-      "15686 0.650980392156863],'Title','Logitudinal speed [m/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',"
-      "{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'DisplayLayoutDimensions',[3 1]),extmgr.C"
-      "onfiguration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('T"
-      "ools','Measurements',true,'Version','2016a','Measurements',struct('traceselector',struct('Line',1),'tcursors',st"
-      "ruct('XCoordinates',[8.20971867007673 30],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true"
-      ",'ShowHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'"
-      "MeasurementsPanelOpen',1)))),'Version','2016a','Location',[264 114 1362 934])"
+      ",'SerializedDisplays',{struct('MinYLimReal','41.08579','MaxYLimReal','47.49773','YLabelReal','','MinYLimMag','41"
+      ".08579','MaxYLimMag','47.49773','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCol"
+      "or',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666666"
+      "66666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313725"
+      "49019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0."
+      "650980392156863],'Title','Logitudinal speed [m/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'Nu"
+      "mLines',1,'LineNames',{{'longitudinal speed [m/s]'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-17"
+      ".854','MaxYLimReal','2.28771','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid"
+      "',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450980392"
+      "2 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470588"
+      "2353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569"
+      " 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Lateral speed [m/s]','LinePropertiesC"
+      "ache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'lateral speed [m/s]'}},'ShowContent',true,"
+      "'Placement',2),struct('MinYLimReal','-45.26988','MaxYLimReal','49.10914','YLabelReal','','MinYLimMag','0.00000',"
+      "'MaxYLimMag','57.15989','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0"
+      " 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667"
+      ";0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608"
+      " 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.65098039"
+      "2156863],'Title','Yaw rate [deg/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'Line"
+      "Names',{{'rad -> deg1'}},'ShowContent',true,'Placement',3)},'DisplayPropertyDefaults',struct('YLabelReal','','Ax"
+      "esColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066"
+      "6666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83"
+      "1372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980392156"
+      "86 0.650980392156863],'Title','Logitudinal speed [m/s]','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}"
+      "},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'DisplayLayoutDimensions',[3 1]),extmgr.Conf"
+      "iguration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tool"
+      "s','Measurements',true,'Version','2016a','Measurements',struct('traceselector',struct('Line',1),'tcursors',struc"
+      "t('XCoordinates',[8.20971867007673 30],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'S"
+      "howHorizontal',false,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'Mea"
+      "surementsPanelOpen',1)))),'Version','2016a','Location',[1 75 1921 1039])"
       NumInputPorts	      "3"
     }
     Block {
@@ -12294,7 +12101,7 @@ Model {
       Variant		      off
       System {
 	Name			"Weight Transfer"
-	Location		[163, 89, 1798, 955]
+	Location		[118, 125, 1753, 991]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -12819,19 +12626,19 @@ Model {
     }
     Block {
       BlockType		      SubSystem
-      Name		      "Wheel States"
-      SID		      "2975"
-      Ports		      [5, 8]
+      Name		      "Wheel States1"
+      SID		      "5776"
+      Ports		      [4, 8]
       Position		      [785, 547, 1035, 783]
-      ZOrder		      -154
+      ZOrder		      296
       BlockMirror	      on
       BackgroundColor	      "darkGreen"
       LibraryVersion	      "1.216"
       RequestExecContextInheritance off
       Variant		      off
       System {
-	Name			"Wheel States"
-	Location		[163, 89, 1798, 955]
+	Name			"Wheel States1"
+	Location		[290, 369, 1845, 1364]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -12847,16 +12654,16 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "Vehicle Long. speed [m/s]"
-	  SID			  "2976"
-	  Position		  [330, 188, 360, 202]
+	  SID			  "5777"
+	  Position		  [330, 193, 360, 207]
 	  ZOrder		  -1
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
 	  Name			  "Vehicle Lateral speed [m/s]"
-	  SID			  "2977"
-	  Position		  [330, 228, 360, 242]
+	  SID			  "5778"
+	  Position		  [330, 243, 360, 257]
 	  ZOrder		  -2
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -12864,8 +12671,8 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "Vehicle yaw rate [rad/s]"
-	  SID			  "2978"
-	  Position		  [330, 268, 360, 282]
+	  SID			  "5779"
+	  Position		  [330, 293, 360, 307]
 	  ZOrder		  -3
 	  Port			  "3"
 	  IconDisplay		  "Port number"
@@ -12873,25 +12680,16 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "Steering angle [rad]"
-	  SID			  "2979"
-	  Position		  [330, 308, 360, 322]
+	  SID			  "5780"
+	  Position		  [330, 343, 360, 357]
 	  ZOrder		  -4
 	  Port			  "4"
 	  IconDisplay		  "Port number"
 	}
 	Block {
-	  BlockType		  Inport
-	  Name			  "Rear Steering angle [rad]"
-	  SID			  "5732"
-	  Position		  [330, 348, 360, 362]
-	  ZOrder		  1
-	  Port			  "5"
-	  IconDisplay		  "Port number"
-	}
-	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn"
-	  SID			  "2980"
+	  SID			  "5781"
 	  Position		  [505, 116, 765, 144]
 	  ZOrder		  -5
 	  ShowName		  off
@@ -12900,7 +12698,7 @@ Model {
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn1"
-	  SID			  "2981"
+	  SID			  "5782"
 	  Position		  [505, 157, 765, 183]
 	  ZOrder		  -6
 	  ShowName		  off
@@ -12909,25 +12707,25 @@ Model {
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn2"
-	  SID			  "2982"
+	  SID			  "5783"
 	  Position		  [505, 191, 765, 219]
 	  ZOrder		  -7
 	  ShowName		  off
-	  Expr			  "u(5)-atan((u(2)-Lr*u(3))/(u(1)-Lw*u(3)/2))"
+	  Expr			  "-atan((u(2)-Lr*u(3))/(u(1)-Lw*u(3)/2))"
 	}
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn3"
-	  SID			  "2983"
+	  SID			  "5784"
 	  Position		  [505, 232, 765, 258]
 	  ZOrder		  -8
 	  ShowName		  off
-	  Expr			  "u(5)-atan((u(2)-Lr*u(3))/(u(1)+Lw*u(3)/2))"
+	  Expr			  "-atan((u(2)-Lr*u(3))/(u(1)+Lw*u(3)/2))"
 	}
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn4"
-	  SID			  "2984"
+	  SID			  "5785"
 	  Position		  [505, 271, 765, 299]
 	  ZOrder		  -9
 	  ShowName		  off
@@ -12936,7 +12734,7 @@ Model {
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn5"
-	  SID			  "2985"
+	  SID			  "5786"
 	  Position		  [505, 311, 765, 339]
 	  ZOrder		  -10
 	  ShowName		  off
@@ -12945,46 +12743,44 @@ Model {
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn6"
-	  SID			  "2986"
+	  SID			  "5787"
 	  Position		  [505, 353, 765, 377]
 	  ZOrder		  -11
 	  ShowName		  off
-	  Expr			  "(u(1)-u(3)*Lw/2)*cos(u(5))+(u(2)-u(3)*Lr)*sin(u(5))"
+	  Expr			  "u(1)-u(3)*Lw/2"
 	}
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fcn7"
-	  SID			  "2987"
+	  SID			  "5788"
 	  Position		  [505, 383, 765, 407]
 	  ZOrder		  -12
 	  ShowName		  off
-	  Expr			  "(u(1)+u(3)*Lw/2)*cos(u(5))+(u(2)-u(3)*Lr)*sin(u(5))"
+	  Expr			  "u(1)+u(3)*Lw/2"
 	}
 	Block {
 	  BlockType		  Mux
 	  Name			  "Mux"
-	  SID			  "2988"
-	  Ports			  [5, 1]
+	  SID			  "5789"
+	  Ports			  [4, 1]
 	  Position		  [420, 175, 425, 375]
 	  ZOrder		  -13
 	  ShowName		  off
-	  Inputs		  "5"
 	  DisplayOption		  "bar"
 	}
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Subsystem1"
-	  SID			  "3808"
+	  SID			  "5790"
 	  Ports			  [2, 1]
 	  Position		  [990, 79, 1125, 126]
 	  ZOrder		  -17
 	  ShowName		  off
-	  Commented		  "on"
 	  RequestExecContextInheritance	off
 	  Variant		  off
 	  System {
 	    Name		    "Subsystem1"
-	    Location		    [163, 89, 1798, 955]
+	    Location		    [308, 43, 1780, 1005]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -13000,7 +12796,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "slip angle"
-	      SID		      "3809"
+	      SID		      "5791"
 	      Position		      [340, 188, 370, 202]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -13008,7 +12804,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "long. speed [m/s]"
-	      SID		      "3810"
+	      SID		      "5792"
 	      Position		      [155, 128, 185, 142]
 	      ZOrder		      -1
 	      Port		      "2"
@@ -13017,7 +12813,7 @@ Model {
 	    Block {
 	      BlockType		      If
 	      Name		      "If"
-	      SID		      "3811"
+	      SID		      "5793"
 	      Ports		      [1, 2]
 	      Position		      [270, 116, 370, 154]
 	      ZOrder		      -3
@@ -13025,7 +12821,7 @@ Model {
 	    Block {
 	      BlockType		      Merge
 	      Name		      "Merge1"
-	      SID		      "3812"
+	      SID		      "5794"
 	      Ports		      [2, 1]
 	      Position		      [585, 130, 625, 170]
 	      ZOrder		      -4
@@ -13033,7 +12829,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "negative slip angle"
-	      SID		      "3813"
+	      SID		      "5795"
 	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
 	      Position		      [445, 177, 515, 213]
 	      ZOrder		      -5
@@ -13043,7 +12839,7 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"negative slip angle"
-		Location		[22, 0, 1787, 1056]
+		Location		[672, 52, 1453, 536]
 		Open			off
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
@@ -13059,7 +12855,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "in"
-		  SID			  "3814"
+		  SID			  "5796"
 		  Position		  [85, 78, 115, 92]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -13067,7 +12863,7 @@ Model {
 		Block {
 		  BlockType		  ActionPort
 		  Name			  "Action Port"
-		  SID			  "3815"
+		  SID			  "5797"
 		  Position		  [170, 15, 229, 43]
 		  ZOrder		  -2
 		  ActionType		  "else"
@@ -13075,7 +12871,7 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "3816"
+		  SID			  "5798"
 		  Position		  [195, 70, 225, 100]
 		  ZOrder		  -8
 		  Gain			  "-1"
@@ -13086,7 +12882,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "-in"
-		  SID			  "3817"
+		  SID			  "5799"
 		  Position		  [325, 78, 355, 92]
 		  ZOrder		  -9
 		  IconDisplay		  "Port number"
@@ -13110,7 +12906,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "positive slip angle"
-	      SID		      "3818"
+	      SID		      "5800"
 	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
 	      Position		      [445, 72, 515, 108]
 	      ZOrder		      -6
@@ -13121,7 +12917,7 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"positive slip angle"
-		Location		[22, 0, 1787, 1056]
+		Location		[591, 430, 1145, 913]
 		Open			off
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
@@ -13137,7 +12933,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "in"
-		  SID			  "3819"
+		  SID			  "5801"
 		  Position		  [90, 113, 120, 127]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -13145,7 +12941,7 @@ Model {
 		Block {
 		  BlockType		  ActionPort
 		  Name			  "Action Port"
-		  SID			  "3820"
+		  SID			  "5802"
 		  Position		  [170, 15, 229, 43]
 		  ZOrder		  -2
 		  ActionType		  "then"
@@ -13153,7 +12949,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "+in"
-		  SID			  "3821"
+		  SID			  "5803"
 		  Position		  [265, 113, 295, 127]
 		  ZOrder		  -3
 		  IconDisplay		  "Port number"
@@ -13170,7 +12966,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "slip angle [rad]"
-	      SID		      "3822"
+	      SID		      "5804"
 	      Position		      [685, 228, 715, 242]
 	      ZOrder		      -2
 	      IconDisplay	      "Port number"
@@ -13244,18 +13040,17 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Subsystem2"
-	  SID			  "3766"
+	  SID			  "5805"
 	  Ports			  [2, 1]
 	  Position		  [990, 194, 1125, 241]
 	  ZOrder		  -17
 	  ShowName		  off
-	  Commented		  "on"
 	  RequestExecContextInheritance	off
 	  Variant		  off
 	  System {
 	    Name		    "Subsystem2"
-	    Location		    [163, 89, 1798, 955]
-	    Open		    on
+	    Location		    [857, 334, 1715, 949]
+	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -13270,7 +13065,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "slip angle"
-	      SID		      "3767"
+	      SID		      "5806"
 	      Position		      [340, 188, 370, 202]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -13278,7 +13073,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "long. speed [m/s]"
-	      SID		      "3768"
+	      SID		      "5807"
 	      Position		      [155, 128, 185, 142]
 	      ZOrder		      -1
 	      Port		      "2"
@@ -13287,7 +13082,7 @@ Model {
 	    Block {
 	      BlockType		      If
 	      Name		      "If"
-	      SID		      "3769"
+	      SID		      "5808"
 	      Ports		      [1, 2]
 	      Position		      [270, 116, 370, 154]
 	      ZOrder		      -3
@@ -13295,7 +13090,7 @@ Model {
 	    Block {
 	      BlockType		      Merge
 	      Name		      "Merge1"
-	      SID		      "3770"
+	      SID		      "5809"
 	      Ports		      [2, 1]
 	      Position		      [585, 130, 625, 170]
 	      ZOrder		      -4
@@ -13303,7 +13098,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "negative slip angle"
-	      SID		      "3771"
+	      SID		      "5810"
 	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
 	      Position		      [445, 177, 515, 213]
 	      ZOrder		      -5
@@ -13329,7 +13124,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "in"
-		  SID			  "3772"
+		  SID			  "5811"
 		  Position		  [85, 78, 115, 92]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -13337,7 +13132,7 @@ Model {
 		Block {
 		  BlockType		  ActionPort
 		  Name			  "Action Port"
-		  SID			  "3773"
+		  SID			  "5812"
 		  Position		  [170, 15, 229, 43]
 		  ZOrder		  -2
 		  ActionType		  "else"
@@ -13345,7 +13140,7 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "3774"
+		  SID			  "5813"
 		  Position		  [195, 70, 225, 100]
 		  ZOrder		  -8
 		  Gain			  "-1"
@@ -13356,7 +13151,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "-in"
-		  SID			  "3775"
+		  SID			  "5814"
 		  Position		  [325, 78, 355, 92]
 		  ZOrder		  -9
 		  IconDisplay		  "Port number"
@@ -13380,7 +13175,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "positive slip angle"
-	      SID		      "3776"
+	      SID		      "5815"
 	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
 	      Position		      [445, 72, 515, 108]
 	      ZOrder		      -6
@@ -13407,7 +13202,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "in"
-		  SID			  "3777"
+		  SID			  "5816"
 		  Position		  [90, 113, 120, 127]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -13415,7 +13210,7 @@ Model {
 		Block {
 		  BlockType		  ActionPort
 		  Name			  "Action Port"
-		  SID			  "3778"
+		  SID			  "5817"
 		  Position		  [170, 15, 229, 43]
 		  ZOrder		  -2
 		  ActionType		  "then"
@@ -13423,7 +13218,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "+in"
-		  SID			  "3779"
+		  SID			  "5818"
 		  Position		  [265, 113, 295, 127]
 		  ZOrder		  -3
 		  IconDisplay		  "Port number"
@@ -13440,7 +13235,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "slip angle [rad]"
-	      SID		      "3780"
+	      SID		      "5819"
 	      Position		      [685, 228, 715, 242]
 	      ZOrder		      -2
 	      IconDisplay	      "Port number"
@@ -13514,18 +13309,17 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Subsystem3"
-	  SID			  "3823"
+	  SID			  "5820"
 	  Ports			  [2, 1]
 	  Position		  [990, 139, 1125, 186]
 	  ZOrder		  -17
 	  ShowName		  off
-	  Commented		  "on"
 	  RequestExecContextInheritance	off
 	  Variant		  off
 	  System {
 	    Name		    "Subsystem3"
-	    Location		    [163, 89, 1798, 955]
-	    Open		    on
+	    Location		    [857, 334, 1715, 949]
+	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -13540,7 +13334,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "slip angle"
-	      SID		      "3824"
+	      SID		      "5821"
 	      Position		      [340, 188, 370, 202]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -13548,7 +13342,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "long. speed [m/s]"
-	      SID		      "3825"
+	      SID		      "5822"
 	      Position		      [155, 128, 185, 142]
 	      ZOrder		      -1
 	      Port		      "2"
@@ -13557,7 +13351,7 @@ Model {
 	    Block {
 	      BlockType		      If
 	      Name		      "If"
-	      SID		      "3826"
+	      SID		      "5823"
 	      Ports		      [1, 2]
 	      Position		      [270, 116, 370, 154]
 	      ZOrder		      -3
@@ -13565,7 +13359,7 @@ Model {
 	    Block {
 	      BlockType		      Merge
 	      Name		      "Merge1"
-	      SID		      "3827"
+	      SID		      "5824"
 	      Ports		      [2, 1]
 	      Position		      [585, 130, 625, 170]
 	      ZOrder		      -4
@@ -13573,7 +13367,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "negative slip angle"
-	      SID		      "3828"
+	      SID		      "5825"
 	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
 	      Position		      [445, 177, 515, 213]
 	      ZOrder		      -5
@@ -13599,7 +13393,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "in"
-		  SID			  "3829"
+		  SID			  "5826"
 		  Position		  [85, 78, 115, 92]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -13607,7 +13401,7 @@ Model {
 		Block {
 		  BlockType		  ActionPort
 		  Name			  "Action Port"
-		  SID			  "3830"
+		  SID			  "5827"
 		  Position		  [170, 15, 229, 43]
 		  ZOrder		  -2
 		  ActionType		  "else"
@@ -13615,7 +13409,7 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "3831"
+		  SID			  "5828"
 		  Position		  [195, 70, 225, 100]
 		  ZOrder		  -8
 		  Gain			  "-1"
@@ -13626,7 +13420,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "-in"
-		  SID			  "3832"
+		  SID			  "5829"
 		  Position		  [325, 78, 355, 92]
 		  ZOrder		  -9
 		  IconDisplay		  "Port number"
@@ -13650,7 +13444,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "positive slip angle"
-	      SID		      "3833"
+	      SID		      "5830"
 	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
 	      Position		      [445, 72, 515, 108]
 	      ZOrder		      -6
@@ -13677,7 +13471,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "in"
-		  SID			  "3834"
+		  SID			  "5831"
 		  Position		  [90, 113, 120, 127]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -13685,7 +13479,7 @@ Model {
 		Block {
 		  BlockType		  ActionPort
 		  Name			  "Action Port"
-		  SID			  "3835"
+		  SID			  "5832"
 		  Position		  [170, 15, 229, 43]
 		  ZOrder		  -2
 		  ActionType		  "then"
@@ -13693,7 +13487,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "+in"
-		  SID			  "3836"
+		  SID			  "5833"
 		  Position		  [265, 113, 295, 127]
 		  ZOrder		  -3
 		  IconDisplay		  "Port number"
@@ -13710,7 +13504,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "slip angle [rad]"
-	      SID		      "3837"
+	      SID		      "5834"
 	      Position		      [685, 228, 715, 242]
 	      ZOrder		      -2
 	      IconDisplay	      "Port number"
@@ -13784,18 +13578,17 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Subsystem4"
-	  SID			  "3838"
+	  SID			  "5835"
 	  Ports			  [2, 1]
 	  Position		  [990, 249, 1125, 296]
 	  ZOrder		  -17
 	  ShowName		  off
-	  Commented		  "on"
 	  RequestExecContextInheritance	off
 	  Variant		  off
 	  System {
 	    Name		    "Subsystem4"
-	    Location		    [163, 89, 1798, 955]
-	    Open		    on
+	    Location		    [857, 334, 1715, 949]
+	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -13810,7 +13603,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "slip angle"
-	      SID		      "3839"
+	      SID		      "5836"
 	      Position		      [340, 188, 370, 202]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -13818,7 +13611,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "long. speed [m/s]"
-	      SID		      "3840"
+	      SID		      "5837"
 	      Position		      [155, 128, 185, 142]
 	      ZOrder		      -1
 	      Port		      "2"
@@ -13827,7 +13620,7 @@ Model {
 	    Block {
 	      BlockType		      If
 	      Name		      "If"
-	      SID		      "3841"
+	      SID		      "5838"
 	      Ports		      [1, 2]
 	      Position		      [270, 116, 370, 154]
 	      ZOrder		      -3
@@ -13835,7 +13628,7 @@ Model {
 	    Block {
 	      BlockType		      Merge
 	      Name		      "Merge1"
-	      SID		      "3842"
+	      SID		      "5839"
 	      Ports		      [2, 1]
 	      Position		      [585, 130, 625, 170]
 	      ZOrder		      -4
@@ -13843,7 +13636,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "negative slip angle"
-	      SID		      "3843"
+	      SID		      "5840"
 	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
 	      Position		      [445, 177, 515, 213]
 	      ZOrder		      -5
@@ -13869,7 +13662,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "in"
-		  SID			  "3844"
+		  SID			  "5841"
 		  Position		  [85, 78, 115, 92]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -13877,7 +13670,7 @@ Model {
 		Block {
 		  BlockType		  ActionPort
 		  Name			  "Action Port"
-		  SID			  "3845"
+		  SID			  "5842"
 		  Position		  [170, 15, 229, 43]
 		  ZOrder		  -2
 		  ActionType		  "else"
@@ -13885,7 +13678,7 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "3846"
+		  SID			  "5843"
 		  Position		  [195, 70, 225, 100]
 		  ZOrder		  -8
 		  Gain			  "-1"
@@ -13896,7 +13689,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "-in"
-		  SID			  "3847"
+		  SID			  "5844"
 		  Position		  [325, 78, 355, 92]
 		  ZOrder		  -9
 		  IconDisplay		  "Port number"
@@ -13920,7 +13713,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "positive slip angle"
-	      SID		      "3848"
+	      SID		      "5845"
 	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
 	      Position		      [445, 72, 515, 108]
 	      ZOrder		      -6
@@ -13947,7 +13740,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "in"
-		  SID			  "3849"
+		  SID			  "5846"
 		  Position		  [90, 113, 120, 127]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -13955,7 +13748,7 @@ Model {
 		Block {
 		  BlockType		  ActionPort
 		  Name			  "Action Port"
-		  SID			  "3850"
+		  SID			  "5847"
 		  Position		  [170, 15, 229, 43]
 		  ZOrder		  -2
 		  ActionType		  "then"
@@ -13963,7 +13756,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "+in"
-		  SID			  "3851"
+		  SID			  "5848"
 		  Position		  [265, 113, 295, 127]
 		  ZOrder		  -3
 		  IconDisplay		  "Port number"
@@ -13980,7 +13773,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "slip angle [rad]"
-	      SID		      "3852"
+	      SID		      "5849"
 	      Position		      [685, 228, 715, 242]
 	      ZOrder		      -2
 	      IconDisplay	      "Port number"
@@ -14054,7 +13847,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "FR slip angle [rad] "
-	  SID			  "2989"
+	  SID			  "5850"
 	  Position		  [1170, 98, 1200, 112]
 	  ZOrder		  -21
 	  IconDisplay		  "Port number"
@@ -14062,7 +13855,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "FL slip angle [rad] "
-	  SID			  "2990"
+	  SID			  "5851"
 	  Position		  [1170, 158, 1200, 172]
 	  ZOrder		  -22
 	  Port			  "2"
@@ -14071,7 +13864,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "RR slip angle [rad] "
-	  SID			  "2991"
+	  SID			  "5852"
 	  Position		  [1170, 213, 1200, 227]
 	  ZOrder		  -23
 	  Port			  "3"
@@ -14080,7 +13873,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "RL slip angle [rad] "
-	  SID			  "2992"
+	  SID			  "5853"
 	  Position		  [1170, 268, 1200, 282]
 	  ZOrder		  -24
 	  Port			  "4"
@@ -14089,7 +13882,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "FR Long. speed [m/s]"
-	  SID			  "2993"
+	  SID			  "5854"
 	  Position		  [805, 278, 835, 292]
 	  ZOrder		  -25
 	  Port			  "5"
@@ -14098,7 +13891,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "FL Long. speed [m/s]"
-	  SID			  "2994"
+	  SID			  "5855"
 	  Position		  [860, 318, 890, 332]
 	  ZOrder		  -26
 	  Port			  "6"
@@ -14107,7 +13900,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "RR Long. speed [m/s]"
-	  SID			  "2995"
+	  SID			  "5856"
 	  Position		  [920, 358, 950, 372]
 	  ZOrder		  -27
 	  Port			  "7"
@@ -14116,7 +13909,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "RL Long. speed [m/s]"
-	  SID			  "2996"
+	  SID			  "5857"
 	  Position		  [995, 388, 1025, 402]
 	  ZOrder		  -28
 	  Port			  "8"
@@ -14291,82 +14084,66 @@ Model {
 	  }
 	}
 	Line {
+	  ZOrder		  32
+	  SrcBlock		  "Subsystem1"
+	  SrcPort		  1
+	  DstBlock		  "FR slip angle [rad] "
+	  DstPort		  1
+	}
+	Line {
 	  ZOrder		  33
 	  SrcBlock		  "Fcn"
 	  SrcPort		  1
-	  Points		  [5, 0; 0, -40; 167, 0]
-	  Branch {
-	    ZOrder		    43
-	    Points		    [0, -25; 213, 0]
-	    DstBlock		    "FR slip angle [rad] "
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    42
-	    DstBlock		    "Subsystem1"
-	    DstPort		    1
-	  }
+	  Points		  [5, 0; 0, -40]
+	  DstBlock		  "Subsystem1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  34
+	  SrcBlock		  "Subsystem3"
+	  SrcPort		  1
+	  DstBlock		  "FL slip angle [rad] "
+	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  35
 	  SrcBlock		  "Fcn1"
 	  SrcPort		  1
-	  Points		  [5, 0; 0, -20; 170, 0]
-	  Branch {
-	    ZOrder		    45
-	    Points		    [0, -17; 191, 0; 0, 32]
-	    DstBlock		    "FL slip angle [rad] "
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    44
-	    DstBlock		    "Subsystem3"
-	    DstPort		    1
-	  }
+	  Points		  [5, 0; 0, -20]
+	  DstBlock		  "Subsystem3"
+	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  36
 	  SrcBlock		  "Fcn2"
 	  SrcPort		  1
-	  Points		  [194, 0]
-	  Branch {
-	    ZOrder		    47
-	    Points		    [0, -16; 191, 0]
-	    DstBlock		    "RR slip angle [rad] "
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    46
-	    DstBlock		    "Subsystem2"
-	    DstPort		    1
-	  }
+	  DstBlock		  "Subsystem2"
+	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  37
 	  SrcBlock		  "Fcn3"
 	  SrcPort		  1
-	  Points		  [185, 0; 0, 15; 16, 0]
-	  Branch {
-	    ZOrder		    49
-	    Points		    [0, 86; 181, 0; 0, -71]
-	    DstBlock		    "RL slip angle [rad] "
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    48
-	    DstBlock		    "Subsystem4"
-	    DstPort		    1
-	  }
+	  Points		  [185, 0; 0, 15]
+	  DstBlock		  "Subsystem4"
+	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  40
-	  SrcBlock		  "Rear Steering angle [rad]"
+	  ZOrder		  38
+	  SrcBlock		  "Subsystem2"
 	  SrcPort		  1
-	  DstBlock		  "Mux"
-	  DstPort		  5
+	  DstBlock		  "RR slip angle [rad] "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  39
+	  SrcBlock		  "Subsystem4"
+	  SrcPort		  1
+	  DstBlock		  "RL slip angle [rad] "
+	  DstPort		  1
 	}
 	Annotation {
-	  SID			  "5268"
+	  SID			  "5859"
 	  Name			  "alpha1 = delta_f - atan{ (Vy+Lf*r)/(Vx-Lw*r/2) }  \nalpha2 = delta_f - atan{ (Vy+Lf*r)/(Vx+Lw*r/2) } \nal"
 	  "pha3 = - atan{ (Vy-Lr*r)/(Vx-Lw*r/2) } \nalpha4 = - atan{ (Vy-Lr*r)/(Vx+Lw*r/2) } \nUnder this definition, positive"
 	  " angle will lead to  positive lateral force, \ni.e. corning stiffness is positive"
@@ -14380,7 +14157,7 @@ Model {
 	  FontSize		  12
 	}
 	Annotation {
-	  SID			  "5269"
+	  SID			  "5858"
 	  Name			  "Vx1 = (Vx - Lw*r/2)*cos(delta_f)+(Vy + Lf*r)*sin(delta_f)\nVx2 = (Vx + Lw*r/2)*cos(delta_f)+(Vy + Lf*r)*s"
 	  "in(delta_f)\nVx3 = Vx - Lw*r/2\nVx4 = Vx + Lw*r/2"
 	  Position		  [104, 387, 401, 445]
@@ -14515,29 +14292,29 @@ Model {
       Expr		      "atan(u(2)/u(1))*180/3.14"
     }
     Line {
-      ZOrder		      1
-      SrcBlock		      "Wheel States"
+      ZOrder		      1535
+      SrcBlock		      "Wheel States1"
       SrcPort		      5
       DstBlock		      "Goto9"
       DstPort		      1
     }
     Line {
-      ZOrder		      2
-      SrcBlock		      "Wheel States"
+      ZOrder		      1536
+      SrcBlock		      "Wheel States1"
       SrcPort		      6
       DstBlock		      "Goto10"
       DstPort		      1
     }
     Line {
-      ZOrder		      3
-      SrcBlock		      "Wheel States"
+      ZOrder		      1537
+      SrcBlock		      "Wheel States1"
       SrcPort		      7
       DstBlock		      "Goto11"
       DstPort		      1
     }
     Line {
-      ZOrder		      4
-      SrcBlock		      "Wheel States"
+      ZOrder		      1538
+      SrcBlock		      "Wheel States1"
       SrcPort		      8
       DstBlock		      "Goto13"
       DstPort		      1
@@ -14553,16 +14330,16 @@ Model {
 	ZOrder			6
 	Points			[-105, 0]
 	Branch {
+	  ZOrder		  1541
+	  Labels		  [2, 1]
+	  Points		  [0, -105]
+	  DstBlock		  "Wheel States1"
+	  DstPort		  3
+	}
+	Branch {
 	  ZOrder		  7
 	  DstBlock		  "rad -> deg1"
 	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  8
-	  Labels		  [2, 1]
-	  Points		  [0, -135]
-	  DstBlock		  "Wheel States"
-	  DstPort		  3
 	}
 	Branch {
 	  ZOrder		  9
@@ -14593,9 +14370,9 @@ Model {
 	  Labels		  [1, 0]
 	  Points		  [-125, 0]
 	  Branch {
-	    ZOrder		    13
-	    Points		    [0, -140]
-	    DstBlock		    "Wheel States"
+	    ZOrder		    1542
+	    Points		    [0, -125]
+	    DstBlock		    "Wheel States1"
 	    DstPort		    2
 	  }
 	  Branch {
@@ -14641,9 +14418,9 @@ Model {
 	  ZOrder		  162
 	  Points		  [-135, 0]
 	  Branch {
-	    ZOrder		    22
+	    ZOrder		    1530
 	    Points		    [0, -145]
-	    DstBlock		    "Wheel States"
+	    DstBlock		    "Wheel States1"
 	    DstPort		    1
 	  }
 	  Branch {
@@ -14675,38 +14452,38 @@ Model {
       }
     }
     Line {
-      ZOrder		      28
-      SrcBlock		      "Wheel States"
+      ZOrder		      1531
+      SrcBlock		      "Wheel States1"
       SrcPort		      1
       DstBlock		      "Goto19"
       DstPort		      1
     }
     Line {
-      ZOrder		      29
-      SrcBlock		      "Wheel States"
+      ZOrder		      1532
+      SrcBlock		      "Wheel States1"
       SrcPort		      2
       DstBlock		      "Goto16"
       DstPort		      1
     }
     Line {
-      ZOrder		      30
-      SrcBlock		      "Wheel States"
+      ZOrder		      1533
+      SrcBlock		      "Wheel States1"
       SrcPort		      3
       DstBlock		      "Goto17"
       DstPort		      1
     }
     Line {
-      ZOrder		      31
-      SrcBlock		      "Wheel States"
+      ZOrder		      1534
+      SrcBlock		      "Wheel States1"
       SrcPort		      4
       DstBlock		      "Goto18"
       DstPort		      1
     }
     Line {
-      ZOrder		      32
-      SrcBlock		      "Force Composition"
+      ZOrder		      1543
+      SrcBlock		      "Force Composition1"
       SrcPort		      1
-      Points		      [85, 0; 0, 270]
+      Points		      [95, 0; 0, 270]
       Branch {
 	ZOrder			33
 	DstBlock		"Weight Transfer"
@@ -14720,67 +14497,59 @@ Model {
       }
     }
     Line {
-      ZOrder		      35
+      ZOrder		      1546
       SrcBlock		      "From2"
       SrcPort		      1
-      Points		      [10, 0]
-      DstBlock		      "Force Composition"
+      DstBlock		      "Force Composition1"
       DstPort		      1
     }
     Line {
-      ZOrder		      36
+      ZOrder		      1549
       SrcBlock		      "From3"
       SrcPort		      1
-      Points		      [10, 0]
-      DstBlock		      "Force Composition"
+      DstBlock		      "Force Composition1"
       DstPort		      2
     }
     Line {
-      ZOrder		      37
+      ZOrder		      1552
       SrcBlock		      "From"
       SrcPort		      1
-      Points		      [10, 0]
-      DstBlock		      "Force Composition"
+      DstBlock		      "Force Composition1"
       DstPort		      3
     }
     Line {
-      ZOrder		      38
+      ZOrder		      1551
       SrcBlock		      "From1"
       SrcPort		      1
-      Points		      [10, 0]
-      DstBlock		      "Force Composition"
+      DstBlock		      "Force Composition1"
       DstPort		      4
     }
     Line {
-      ZOrder		      39
+      ZOrder		      1547
       SrcBlock		      "From6"
       SrcPort		      1
-      Points		      [10, 0]
-      DstBlock		      "Force Composition"
+      DstBlock		      "Force Composition1"
       DstPort		      5
     }
     Line {
-      ZOrder		      40
+      ZOrder		      1553
       SrcBlock		      "From7"
       SrcPort		      1
-      Points		      [10, 0]
-      DstBlock		      "Force Composition"
+      DstBlock		      "Force Composition1"
       DstPort		      6
     }
     Line {
-      ZOrder		      41
+      ZOrder		      1548
       SrcBlock		      "From4"
       SrcPort		      1
-      Points		      [10, 0]
-      DstBlock		      "Force Composition"
+      DstBlock		      "Force Composition1"
       DstPort		      7
     }
     Line {
-      ZOrder		      42
+      ZOrder		      1550
       SrcBlock		      "From5"
       SrcPort		      1
-      Points		      [10, 0]
-      DstBlock		      "Force Composition"
+      DstBlock		      "Force Composition1"
       DstPort		      8
     }
     Line {
@@ -14896,10 +14665,10 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      57
-      SrcBlock		      "Force Composition"
+      ZOrder		      1544
+      SrcBlock		      "Force Composition1"
       SrcPort		      2
-      Points		      [65, 0; 0, 230]
+      Points		      [75, 0; 0, 230]
       Branch {
 	ZOrder			58
 	DstBlock		"Weight Transfer"
@@ -14939,10 +14708,10 @@ Model {
       }
     }
     Line {
-      ZOrder		      65
-      SrcBlock		      "Force Composition"
+      ZOrder		      1545
+      SrcBlock		      "Force Composition1"
       SrcPort		      3
-      Points		      [55, 0; 0, 275]
+      Points		      [85, 0; 0, 275]
       DstBlock		      "Three DOF Vehicle Dynamics"
       DstPort		      3
     }
@@ -15021,7 +14790,6 @@ Model {
       ZOrder		      87
       SrcBlock		      "Mux3"
       SrcPort		      1
-      Points		      [43, 0; 0, -20]
       DstBlock		      "To Workspace"
       DstPort		      1
     }
@@ -15184,18 +14952,18 @@ Model {
       }
       Branch {
 	ZOrder			111
-	Points			[180, 0; 0, -105]
+	Points			[180, 0; 0, -60]
 	Branch {
-	  ZOrder		  160
-	  DstBlock		  "Wheel States"
-	  DstPort		  4
+	  ZOrder		  1554
+	  Labels		  [0, 1]
+	  Points		  [0, -205]
+	  DstBlock		  "Force Composition1"
+	  DstPort		  9
 	}
 	Branch {
-	  ZOrder		  113
-	  Labels		  [1, 0]
-	  Points		  [0, -175]
-	  DstBlock		  "Force Composition"
-	  DstPort		  9
+	  ZOrder		  1539
+	  DstBlock		  "Wheel States1"
+	  DstPort		  4
 	}
       }
     }
@@ -15374,10 +15142,10 @@ Model {
       ZOrder		      378
       SrcBlock		      "Model"
       SrcPort		      1
-      Points		      [11, 0; 0, -10]
+      Points		      [11, 0]
       Branch {
 	ZOrder			902
-	Points			[0, -130]
+	Points			[0, -115]
 	DstBlock		"Mux1"
 	DstPort			1
       }
@@ -15391,10 +15159,10 @@ Model {
       ZOrder		      379
       SrcBlock		      "Model"
       SrcPort		      2
-      Points		      [27, 0; 0, -15]
+      Points		      [27, 0]
       Branch {
-	ZOrder			904
-	Points			[0, -200]
+	ZOrder			1755
+	Points			[0, -170]
 	DstBlock		"Mux1"
 	DstPort			2
       }
@@ -15408,10 +15176,10 @@ Model {
       ZOrder		      382
       SrcBlock		      "Model"
       SrcPort		      3
-      Points		      [56, 0; 0, -20]
+      Points		      [56, 0]
       Branch {
 	ZOrder			906
-	Points			[0, -270]
+	Points			[0, -225]
 	DstBlock		"Mux1"
 	DstPort			3
       }
@@ -15425,10 +15193,10 @@ Model {
       ZOrder		      383
       SrcBlock		      "Model"
       SrcPort		      4
-      Points		      [81, 0; 0, -25]
+      Points		      [81, 0]
       Branch {
 	ZOrder			908
-	Points			[0, -340]
+	Points			[0, -280]
 	DstBlock		"Mux1"
 	DstPort			4
       }
@@ -15494,7 +15262,6 @@ Model {
       ZOrder		      447
       SrcBlock		      "Model"
       SrcPort		      5
-      Points		      [75, 0; 0, -30]
       DstBlock		      "Goto40"
       DstPort		      1
     }
@@ -15600,8 +15367,8 @@ Model {
       DstPort		      5
     }
     Line {
-      ZOrder		      1475
-      SrcBlock		      "Constant2"
+      ZOrder		      1766
+      SrcBlock		      "From68"
       SrcPort		      1
       DstBlock		      "Mux3"
       DstPort		      19
@@ -15824,26 +15591,8 @@ Model {
       SrcBlock		      "deg -> rad1"
       SrcPort		      1
       Points		      [48, 0; 0, -35]
-      Branch {
-	ZOrder			1469
-	DstBlock		"Goto41"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			1468
-	Points			[0, -434; 81, 0; 0, -76]
-	Branch {
-	  ZOrder		  1442
-	  Points		  [0, -190]
-	  DstBlock		  "Force Composition"
-	  DstPort		  10
-	}
-	Branch {
-	  ZOrder		  1441
-	  DstBlock		  "Wheel States"
-	  DstPort		  5
-	}
-      }
+      DstBlock		      "Goto41"
+      DstPort		      1
     }
     Line {
       ZOrder		      1445
@@ -15905,7 +15654,7 @@ Model {
       DstPort		      2
     }
     Line {
-      ZOrder		      1467
+      ZOrder		      1765
       SrcBlock		      "From65"
       SrcPort		      1
       DstBlock		      "Mux3"
@@ -15915,7 +15664,6 @@ Model {
       ZOrder		      1471
       SrcBlock		      "Model"
       SrcPort		      6
-      Points		      [78, 0; 0, -35]
       DstBlock		      "\n"
       DstPort		      1
     }
@@ -15977,6 +15725,20 @@ Model {
       SrcPort		      1
       DstBlock		      "Multiport\nSwitch"
       DstPort		      3
+    }
+    Line {
+      ZOrder		      1762
+      SrcBlock		      "Model"
+      SrcPort		      7
+      DstBlock		      "Goto43"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1763
+      SrcBlock		      "Model"
+      SrcPort		      8
+      DstBlock		      "Goto44"
+      DstPort		      1
     }
     Annotation {
       SID		      "5270"
