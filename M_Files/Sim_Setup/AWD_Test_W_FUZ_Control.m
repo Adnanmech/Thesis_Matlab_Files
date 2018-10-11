@@ -23,9 +23,9 @@ set_param('AWD_EV_MODEL_rev2','AlgebraicLoopSolver','TrustRegion')
 %plottools('off')
 %plotfis(Fuzzy_AYC_Ctl)             //plots whole FIS
 %Load Fuzzy Inference System Controllers
-Fuzzy_Slip_Ctl_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
-Fuzzy_Slip_Ctl_ABS = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
-Fuzzy_AYC_Ctl      = readfis('Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
+%Fuzzy_Slip_Ctl_VLC = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_VLC');    %VLC FIS
+%Fuzzy_Slip_Ctl_ABS = readfis('Fuzzy_Controller_Files\Fuzzy_Slip_Ctl_ABS');    %ABS FIS
+%Fuzzy_AYC_Ctl      = readfis('Fuzzy_Controller_Files\Fuzzy_AYC_Ctl');         %AYC FIS
 
 %Fuzzy_Slip_Ctl_VLC = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_VLC_2');      %VLC FIS
 %Fuzzy_Slip_Ctl_ABS = readfis('C:\Users\kschmutz\OneDrive\Thesis MATLAB Working Directory\Fuzzy_Controller\Fuzzy_Slip_Ctl_ABS_2');      %ABS FIS
@@ -121,6 +121,7 @@ SE_P_Gain = 4;
 SE_D_Gain = 0.1;
 SE_Alpha_Gain = 60;
 SE_Beta_Gain = 1000;
+SE_Beta_Gain_BIG_ERR = 6000;
 
 YAW_P_Gain = 30;
 YAW_D_Gain = 15;
